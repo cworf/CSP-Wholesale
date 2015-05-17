@@ -1445,3 +1445,15 @@
 [17-May-2015 08:59:34 UTC] PHP Strict Standards:  Redefining already defined constructor for class WPPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/wp-plugin.php on line 27
 [17-May-2015 20:30:54 UTC] PHP Strict Standards:  Redefining already defined constructor for class ReCAPTCHAPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/recaptcha.php on line 41
 [17-May-2015 20:30:54 UTC] PHP Strict Standards:  Redefining already defined constructor for class WPPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/wp-plugin.php on line 27
+[17-May-2015 20:34:11 UTC] PHP Strict Standards:  Redefining already defined constructor for class ReCAPTCHAPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/recaptcha.php on line 41
+[17-May-2015 20:34:11 UTC] PHP Strict Standards:  Redefining already defined constructor for class WPPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/wp-plugin.php on line 27
+[17-May-2015 20:35:37 UTC] PHP Fatal error:  Call to undefined function ubermenu() in /home2/montani7/public_html/cspwholesale/wp-content/themes/zeon-child/header.php on line 83
+[17-May-2015 20:35:49 UTC] PHP Fatal error:  Call to undefined function ubermenu() in /home2/montani7/public_html/cspwholesale/wp-content/themes/zeon-child/header.php on line 83
+[17-May-2015 20:36:00 UTC] PHP Fatal error:  Call to undefined function ubermenu() in /home2/montani7/public_html/cspwholesale/wp-content/themes/zeon-child/header.php on line 83
+[17-May-2015 20:39:13 UTC] PHP Fatal error:  Call to undefined function ubermenu() in /home2/montani7/public_html/cspwholesale/wp-content/themes/zeon-child/header.php on line 83
+[17-May-2015 20:39:39 UTC] PHP Strict Standards:  Redefining already defined constructor for class ReCAPTCHAPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/recaptcha.php on line 41
+[17-May-2015 20:39:39 UTC] PHP Strict Standards:  Redefining already defined constructor for class WPPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/wp-plugin.php on line 27
+[17-May-2015 20:40:13 UTC] PHP Strict Standards:  Redefining already defined constructor for class ReCAPTCHAPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/recaptcha.php on line 41
+[17-May-2015 20:40:13 UTC] PHP Strict Standards:  Redefining already defined constructor for class WPPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/wp-plugin.php on line 27
+[17-May-2015 20:40:14 UTC] PHP Strict Standards:  Redefining already defined constructor for class ReCAPTCHAPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/recaptcha.php on line 41
+[17-May-2015 20:40:14 UTC] PHP Strict Standards:  Redefining already defined constructor for class WPPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/wp-plugin.php on line 27
