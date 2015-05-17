@@ -11,7 +11,7 @@ class VTMIN_Parent_Definitions {
 	public function __construct(){
     
     define('VTMIN_PARENT_PLUGIN_NAME',                      'WooCommerce');
-    define('VTMIN_EARLIEST_ALLOWED_PARENT_VERSION',         '1.0');
+    define('VTMIN_EARLIEST_ALLOWED_PARENT_VERSION',         '2.1.0');  //v1.0.9.5  plugin now uses WOO messaging to send messages to screen
     define('VTMIN_TESTED_UP_TO_PARENT_VERSION',             '1.6.6');
     define('VTMIN_DOCUMENTATION_PATH_PRO_BY_PARENT',        'http://www.varktech.com/woocommerce/minimum-purchase-pro-for-woocommerce/?active_tab=tutorial');                                                                                                     //***
     define('VTMIN_DOCUMENTATION_PATH_FREE_BY_PARENT',       'http://www.varktech.com/woocommerce/minimum-purchase-for-woocommerce/?active_tab=tutorial');      

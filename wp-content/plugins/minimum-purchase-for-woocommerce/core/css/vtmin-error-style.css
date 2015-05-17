@@ -1,7 +1,8 @@
     /*CSS for Mimimum Error Msg Display*/
             table.shop_table {clear:left} /*woo-only override, for table following msgs on cart page, but css also hits the same table on checkout page(no effect)*/
             div.vtmin-error {
-              margin: 20px 0;
+              margin: 30px 0 0 -15%;  /* v1.09.5 */
+              width: 120%;   /* v1.09.5 */
               background-color: #FFEBE8;
               border-color: #CC0000;
               padding: 5px 0.6em;

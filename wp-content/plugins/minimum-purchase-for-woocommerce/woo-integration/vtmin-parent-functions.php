@@ -265,6 +265,7 @@ Parent Plugin Integration
 
 
   function vtmin_debug_options(){   //v1.09 updated function
+ 
     global $vtmin_setup_options;
     if ( ( isset( $vtmin_setup_options['debugging_mode_on'] )) &&
          ( $vtmin_setup_options['debugging_mode_on'] == 'yes' ) ) {  
@@ -272,8 +273,10 @@ Parent Plugin Integration
     }  else {
       error_reporting(E_ERROR | E_CORE_ERROR | E_COMPILE_ERROR);    //only allow FATAL error types
     }
+     
+    
   }
-  
+
   //***** v1.0.5  end
   
   //v1.07 end

@@ -24,7 +24,7 @@ class VTMIN_Rules_UI {
   public function vtmin_enqueue_script() {
     global $post_type;
     if( 'vtmin-rule' == $post_type ){ 
-        wp_register_style( 'vtmin-admin-style', VTMIN_URL.'/admin/css/vtmin-admin-style.css' );  
+        wp_register_style( 'vtmin-admin-style', VTMIN_URL.'/admin/css/vtmin-admin-style-v002.css' );  //v1.09.6 ==> new version for new metabox
         wp_enqueue_style('vtmin-admin-style');
         wp_register_script( 'vtmin-admin-script', VTMIN_URL.'/admin/js/vtmin-admin-script.js' );  
         wp_enqueue_script('vtmin-admin-script');
@@ -101,6 +101,7 @@ class VTMIN_Rules_UI {
       add_meta_box('vtmin-pop-in-select', __('Cart Search Criteria', 'vtmin'), array(&$this, 'vtmin_pop_in_select'), 'vtmin-rule', 'normal', 'high');                      
       add_meta_box('vtmin-pop-in-specifics', __('Rule Application Method', 'vtmin'), array(&$this, 'vtmin_pop_in_specifics'), 'vtmin-rule', 'normal', 'high');
       add_meta_box('vtmin-rule-amount', __('Quantity or Price Minimum Amount', 'vtmin'), array(&$this, 'vtmin_rule_amount'), 'vtmin-rule', 'normal', 'high');
+      add_meta_box('vtmin-rule-repeating-groups', __('Repeating Groups', 'vtmin'), array(&$this, 'vtmin_rule_repeating_groups'), 'vtmin-rule', 'normal', 'default');  //v1.09.6
       add_meta_box('vtmin-rule-custom-message', __('Custom Message', 'vtmin'), array(&$this, 'vtmin_rule_custom_message'), 'vtmin-rule', 'normal', 'default');  //v1.08
       add_meta_box('vtmin-rule-id', __('Minimum Purchase Rule ID', 'vtmin'), array(&$this, 'vtmin_rule_id'), 'vtmin-rule', 'side', 'low'); //low = below Publish box
       add_meta_box('vtmin-rule-resources', __('Resources', 'vtmin'), array(&$this, 'vtmin_rule_resources'), 'vtmin-rule', 'side', 'low'); //low = below Publish box  
@@ -505,7 +506,25 @@ class VTMIN_Rules_UI {
        </div>
       <?php
   }       
-   
+    
+   //v1.09.6 NEW FUNCTION 
+   //repeating groups by count or $ value                                                                        
+    public    function vtmin_rule_repeating_groups() {
+        global $post, $vtmin_info, $vtmin_rule, $vtmin_rules_set;                   
+          ?>
+        <div class="rule_message clear-left" id="repeating-groups-area">
+           <span class="newColumn1" id=repeating-groups-label-area>
+              <h3><?php _e('Repeating Groups Quantity', 'vtmin')?></h3>
+              <span id='repeating-groups-optional'>(optional)</span>
+              <span class="clear-left" id='repeating-groups-comment'>(rule purchases must be in groups of X count)</span>
+           </span>   
+            <textarea name="repeating-groups" type="text" class="msg-text" id="repeating-groups"><?php echo $vtmin_rule->repeatingGroups; ?></textarea> 
+        </div>
+
+      <?php
+  }  
+  //v1.09.6 end
+    
    //V1.08 NEW FUNCTION 
    //Custom Message overriding default messaging                                                                        
     public    function vtmin_rule_custom_message() {
@@ -517,7 +536,7 @@ class VTMIN_Rules_UI {
               <span id='cust-msg-optional'>(optional)</span>
               <span class="clear-left" id='cust-msg-comment'>(overrides default message)</span>
            </span>   
-            <textarea name="cust-msg-text" type="text" class="msg-text newColumn2" id="cust-msg-text" cols="50" rows="2"><?php echo $vtmin_rule->custMsg_text; ?></textarea>          
+            <textarea name="cust-msg-text" type="text" class="msg-text newColumn2" id="cust-msg-text" cols="50" rows="2"><?php echo stripslashes($vtmin_rule->custMsg_text); ?></textarea>          
        </div>
 
       <?php

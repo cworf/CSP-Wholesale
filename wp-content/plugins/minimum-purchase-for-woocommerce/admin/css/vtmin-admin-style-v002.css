@@ -21,6 +21,7 @@
             div#vtmin-rule-resources,
             div#vtmin-errmsg,
             div#vtmin-rule-custom-message,    /* v1.08 */
+            div#vtmin-rule-repeating-groups,    /* v1.09.6 */
             div#submitdiv 
                     {display:block;}
             /* end fix */
@@ -32,6 +33,7 @@
             div#vtmin-rule-amount.postbox,
             div#vtmin-rule-msg.postbox,
             div#vtmin-rule-custom-message.postbox,     /* v1.08 */
+            div#vtmin-rule-repeating-groups.postbox,    /* v1.09.6 */
             div#vtmin-errmsg.postbox {
               padding-bottom:10px;
               height:auto;
@@ -557,3 +559,26 @@
            }    
            #cust-msg-text-label-area {margin-top:10px;}                        
           /*   v1.08 END */   
+          /*   ***********************   */
+          /*   v1.09.6 BEGIN */
+          /*   ***********************   */
+          #repeating-groups-area,
+          #repeating-groups-area h3,
+          #repeating-groups-comment,
+          #repeating-groups-optional,
+          #repeating-groups {float:left;} 
+
+          #custMsg-select {width:auto;margin-top: 15px;}
+          #repeating-groups-comment {    
+                font-size: 12px;
+                font-style: italic;
+                margin-left: 6%;
+               /* margin-top: -5px; */
+                }
+           #repeating-groups-optional {
+                font-size: 10px;
+                font-style: italic;
+                margin-top: 5px;
+           }    
+           #repeating-groups-label-area {margin-top:10px;}                        
+          /*   v1.09.6 END */   
