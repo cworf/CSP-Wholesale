@@ -394,9 +394,7 @@ function vtmin_initialize_options() {
 		array(								// The array of arguments to pass to the callback. In this case, just a description.
 			 __( 'Error messages can be shown in table formats.', 'vtmin' )
 		)
-	); 
-  
- /*  //v1.09.5 REMOVED - all messages now use WOO messaging, so these are redundant                                                        
+	);                                                        
 	// show error msg = yes/no
 	add_settings_field(	           //opt2
 		'show_error_before_checkout_products',						// ID used to identify the field throughout the theme
@@ -441,9 +439,6 @@ function vtmin_initialize_options() {
 			__( 'For the Address area, Supplies the ID or Class HTML selector this message appears before', 'vtmin' )
 		)
 	);
-  
-  */
-  
     	// show vtmin ID = yes/no
     add_settings_field(	         //opt10
 		'show_rule_ID_in_errmsg',						// ID used to identify the field throughout the theme
@@ -488,25 +483,9 @@ function vtmin_initialize_options() {
 			__( 'Realtime CSS override for minimum amount error messages shown at checkout time.  Supply CSS statements only.', 'vtmin' )
 		)
 	);
-    //v1.09.5 NEW   
-/*
+       
 
-THIS IS COMMENTED because the add-to-cart is not working realtime, 
-and confusion reigns if an error box is already displayed and doesn't reflect the new totals
-
-
-     // custom error msg css at checkout time
-    add_settings_field(	         //opt13  'show_errors_on_all_pages'
-		'show_errors_on_all_pages',						// ID used to identify the field throughout the theme
-		__( 'Show Errors on all Pages', 'vtmin' ),							// The label to the left of the option interface element
-		array(&$this, 'vtmin_show_errors_on_all_pages_callback'), // The name of the function responsible for rendering the option interface
-		'vtmin_setup_options_page',	// The page on which this option will be displayed
-		'general_settings_section',			// The name of the section to which this field belongs
-		array(								// The array of arguments to pass to the callback. In this case, just a description.
-			__( 'Show errors only at checkout, or on all pages', 'vtmin' )
-		)
-	);
- */
+ 
       
   //****************************
   //  PROCESSING OPTIONS Area
@@ -596,8 +575,7 @@ function vtmin_get_default_options() {
           'custom_error_msg_css_at_checkout'  => '',  //opt9
           'show_rule_ID_in_errmsg' => 'yes',  //opt10
           'show_error_before_checkout_products_selector' => VTMIN_CHECKOUT_PRODUCTS_SELECTOR_BY_PARENT,  //opt11
-          'show_error_before_checkout_address_selector'  => VTMIN_CHECKOUT_ADDRESS_SELECTOR_BY_PARENT,  //opt12
-          'show_errors_on_all_pages'  => 'no'  //opt13  //v1.09.5 NEW
+          'show_error_before_checkout_address_selector'  => VTMIN_CHECKOUT_ADDRESS_SELECTOR_BY_PARENT  //opt12
      );
      return $options;
 }
@@ -880,28 +858,6 @@ function vtmin_before_checkout_address_selector_callback() {    //opt12
   just above the address display area.  Be sure to include the "." or "#" selector identifier before the selector name. Default = "' .VTMIN_CHECKOUT_ADDRESS_SELECTOR_BY_PARENT . '".  If you"ve changed this value and can"t get it to work, you can use the "reset to defaults" button (just below the "save changes" button) to get the value back (snapshot your other settings first to help you quickly set the other settings back the way to what you had before.)', 'vtmin'); 
   $html .= $help;
   $html .= '</p>';  
-  
-	echo $html;
-}
-
-//v1.09.5 NEW
-function vtmin_show_errors_on_all_pages_callback() {    //opt13  
-	$options = get_option( 'vtmin_setup_options' );	
-	$html = '<select id="vtmin-id" name="vtmin_setup_options[show_errors_on_all_pages]">';
-	$html .= '<option value="yes"' . selected( $options['show_errors_on_all_pages'], 'yes', false) . '>Show Errors on All Pages &nbsp;</option>';
-	$html .= '<option value="no"'  . selected( $options['show_errors_on_all_pages'], 'no', false)  . '>Show Errors Only on Cart and Checkout &nbsp;</option>';
-	$html .= '</select>';
-  
-	$more_info = __('More Info', 'vtmin');
-  $html .= '<a id="help13" class="help-anchor" href="javascript:void(0);" >' ;  $html .= $more_info;   $html .= '</a>';
-
-  $html .= '<p id="help13-text" class = "help-text" >'; 
-  $help = __('Do we show the Rules error messages on all pages, or only on Cart and at Checkout ', 'vtmin'); 
-  $html .= $help;
-  $html .= '</p>';
-    $html .= '<p><em>&nbsp;&nbsp;';
-  $html .= __('NOTE ==>> "Show Errors on All Pages" will NOT react immediately to an Aadd-to-cart.  The error message, if warranted, will show up with the NEXT PAGE REFRESH>', 'vtprd');
-  $html .=  '</em></p>';
   
 	echo $html;
 }

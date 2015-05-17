@@ -51,8 +51,7 @@ class VTMIN_Rule {
      //v1.08 begin
      //custom messaging      
      public  $custMsg_text;
-     //v1.08 end 
-     public  $repeatingGroups; //v1.09.6    
+     //v1.08 end     
           
      /*********************
      * error messages during admin rule creation - if error message, 
@@ -234,7 +233,6 @@ class VTMIN_Rule {
           );
           
      $this->custMsg_text; //v1.08 
-     $this->repeatingGroups; //v1.09.6
       
      $this->rule_error_message = array();
            

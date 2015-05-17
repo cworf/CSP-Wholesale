@@ -102,18 +102,6 @@ class VTMIN_Rule_update {
         }
      }
 
-     //v1.09.6 begin
-     $vtmin_rule->repeatingGroups = $_REQUEST['repeating-groups'];
-     if ( ( $vtmin_rule->repeatingGroups == '')  ||
-          ( $vtmin_rule->repeatingGroups == ' ') ) {
-        $vtmin_rule->repeatingGroups = '';   //re-initialize if default msg still there...
-     } else {
-       if ( is_numeric($vtmin_rule->repeatingGroups)  === false  ) {
-           $vtmin_rule->rule_error_message[] = __('If Repeating Groups is chosen, this must be a number greater than 0.', 'vtmin');              
-       }
-     }  
-     //v1.09.6 end
-     
      //v1.08 begin
      $vtmin_rule->custMsg_text = $_REQUEST['cust-msg-text'];
      global $vtmin_info; 

@@ -3,7 +3,7 @@
 Plugin Name: VarkTech Minimum Purchase for WooCommerce
 Plugin URI: http://varktech.com
 Description: An e-commerce add-on for WooCommerce, supplying minimum purchase functionality.
-Version: 1.09.6
+Version: 1.09.3
 Author: Vark
 Author URI: http://varktech.com
 */
@@ -21,16 +21,15 @@ Author URI: http://varktech.com
 //   $vtmin_error_msg;
    
    //initial setup only, overriden later in function vtprd_debug_options
-
 error_reporting(E_ERROR | E_CORE_ERROR | E_COMPILE_ERROR); //v1.09.2
          
 class VTMIN_Controller{
 	
 	public function __construct(){    
    
-		define('VTMIN_VERSION',                               '1.09.6');
-    define('VTMIN_MINIMUM_PRO_VERSION',                   '1.08.2'); 
-    define('VTMIN_LAST_UPDATE_DATE',                      '2015-05-16');
+		define('VTMIN_VERSION',                               '1.09.3');
+    define('VTMIN_MINIMUM_PRO_VERSION',                   '1.08'); //V1.09.2  
+    define('VTMIN_LAST_UPDATE_DATE',                      '2014-12-28');
     define('VTMIN_DIRNAME',                               ( dirname( __FILE__ ) ));
     define('VTMIN_URL',                                   plugins_url( '', __FILE__ ) );
     define('VTMIN_EARLIEST_ALLOWED_WP_VERSION',           '3.3');   //To pick up wp_get_object_terms fix, which is required for vtmin-parent-functions.php
@@ -110,7 +109,7 @@ class VTMIN_Controller{
         }
         //v1.09.2 end 
                 
-    }
+    } 
     
     //unconditional branch for these resources needed for WOOCommerce, at "place order" button time
     require ( VTMIN_DIRNAME . '/core/vtmin-cart-classes.php');
@@ -367,13 +366,6 @@ class VTMIN_Controller{
       
       $admin_notices = '<div id="message" class="error fade" style="background-color: #FFEBE8 !important;"><p>' . $message . ' </p></div>';
       echo $admin_notices;
-      
-      //v1.09.2 added
-      $plugin = VTMIN_PRO_PLUGIN_SLUG;
-			if( is_plugin_active($plugin) ) {
-			   deactivate_plugins( $plugin );
-      }      
-      
       return;    
   }   
    //v1.09.2 end    
