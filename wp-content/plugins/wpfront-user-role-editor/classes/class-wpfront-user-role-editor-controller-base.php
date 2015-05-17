@@ -36,6 +36,8 @@ if (!class_exists('WPFront_User_Role_Editor_Controller_Base')) {
      */
     class WPFront_User_Role_Editor_Controller_Base {
 
+        const ADMINISTRATOR_ROLE_KEY = WPFront_User_Role_Editor::ADMINISTRATOR_ROLE_KEY;
+        
         protected $main;
         protected $page_hook;
         protected $multisite = FALSE;
@@ -161,6 +163,10 @@ if (!class_exists('WPFront_User_Role_Editor_Controller_Base')) {
 
         public function settings_url() {
             return admin_url('admin.php') . '?page=' . WPFront_User_Role_Editor_Options::MENU_SLUG;
+        }
+        
+        public function login_redirect_url() {
+            return admin_url('admin.php') . '?page=' . WPFront_User_Role_Editor_Login_Redirect::MENU_SLUG;
         }
 
         public function cache_add($key, $data) {
