@@ -1,0 +1,49 @@
+.displayProduct-shortcode nav.woocommerce-pagination{
+    text-align: center;
+}
+.displayProduct-shortcode nav.woocommerce-pagination ul {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0;
+    clear: both;
+    border: 1px solid #e0dadf;
+    border-right: 0;
+    margin: 1px;
+    height: auto;
+}
+.displayProduct-shortcode nav.woocommerce-pagination ul:hover{
+     border: 1px solid #e0dadf;
+}
+.displayProduct-shortcode nav.woocommerce-pagination .page-numbers:hover  .page-numbers{
+border: 0px solid #e0dadf;
+border-right: 1px solid #e0dadf;
+}
+.displayProduct-shortcode nav.woocommerce-pagination ul:hover a.next.page-numbers{border-right: 0px solid #e0dadf;}
+.displayProduct-shortcode nav.woocommerce-pagination ul li{
+    border-right: 1px solid #e0dadf;
+    padding: 0;
+    margin: 0;
+    float: left;
+    display: inline;
+    overflow: hidden;
+}
+.displayProduct-shortcode nav.woocommerce-pagination .page-numbers:hover li{ border:0}
+.displayProduct-shortcode nav.woocommerce-pagination ul li span.current, .displayProduct-shortcode nav.woocommerce-pagination ul li a:hover, .displayProduct-shortcode nav.woocommerce-pagination ul li a:focus{
+    background: #888 !important;
+    color: #ffffff;
+    border-color: #e0dadf !important;
+}
+.displayProduct-shortcode nav.woocommerce-pagination ul li a, .displayProduct-shortcode nav.woocommerce-pagination ul li span{
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    line-height: 1em;
+    font-size: 1em;
+    font-weight: normal;
+    padding: .5em;
+    min-width: 1em;
+    display: block;
+    border: 0;
+    font-size: 13px
+}
+.displayProduct-shortcode nav.woocommerce-pagination .page-numbers:hover{border: 1px solid #e0dadf;}
