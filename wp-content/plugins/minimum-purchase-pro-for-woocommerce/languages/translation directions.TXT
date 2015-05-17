@@ -1,0 +1,13 @@
+plesae refer to the excellent tutorial at:
+
+http://www.inkthemes.com/how-to-create-a-po-file-of-your-themes-i-e-translation-of-wordpress-theme-in-multiple-languages/02/
+
+http://betterwp.net/wordpress-tips/create-pot-file-using-poedit/
+
+translation file naming samples:
+
+vtmin-en_EN.po
+vtmin-en_EN.mo
+
+vtmin-fr_FR.po
+vtmin-fr_FR.mo

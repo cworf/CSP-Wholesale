@@ -1,0 +1,881 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Min Purchase Pro for Woo\n"
+"POT-Creation-Date: 2014-05-19 13:22+1200\n"
+"PO-Revision-Date: 2014-05-19 13:22+1200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../vt-minimum-purchase-pro.php:61
+msgid "<strong>Please Download and/or Activate "
+msgstr ""
+
+#: ../vt-minimum-purchase-pro.php:74
+msgid "<strong>Please Update "
+msgstr ""
+
+#: ../vt-minimum-purchase-pro.php:116
+msgid "There is a new version of "
+msgstr ""
+
+#: ../vt-minimum-purchase-pro.php:116
+msgid " available."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:103
+msgid ""
+"Update Error Messages :: The rule is not active until these are resolved ::"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:106
+msgid "Cart Search Criteria"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:107
+msgid "Rule Application Method"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:108
+msgid "Quantity or Price Minimum Amount"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:109
+msgid "Custom Message"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:110
+msgid "Minimum Purchase Rule ID"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:111
+msgid "Resources"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:153
+msgid "Choose how to search the cart contents"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:154
+msgid ""
+"Minimum Purchase rules will only look at the contents of the cart at "
+"checkout.\n"
+"            The cart can be searched based on a wide variety of criteria - "
+"by a single product id,\n"
+"            by a group of products, or by all products in the cart.  Product "
+"groups can look at product categories,\n"
+"            custom categories, the logged-in user membership status, or any "
+"combination."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:162
+msgid "Select Search Type"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:175
+#: ../admin/vtmin-rules-ui.php:234
+msgid "&nbsp; Enter Product ID Number"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:179
+msgid "&nbsp; Product Name"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:187
+msgid "Apply to all products in the cart"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:187
+#: ../admin/vtmin-rules-ui.php:193
+#: ../admin/vtmin-rules-ui.php:201
+#: ../admin/vtmin-rules-ui.php:207
+#: ../admin/vtmin-rules-ui.php:391
+#: ../admin/vtmin-rules-ui.php:397
+#: ../admin/vtmin-rules-ui.php:403
+#: ../admin/vtmin-rules-ui.php:451
+#: ../admin/vtmin-rules-ui.php:457
+msgid "explained"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:188
+msgid ""
+"No threshhold group is chosen, and the initial rule logic applies to all "
+"products\n"
+"            to be found in the cart."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:193
+msgid "Use Selection Groups"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:194
+msgid ""
+"Using selection groups, you can specify the initial focus of the rule, "
+"focusing on some products found in the cart.  \n"
+"            A selection group can be considered a threshhold, which when "
+"reached the other\n"
+"            aspects of the rule is applied.  For example, if you specify "
+"category Auto Parts, then\n"
+"            if products in categories other than Auto Parts are in the cart, "
+"the rule would not apply to them."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:201
+msgid "Single Product with Variations"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:202
+msgid ""
+"Apply rule to the variations for a single product found in the cart, whose "
+"ID is supplied in the \"Product ID\" box.  Enter the Product ID and hit the "
+"\"Product and Variations\" button (The product ID can be found in the URL\n"
+"            of the product during a product edit session).  Select any/all "
+"of the variations belonging to the product."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:207
+msgid "Single Product Only"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:208
+msgid ""
+"Only apply rule to a single product found in the cart, whose ID is supplied "
+"in the \"Product ID\" box.  The product ID can be found in the URL\n"
+"            of the product during a product edit session."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:211
+msgid "For example, in the product edit session url:"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:213
+msgid "http://www.xxxx.com/wp-admin/post.php?post=872&action=edit"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:215
+msgid ""
+"The product id is in the \"post=872\" portion of the address, and hence the "
+"number is 872. You would enter \n"
+"            that number in the box to the left labeled \"Enter Product ID "
+"Number\"."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:218
+msgid ""
+"NB: If **single** is chosen, the value of \"All\" is applied to the Rule "
+"Application Method, regardless of what is chosen below."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:224
+msgid ""
+"When \"Single Product with Variations\" is chosen, at least one variation "
+"must be selected.\n"
+"         <br><br> NB - PLEASE NOTE: If the product variation structure is "
+"changed in any way, you MUST return to the matching rule and reselect your "
+"variation choices.\n"
+"         <br><br>Multiple rules may be created to apply to individual "
+"variations, or groups of variations within a product.           \n"
+"         <br><br>Please be sure to prevent any rule overlap when applied to "
+"a given\n"
+"            product-variation combination.  An overlap example: if there is "
+"a category-level rule covering an entire product, and an individual rule "
+"applying to any of the product variations.\n"
+"         <br><br>Rule overlap in variation rules is Not removed by the rule "
+"processing engine, it must be prevented here."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:252
+msgid "Getting Variations ..."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:258
+msgid "Refresh Variations"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:260
+msgid "Get Variations"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:270
+#: ../admin/vtmin-rules-ui.php:687
+msgid "Product Variations"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:282
+msgid ""
+"Role/Membership is used within Wordpress to control access and capabilities, "
+"when a role is given to a user.  \n"
+"         Wordpress assigns certain roles by default such as Subscriber for "
+"new users or Administrator for the site's owner. Roles can also be used to "
+"associate a user \n"
+"         with a pricing level.  Use a role management plugin like http://"
+"wordpress.org/extend/plugins/user-role-editor/ to establish custom roles, "
+"which you can give \n"
+"         to a user or class of users.  Then you can associate that role with "
+"a Minimum Purchase Rule.  So when the user logs into your site, their Role "
+"interacts with the appropriate Rule.\n"
+"         <br><br>         \n"
+"         Use an existing category to identify the group of products to which "
+"you wish to apply the rule.  \n"
+"         If you'd rather, use a Minimum Purchase Category to identify "
+"products - this avoids disturbing the store categories. Just add a Minimum "
+"Purchase Category, go to the product screen,\n"
+"         and add the product to the correct minimum purchase category.  (On "
+"your product add/update screen, the Mininimum purchase \n"
+"         category metabox is just below the default product category box.)  "
+"You can also apply the rule using User Membership or Roles  \n"
+"         as a solo selection, or you can use any combination of all "
+"three.  \n"
+"         <br><br>\n"
+"         Please take note of the relationship choice 'and/or' when using "
+"roles.  The default is 'or', while choosing 'and' requires that \n"
+"         both a role and a category be selected, before a rule can be "
+"published."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:298
+msgid "Product Categories"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:307
+msgid "Or"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:309
+msgid "Minimum Purchase Categories"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:337
+msgid "Membership List by Role"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:346
+#: ../admin/vtmin-rules-ui.php:414
+#: ../admin/vtmin-rules-ui.php:463
+msgid "Back to Top"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:360
+msgid "How is the Rule applied to the search results?"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:361
+msgid ""
+"Once we've figured out the population we're working on (cart only or "
+"specified groups),\n"
+"          how do we apply the rule?  Do we look at each product individually "
+"and apply the rule to\n"
+"          each product we find?  Or do we look at the population as a group, "
+"and apply the rule to the\n"
+"          group as a tabulated whole?  Or do we apply the rule to any we "
+"find, and limit the application \n"
+"          of the rule to a certain number of products?"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:369
+msgid "Select Rule Application Method"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:383
+msgid "*Any* applies to a *required*"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:384
+msgid "Maximum of:"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:386
+msgid "Products"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:391
+msgid "Treat the Selected Group as a Single Entity"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:392
+msgid ""
+"Using *All* as your method, you choose to look at all the products from your "
+"cart search results.  That means we add\n"
+"          all the quantities and/or price across all relevant products in "
+"the cart, to test against the rule's requirements."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:397
+msgid "Each in the Selected Group"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:398
+msgid ""
+"Using *Each* as your method, we apply the rule to each product from your "
+"cart search results.\n"
+"          So if any of these products fail to meet the rule's requirements, "
+"the cart as a whole receives an error message."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:403
+msgid "Apply the rule to any Individual Product in the Cart"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:404
+msgid ""
+"Using *Any*, we can apply the rule to any product in the cart from your cart "
+"search results, similar to *Each*.  However, there is a\n"
+"          maximum number of products to which the rule is applied. The "
+"product group is checked to see if any of the group fail to reach the "
+"minimum amount\n"
+"          threshhold.  If so, the error will be applied to products in the "
+"cart based on cart order, up to the maximum limit supplied."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:408
+msgid "For example, the rule might be something like:"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:410
+msgid ""
+"&nbsp;&nbsp;\"You must buy a minimum of $10 for each of any of 2 products "
+"from this group.\""
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:425
+msgid "What are the Rule Amount Options?"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:426
+msgid ""
+"Minimum Purchase Rules can be applied to the quantity or the price of the "
+"products from \n"
+"          your cart search results."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:431
+msgid "Select Rule Amount Option"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:445
+msgid "Minimum Amount:"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:451
+msgid "Apply to Quantity"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:452
+msgid ""
+"With Quantity chosen, we total up the units amount across indivual products, "
+"candidate groups in the cart, or the cart\n"
+"          in total.  Then we compare that total against the minimum amount "
+"for the rule."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:457
+msgid "Apply to Price"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:458
+msgid ""
+"With Price chosen, we total up the price across indivual products, candidate "
+"groups in the cart, or the cart\n"
+"          in total.  Then we compare that total against the minimum amount "
+"for the rule."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:475
+msgid "Custom Message Text"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:639
+msgid "No Product ID was supplied."
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:644
+msgid "Product ID was not numeric. "
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:653
+msgid "Product ID was not found"
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:664
+#: ../admin/vtmin-rules-ui.php:673
+msgid "Product has no Variations. Product Name = "
+msgstr ""
+
+#: ../admin/vtmin-rules-ui.php:664
+#: ../admin/vtmin-rules-ui.php:673
+msgid "<br><br> Please use \"Single Product Only\" option, above."
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:36
+msgid "The Rule needs to have a title, but title is empty."
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:59
+msgid ""
+"In Cart Search Criteria Selection Metabox, \"Use Selection Groups\" was "
+"chosen, but no Categories or Roles checked"
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:67
+msgid ""
+"In Cart Search Criteria Selection Metabox, \"Use Selection Groups\" and \"And"
+"\" was chosen, but no Categories or Roles are checked"
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:70
+msgid ""
+"In Cart Search Criteria Selection Metabox, \"Use Selection Groups\" and \"And"
+"\" was chosen, but no Categories are checked. <br><br><br><br><em>If Roles "
+"alone are desired, please select \"OR\".</em>"
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:73
+msgid ""
+"In Cart Search Criteria Selection Metabox, \"Use Selection Groups\" and \"And"
+"\" was chosen, but no Roles are checked.  <br><br><br><br><em>If Categories "
+"alone are desired, please select \"OR\".</em>"
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:89
+msgid ""
+"In Cart Search Criteria Selection Metabox, \"*Single Product with "
+"variations* was chosen, but not Product ID was supplied."
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:92
+msgid ""
+"In Cart Search Criteria Selection Metabox, \"*Single Product with "
+"variations* was chosen, but Product ID was not numeric."
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:97
+msgid ""
+"In Cart Search Criteria Selection Metabox, \"*Single Product with "
+"variations* was chosen, but Product ID was not found."
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:106
+msgid ""
+"In Cart Search Criteria Selection Metabox, \"Single Product with variations"
+"\" was chosen, but no Variations checked"
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:109
+msgid ""
+"In Cart Search Criteria Selection Metabox, \"Single Product with variations"
+"\" was chosen, but no Product has no Variations.  Please use \"Single "
+"Product Only\" option."
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:122
+msgid ""
+"In Cart Search Criteria Selection Metabox, \"*Single Product Only* was "
+"chosen, but not Product ID was supplied."
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:125
+msgid ""
+"In Cart Search Criteria Selection Metabox, \"*Single Product Only* was "
+"chosen, but Product ID was not numeric."
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:129
+msgid ""
+"In Cart Search Criteria Selection Metabox, \"*Single Product Only* was "
+"chosen, but Product ID was not found."
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:134
+msgid ""
+"In Cart Search Criteria Selection Metabox, \"Single Product Only\" was "
+"chosen, but ** Product has Variations **.  Please use \"Single Product with "
+"variations\" option."
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:158
+msgid ""
+"In Select Rule Application cs Metabox, \"*Any* in the Population\" was "
+"chosen, but Maximum products count not filled in"
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:162
+msgid ""
+"In Select Rule Application  Metabox, \"*Any* in the Population\" was chosen, "
+"but Maximum products count not filled in"
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:165
+msgid ""
+"In Select Rule Application  Metabox, \"*Any* in the Population\" was chosen, "
+"but Maximum products count not numeric"
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:184
+#: ../admin/vtmin-rules-update.php:188
+msgid "In Minimum Amount for this role Metabox, Minimum Amount not filled in"
+msgstr ""
+
+#: ../admin/vtmin-rules-update.php:191
+msgid "In Minimum Amount for this role Metabox, Minimum Amount not numeric"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:343
+msgid "<span id=\"table-error-messages\">"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:402
+msgid "<br /><br />"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:410
+#: ../core/vtmin-apply-rules.php:460
+#: ../core/vtmin-apply-rules.php:476
+#: ../core/vtmin-apply-rules.php:480
+#: ../core/vtmin-apply-rules.php:497
+#: ../core/vtmin-apply-rules.php:498
+#: ../core/vtmin-apply-rules.php:517
+#: ../core/vtmin-apply-rules.php:530
+#: ../core/vtmin-apply-rules.php:534
+#: ../core/vtmin-apply-rules.php:547
+#: ../core/vtmin-apply-rules.php:548
+#: ../core/vtmin-apply-rules.php:561
+#: ../core/vtmin-apply-rules.php:683
+#: ../core/vtmin-apply-rules.php:697
+#: ../core/vtmin-apply-rules.php:698
+#: ../core/vtmin-apply-rules.php:745
+#: ../core/vtmin-apply-rules.php:761
+#: ../core/vtmin-apply-rules.php:778
+#: ../core/vtmin-apply-rules.php:864
+msgid "</span>"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:455
+msgid "<span class=\"table-msg-line\">"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:456
+msgid "<span class=\"product-column color-grp"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:458
+#: ../core/vtmin-apply-rules.php:468
+#: ../core/vtmin-apply-rules.php:488
+#: ../core/vtmin-apply-rules.php:586
+#: ../core/vtmin-apply-rules.php:598
+#: ../core/vtmin-apply-rules.php:603
+#: ../core/vtmin-apply-rules.php:629
+#: ../core/vtmin-apply-rules.php:648
+#: ../core/vtmin-apply-rules.php:667
+msgid "\">"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:463
+msgid "<span class=\"quantity-column color-grp"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:466
+#: ../core/vtmin-apply-rules.php:486
+msgid " bold-this"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:470
+#: ../core/vtmin-apply-rules.php:527
+msgid "<span class=\"quantity-column\">"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:474
+#: ../core/vtmin-apply-rules.php:495
+msgid " &nbsp;(Error)"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:478
+#: ../core/vtmin-apply-rules.php:532
+msgid "<span class=\"price-column\">"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:483
+msgid "<span class=\"total-column color-grp"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:490
+msgid "<span class=\"total-column\">"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:514
+msgid "<span class=\"table-totals-line\">"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:515
+msgid "<span class=\"product-column\">"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:516
+#: ../core/vtmin-apply-rules.php:528
+#: ../core/vtmin-apply-rules.php:533
+#: ../core/vtmin-apply-rules.php:545
+msgid "&nbsp;"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:520
+msgid "<span class=\"quantity-column quantity-column-total color-grp"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:522
+#: ../core/vtmin-apply-rules.php:539
+msgid "\">("
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:525
+#: ../core/vtmin-apply-rules.php:542
+msgid ") Error"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:537
+msgid "<span class=\"quantity-column total-column-total color-grp"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:544
+msgid "<span class=\"quantity-column \">"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:556
+msgid "<span class=\"table-titles\">"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:557
+msgid "<span class=\"product-column product-column-title\">Product:</span>"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:558
+msgid "<span class=\"quantity-column quantity-column-title\">Quantity:</span>"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:559
+msgid "<span class=\"price-column price-column-title\">Price:</span>"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:560
+msgid "<span class=\"total-column total-column-title\">Total:</span>"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:584
+msgid "<span class=\"table-error-msg\"><span class=\"bold-this color-grp"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:587
+msgid "Error => "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:588
+msgid "</span>Minimum Purchase "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:593
+msgid "total"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:596
+msgid " <span class=\"color-grp"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:599
+msgid "quantity</span>"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:601
+msgid " of <span class=\"color-grp"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:607
+msgid "</span> required "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:610
+msgid " </span>units required  "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:615
+msgid "for this product."
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:620
+#: ../core/vtmin-apply-rules.php:639
+msgid "for this group."
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:623
+#: ../core/vtmin-apply-rules.php:642
+msgid "for each product within the group."
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:626
+#: ../core/vtmin-apply-rules.php:645
+#: ../core/vtmin-apply-rules.php:664
+msgid "for the first "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:627
+#: ../core/vtmin-apply-rules.php:646
+#: ../core/vtmin-apply-rules.php:665
+msgid "<span class=\"color-grp"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:631
+#: ../core/vtmin-apply-rules.php:650
+msgid " </span>product(s) found within the product group."
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:658
+msgid "for the cart."
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:661
+msgid "for each product the cart."
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:669
+msgid " </span>product(s) found within the cart."
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:677
+#: ../core/vtmin-apply-rules.php:850
+msgid "<span class=\"rule-id\"> (Rule ID = "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:679
+#: ../core/vtmin-apply-rules.php:852
+msgid ") </span>"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:689
+msgid "<span class=\"table-text-line\">"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:691
+msgid ""
+"<span class=\"table-text-cats\">The minimum purchase rule applies to any "
+"products in the following categories: </span><span class=\"black-font-italic"
+"\">"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:693
+#: ../core/vtmin-apply-rules.php:860
+#: ../core/vtmin-apply-rules.php:996
+msgid " \""
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:695
+#: ../core/vtmin-apply-rules.php:862
+msgid "\" "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:731
+#: ../core/vtmin-apply-rules.php:748
+#: ../core/vtmin-apply-rules.php:764
+msgid "<span class=\"errmsg-begin\">Minimum Purchase Required -</span> for "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:737
+#: ../core/vtmin-apply-rules.php:740
+#: ../core/vtmin-apply-rules.php:770
+#: ../core/vtmin-apply-rules.php:773
+msgid "each of"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:743
+msgid " the product(s) in this group: <span class=\"red-font-italic\">"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:752
+#: ../core/vtmin-apply-rules.php:776
+msgid " the products in this group: <span class=\"red-font-italic\">"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:755
+msgid " this product: <span class=\"red-font-italic\">"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:781
+msgid "For this product: <span class=\"red-font-italic\">\""
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:783
+msgid "\"</span>  "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:789
+msgid ""
+"<br /><span class=\"errmsg-text\">A minimum of &nbsp;<span class=\"errmsg-"
+"amt-required\"> "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:795
+msgid ""
+"</span> &nbsp;for the total group must be purchased.  The current total "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:796
+#: ../core/vtmin-apply-rules.php:826
+msgid "for all the products "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:797
+#: ../core/vtmin-apply-rules.php:827
+msgid "in the group is: <span class=\"errmsg-amt-current\"> "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:800
+msgid "</span> &nbsp;for this product must be purchased.  The current total "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:801
+#: ../core/vtmin-apply-rules.php:831
+msgid "for this product is: "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:810
+msgid " </span></span> "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:820
+msgid ""
+"<br /><span class=\"errmsg-text\">A minimum quantity of &nbsp;<span class="
+"\"errmsg-amt-required\"> "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:825
+msgid ""
+" units</span> &nbsp;&nbsp;for the total group must be purchased.  The "
+"current total "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:830
+msgid ""
+" units</span> &nbsp;&nbsp;for each product in the group must be purchased.  "
+"The current total "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:841
+msgid " units.</span></span> "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:843
+msgid " unit.</span></span> "
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:858
+msgid ""
+"<br />:: <span class=\"black-font\">The minimum purchase rule applies to any "
+"products in the following categories: </span><span class=\"black-font-italic"
+"\">"
+msgstr ""
+
+#: ../core/vtmin-apply-rules.php:998
+msgid "\"  "
+msgstr ""
