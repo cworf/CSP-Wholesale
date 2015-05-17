@@ -1,0 +1,559 @@
+
+           
+           /*
+           *** -----------------------------------------------------
+           CSS FIX FOR OTHER PLUGINS METABOX PROBLEMS...    2/13/2013
+           *** -----------------------------------------------------
+           Some plugins insert global metaboxes which conflict with this plugin
+           
+           remove them by shutting off .postbox,
+           then allowing *this plugin's* specific meta boxes to display only.
+           
+           (id selector takes precedence over the class selector.)           
+           */
+            .postbox {display:none;}
+            
+            div#vtmin-pop-in-select,
+            div#vtmin-pop-in-specifics,
+            div#vtmin-rule-amount,
+            div#vtmin-rule-msg,
+            div#vtmin-rule-id,
+            div#vtmin-rule-resources,
+            div#vtmin-errmsg,
+            div#vtmin-rule-custom-message,    /* v1.08 */
+            div#submitdiv 
+                    {display:block;}
+            /* end fix */
+
+
+            div#vtmin-pop-in-select.postbox,
+            div#vtmin-pop-out-select.postbox,
+            div#vtmin-pop-in-specifics.postbox,
+            div#vtmin-rule-amount.postbox,
+            div#vtmin-rule-msg.postbox,
+            div#vtmin-rule-custom-message.postbox,     /* v1.08 */
+            div#vtmin-errmsg.postbox {
+              padding-bottom:10px;
+              height:auto;
+              float:left;
+              width:100%;
+              }
+            div#vtmin-pop-in-cntl,
+            div#vtmin-pop-out-cntl,
+            div#inpop-varProdID-cntl,
+            div#outpop-varProdID-cntl {
+              padding:20px 20px 0 20px;
+              height:auto;
+              clear:left;
+              float:left;
+              width:100%;
+              display:none;
+              }
+              
+          /**********************************/
+          /*      Variations       */
+          /**********************************/  
+            div#inpop-varProdID-cntl #inpopVarBox {
+              margin: 12px 0 20px 30%;
+              border: 1px solid #CCCCCC;
+              border-radius: 5px 5px 5px 5px;
+              width: 20%;
+              background-color:#F0F0FA;
+              float:left;
+              color:blue;
+            }
+            div#inpop-varProdID-cntl #inpopVarBox #inpopVarProduct,
+            div#inpop-varProdID-cntl #inpopVarBox #inpopVarButton {            
+              float:left;
+            } 
+            div#inpop-varProdID-cntl #inpopVarBox #inpopVarProduct {
+              margin: 15px 0 0 8%;
+            }
+            div#inpop-varProdID-cntl #inpopVarBox #inpopVarButton {
+              margin-left:9%;
+              margin-bottom:20px;
+            }
+            div#inpop-varProdID-cntl,
+            div#outpop-varProdID-cntl { 
+              padding-top:0px; /* override standard box config*/
+            }
+            div.inpopVar-loading-animation {
+              margin-top: 5px;
+              visibility: hidden;
+              border:none;
+              color:gray;
+            }
+            div#inpop-varProdID-cntl  #inpopVarBox #ajaxVariationIn,
+            div#outpop-varProdID-cntl #inpopVarBox #ajaxVariationOut {  /*change anchor to button*/
+            background: url("../images/button-grad.png") repeat-x scroll left top #21759B;
+            border-color: #298CBA;
+            color: #FFFFFF;
+            font-weight: bold;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+            -moz-box-sizing: content-box;
+            border-radius: 11px 11px 11px 11px;
+            border-style: solid;
+            border-width: 1px;
+            cursor: pointer;
+            font-size: 12px !important;
+            line-height: 13px;
+            padding: 3px 8px;
+            text-decoration: none;
+            }  
+            div#inpop-varProdID-cntl  #inpopVarBox #ajaxVariationIn:hover, 
+            div#outpop-varProdID-cntl #inpopVarBox #ajaxVariationOut:hover {
+            border-color: #000;
+            }
+            div#variations-in {
+              width:43%;
+              float:left;
+              padding: 0 2% 10px 2%;
+              margin-left:1%;
+              margin-top:10px;
+            } 
+            div#inpop-varProdID-cntl p#inpop-varProdID-descrip,
+            div#outpop-varProdID-cntl p#outpop-varProdID-descrip {
+              float:left;
+              margin: 5px 0 15px 15px;
+              font-style:italic;
+              width:95%;
+              font-size:15px;
+            }     
+            #inpop-varProdID-more {margin-top:10px;margin-left:30%;}
+            #inpop-varProdID-more-help {text-decoration:underline;}
+            #inVariationsError {color:red;margin-top:50px;}
+            /************ End Variations **********************/
+              
+            div#vtmin-pop-in-specifics.postbox,
+            div#vtmin-rule-msg.postbox {
+              background: #fff; /*alternate postbox background colors*/
+            }
+            div.column1 {
+              width:24%;
+              float:left;
+              border-right: 1px solid rgb(235,235,235);
+              padding: 0 2%;
+            }
+            div.column2 {
+              float:left;
+              width:26%; /*width:255px;       mwn  */
+              margin: 20px 3% 0 3%;
+              /*padding: 20px 40px 0 40px;*/
+              color: blue;             
+            }
+            div.column3 {
+              width:31%;
+              float:left;
+              border-left: 1px solid rgb(235,235,235);
+              padding: 0 2% 10px 2%;
+              background: rgb(235, 235, 235);
+              color: grey;
+              border-radius: 3px 3px 3px 3px;
+            } 
+            div.inpopExplanation:hover,
+            div.specExplanation:hover,
+            div.amtExplanation:hover {
+              color:black;
+            }
+            div#inpopChoice div#inpopRadio,
+            div#specChoice div#specRadio,
+            div#amtChoice div#amtRadio {
+              padding: 10px 4% 20px 4%;
+              background-color: #fff;
+              border: 2px solid rgb(208,208,208);
+              float:left;
+              width:91%;
+              border-radius: 0px 0px 3px 3px;
+              line-height:18px;
+            }
+            .hideMe {display:none;}
+            .showMe {display:block;}            
+            /*exposing these divs is all handled entirely in the js*/
+            div#groupChoice-chosen,
+            div#cartChoice-chosen,
+            div#allChoice-chosen,
+            div#anyChoice-chosen,
+            div#eachChoice-chosen,
+            div#anyChoice-chosen,
+            div#singleChoice-chosen,
+            div#varChoice-chosen,
+            #singleChoice-span,
+            #anyChoice-span, 
+            div#amtChoice-chosen,
+            #message.updated, /* "#meassage and .updated" => 'view post' url */
+            div#edit-slug-box /*clickable slug following update*/
+            {
+              display:none;
+            }  
+            div#cartChoice-chosen,
+            div#varChoice-chosen,
+            div.specExplanation,
+            div.amtExplanation {
+              margin-top:20px;
+            }
+            div#groupChoice-chosen {
+              margin-top:10px;
+            }
+            div#anyChoice-chosen {
+              padding-bottom:20px;
+            }           
+            div#vtmin-pop-in-cntl p#pop-in-descrip,
+            div#vtmin-pop-out-cntl p#pop-out-descrip {
+              float:left;
+              margin: 5px 0 15px 15px;
+              font-style:italic;
+              width:95%;
+            }
+            div#prodcat-in,
+            div#prodcat-out, 
+            div#rulecat-in,
+            div#rulecat-out,
+            div#role-in,
+            div#role-out {                       
+              width:25%;
+              float:left;
+           /*   min-width:25%;
+              max-width:25%;  */
+              margin:10px 1.5% 0 1.5%;
+            }
+            div#prodcat-in ul#wpsc_product_category-tabs.category-tabs,
+            div#prodcat-out ul#wpsc_product_rule_category-tabs.category-tabs,
+            div#rulecat-in ul#vtmin_rule_category-tabs.category-tabs,
+            div#rulecat-out ul#vtmin_rule_category-tabs.category-tabs {
+              /* 'none' turns off existing stlyes for these elements 
+              float:none;  */
+              width:none;
+              text-align:none;
+              margin:8px 0pt 3px;
+              list-style:none outside none;
+              display:inline;
+            }           
+            div#prodcat-in div#wpsc_product_category-all.tabs-panel,
+            div#prodcat-out div#wpsc_product_category-all.tabs-panel,
+            div#rulecat-in div#vtmin_rule_category-all.tabs-panel,
+            div#rulecat-out div#vtmin_rule_category-all.tabs-panel,
+            div#role-in div#roles-all.tabs-panel,
+            div#role-out div#roles-all.tabs-panel {
+              margin: 0pt 5px 0pt 0px;
+            /*  min-width:91%;
+              max-width:91%;*/
+              width:89%;
+            }
+          /*  h4.and-or {     
+              float:left;
+              margin: 50px 10px 0 22px;
+              width: 25px;
+            }   */
+            h4.and-or {
+                float: left;
+                margin-top: 50px;
+               /* width: 2.5%;     */
+                border: 1px solid #CCCCCC;
+                border-radius: 5px 5px 5px 5px;
+                padding: 5px;
+            }
+            /*mwn test*/  
+            .help-anchor {
+                float: left;
+                font-size: 12px;
+                margin-bottom: 5px;
+                width: 100%;
+                text-decoration:none;
+            }
+            .help-anchor:hover {color:green; }
+            #pop-in-more-help {text-decoration:underline;}      
+            .help-text {display:none; font-style:italic; } 
+            #inpopDescrip-more {margin-top:10px;}
+            #inpopDescrip-more-help {text-decoration:underline;}      
+            
+            #and-or-role-div {
+                float: left;
+                margin-top: 50px;
+               /* width: 2.5%;  */              
+                border: 1px solid #aaa;
+                border-radius: 5px 5px 5px 5px;
+                padding: 5px;
+                color: #21759B;
+            }
+            h4 span {
+              font-weight:normal;
+              font-style:italic;
+            }
+            #poststuff h3, .metabox-holder h3 {
+                border-top: 1px solid rgb(230,230,230);
+                border-left: 1px solid rgb(230,230,230);
+                border-right: 1px solid rgb(230,230,230);
+            }
+
+            #vtmin-pop-in-cntl  h3,
+            #vtmin-pop-out-cntl  h3 {
+                padding: 7px 0 7px 10px;
+                width: 94%;
+            }
+            #anyChoice-max,
+            #amtChoice-count {
+              width:50px;background:#fff;
+              }
+            #singleChoice-chosen {margin-top:15px;}
+            #singleChoice-span,
+            #anyChoice-span,
+            #amtChoice-span {
+              padding:5px;
+              background: #F0F0FA;
+              margin-top:10px;
+              margin-left:20px;
+              border: 1px solid rgb(135,135,135);
+              float:left;
+              border-radius: 3px 3px 3px 3px;
+            }
+             #singleChoice-span {   /*override the margin from above*/
+              margin: 30px 0 0 13%;
+              width:70%;
+            }
+            #singleProdID {margin-bottom:10px;width: 95%;}
+            #inpop-singleProdID-label {line-height:25px;}
+            #inpop-singleProdID-name-label {color:grey;padding-left:15px;}
+            #inpop-singleProdID-name {color:#403E3E;padding-left:5px;font-style:italic;}
+            div#specChoice div#specRadio,
+            span#Choice-input-span {float:left;}
+            
+            /*div#specChoice div#specRadio {width:231px;} */
+            
+            div#ruleMSG-default,
+            div#ruleMSG-custom {
+              float:left;
+              width:90%;
+            }
+            div#ruleMSG-custom #custom-msg {
+              width:80%;
+              height:50px;
+            }
+            div.vtmin-error {
+              margin: 20px 0;
+              background-color: #FFEBE8;
+              border-color: #CC0000;
+              padding: 5px 0.6em;
+              border-radius: 3px 3px 3px 3px;
+              border-style: solid;
+              border-width: 1px;
+              line-height: 0.4em;
+            }
+             div#vtmin-errmsg h3 span { 
+              color:red;
+              /*font-weight:bold; */
+             }
+             div.back-to-top { 
+              float:left;
+              margin: 70px 0 20px 1%; 
+              display: block;
+              width:1.5%;
+              /* width:3.5%;font-weight:bold; */
+             }
+             div.back-to-top a {
+              color: grey;
+            /*  float: right; */
+              font-size: 0.8em;
+              text-decoration: none;
+              display: block;                 
+            }
+            div.back-to-top a:hover {
+              color:blue;  
+            }
+            /**********************************/
+            /*      Submitdiv stuff           */
+            /**********************************/
+            div#submitpost div#minor-publishing {
+              display:none;
+            }
+            div#submitdiv {
+              min-width:200px;
+            }
+            div#submitdiv .button {    /*new*/
+              margin-top:20px;
+              margin-right:20px;
+            }
+            div#submitdiv #delete-action {
+              float:none;
+            }
+            div#delete-action a.submitdelete {
+              margin: 0 0 10px;
+              width: 150px;
+            }                        
+            .inner-sidebar #side-sortables, 
+            .columns-2 .inner-sidebar #side-sortables,
+            div#side-info-column {
+                  min-height: 300px;
+                  padding: 0;
+                  width: 200px !important;
+              }
+            .has-right-sidebar #post-body-content{                
+                margin-right: 220px  !important;                
+            }                                
+            a.deletion,
+            input[type="submit"].deletion {
+            	display: block;
+            	border-radius: 4px;
+            	background: #2c8bbe;
+            	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c8bbe', endColorstr='#246f99'); /* for IE */
+            	background: -webkit-gradient(linear, left top, left bottom, from(#2c8bbe), to(#246f99)); /* for webkit browsers */
+            	background: -moz-linear-gradient(top,  #2c8bbe, #246f99); /* for firefox 3.6+ */
+                color: #FFFFFF;
+                font-weight: normal;
+                text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+                font-size: 13px;
+                line-height: 1em;
+                padding: 6px 11px;
+            	border: 0 none;
+            	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            	cursor: pointer;
+            	position: relative;
+            	text-align: center;
+            	text-decoration: none;
+            }            
+            a.deletion:hover,
+            input[type="submit"].deletion:hover {
+            	box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+            	background: #3b97c9;
+            	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b97c9', endColorstr='#246f99'); /* for IE */
+            	background: -webkit-gradient(linear, left top, left bottom, from(#3b97c9), to(#246f99)); /* for webkit browsers */
+            	background: -moz-linear-gradient(top,  #3b97c9, #246f99); /* for firefox 3.6+ */
+            }
+            a.deletion:active,
+            input[type="submit"].deletion:active {
+            	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            	top: 1px;
+            	
+            }            
+            a.deletion,
+            input[type="submit"].deletion {
+            	text-shadow: 0 1px 0 #fff;
+            	color: #454545;
+            	background: #fff;
+            	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#ececec'); /* for IE */
+            	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ececec)); /* for webkit browsers */
+            	background: -moz-linear-gradient(top,  #fff, #ececec); /* for firefox 3.6+ */
+            	
+            }            
+            #minor-publishing-actions input, #major-publishing-actions input, #minor-publishing-actions .preview {
+              height: 30px !important;
+              min-width: 160px !important;
+              text-align: center;
+            }
+            div#delete-action a.submitdelete {
+              color: grey;
+             /* font-weight: bold; */
+              height: 20px;
+              line-height: 19px;
+              margin: 0;
+              width: 170px;
+              border-bottom-color: grey;
+          }
+          div#publishing-action {
+              float: left;
+              margin-top: 10px;
+          }
+          
+          /**********************************/
+          /*      Rule ID div stuff           */
+          /**********************************/
+          div#vtmin-rule-id {
+              min-width:200px;
+              max-width:200px;
+              margin-top:40px;
+          }
+           
+          /**********************************/
+          /*      Resource div stuff        */
+          /**********************************/     
+          div#vtmin-rule-resources {
+              min-width:200px;
+              max-width:200px;
+              margin-top:15px;
+              float:left;
+          }
+          #vtmin-rr-text {
+            float:left;
+          }
+          #vtmin-rr-doc {
+             margin-top:10px;
+             float:left;
+          }
+          #vtmin-rr-box {
+            border-top: 1px solid #BDB6B6;
+            background-color: #eee;
+            float: left;
+            margin-bottom: 10px;
+            margin-top: 15px;
+            padding: 5px;
+            width: 95%;
+          }
+          #vtmin-rr-created {
+            float:left;
+          }
+          #vtmin-rr-vote {
+            float:right;
+          }
+              
+          /*   ***********************   */
+          /*   (FOR 2010 THEME) */
+          /*   ***********************   */
+          
+          #major-publishing-actions {max-width: 190px; }
+          div#submitdiv {
+              max-width:200px;
+            }
+          
+          /*   ***********************   */
+          /*   (Change right column width) */
+          /*   ***********************   */
+            
+         #poststuff #post-body.columns-2 {
+              margin-right: 225px;
+          }  
+          #post-body.columns-2 #postbox-container-1 {
+              float: right;
+              margin-right: -225px;
+              width: 200px;
+          }  
+          #poststuff .postbox-container {
+              width: 100%;
+          }
+          /*   ***********************   */
+          /*   v1.08 BEGIN */
+          /*   ***********************   */
+          .clear-left {clear:left;} 
+          #cust-msg-text-area,
+          #cust-msg-text-area h3,
+          #cust-msg-comment,
+          #cust-msg-optional,
+          #cust-msg-text {float:left;} 
+          .newColumn1 {
+                float: left;
+                width: 35%;
+            }  
+          .newColumn2 {
+                float: left;
+                width: 60%;
+            }
+          .rule_message {
+                float: left;
+                margin-bottom: 10px;
+                margin-left: 2%;
+                margin-top: 10px;
+                width: 95%;
+            }
+          #custMsg-select {width:auto;margin-top: 15px;}
+          .rule_message h3 {border:none !important; padding:none !important;margin-top:-5px !important;} 
+          #cust-msg-comment {    
+                font-size: 12px;
+                font-style: italic;
+                margin-left: 6%;
+               /* margin-top: -5px; */
+                }
+           #cust-msg-optional {
+                font-size: 10px;
+                font-style: italic;
+                margin-top: 5px;
+           }    
+           #cust-msg-text-label-area {margin-top:10px;}                        
+          /*   v1.08 END */   
