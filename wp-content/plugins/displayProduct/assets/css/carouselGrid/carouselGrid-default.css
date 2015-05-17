@@ -1,0 +1,188 @@
+
+.displayProduct-shortcode .product_grid .dp-col{
+    margin-bottom: 0px;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+    position: relative;
+}
+
+.dp-grid-price{
+    float: left;
+    margin-top: 14px;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 1px;
+}
+.dp-product-information{position: relative;
+                        padding: 0;
+                        text-align: center;
+}
+.dp-grid-button{
+    float: right;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.displayProduct-shortcode .product_grid .product-name {
+    margin: 10px 0;
+    font-size: 1.05em;
+    text-align: center
+}
+.displayProduct-shortcode .product_grid .product-name a, .displayProduct-shortcode .product_grid .product-name a:active, .displayProduct-shortcode .product_grid .product-name a:visited {
+    text-decoration: none;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    -webkit-transition-timing-function: ease;
+    -webkit-transition-duration: .2s;
+    -webkit-transition-property: color;
+}
+.displayProduct-shortcode .product_grid  .product-name a:hover {
+    text-decoration: none;
+}
+.displayProduct-shortcode .product_grid p.dp-grid-excerpt {
+    font-size: 12px;
+    margin: 15px 0px;
+}
+.dp-grid-rating {
+    line-height: 1.0833em;
+    margin: 15px 0 15px;
+}
+.displayProduct-shortcode .dp-grid-rating .star-rating {
+    white-space: nowrap;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #FDD97D;
+    float: none;
+    clear: both;
+    display: inline-block;
+    text-align: center;
+}
+.displayProduct-shortcode .dp-grid-price del span.amount{font-size: 0.8em;}
+
+.displayProduct-shortcode .dp-grid-price ins{
+    background: none;
+    text-decoration: none;
+}
+.displayProduct-shortcode .dp-grid-thumb img{
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius-topleft: 3px;    
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.dp-grid-add-to-cart{
+    text-align: center
+}
+.img-hided {
+    position: absolute;
+    left: 0;
+    display: none
+}
+.dp-img-wrapper {
+    text-align: center;
+}
+.dp-product-image {
+    position: relative;
+    display: block;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+}
+.displayProduct-Container .product_grid .dp-button {
+    display: block
+}
+.owl-carousel .owl-wrapper{ padding-top: 30px}
+.owl-item .dp-col{ margin: 0 5px}
+
+
+.customNavigation{
+  text-align: center;
+}
+.customNavigation a{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background: url('../../images/carousel/carousel-arrow.png') no-repeat #dddddd;
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  z-index: 99;
+  opacity: 0.4; /* css standard */
+  filter: alpha(opacity=40); /* internet explorer */
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  cursor: pointer;
+}
+.customNavigation a:hover{
+  opacity: 1; /* css standard */
+  filter: alpha(opacity=100); /* internet explorer */
+}
+.displayProduct-shortcode.displayProduct-Container{ position: relative}
+
+/*Position */
+.customNavigation.topRight a.next{
+    top: -15px;
+    right: 5px
+}
+.customNavigation.topRight a.prev{
+    top: -15px;
+    right: 45px
+}
+
+.customNavigation.topLeft a.next{
+    top: -15px;
+    left: 45px
+}
+.customNavigation.topLeft a.prev{
+    top: -15px;
+    left: 5px
+}
+
+.customNavigation.sideMiddle a.next{
+    top: 100px;
+    right: 5px
+}
+.customNavigation.sideMiddle a.prev{
+    top: 100px;
+    left: 5px
+}
+/*Style*/
+.customNavigation.style1 a.next{
+    background-position: -40px 0px;
+}
+.customNavigation.style1 a.prev{
+    background-position: 0 0px;
+}
+
+.customNavigation.style2 a.next{
+    background-position: -40px -40px;
+}
+.customNavigation.style2 a.prev{
+    background-position: 0 -40px;
+}
+
+.customNavigation.style3 a.next{
+    background-position: -40px -80px;
+}
+.customNavigation.style3 a.prev{
+    background-position: 0 -80px;
+}
+
+.customNavigation.style4 a.next{
+    background-position: -40px -120px;
+}
+.customNavigation.style4 a.prev{
+    background-position: 0 -120px;
+}
+
