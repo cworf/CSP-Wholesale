@@ -55,6 +55,13 @@ a.help {
   right: auto;
 }
 /**
+ * Admin Notice Message
+ * ----------------------------------------------------------------------------
+ */
+.cpac_message.error.warning {
+  border-left: 4px solid #ffba00;
+}
+/**
  * Icons
  * ----------------------------------------------------------------------------
  */
@@ -73,6 +80,32 @@ a.help {
   display: inline-block;
   position: relative;
   top: 2px;
+}
+/**
+ * Dashicons used on list screens
+ * ----------------------------------------------------------------------------
+ */
+.cpac-column .comment-grey-bubble {
+  height: 16px;
+  width: 16px;
+}
+.cpac-column .comment-grey-bubble:before {
+  content: '\f101';
+  font: normal 20px/0.5 'dashicons';
+  speak: none;
+  display: inline-block;
+  padding: 0;
+  top: 4px;
+  left: 0;
+  position: relative;
+  vertical-align: top;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none !important;
+}
+.rtl .cpac-column .comment-grey-bubble:before {
+  right: 0;
+  left: auto;
 }
 /**
  * Header
@@ -98,7 +131,7 @@ h2.cpac-nav-tab-wrapper {
 }
 .cpac-menu .subsubsub li.first {
   font-weight: bold;
-  min-width: 90px;
+  min-width: 100px;
 }
 /**
  * Structure
@@ -240,17 +273,11 @@ h2.cpac-nav-tab-wrapper {
 }
 .cpac-column .column-meta table tr td.column_label .inner .meta span {
   cursor: pointer;
-  /*background: #ccc;
-									border-radius: 2px;
-									padding: 0 4px;
-									color: #fff;
-									display: inline-block;
-									height: 15px;
-									line-height: 15px;
-
-									&.on {
-										background: #1e8cbe;
-									}*/
+}
+.cpac-column .column-meta table tr td.column_label .inner .meta span.width {
+  margin-right: 5px;
+  cursor: auto;
+  color: #737373;
 }
 .cpac-column .column-meta table tr td.column_label span.vers {
   float: left;
@@ -285,9 +312,6 @@ h2.cpac-nav-tab-wrapper {
   padding-top: 2px;
 }
 .cpac-column .column-meta span.vers .comment-grey-bubble {
-  background: transparent url("../images/comment-grey-bubble.png") no-repeat 0 0;
-  height: 12px;
-  width: 12px;
   float: right;
 }
 .cpac-column .column-form {
@@ -311,6 +335,14 @@ h2.cpac-nav-tab-wrapper {
 .cpac-column .column-form table tr td select,
 .cpac-column .column-form table tr td input[type=text] {
   width: 99.95%;
+}
+.cpac-column .column-form table tr td select.small,
+.cpac-column .column-form table tr td input[type=text].small {
+  width: 100px;
+}
+.cpac-column .column-form table tr td span.suffix {
+  line-height: 40px;
+  color: #808080;
 }
 .cpac-column .column-form table tr td select optgroup:nth-child(2n) {
   background: #F9F9F9;
@@ -355,6 +387,43 @@ h2.cpac-nav-tab-wrapper {
   display: block;
   color: #999;
 }
+.cpac-column .column-form table tr td.label .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.cpac-column .column-form table tr td.label .info:before {
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  top: 50%;
+  margin-top: -7px;
+  content: '';
+  display: block;
+  border-radius: 32px;
+  border: 1px solid #E6E6E6;
+  width: 12px;
+  height: 12px;
+}
+.cpac-column .column-form table tr td.label .info:after {
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  top: 50%;
+  margin-top: -6px;
+  content: '?';
+  display: block;
+  width: 14px;
+  height: 14px;
+  color: #E6E6E6;
+  font: bold 10px Arial;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 14px;
+}
 .cpac-column .column-form table tr td.input label {
   padding-left: 10px;
   padding-right: 0;
@@ -373,20 +442,43 @@ h2.cpac-nav-tab-wrapper {
 .cpac-column .column-form table tr td.input .section {
   padding: 12px;
 }
-.cpac-column .column-form table tr.column_width div.description {
+.cpac-column .column-form table tr.column_width .input {
+  position: relative;
+}
+.cpac-column .column-form table tr.column_width .input div.description {
   font-size: 11px;
-  width: 12%;
-  float: left;
+  width: 54px;
+  position: absolute;
+  left: 10px;
   text-align: middle;
 }
-.cpac-column .column-form table tr.column_width div.input-width-range {
-  float: left;
+.cpac-column .column-form table tr.column_width .input div.description input {
+  background: #efefef;
+  border: none;
+  height: 20px;
+  line-height: 20px;
+  text-align: right;
+  width: 36px;
+  font-size: 12px;
+}
+.cpac-column .column-form table tr.column_width .input div.width-slider {
+  margin-left: 60px;
+  margin-right: 100px;
   position: relative;
-  width: 87%;
   margin-top: 4px;
 }
-.cpac-column .column-form table tr.column_width div.input-width-range .ui-slider-handle {
+.cpac-column .column-form table tr.column_width .input div.width-slider .ui-slider-handle {
   cursor: ew-resize;
+}
+.cpac-column .column-form table tr.column_width .input div.unit-select {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 90px;
+  text-align: right;
+}
+.cpac-column .column-form table tr.column_width .input div.unit-select label {
+  padding-left: 5px;
 }
 .cpac-column .column-form table tr.column_image_size {
   border: 10px solid red;
