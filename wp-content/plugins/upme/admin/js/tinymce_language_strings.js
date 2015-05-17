@@ -1,0 +1,1 @@
+// Language strings for TinyMCE

@@ -1,0 +1,409 @@
+/*
+* This CSS file is responsible for auto-adjust
+* of user profiles, responsive styles,
+* media queries, width issues
+*/
+
+div.upme-width-2 {
+    width: 48%;
+    margin-right: 4%;
+}
+
+div.upme-width-2:nth-of-type(2n) {
+    width: 48%;
+    margin-right: 0;
+}
+
+div.upme-width-3 {
+    width: 31%;
+    margin-right: 3%;
+}
+
+div.upme-width-3:nth-child(3n) {
+    width: 31%;
+    margin-right: 0;
+}
+
+div.upme-width-2 div.upme-field-name, div.upme-width-3 div.upme-field-name {
+    font-size: 16px;
+}
+
+div.upme-width-2 div.upme-pic, div.upme-width-3 div.upme-pic {
+    margin: 0 10px 0 0;
+}
+
+div.upme-width-2 div.upme-social div, div.upme-width-3 div.upme-social div {
+    padding: 6px 0 9px 0;
+}
+
+div.upme-width-2 .upme-main, div.upme-width-3 .upme-main {
+    padding: 20px 20px 0 20px;
+}
+
+div.upme-width-2 .upme-field-type, div.upme-width-3 .upme-field-type {
+    width: 100%;
+    margin: 0 0 8px 0;
+}
+
+div.upme-width-2 .upme-field-value, div.upme-width-3 .upme-field-value {
+    width: 100%;
+}
+
+label.upme-field-type-width-2, label.upme-field-type-width-3 {
+    display: none;
+}
+
+div.upme-width-2 i.upme-icon-none, div.upme-width-3 i.upme-icon-none {
+    display: none;
+}
+
+/* Using in sidebar */
+div.upme-sidebar div.upme-field-name {
+    font-size: 16px;
+}
+
+div.upme-sidebar div.upme-pic {
+    margin: 0 10px 0 0;
+}
+
+div.upme-sidebar div.upme-social div {
+    padding: 6px 0 9px 0;
+}
+
+div.upme-sidebar .upme-main {
+    padding: 20px 20px 0 20px;
+}
+
+div.upme-sidebar .upme-field-type {
+    width: 100%;
+    margin: 0 0 8px 0;
+    font-size: 13px;
+}
+
+div.upme-sidebar .upme-field-value {
+    width: 100%;
+    font-size: 13px;
+}
+
+label.upme-field-type-upme-sidebar {
+    display: none !important; /*Important declaration needed for Enfold theme*/
+}
+
+div.upme-sidebar i.upme-icon-none {
+    display: none;
+}
+
+div.upme-sidebar input.upme-input-left, div.upme-sidebar input.upme-input-right {
+    float: none;
+    width: 100%;
+}
+
+/* Responsive media query */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	#TB_window
+	{
+		  margin-left:-44% !important;
+			width: 86% !important;
+	}
+
+    .upme-preview-current{
+        max-width: 200px !important;
+    }
+	
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+     
+    .jcrop-holder #upme-preview-pane {
+        display: block;
+        position: absolute;
+        z-index: 2000;
+        right: -190px;
+        padding: 0 6px;
+
+    }
+
+
+    .upme-preview-current{
+        max-width: 200px !important;
+    }
+	
+		#TB_window
+		{
+			margin-left:-44% !important;
+			width: 86% !important;
+		}
+
+    div.upme-field-name {
+        font-size: 16px;
+    }
+
+    div.upme-pic {
+        margin: 0 10px 0 0;
+    }
+
+    div.upme-social div {
+        padding: 6px 0 9px 0;
+    }
+
+    .upme-main {
+        padding: 20px 20px 0 20px;
+    }
+
+    .upme-field-type {
+        width: 100%;
+        margin: 0 0 8px 0;
+    }
+
+    .upme-field-value {
+        width: 100%;
+    }
+
+    i.upme-icon-none {
+        display: none;
+    }
+
+    input.upme-input-left, input.upme-input-right {
+        float: none;
+        width: 100%;
+    }
+
+    .upme-widget-main {
+        padding: 20px 20px 0 20px;
+    }
+
+}
+
+@media only screen and (max-width: 479px) {
+    .upme-preview-current{
+        max-width: 200px !important;
+    }
+	
+		#TB_window
+		{
+			margin-left:-44% !important;
+			width: 86% !important;
+		}
+
+    div.upme-width-2, div.upme-width-3 {
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    div.upme-width-2:nth-of-type(2n) {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    div.upme-width-3:nth-child(3n) {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    div.upme-field-name {
+        font-size: 16px;
+    }
+
+    div.upme-pic {
+        margin: 0 10px 0 0;
+    }
+
+    div.upme-social div {
+        padding: 6px 0 9px 0;
+    }
+
+    .upme-main {
+        padding: 20px 20px 0 20px;
+    }
+
+    .upme-field-type {
+        width: 100%;
+        margin: 0 0 8px 0;
+    }
+
+    .upme-field-value {
+        width: 100%;
+    }
+
+    i.upme-icon-none {
+        display: none;
+    }
+
+    input.upme-input-left, input.upme-input-right {
+        float: none;
+        width: 100%;
+    }
+
+    .upme-widget-main {
+        padding: 20px 20px 0 20px;
+    }
+
+}
+
+@media only screen and (min-width: 261px) and (max-width: 300px) {
+	
+		#TB_window
+		{
+			margin-left:-44% important;
+			width: 86% important;
+		}
+	
+
+    div.upme-width-2, div.upme-width-3 {
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    div.upme-width-2:nth-of-type(2n) {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    div.upme-width-3:nth-child(3n) {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    div.upme-field-name {
+        font-size: 16px;
+    }
+
+    div.upme-pic {
+        margin: 0 10px 0 0;
+    }
+
+    div.upme-social div {
+        padding: 6px 0 9px 0;
+    }
+
+    .upme-main {
+        padding: 20px 20px 0 20px;
+    }
+
+    .upme-field-type {
+        width: 100%;
+        margin: 0 0 8px 0;
+    }
+
+    .upme-field-value {
+        width: 100%;
+    }
+
+    i.upme-icon-none {
+        display: none;
+    }
+
+    input.upme-input-left, input.upme-input-right {
+        float: none;
+        width: 100%;
+    }
+
+    .upme-widget-main {
+        padding: 20px 20px 0 20px;
+    }
+
+}
+
+
+/* Custom Search Form */
+
+/*Landscape Mode*/
+
+@media screen and (max-device-width: 480px) 
+{ 
+		#TB_window
+		{
+			margin-left:-44% !important;
+			width: 86% !important;
+		}
+	
+    .upme-search-input-left {
+        float: left;
+        width: 100% !important; /*Fix for popular themes*/
+        margin-bottom: 10px !important;
+    }
+
+    .upme-search-input-right {
+        float: left;
+        width: 100% !important; /*Fix for popular themes*/
+        margin-bottom: 0px !important;
+    }
+}
+/* Portrait Mode */
+
+@media screen and (max-device-width: 320px) 
+{ 
+		#TB_window
+		{
+			margin-left:-44% !important;
+			width: 86% !important;
+		}
+			
+    .upme-search-input-left {
+        float: left;
+        width: 100% !important; /*Fix for popular themes*/
+        margin-bottom: 10px !important;
+    }
+
+    .upme-search-input-right {
+        float: left;
+        width: 100% !important; /*Fix for popular themes*/
+        margin-bottom: 0px !important;
+    }
+}
+
+
+
+
+
+
+
+/* Using as a sidebar widget */
+div.upme-sidebar-widget div.upme-field-name {
+    font-size: 16px;
+}
+
+div.upme-sidebar-widget div.upme-pic {
+    margin: 0 10px 0 0;
+}
+
+div.upme-sidebar-widget div.upme-social div {
+    padding: 6px 0 9px 0;
+}
+
+div.upme-sidebar-widget .upme-main {
+    padding: 20px 20px 0 20px;
+}
+
+div.upme-sidebar-widget .upme-field-type {
+    width: 100%;
+    margin: 0 0 8px 0;
+    font-size: 13px;
+}
+
+div.upme-sidebar-widget .upme-field-value {
+    width: 100%;
+    font-size: 13px;
+}
+
+label.upme-field-type-upme-sidebar {
+    display: none !important; /*Important declaration needed for Enfold theme*/
+}
+
+div.upme-sidebar-widget i.upme-icon-none {
+    display: none;
+}
+
+div.upme-sidebar-widget input.upme-input-left, div.upme-sidebar-widget input.upme-input-right {
+    float: none;
+    width: 100%;
+}
+
+div.upme-sidebar-widget div.upme-field-name {
+    font-size: 16px;
+}
+
+div.upme-sidebar-widget .upme-widget-main {
+    padding: 20px 20px 0 20px;
+}

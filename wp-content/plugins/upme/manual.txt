@@ -1,0 +1,631 @@
+Most Basic Usage:
+========================================================
+	
+	[upme] shows the current logged in user profile
+
+	Will automatically show a login form to Guests
+
+
+Registration Form
+========================================================
+
+	Use the shortcode:
+	
+	[upme_registration]
+
+Options that can be passed to [upme_registration] shortcode:
+========================================================
+
+	redirect_to
+	captcha
+	use_in_sidebar
+	name
+	user_role
+
+(redirect_to) Registration Form with custom redirect:
+========================================================
+
+	[upme_registration redirect_to="http://url_here"]
+	
+	Users are redirected to the specified URL
+	after completing registration.
+
+
+(captcha) Registration Form Captcha options:
+========================================================
+
+	[upme_registration captcha=no]
+	
+	Show the registration form without captcha,
+	even if a captcha is set in UPME settings.
+
+	You can specify the captcha to be used with
+	the following:
+
+	[upme_registration captcha=recaptcha]
+
+	or:
+
+	[upme_registration captcha=funcaptcha]
+
+(name) Multiple Registration Forms with Different Names:
+========================================================
+
+	[upme_registration name='member_registration' ]
+
+	Add specific name to registration form to load different fields on different registration
+	forms. If not specified, this will add a dynamic random string as the name.
+
+(user_role) Registration Forms with Different User Roles:
+========================================================
+
+	[upme_registration user_role='author' ]
+
+	Add specific to the registration form. Once user_role attribute is added, all users registred with this form will get the defined user role instead of default user role.
+	
+Login Form
+========================================================
+
+	use the shortcode:
+
+	[upme_login]
+
+
+Login Form in Sidebar Widget
+========================================================
+
+	It is recommended to use the UPME Login widget,
+	however you can also use the following method:
+
+	- Create new sidebar text widget
+
+	- add in it: [upme_login use_in_sidebar=yes]
+
+	This will change the CSS styling to better fit
+	inside a small width sidebar.
+
+	It will also link to the user profile page for
+	editing when the user is logged in.
+
+
+Login form with custom redirect:
+========================================================
+
+	use the shortcode:
+
+	[upme_login redirect_to="http://url_here"]
+	
+	Useres are redirected to the specified URL
+	after logging in.
+
+
+Login Form Captcha options:
+========================================================
+
+	[upme_login captcha=yes]
+	
+	Show the Login Form with captcha,
+	uses the captcha plugn selected in UPME settings.
+
+	You can specify the captcha to be used with
+	the following:
+
+	[upme_login captcha=recaptcha]
+
+	or:
+
+	[upme_login captcha=funcaptcha]
+
+
+Login Form Register/Forgot Password link options:
+========================================================
+
+	With the following options to enable/disable or
+	customize the register/forgot links on the login
+	form.
+
+	Do not display the register link:
+	[upme_login register_link=no]
+
+	Do not display the Forgot Password link:
+	[upme_login forgot_link=no]
+
+	Custom Register Link Text:
+	[upme_login register_text=Join]
+	(Replace the word 'Join' with your custom text)
+	
+	Custom Forgot Password Text:
+	[upme_login forgot_text=Forgot]
+	(Replace the word 'Forgot' with your custom text)
+
+	Custom Register Link URL:
+	[upme_login custom_register_url=http://your-link-here.com]
+	
+	Custom Forgot Password URL:
+	[upme_login custom_forgot_url=http://your-link-here.com]
+	
+
+
+Private Member-Only Content:
+========================================================
+
+	[upme_private]Member only content[/upme_private]
+	
+	The content inside the private shortcodes will
+	only be visible to logged in users.
+
+Options that can be passed to [upme_private] shortcode:
+========================================================
+
+	allowed_roles
+	blocked_roles
+	allowed_users
+	blocked_users
+	allowed_meta_key
+	blocked_meta_key
+
+	** Special Note - Only use one of the 6 possible attributes for a single [upme_private] shortcode. Multiple attributes is not supported at this stage.
+
+(allowed_roles) Usage Manual:
+========================================================
+
+	[upme_private allowed_roles=subscriber,editor]Member only content[/upme_private] a comma separated list of user roles that you want to be allowed to view this private content.
+
+	This is entirely optional. If you do not specify any user roles here, content will be allowed for all loggedin users.
+
+	If you specify user roles with this option, only the users with specified user roles will be able to view this content.
+
+(blocked_roles) Usage Manual:
+========================================================
+
+	[upme_private blocked_roles=subscriber,editor]Member only content[/upme_private] a comma separated list of user roles that you want to be restricted from viewing this private content.
+
+	This is entirely optional. If you do not specify any user roles here, content will be allowed for all loggedin users.
+
+	If you specify user roles with this option, the users with specified user roles will not be able to view this content.
+
+(allowed_users) Usage Manual:
+========================================================
+
+	[upme_private allowed_users=1,12]Member only content[/upme_private] a comma separated list of user ID's that you want to be allowed to view this private content.
+
+	This is entirely optional. If you do not specify any user ID's here, content will be allowed for all loggedin users.
+
+	If you specify user ID's with this option, the users with specified ID's will be able to view this content.
+
+(blocked_users) Usage Manual:
+========================================================
+
+	[upme_private blocked_users=1,12]Member only content[/upme_private] a comma separated list of
+	user ID's that you want to be restricted from viewing this private content.
+
+	This is entirely optional. If you do not specify any user ID's here, content will be allowed for all loggedin users.
+
+	If you specify user ID's with this option, the users with specified ID's will not be able to view this content.
+
+(allowed_meta_key) Usage Manual:
+========================================================
+
+	[upme_private allowed_meta_key=Country allowed_meta_value='United Status']Member only content[/upme_private] a meta key of custom field and its meta value.
+
+	This is entirely optional. If you do not specify a meta key and value here, content will be allowed for all loggedin users.
+
+	If you specify meta key and meta value with this option, only the users with specified value for the meta field will be able to view this content. It's mandatory to use allowed_meta_value attribute, when using allowed_meta_key attribute.
+
+(blocked_meta_key) Usage Manual:
+========================================================
+
+	[upme_private blocked_meta_key=Country blocked_meta_value='United Status']Member only content[/upme_private] a meta key of custom field and its meta value.
+
+	This is entirely optional. If you do not specify a meta key and value here, content will be allowed for all loggedin users.
+
+	If you specify meta key and meta value with this option, only the users who don't have the specified value for the meta field will be able to view this content. It's mandatory to use allowed_meta_value attribute, when using allowed_meta_key attribute.
+
+
+Search users form:
+========================================================
+
+	Use the shortcode:
+	
+	[upme_search]
+
+	The default search form will search all text
+	profile fields.
+
+	You will need to include the following shrotcode
+	on the same page below the search form to show
+	the results:
+
+	[upme group=all view=compact users_per_page=10]
+
+	You can use or modify any of the view/role/pagination
+	etc. options in the above shortcode to display the
+	search results differently or restrict the search
+	to only specific users or roles.
+
+
+Options that can be passed to [upme_search] shortcode:
+========================================================
+
+	fields
+	filters
+	exclude_fields
+	operator
+	use_in_sidebar
+	users_are_called
+	combined_search_text
+	button_text
+	reset_button_text
+	show_combined_search
+	name
+
+(fields) Usage Manual:
+========================================================
+
+	[upme_search fields=X,X,X] a comma separated list of
+	custom field meta keys that you want to be included
+	in the search.
+
+	This is entirely optional. If you do not specify
+	any text fields here, all text fields will be searched.
+
+	If you specify text fields with this option, only
+	the specified text fields will be searched, the
+	default fields will be excluded.
+
+(filters) Usage Manual:
+========================================================
+
+	[upme_search filters=X,X,X] a comma separated list of
+	custom field meta keys that you want to be displayed
+	as filters on the search form.
+
+	Filters for text fields will allow the user to type
+	a value for the specified field to search on.
+
+	Filters for non-text fields will be displayed as
+	dropdowns or multi-select (for checkboxes) where
+	the user can choose from available optiosn to
+	filter by.
+
+(exclude_fields) Usage Manual:
+========================================================
+
+	[upme_search exclude_fields=X,X,X] a comma separated
+	list of custom field meta keys that you do not want
+	to be included in the search.
+	
+	You can use this option to exclude some text fields
+	from the default search.
+
+(operator) Usage Manual:
+========================================================
+
+	Possible values: AND, OR
+
+	[upme_search operator=AND] returns only users that
+	match all search criteria and filters.
+
+	[upme_search operator=OR] returns users that match
+	any of the specified criteria and filters.
+
+(use_in_sidebar) Usage Manual:
+========================================================
+
+	[upme_search use_in_sidebar=yes] can be used to place the search form on sidebar and 
+	display the results in member list page.
+
+	This is entirely optional. You can decide to show the search inside a page
+	or in the sidebar.
+
+(users_are_called) Usage Manual:
+========================================================
+
+	[upme_search users_are_called=Members] can be used change the text display for users
+
+	This is entirely optional. 
+
+(combined_search_text) Usage Manual:
+========================================================
+
+	[upme_search combined_search_text='Search Here'] can be used to change the text displayed inside the search box.
+
+	This is entirely optional. 
+
+(button_text) Usage Manual:
+========================================================
+
+	[upme_search button_text='Search Users'] can be used to change the text displayed on search button.
+
+	This is entirely optional. 
+
+(reset_button_text) Usage Manual:
+========================================================
+
+	[upme_search reset_button_text='Reset Search'] can be used to change the text displayed inside the search reset button.
+
+	This is entirely optional. 
+
+(show_combined_search) Usage Manual:
+========================================================
+
+	[upme_search show_combined_search=yes] can be used to hide combined search option and only use the search on search filters.
+
+	This is entirely optional. 
+
+(name) Multiple Search Forms with Different Names:
+========================================================
+
+	[upme_search name='member_search' ]
+
+	Add specific name to search form to load different filters on different search
+	forms. If not specified, this will add a dynamic random string as the name.
+	
+Show/hide specific fields on the Registration form:
+========================================================
+
+	- Open Settings -> UPME Profiles -> Custom Fields
+	- Edit the field you wish to show/hide
+	- Update the option 'Show on Registration form'
+
+Make fields visible to admin users only:
+========================================================
+
+	- Open Settings -> UPME Profiles -> Custom Fields
+	- Edit the field you want to make admin-only
+	- Select 'yes' for 'Field is Private'
+
+	
+Options that can be passed to [upme] shortcode:
+========================================================
+
+	id
+	view
+	group
+	group_meta + group_meta_value
+	hide_until_search
+	order
+	orderby
+	role
+	show_id
+	show_stats
+	show_social_bar
+	use_in_sidebar
+	users_per_page
+	width
+	new_window
+	modal
+	show_role
+	logout_redirect
+	show_profile_status
+	show_result_count
+	limit_results
+	hide_admins
+	name
+
+(id) Usage Manual:
+========================================================
+
+	[upme id=X] retrieves a specific profile of the
+	passed user ID
+
+	[upme id=author] shows the author profile of
+	the current page or post
+
+(view) Usage Manual:
+========================================================
+
+	[upme view=X,X,X] a comma separated list of
+	profile fields (meta key or position) that you
+	want to be included only in the profile view.
+	
+	[upme view=compact] Hides all profile fields, and
+	shows a compact style profile view.
+
+	
+(group) Usage Manual:
+========================================================
+
+	[upme group=user_1,user_2,user_3,etc] To display
+	multiple profiles of specific users, pass a comma
+	separated list of all user IDs you want to show.
+	
+	[upme group=all] Displays All User Profiles
+
+	Advanced Example:
+	[upme group=all view=compact width=2 order=desc orderby=registered users_per_page=10]
+
+
+(group_meta) + (group_meta_value) Usage Manual:
+========================================================
+
+	Show a group of users based on a custom field value:
+
+	[upme group=all group_meta=country group_meta_value='United States']
+
+	The above will show all users that have 'United States' set for the
+	field with meta ID of 'country'. You can replace the word 'country'
+	with your meta key, and 'United States' with your matching value.
+
+
+(hide_until_search) Usage Manual:
+========================================================
+
+	Hides user list and only show search results.
+	
+	First add the search shortcode:
+	[upme_search]
+
+	Then add the shortcode:
+	[upme group=all hide_until_search=true]
+
+
+(order) and (orderby) Usage Manual:
+========================================================
+
+	Sort/order of the profiles displayed.
+
+	Possible values for order:
+	asc, desc
+
+	Possible values for orderby:
+	ID, login, nicename, email, url, registered,
+	display_name, or post_count
+
+	Examples:
+	[upme group=all order=desc orderby=post_count]
+
+	[upme group=all order=asc orderby=registered]
+
+
+(role) Usage Manual:
+========================================================
+	
+	Show users of a specific User Role
+	
+	Examples:
+	[upme group=all role=subscriber]
+
+	[upme group=all role=administrator]
+
+
+(show_id) Usage Manual
+========================================================
+
+	Display the User ID the profile
+
+	[upme show_id=true] OR [upme show_id=yes]
+
+
+(show_stats) Usage Manual
+========================================================
+
+	Hide user statistics (entries, comments, etc.)
+
+	[upme show_stats=no] OR [upme show_stats=false]
+
+
+(show_social_bar) Usage Manual
+========================================================
+
+	Hide the social bar (social icons)
+
+	[upme show_social_bar=no] OR [upme show_social_bar=false]
+
+
+(use_in_sidebar) Usage Manual
+========================================================
+
+	Show the profile/form in sidebar widget beautifully
+
+	[upme use_in_sidebar=yes]
+
+
+(users_per_page) Usage Manual
+========================================================
+	
+	Paginate the members list
+
+	[upme group=all users_per_page=10]
+
+
+(width) Usage Manual
+========================================================
+	Show profiles in 1/2 or 1/3 width view
+
+	Examples:
+
+	[upme group=all view=compact width=2]
+
+	[upme group=all view=compact width=3]
+
+
+(new_window) Usage Manual
+========================================================
+	Open profiles in a new window from the members list
+
+	Examples : 
+
+	[upme group=all view=compact new_window=yes] 
+
+	OR
+
+	[upme group=all view=compact new_window=true]
+
+(modal) Usage Manual
+========================================================
+	Open profiles in a modal window from a member list with compact view
+
+	Examples : 
+
+	[upme group=all view=compact modal=yes] 
+
+	OR
+
+	[upme group=all view=compact modal=true]
+
+(show_role) Usage Manual
+========================================================
+	Show user roles of profile owner inside the profile. (Similar to show_id)
+
+	Examples : 
+
+	[upme show_role=true]
+
+	OR
+
+	[upme show_role=yes]
+
+
+(logout_redirect) Usage Manual
+========================================================
+	Define a custom URL for redirecting users after clicking logout button.
+
+	Examples : 
+
+	[upme logout_redirect='http://url_here']
+
+(show_profile_status) Usage Manual
+========================================================
+	Show/ Hide the user profile status inside the View Profile section.
+
+	Examples : 
+
+	[upme show_profile_status=yes] or [upme show_profile_status=true]
+
+(show_result_count) Usage Manual
+========================================================
+	Show/ hide the number of results generated in the search.
+
+	Examples : 
+
+	[upme show_result_count=yes] or [upme show_result_count=true]
+
+(limit_results) Usage Manual
+========================================================
+	Limit the member list to fixed number of users without pagination
+
+	Examples : 
+
+	[upme group=all view=compact limit_results=yes users_per_page=5 ]
+
+(hide_admins) Usage Manual
+========================================================
+	Hide administrators from the member list
+
+	Examples : 
+
+	[upme group=all view=compact hide_admins=yes users_per_page=5 ]
+
+(name) Multiple Profiles with Different Names:
+========================================================
+
+	[upme name='member_profile' ]
+
+	Add specific name to profile form to load different fields on different profile
+	forms. If not specified, this will add a dynamic random string as the name.
+	
+
+<!-------------------Action Filters and Hooks for Developers-------------------------------->
+
+Please check Docs on http://www.profileplugin.com

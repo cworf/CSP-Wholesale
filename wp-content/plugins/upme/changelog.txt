@@ -1,0 +1,558 @@
+Version 2.0.23 (2014.12.23)
+* New Feature : Two-Factor authentication with email 
+* New Feature : compatibility with UPME Invitation Codes addon
+* New Feature : Implement filters for profile header 
+* Added       : addon list in settings section
+* Added       : support for redirect users to previous page after login 
+* Added       : setting for disable third party script and styles
+* Added       : ability to validate image dimensions with filters
+* Added       : ability to show error messages on profile image upload
+* Fixed Bug   : PHP error message in registration
+
+Version 2.0.22 (2014.12.06)
+* New Feature : UPME Cards for Post Authors and Teams 
+* New Feature : User profile slider
+* New Feature : Implement custom fields in admin email templates
+* Added       : * sign to required fields
+* Fixed Bug   : tooltip not showing issue in upme settings
+* Fixed Bug   : separator text issue
+
+Version 2.0.21 (2014.11.12)
+* New Feature: link post author link to UPME profile
+* New Feature: display UPME author profile after post content
+* Fixed Bug  : fix issues in icon names for Fontawesome 4.2.0
+* Fixed Bug  : fix issues in search for WordPress versions prior to 4.0
+* Fixed Bug  : display error in checkbox fields
+
+Version 2.0.20 (2014.11.09)
+* New Feature: support for Captcha plugin by BestWebSoft
+* New Feature: support for adding any captcha plugin through filters
+* New Feature: email module with custom templates and template tags
+* New Feature: ability to enable/disable sending emails
+* New Feature: Foundation and Zocial icon libraries are built-in and accessible through filters
+* New Feature: support for additional icon libraries through filters
+* Added : compatibility with Fontawesome version 4.2.0
+* Fixed Bug  : conflict in error messages when using email confirmation and user approvals
+
+Version 2.0.19 (2014.10.23)
+* New Feature: support for multiple registration forms through filters
+* New Feature: create individual registration forms for each user role
+* New Feature: support for multiple search forms with different conditions through filters
+* New Feature: support for multiple user profiles through filters
+* New Feature: customize profile header design and content through filters
+* New Feature: adding contents after separators through filters
+* New Feature: dynamic lists for checkboxes, dropdowns, radio buttons through filters
+* New Feature: trigger profile field updates and execute custom actions through filters
+* New Feature: restrict file types on individual file upload fields through filters
+* New Feature: customize login form header through filters
+* New Feature: customize registration form header through filters
+* New Feature: support for custom validations on login, registration, profile update through filters
+* New Feature: support for custom messages on login success and failure through filters
+* New Feature: support for customizing login fields through filters
+* New Feature: support for customizing registration fields through filters
+* New Feature: support for customizing profile fields through filters
+* New Feature: customize field icons and adding new icons with filters
+* New Feature: display profile picture inside the profile through filters
+* Added : compatibility with WordPress version 4.0
+* Added : enable shortcodes on custom fields through filters
+* Added : support for custom restriction rules through filters
+* Fixed Bug: using re-Captcha on with HTTPS
+* Fixed Bug: PHP error in member list pagination
+* Fixed Bug: error messages in profile email validations
+* Fixed Bug: unable to load datepicker on backend profiles
+* Fixed Bug: issue in site lockdown module for URL’s with query strings
+* Fixed Bug: OR operator not working properly in search
+* Fixed Bug: PHP error in login process
+
+
+Version 2.0.18 (2014.09.06)
+* New Feature: social login and registration using UPME Social addon
+* New Feature: user approval and activation cancellation for administrators
+* New Feature: display lists with limited number of users without pagination
+* Added : clear date functionality for date pickers
+* Added : support for hide administrators from list using shortcode attributes
+* Added : filters for adding hidden fields on UPME forms
+* Removed : UPME shortcode buttons for non-admin users
+* Fixed Bug: unable use ampersand in radio, checkbox and dropdown field values
+* Fixed Bug: issues with required attribute in video and soundcloud fields
+* Fixed Bug: issues with apostrophe in help text
+* Fixed Bug: user cache not updating in backend user creation
+
+
+Version 2.0.17 (2014.07.07)
+* New Feature: Private content module for specifying global restriction rules
+* New Feature: Enhancements in private content shortcodes to allow custom conditions
+* New Feature: API for retriving UPME data for other plugins and themes
+* Fixed Bug: Issues in search when using mutiple conditions
+* Fixed Bug: Approval and Activation status not updating when creating users from backend
+* Fixed Bug: Typo issues in terms and conditions message
+* Fixed Bug: File upload error messages
+* Fixed Bug: Issue with enabling tinymce editor in frontend through other pluginsFix 
+* Fixed Bug: Private field showing issue in backend
+* Fixed Bug: Issue with additional columns in WordPress user list
+* Fixed Bug: Blank default values not displaying issue for date fields
+* Added : Filter for defining custom class for texteditor fields
+* Added : Support for deleting existing profile images on new uploads
+* Added : Support for improved success messages on email confirmations and user approvals
+
+
+Version 2.0.16 (2014.05.13)
+* Fixed Bug: Profile not updating in backend section
+* Fixed Bug: Typo errors in image upload filters
+* Fixed Bug: Permission issue on profile social icons section
+* Added : Filters for adding dynamic forms or content on View Profile
+* Added : Filters for defining custom CSS styles for textareas
+
+Version 2.0.15 (2014.05.09)
+* Fixed Bug: Images not displaying on profiles
+
+Version 2.0.14 (2014.05.06)
+* New Feature: Implement AJAX support on custom field creation/update.
+* New Feature: Implement terms and conditions checkbox on registration
+* New Feature: Implement profile status to display/hide profiles(Private Profiles)
+* New Feature: Implement user profile approvals for administrators 
+* New Feature: Implement sorting on search results based on custom fields 
+* New Feature: Implement meta key filters for search 
+* New Feature: Implement search result count on member lists 
+* New Feature: Implement filters for adding hidden fields in UPME forms 
+* Added : Translation support on uncompleted strings
+* Added : Specific CSS classes for custom fields for advanced styling 
+* Added : Translation support for built-in custom fields
+* Added : Displaying User Role Name instead of User Role Key in Profiles 
+* Added : UPME action hooks for User activation 
+* Added : Support for non image file uploads using filters and actions
+* Added : Remove combined search using shortcode attributes
+* Added : Filter for customize password help text message
+* Fixed Bug: Display separators based on user role
+* Fixed Bug: User cache not updating for new users
+* Fixed Bug: Login with email when email confirmation is enabled 
+* Fixed Bug: Login with usernames specified like emails  
+* Fixed Bug: Visual editor shortcode buttons icon in WordPress 3.9 
+* Fixed Bug: Redirect registration page to user profile when user is logged in
+* Fixed Bug: Blank options in drop down fields not working in registration
+* Fixed Bug: PHP error in Sync/Tools section
+
+Version 2.0.13 (2014.03.26)
+* Fixed Bug: Profile fields displaying issue in WordPress backend profile edit
+
+Version 2.0.12 (2014.03.23)
+* New Feature: Restrict Viewing of Other User Profiles based on user role
+* New Feature: Implement popup window on user profiles list for viewing individual profile from list
+* New Feature: Option to change the shortcode used inside upme modal window
+* New Feature: Filters to customize the emails for registration with activation,reset password 
+* New Feature: Display user role on profiles using shortcode attributes
+* New Feature: Implement support for Youtube short URL's
+* New Feature: New field type for soundcloud audios
+* New Feature: Implement the support for loading profiles on new windows from the list
+* New Feature: Custom filter to change datepicker settings
+* New Feature: Custom filter for modifying profile avatar image
+* New Feature: Custom filter for modifying profile stats section
+* New Feature: Custom action for validating usernames for user creation
+* New Feature: Custom actions for deleting custom fields
+* New Feature: Custom actions for validating user login
+* New Feature: Custom filters for inserting dynamic content inside upme profile
+* New Feature: Custom filter for changing profile buttons on edit bar
+* New Feature: Custom filter for changing user profile link and profile avatar
+* New Feature: Custom filter for modifying profile stats section
+* New Feature: New settings section for disabling UPME scripts and styles
+* Added the support for WordPress core email notification function on user registration
+* Added logout redirection Url attribute to all shortcodes
+* Added the support for hiding login form when message is displayed, asking for login
+* Removed register link from login forms when registration is disabled
+* Fixed Bug: Gravatar loading issue and fatal error generation in registration form
+* Fixed Bug: Date formatting issue on PHP 5.2.x versions
+* Fixed bug: Woocommerce compatibility issues with 2x versions
+* Fixed bug: Fix the field duplication bug in woocommerce synchronization
+* Fixed bug: Displaying search results on member list when using the search from sidebar.
+* Fixed Bug: Allow extensions with capital letters in image upload
+
+Version 2.0.10 (2014.02.21)
+* New Feature: Option to enable/disable avatar cropping lightbox in settings
+* New Feature: Option to show recent posts on profiles
+* Added setting to select Default Country
+* Added filter for custom social URL's
+* Added a new default system page for Member List
+* Added shortcode option to show/hide register & forgot links on login form
+* Added title option to UPME Login widget
+* Added setting to enable/disable website hyperlinks on profiles
+* Fixed bug with Grouping Users by Custom Field
+* Fixed bug with DatePicker field
+* Fixed bug with Author profiles
+* Fixed bug with role based permissions for custom fields
+* Fixed bug with displaying multiple role group shortcodes on one page
+* Resolved several plugin conflicts with avatar cropping lightbox
+* Update manual.txt
+* Update po/mo translation files
+
+Version 2.0.9 (2014.01.18)
+* Added admin setting to enable/disable email activation for new users
+* Added option for manual activation of new users by admin
+* Fixed bug with user role selection in settings
+
+Version 2.0.8 (2014.01.16)
+* New Feature: Option to choose a custom field to replace Display Name
+* New Feature: Login widget with options to show/hide register and forgot links
+* New Feature: Email validation system
+* New Feature: Optional setting to require email validation with user selected passwords
+* New Feature: optionally add User Role selection to registration form
+* New Feature: Fotn end password reset shortcode & system page
+* Added Reset button to search filters
+* Added Turkish translation files
+* Added Danish translation files
+* Added Hebrew translation files
+* Updated po/mo translation files
+* Security patch for uploads with manipulated exif/idat data
+* Fixed CSS issues with several popular ThemeForest themes
+* Fixed issue with redirecting WordPress admin login timeout modal window
+* Fixed conflict with other plugins using Tipsy
+* Fixed bug with duplicate meta keys
+* Fixed bug when searching from inner page of paginated member list
+
+Version 2.0.7 (2014.01.05)
+* Fixed bug with sort order when using user role shortcode
+* Minor bugfixes
+
+Version 2.0.6 (2013.12.19)
+* Added Filters for profile field labels and values
+* Added Filter to edit profile fields
+* Added Fitler to registration form labels
+* Added Filter to Login form labels
+* Fixed CSS issue with image uploads for mobile screens
+
+Version 2.0.5 (2013.11.29)
+* New Feature: Help text option for custom fields
+* New Feature: Advanced Search settings
+
+Version 2.0.4 (2013.11.15)
+* Fixed issue with profile rewrite rules
+* Fixed issue with default value for datepicker
+* Fixed issue with Redirect After Login setting
+* Fixed issue with Admin Bar default setting
+* Fixed issue with Pagination in group shortcode
+* Fixed issue with deleting certain profile images
+* Update po/mo translation files
+
+Version 2.0.3 (2013.10.13)
+* New Feature: Crop function for avatar images
+* New Feature: Search all Custom Fields
+* New Feature: Filter by any Custom Field Values
+* New Feature: Search Cache for improved performance
+* New Feature: Profile permalink settings, use username or user ID
+* New Feature: Show fields only to specific User Roles
+* New Feature: Restrict editing of Custom Fields to specific user roles
+* New Feature: Options to hide the WP admin bar from logged in users
+* New Feature: Video field type for responsive YouTube and Vimeo videos
+* Revised member search functions
+* Revised Admin Settings pages
+* Improved styling of compact view on mobile devices
+* Optimized Ajax validations
+* Added option to show separators on profile view
+* Added option to show empty fields on profile view
+* Added CSS classes to search form elements
+* Added shortcode option to include or exclude fields from search
+* Added default value for pagination on member list
+* Added compatibility with forced SSL plugins
+* Added validation for editing profiles
+* Added Ajax loader when deleting profile images
+* Move image upload location to WP uploads directory
+* Move existing image uploads to WP uploads directory
+* Update username/email validation messages for wider theme compatibility
+* Display Log Out button only on active user's profile
+* Fixed conflict with s2member registrations
+* Fixed SSL issue with Google fonts in wp-admin
+* Fixed CSS conflicts with some themes that apply styles to all forms
+* Fixed compatibility issue with WordPress 3.5.x
+* Update manual.txt with new search shortcode options
+* Update po/mo translation files
+
+Version 1.9.3 (2013.10.05)
+* Improved display of 2 and 3 column member list
+* Added option to delete profile images
+* Added date format setting for date picker custom fields
+* Remove auto-generated password nag for user selected passwords
+* Added Greek translation files
+* Update po/mo translation files
+* Fixed conflict with file upload on some form plugins
+* Fixed bug with checkboxes on registration form
+
+Version 1.9.2 (2013.09.27)
+* New Feature: Redirect After Login global setting
+* New Feature: Redirect After Registration global setting
+* Replace file_get_contents with wp_remote_get function for loading FontAwesome icons
+* Fixed bug with 'User must log-in to view private content' default setting
+
+Version 1.9.1 (2013.09.26)
+* New Feature: Option for automatic login after registration with user selected passwords
+* New Feature: Set custom registration success message
+* Updated FontAwesome to latest version, includes 100+ new icons
+* Improved registration success message appearance
+* Improved handling of profile edit success and error messages
+* Added: Clear Profile updated message on Edit or View profile
+* Added: Prevent duplicate successive registration submissions
+* Update po/mo translation files
+* Fixed bug where validation errors were appearing more than once
+
+Version 1.9.0 (2013.09.23)
+* New Feature: Custom Fields display on backend WP profiles
+* New Feature: WP multisite "Network Activated" plugin compatibility
+* New Feature: Show specific fields by meta key in shortcode
+* New Feature: Custom Field support for default WP registration
+* New Feature: Ajax validation for username and email on registration form
+* New Feature: Option to link post count on profiles to author archive
+* Added: Auto Line Breaks in HTML fields
+* Update po/mo translation files
+* CSS fixes for sidebar login
+* CSS Fixes for Bootstrap Themes
+* Fixed bug with Register link on login form
+
+Version 1.8.3 (2013.09.13)
+* New Feature: Built in reCaptcha support
+* New Feature: Customize the message shown if registration is disabled
+* Improved mini profile design
+* Added Russian translation files
+* Added Dutch translation files
+* Update manual.txt with Captcha shortcode options
+* Update po/mo translation files
+* Fixed bug allowing registrations when disabled in WP settings
+
+Version 1.8.2 (2013.09.06)
+* New Feature: 1/3 Width Profiles shortcode accepted using width=3
+* Improved display of compact view 1/2 and 1/3 width profiles
+* Fixed bug with password reset when Funcaptcha plugin is active
+* Update po/mo files
+
+Version 1.8.1 (2013.09.03)
+* New Feature: Mini profile when using [upme_login use_in_sidebar=yes]
+* Improved sidebar login appearance and layout
+* Null value provided for Country by default when no Country is selected
+* Fixed bug where system pages were not being created automatically
+
+Version 1.8.0 (2013.09.01)
+* New Feature: Automatic installation of default UPME system pages
+* New Feature: Select custom system pages (Login, Profile, Register) in UPME settings
+* New Feature: Allow Separator Fields on Registration Form
+* Styling update to separator fields
+* Re-organize Settings Page
+* Overhaul of Settings options
+* Custom Field option logic improvements
+* Remove hard coded background color in Recent Members widget
+* Several Minor Bugfixes
+* Set default Country value to none
+* Update po/mo translation files
+
+Version 1.7.3 (2013-08-28)
+* Added Magic Quotes compatibility
+* Added sorting of existing meta keys when creating a field
+* Fixed bug with editing custom fields
+* Update Settings Menu & Tabs
+* Removed "must be publicly visible" text from profile fields
+* Checkbox and Radio Button CSS updated to single columns
+
+Version 1.7.2 (2013-08-25)
+* New Feature: Date picker custom field type
+* New Feature: Display users based on User Role
+* Add external nofollow attributes and new window target to social links
+* Add user role options to shortcode generator
+* Remove position validation check from customizer
+* Fix bug with Country dropdown
+* Fix bug with logout shortcode
+* Update po/mo files
+
+Version 1.7.1 (2013-08-20)
+* Add highlighting for drag and drop ordering of fields
+* Update Google font for secure connections
+* All strings translatable
+* Update admin & shrotcode icons
+* Added several new shortcodes to shortcode generator
+* Update po/mo translation files
+* Fixed avatar bug with Safari browser
+* Fixed bug with author archive link
+
+Version 1.7.0 (2013-08-18)
+* New feature: Login by email
+* New feature: Required registration/profile fields
+* New feature: Option to link display name on profiles to author archive page
+* New Feature: Sorting options for member list shortcodes
+* New Feature: Drag & Drop Ordering of custom fields in settings
+* New Feature: Option to show User ID on profiles by adding show_id=true to shortcodes
+* Conditional CSS/js loading for improved performance
+* Re-ordering of columns in Settings -> Customizer for easier viewing
+* Added additional shortcodes to shortcode generator
+* Update po/mo files
+* Update help tooltips and admin settings text
+* Fixed browser detection bug
+* Fixed image upload bug in Safari an Opera browsers
+* Fixed image upload bug when field is set to admin-only edits
+
+Version 1.6.1 (2013.08.13)
+* Added support for Funcaptcha plugin
+* Added captcha option to registration shortcode
+* Added a class for integrating other captcha plugins
+* Fixed bug preventing admins form editing Private fields on front-end
+
+Version 1.6 (2013-08-10)
+* New Feature: Added Inline Lost Password Function to Login Form
+* Added heading section to Login Form
+* Added "Register" link to Login Form
+* Fixed issue with Password Strength Meter at low res
+* Resolved conflict with some themes using FontAwesome
+* Fix bug where "Remember Me" on login form was not working properly in some cases
+* CSS Updates
+
+Version 1.5.1 (2013-08-06)
+* WordPress 3.6 Compatibility Fixes
+
+Version 1.5.0 (2013-08-01)
+* Fix image upload conflict with some themes
+* Fix bug with Logout button
+* Additional client-side validation checks for Registration Form
+* Fix width issue with Country field in widget and at low res
+* Fixed display issue with long strings at low res
+* Improved pagination for large member lists
+
+
+Version 1.4.8 (2013-07-30)
+* Show login form to guests trying to edit their own profiles
+* Show login form to guests trying to view private profiles
+* Revise default private content messages
+* Added password related error messages
+* Fix avatar issue with bbPress
+* Allow shortcodes inside private content shortcode
+
+v1.4.7 (2013-07-26)
+* Added Logout button
+* Code cleanup and improvements
+
+v1.4.6
+* Remove jQuery.validation script, resolve jQuery conflicts with some themes
+* Added max file size upload option in settings
+
+v1.4.5
+* Fix bug with wp-admin bar avatars
+* fix several jQuery Conflicts
+
+v1.4.4
+* Fix security issue with image uploads
+
+v1.4.3
+* Bugfix
+
+v1.4.2
+* Action hook: upme_profile_update
+
+v1.4.1
+* Shortcode button fixed
+
+v1.4.0
+* Minor Improvements
+
+v1.3.8
+* Avatar bugfix
+* Use hide_until_search option to hide profiles If you want search to be used first
+
+v1.3.7
+* Minor bugfix (fixed front-end login)
+* Redirect users after login to custom url
+* Redirect users after registering to custom URL
+	
+v1.3.6
+* Custom redirect URL added to Registration Shortcode
+
+v1.3.5
+* Minor bugfix thanks to mneitz
+	
+v1.3.4
+* Fixed "user can edit" bug
+
+v1.3.3
+* Added custom redirect for [upme_logout] button.
+
+v1.3.2
+* Added [upme_logout] for Logout button
+* Minor compatibility bugfixes
+
+v1.3.1
+* Allow users to set password at registration (+Strength meter!)
+* Minor bugfixes
+
+v1.3.0
+* Auto Sync with WooCommerce!
+* WooCommrece Account Page Fields Integration
+	
+v1.2.9
+* Extended Search! Now search by display name, first/last name are allowed
+* Partial name search is included! (Jame will return James, etc.)
+	
+v1.2.8
+* New shortcode [upme_private] to hide content from guests.
+* Minor bugfixes
+
+v1.2.7
+* Conflict with "Form Maker" plugin due to both using same function name "do_output_buffer" 
+
+http://wordpress.org/extend/plugins/form-maker/ issue fixed
+	
+v1.2.6
+* New Built-in Lists: Country Selection +Country Flags!
+	
+v1.2.5
+* New Input Fields Support! Radio, Select, Checkbox
+
+v1.2.2
+* Major Featured Added! Search Profiles Feature
+* Use [upme_search] in sidebar widget to enable search
+* Use [upme_search autodetect=off] in page content
+	
+v1.2.1
+* Major Featured Added! Automatic Pagination for Displaying All Profiles
+* Enable pagination on all profiles using shortcode: users_per_page=X
+
+v1.2
+* Block access to wp-profile optional. redirect to front end profile / custom page
+* Block access to wp-login optional. redirect to front end login / custom page
+* Block access to wp-register optional. redirect front end registration / custom page
+
+v1.1.6
+* Allow HTML content in ANY profile field (optional)
+* HTML can be used to allow users to embed HTML content (e.g. Videos)
+* Now available in Spanish!
+* Allow/disallow users to view other profiles (optional)
+
+v1.1.5
+* Minor bug fixes
+
+v1.1.4
+* Minor bug fixes
+
+v1.1.3
+* Custom Profile Picture now replace default avatar in comments/entries
+	
+v1.1.2
+* Upload profile picture is added!
+* Few bug fixes
+	
+v1.1.1
+* Front end User Profile page automatic creation
+* Link to User Profile
+* Link to logged in user profile / view another user profile
+
+v1.1
+* Added Front-End Login Form
+* Added ability to use the forms, profiles in sidebar!
+* New shortcode option: use_in_sidebar to show the shortcode in sidebar
+
+v1.09
+* Major update: Front-End Registration Form added! [upme_registration]
+* New Shortcode Button
+	
+v1.04
+* Major update: Add any custom profile field to default WordPress registration form
+	
+v1.03
+* Added option to Show All Users
+
+v1.02
+* Added a New Widget: Display latest registered users
+
+v1.01
+* First stable release

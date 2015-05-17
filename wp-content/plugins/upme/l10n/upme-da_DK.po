@@ -1,0 +1,4795 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: User Profiles Made Easy v2.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-24 10:38+0530\n"
+"PO-Revision-Date: 2014-12-24 10:39+0530\n"
+"Last-Translator: Themefluent <support@themefluent.com>\n"
+"Language-Team: \n"
+"Language: da_DK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ upme
+#: admin/customizer.php:18 admin/field-builder.php:27
+msgid "Profile Fields Cutomizer"
+msgstr "Tilretning af profilfelter"
+
+# @ upme
+#: admin/customizer.php:21 admin/field-builder.php:30
+msgid ""
+"Organize profile fields, add custom fields to profiles, control privacy of "
+"each field, and more using the following customizer. You can drag and drop "
+"the fields to change the order in which they are displayed on profiles and "
+"the registration form."
+msgstr ""
+"Organiser profilfelter, tilføj brugerdefinerede felter, kontroller "
+"privatheds indstillinger for det enkelte felt og meget mere herunder ... Du "
+"kan trække felterne op/ ned for at ændre den rækkefølge de skal vises på "
+"profilsiden og registreringsformularen."
+
+# @ upme
+#: admin/customizer.php:25 admin/field-builder.php:34
+msgid "Click here to add new field"
+msgstr "Klik her for at tilføje et nyt felt"
+
+# @ upme
+#: admin/customizer.php:31 admin/customizer.php:680 admin/field-builder.php:40
+#: admin/field-builder.php:669
+msgid "Position"
+msgstr "Placering"
+
+# @ upme
+#: admin/customizer.php:37 admin/customizer.php:685 admin/field-builder.php:46
+#: admin/field-builder.php:674
+msgid ""
+"Please use a unique position. Position lets you place the new field in the "
+"place you want exactly in Profile view."
+msgstr ""
+"Vælg en unik placering. Placering giver mulighed for at styre felternes "
+"rækkefølge i profilvisningen"
+
+# @ upme
+#: admin/customizer.php:42 admin/field-builder.php:51
+msgid "Type"
+msgstr "Type"
+
+# @ upme
+#: admin/customizer.php:46 admin/customizer.php:564 admin/customizer.php:666
+#: admin/field-builder.php:55 admin/field-builder.php:547
+#: admin/field-builder.php:655
+msgid "Profile Field"
+msgstr "Profil felt"
+
+# @ upme
+#: admin/customizer.php:49 admin/customizer.php:562 admin/customizer.php:668
+#: admin/field-builder.php:58 admin/field-builder.php:545
+#: admin/field-builder.php:657
+msgid "Separator"
+msgstr "Separator"
+
+# @ upme
+#: admin/customizer.php:52 admin/field-builder.php:61
+msgid "You can create a separator or a usermeta (profile field)"
+msgstr "Du kan oprette en separator eller et profil felt (usermeta)"
+
+# @ upme
+#: admin/customizer.php:57 admin/field-builder.php:66
+msgid "Editor / Input Type"
+msgstr "Editor/ input type"
+
+# @ upme
+#: admin/customizer.php:66 admin/customizer.php:730 admin/field-builder.php:75
+#: admin/field-builder.php:719
+msgid "Choose what type of field you would like to add."
+msgstr "Vælg den type felt du ønsker at tilføje."
+
+# @ upme
+#: admin/customizer.php:73 admin/customizer.php:365 admin/customizer.php:434
+#: admin/field-builder.php:82 admin/field-builder.php:401
+#: admin/field-builder.php:1198 classes/class-upme-admin.php:292
+msgid "Label"
+msgstr "Titel"
+
+# @ upme
+#: admin/customizer.php:79 admin/customizer.php:738 admin/field-builder.php:88
+#: admin/field-builder.php:727
+msgid ""
+"Enter the label / name of this field as you want it to appear in front-end "
+"(Profile edit/view)"
+msgstr "Indsæt den titel feltet skal have i front-end visningen af profilen"
+
+# @ upme
+#: admin/customizer.php:84 admin/field-builder.php:93
+msgid "Existing Meta Key / Field"
+msgstr "Eksisterende meta-key"
+
+# @ upme
+#: admin/customizer.php:88 admin/field-builder.php:97
+msgid "Choose a Meta Key"
+msgstr "Vælg en meta-key"
+
+# @ upme
+#: admin/customizer.php:92 admin/customizer.php:132
+#: admin/field-builder.php:101 admin/field-builder.php:141
+#: classes/class-upme-admin.php:290
+msgid "New Custom Meta Key"
+msgstr "Ny brugerdefineret meta-key"
+
+# @ upme
+#: admin/customizer.php:117 admin/customizer.php:766
+#: admin/field-builder.php:126 admin/field-builder.php:755
+msgid ""
+"Choose from a predefined/available list of meta fields (usermeta) or skip "
+"this to define a new custom meta key for this field below."
+msgstr ""
+"Vælg mellem eksisterende/ tilgængelige meta felter, eller spring over for at "
+"oprette en ny brugerdefineret meta-key til dette felt."
+
+# @ upme
+#: admin/customizer.php:142 admin/customizer.php:808
+#: admin/field-builder.php:151 admin/field-builder.php:797
+msgid "Tooltip Text"
+msgstr "Tooltip tekst"
+
+# @ upme
+#: admin/customizer.php:148 admin/customizer.php:813
+#: admin/field-builder.php:157 admin/field-builder.php:802
+msgid "A tooltip text can be useful for social buttons on profile header."
+msgstr ""
+"Et tooltip kan være nyttigt på f.eks. sociale knapper i profil-headeren."
+
+# @ upme
+#: admin/customizer.php:153 admin/customizer.php:816
+#: admin/field-builder.php:162 admin/field-builder.php:805
+msgid "This field is social"
+msgstr "Dette felt er socialt"
+
+# @ upme
+#: admin/customizer.php:157 admin/customizer.php:175 admin/customizer.php:187
+#: admin/customizer.php:205 admin/customizer.php:220 admin/customizer.php:236
+#: admin/customizer.php:253 admin/customizer.php:268 admin/customizer.php:302
+#: admin/customizer.php:820 admin/customizer.php:839 admin/customizer.php:851
+#: admin/customizer.php:871 admin/customizer.php:887 admin/customizer.php:910
+#: admin/customizer.php:935 admin/customizer.php:1001
+#: admin/customizer.php:1083 admin/field-builder.php:166
+#: admin/field-builder.php:184 admin/field-builder.php:196
+#: admin/field-builder.php:214 admin/field-builder.php:229
+#: admin/field-builder.php:245 admin/field-builder.php:262
+#: admin/field-builder.php:277 admin/field-builder.php:311
+#: admin/field-builder.php:809 admin/field-builder.php:828
+#: admin/field-builder.php:840 admin/field-builder.php:860
+#: admin/field-builder.php:876 admin/field-builder.php:899
+#: admin/field-builder.php:924 admin/field-builder.php:990
+#: admin/field-builder.php:1072 widgets/upme-widgets.php:124
+msgid "No"
+msgstr "Nej"
+
+# @ upme
+#: admin/customizer.php:160 admin/customizer.php:172 admin/customizer.php:190
+#: admin/customizer.php:202 admin/customizer.php:223 admin/customizer.php:239
+#: admin/customizer.php:256 admin/customizer.php:271 admin/customizer.php:305
+#: admin/customizer.php:823 admin/customizer.php:836 admin/customizer.php:854
+#: admin/customizer.php:868 admin/customizer.php:890 admin/customizer.php:913
+#: admin/customizer.php:938 admin/customizer.php:1004
+#: admin/customizer.php:1086 admin/field-builder.php:169
+#: admin/field-builder.php:181 admin/field-builder.php:199
+#: admin/field-builder.php:211 admin/field-builder.php:232
+#: admin/field-builder.php:248 admin/field-builder.php:265
+#: admin/field-builder.php:280 admin/field-builder.php:314
+#: admin/field-builder.php:812 admin/field-builder.php:825
+#: admin/field-builder.php:843 admin/field-builder.php:857
+#: admin/field-builder.php:879 admin/field-builder.php:902
+#: admin/field-builder.php:927 admin/field-builder.php:993
+#: admin/field-builder.php:1075 widgets/upme-widgets.php:123
+msgid "Yes"
+msgstr "Ja"
+
+# @ upme
+#: admin/customizer.php:163 admin/customizer.php:826
+#: admin/field-builder.php:172 admin/field-builder.php:815
+msgid ""
+"A social field can show a button with your social profile in the head of "
+"your profile. Such as Facebook page, Twitter, etc."
+msgstr ""
+"Et socialt felt kan vise en knap (med link til brugerens sider på sociale "
+"netværk, så som Facebook, Twitter o.s.v.) i toppen af profilvisningen"
+
+# @ upme
+#: admin/customizer.php:168 admin/customizer.php:393 admin/customizer.php:462
+#: admin/customizer.php:832 admin/field-builder.php:177
+#: admin/field-builder.php:432 admin/field-builder.php:821
+#: admin/field-builder.php:1228
+msgid "User can edit"
+msgstr "Brugeren kan rette"
+
+# @ upme
+#: admin/customizer.php:178 admin/customizer.php:842
+#: admin/field-builder.php:187 admin/field-builder.php:831
+msgid "Users can edit this profile field or not."
+msgstr "Brugere kan rette denne profil tekst eller ikke"
+
+# @ upme
+#: admin/customizer.php:183 admin/field-builder.php:192
+msgid "Allow HTML Content"
+msgstr "Tillad HTML indhold"
+
+# @ upme
+#: admin/customizer.php:193 admin/customizer.php:399 admin/customizer.php:468
+#: admin/customizer.php:857 admin/field-builder.php:202
+#: admin/field-builder.php:440 admin/field-builder.php:846
+#: admin/field-builder.php:1236
+msgid "If yes, users will be able to write HTML code in this field."
+msgstr "Hvis JA, vil brugere kunne skrive HTML kode i feltet"
+
+# @ upme
+#: admin/customizer.php:198 admin/customizer.php:401 admin/customizer.php:470
+#: admin/customizer.php:864 admin/field-builder.php:207
+#: admin/field-builder.php:444 admin/field-builder.php:853
+#: admin/field-builder.php:1240
+msgid "User can hide"
+msgstr "Brugeren kan skjule"
+
+# @ upme
+#: admin/customizer.php:208 admin/customizer.php:874
+#: admin/field-builder.php:217 admin/field-builder.php:863
+msgid "Always Hide from Public"
+msgstr "Skjul altid for offentligheden"
+
+# @ upme
+#: admin/customizer.php:211 admin/customizer.php:877
+#: admin/field-builder.php:220 admin/field-builder.php:866
+msgid ""
+"Allow users to hide this profile field from public viewing or not. Selecting "
+"No will cause the field to always be publicly visible if you have public "
+"viewing of profiles enabled. Selecting Yes will give the user a choice if "
+"the field should be publicy visible or not. Private fields are not affected "
+"by this option."
+msgstr ""
+"Skal brugeren kunne skjule feltet for offentligheden? Hvis NEJ vælges vil "
+"feltet altid være synligt. Hvis JA vælges kan brugeren bestemme om det skal "
+"være offentligt synlige eller ej. Hvis SKJUL ALTID FOR OFFENTLIGHEDEN vælges "
+"vil feltet altid kun være synligt for brugeren."
+
+# @ upme
+#: admin/customizer.php:216 admin/customizer.php:883
+#: admin/field-builder.php:225 admin/field-builder.php:872
+msgid "This field is private"
+msgstr "Dette felt er privat"
+
+# @ upme
+#: admin/customizer.php:226 admin/customizer.php:893
+#: admin/field-builder.php:235 admin/field-builder.php:882
+msgid "Make this field Private. Only admins can see private fields."
+msgstr "Gør dette felt privat. Kun administratorer kan se private felter."
+
+# @ upme
+#: admin/customizer.php:232 admin/field-builder.php:241
+msgid "This field is required"
+msgstr "Dette felt skal udfyldes"
+
+# @ upme
+#: admin/customizer.php:242 admin/customizer.php:916
+#: admin/field-builder.php:251 admin/field-builder.php:905
+msgid ""
+"Selecting yes will force user to provide a value for this field at "
+"registeration and edit profile. Registration or profile edits will not be "
+"accepted if this field is left empty."
+msgstr ""
+"Hvis sat til JA, vil brugeren blive tvunget til at udfylde feltet i "
+"forbindelse med registrering eller opdatering af profilen - feltet kan ikke "
+"efterlades tomt."
+
+# @ upme
+#: admin/customizer.php:249 admin/field-builder.php:258
+msgid "Show on Registration form"
+msgstr "Vis på registreringsformularen"
+
+# @ upme
+#: admin/customizer.php:259 admin/customizer.php:415 admin/customizer.php:484
+#: admin/field-builder.php:268 admin/field-builder.php:458
+#: admin/field-builder.php:1254
+msgid ""
+"Show this field on the registration form? If you choose no, this field will "
+"be shown on edit profile only and not on the registration form. Most users "
+"prefer fewer fields when registering, so use this option with care."
+msgstr ""
+"Hvis NEJ, vil feltet kun vises, når brugeren retter i sin profil og ikke i "
+"forbindelse med registrering. De fleste brugere foretrækker få felter på "
+"registreringsformularer, så brug denne mulighed med omtanke."
+
+# @ upme
+#: admin/customizer.php:264 admin/customizer.php:931
+#: admin/field-builder.php:273 admin/field-builder.php:920
+msgid "Display by User Role"
+msgstr "Vis efter bruger rolle"
+
+# @ upme
+#: admin/customizer.php:274 admin/customizer.php:941
+#: admin/field-builder.php:283 admin/field-builder.php:930
+msgid ""
+"If no, this field will be displayed on profiles of all User Roles. Select "
+"yes to display this field only on profiles of specific User Roles."
+msgstr ""
+"Hvis NEJ, vil dette felt blive vist på alle profiler. Hvis JA, vil det kun "
+"blive vist på de profiler der har en specifik bruger rolle"
+
+# @ upme
+#: admin/customizer.php:280 admin/customizer.php:954
+#: admin/field-builder.php:289 admin/field-builder.php:943
+#: admin/settings.php:784
+msgid "Select User Roles"
+msgstr "Vælg bruger rolle"
+
+# @ upme
+#: admin/customizer.php:293 admin/customizer.php:957
+#: admin/field-builder.php:302 admin/field-builder.php:946
+msgid "This field will only be displayed on users of the selected User Roles."
+msgstr ""
+"Dette felt vil kun blive vist på profiler der har de(n) valgte bruger "
+"rolle(r)"
+
+# @ upme
+#: admin/customizer.php:298 admin/customizer.php:997
+#: admin/field-builder.php:307 admin/field-builder.php:986
+msgid "Editable by Users of Role"
+msgstr "Skal kunne redigeres af brugere med bestemte bruger roller."
+
+# @ upme
+#: admin/customizer.php:308 admin/customizer.php:1007
+#: admin/field-builder.php:317 admin/field-builder.php:996
+msgid "If yes, available user roles will be displayed for selection."
+msgstr "Hvis JA, vil de mulige roller blive tilgængelige for afkrydsning."
+
+#: admin/customizer.php:313 admin/field-builder.php:322
+msgid "Select Roles that can Edit."
+msgstr ""
+
+# @ upme
+#: admin/customizer.php:326 admin/customizer.php:1024
+#: admin/field-builder.php:335 admin/field-builder.php:1013
+msgid "Selected user roles will have the permission to edit this field."
+msgstr "De valgte brugerroller vil kunne rette dette felt"
+
+# @ upme
+#: admin/customizer.php:331 admin/field-builder.php:351
+msgid "Icon for this field"
+msgstr "Ikon til feltet"
+
+# @ upme
+#: admin/customizer.php:334 admin/customizer.php:1113
+#: admin/customizer.php:1127 admin/customizer.php:1132
+#: admin/field-builder.php:354 admin/field-builder.php:1122
+#: admin/field-builder.php:1136 admin/field-builder.php:1141
+#: admin/settings.php:545
+msgid "None"
+msgstr "Intet"
+
+# @ upme
+#: admin/customizer.php:345 admin/field-builder.php:374
+msgid "Submit New Field"
+msgstr "Gem nyt felt"
+
+# @ upme
+#: admin/customizer.php:348 admin/customizer.php:1150
+#: admin/field-builder.php:377 admin/field-builder.php:1169
+msgid "Cancel"
+msgstr "Annuller"
+
+# @ upme
+#: admin/customizer.php:362 admin/customizer.php:431
+#: admin/field-builder.php:398 admin/field-builder.php:1195
+msgid "Icon"
+msgstr "Ikon"
+
+# @ upme
+#: admin/customizer.php:367 admin/customizer.php:436
+#: admin/field-builder.php:403 admin/field-builder.php:1200
+msgid "The label that appears in front-end profile view or edit."
+msgstr "Den titel der vises ved front-end profil-visning eller -redigering"
+
+# @ upme
+#: admin/customizer.php:370 admin/customizer.php:439 admin/customizer.php:778
+#: admin/field-builder.php:406 admin/field-builder.php:767
+#: admin/field-builder.php:1203 classes/class-upme-admin.php:291
+msgid "Meta Key"
+msgstr "Meta-key"
+
+# @ upme
+#: admin/customizer.php:372 admin/customizer.php:441
+#: admin/field-builder.php:408 admin/field-builder.php:1205
+msgid ""
+"This is the meta field that stores this specific profile data (e.g. "
+"first_name stores First Name)"
+msgstr ""
+"Dette er det meta felt der indeholder denne specifikke data for profilen (f."
+"eks first_name indeholder fornavn)"
+
+# @ upme
+#: admin/customizer.php:375 admin/customizer.php:444 admin/customizer.php:720
+#: admin/field-builder.php:411 admin/field-builder.php:709
+#: admin/field-builder.php:1209
+msgid "Field Input"
+msgstr "Felt indhold"
+
+# @ upme
+#: admin/customizer.php:377 admin/customizer.php:446
+#: admin/field-builder.php:413 admin/field-builder.php:1211
+msgid ""
+"This column tells you the field input that will appear to user for this data."
+msgstr "Denne kolonne giver dig det felt indhold der bliver vist for brugeren"
+
+# @ upme
+#: admin/customizer.php:380 admin/customizer.php:449 admin/customizer.php:671
+#: admin/field-builder.php:416 admin/field-builder.php:660
+#: admin/field-builder.php:1215
+msgid "Field Type"
+msgstr "Felt type"
+
+# @ upme
+#: admin/customizer.php:382 admin/customizer.php:451
+#: admin/field-builder.php:418 admin/field-builder.php:1217
+msgid ""
+"Separator is a section title. A Profile Field can hold data and can be "
+"assigned to any user meta field."
+msgstr ""
+"En separator er en sektions titel. Et profil felt kan indeholde data og "
+"tilføjes til hvilken som helst bruger."
+
+# @ upme
+#: admin/customizer.php:385 admin/customizer.php:454
+#: admin/field-builder.php:422 admin/field-builder.php:1220
+msgid "Tooltip"
+msgstr "Tooltip"
+
+# @ upme
+#: admin/customizer.php:387 admin/customizer.php:456
+#: admin/field-builder.php:424 admin/field-builder.php:1222
+msgid ""
+"Please note that tooltips can be activated only for Social buttons such as "
+"Facebook, E-mail. Enter tooltip text here."
+msgstr ""
+"Tooltips er kun tilgængelige for Sociale knapper så som facebook, email mv."
+
+# @ upme
+#: admin/customizer.php:389 admin/customizer.php:458
+#: admin/field-builder.php:428 admin/field-builder.php:1224
+msgid "Social"
+msgstr "Social"
+
+# @ upme
+#: admin/customizer.php:391 admin/customizer.php:460
+#: admin/field-builder.php:430 admin/field-builder.php:1226
+msgid ""
+"Make a field Social to have it appear as a button on the head of profile "
+"such as Facebook, Twitter, Google+ buttons."
+msgstr ""
+"Når et felt markeres som SOCIAL vil det blive vist i profil-headeren med "
+"ikonet som knap"
+
+# @ upme
+#: admin/customizer.php:395 admin/customizer.php:464
+#: admin/field-builder.php:434 admin/field-builder.php:1230
+msgid "Allow or do not allow user to edit this field."
+msgstr "Tillad/ Tillad ikke brugeren at rette dette felt"
+
+# @ upme
+#: admin/customizer.php:397 admin/customizer.php:466 admin/customizer.php:847
+#: admin/field-builder.php:438 admin/field-builder.php:836
+#: admin/field-builder.php:1234
+msgid "Allow HTML"
+msgstr "Tillad HTML"
+
+# @ upme
+#: admin/customizer.php:403 admin/customizer.php:472
+#: admin/field-builder.php:446 admin/field-builder.php:1242
+msgid "Allow user to show/hide this profile field from public view."
+msgstr "Tillad brugerne at skjule/vise dette profil felt for offentligheden."
+
+# @ upme
+#: admin/customizer.php:405 admin/customizer.php:474
+#: admin/field-builder.php:448 admin/field-builder.php:1244
+msgid "Private"
+msgstr "Privat"
+
+# @ upme
+#: admin/customizer.php:407 admin/customizer.php:476
+#: admin/field-builder.php:450 admin/field-builder.php:1246
+msgid "Only admins can see private fields."
+msgstr "Kun Administratorer kan se private felter"
+
+# @ upme
+#: admin/customizer.php:409 admin/customizer.php:478
+#: admin/field-builder.php:452 admin/field-builder.php:1248
+msgid "Required"
+msgstr "Påkrævet"
+
+# @ upme
+#: admin/customizer.php:411 admin/customizer.php:480
+#: admin/field-builder.php:454 admin/field-builder.php:1250
+msgid "This is mandatory field for registration and edit profile."
+msgstr ""
+"Det er et obilgatorisk felt i forbindelse med registrering og tilrettelser "
+"af profilen"
+
+# @ upme
+#: admin/customizer.php:413 admin/customizer.php:482
+#: admin/field-builder.php:456 admin/field-builder.php:1252
+msgid "Show in Registration"
+msgstr "Vis ved registrering"
+
+# @ upme
+#: admin/customizer.php:417 admin/customizer.php:486
+#: admin/field-builder.php:460 admin/field-builder.php:1256
+msgid "Edit"
+msgstr "Ret"
+
+# @ upme
+#: admin/customizer.php:419 admin/customizer.php:488
+#: admin/field-builder.php:462 admin/field-builder.php:1258
+msgid "Click to edit this profile field."
+msgstr "Klik for at rette dette profil felt"
+
+# @ upme
+#: admin/customizer.php:421 admin/customizer.php:490
+#: admin/field-builder.php:464 admin/field-builder.php:1260
+msgid "Trash"
+msgstr "Slet"
+
+# @ upme
+#: admin/customizer.php:423 admin/customizer.php:492
+#: admin/field-builder.php:466 admin/field-builder.php:1262
+msgid "Click to remove this profile field."
+msgstr "Klik for at slette dette profil felt"
+
+# @ upme
+#: admin/customizer.php:734 admin/field-builder.php:723
+msgid "Label / Name"
+msgstr "Titel/ Navn"
+
+# @ upme
+#: admin/customizer.php:742 admin/field-builder.php:731
+msgid "Choose Meta Field"
+msgstr "Vælg meta felt"
+
+# @ upme
+#: admin/customizer.php:746 admin/field-builder.php:735
+msgid "Choose a user field"
+msgstr "Vælg bruger felt"
+
+# @ upme
+#: admin/customizer.php:775 admin/field-builder.php:764
+msgid "Custom Meta Field"
+msgstr "Brugerdefineret meta felt"
+
+# @ upme
+#: admin/customizer.php:906 admin/field-builder.php:895
+msgid "This field is Required"
+msgstr "Dette felt er obligatiorisk"
+
+# @ upme
+#: admin/customizer.php:1021 admin/field-builder.php:1010
+msgid "Select Roles that can Edit"
+msgstr ""
+
+# @ upme
+#: admin/customizer.php:1079 admin/field-builder.php:1068
+msgid "Show on Registration Form"
+msgstr "Vis på registreringsformular"
+
+# @ upme
+#: admin/customizer.php:1089 admin/field-builder.php:1078
+msgid "Show this profile field on the registration form"
+msgstr "Vis dette profilfelt på registreringsformularen"
+
+# @ upme
+#: admin/customizer.php:1101 admin/field-builder.php:1110
+msgid "Available Choices"
+msgstr "Valgmuligheder"
+
+# @ upme
+#: admin/customizer.php:1104 admin/field-builder.php:1113
+msgid ""
+"Enter one choice per line please. The choices will be available for front "
+"end user to choose from."
+msgstr ""
+"Skriv en mulighed pr. linje. Valgene vil være tilgængelige for front-end "
+"brugere."
+
+# @ upme
+#: admin/customizer.php:1109 admin/field-builder.php:1118
+msgid "Enable Predefined Choices"
+msgstr "Slå predifindnerede valg til"
+
+# @ upme
+#: admin/customizer.php:1117 admin/field-builder.php:1126
+msgid "List of Countries"
+msgstr "Liste over lande"
+
+# @ upme
+#: admin/customizer.php:1120 admin/field-builder.php:1129
+msgid ""
+"You can enable a predefined filter for choices. e.g. List of countries It "
+"enables country selection in profiles and saves you time to do it on your "
+"own."
+msgstr ""
+"Her kan du slå predefinerede filtre til for valg af f.eks lande - hvilket "
+"vil spare dig tid i forbindelse med oprettelsen."
+
+# @ upme
+#: admin/customizer.php:1125 admin/field-builder.php:1134
+msgid "Field Icon:"
+msgstr "Felt ikon"
+
+# @ upme
+#: admin/customizer.php:1129 admin/field-builder.php:1138
+msgid "Change Icon"
+msgstr "Skift Ikon"
+
+# @ upme
+#: admin/customizer.php:1148 admin/field-builder.php:1166
+msgid "Update"
+msgstr "Opdater"
+
+# @ upme
+#: admin/field-builder.php:2
+msgid "UPME - Custom Fields"
+msgstr "UPME - Brugerdefinerede felter"
+
+# @ upme
+#: admin/field-builder.php:340 admin/field-builder.php:1088
+msgid "Help Text"
+msgstr "Hjælpe tekst"
+
+# @ upme
+#: admin/field-builder.php:343 admin/field-builder.php:1091
+msgid "A help text can be useful for provide information about the field."
+msgstr "En hjælpetekst, der kan give informationer om feltet"
+
+# @ upme
+#: admin/field-builder.php:345 admin/field-builder.php:1093
+msgid "Show this help text under the profile field."
+msgstr "Vis denne hjælpetekst under feltet"
+
+# @ upme
+#: admin/field-builder.php:1287 classes/class-upme-admin.php:298
+#: classes/class-upme-admin.php:320 classes/class-upme-admin.php:822
+msgid "Save Changes"
+msgstr "Gem ændringer"
+
+# @ upme
+#: admin/field-builder.php:1293 classes/class-upme-admin.php:838
+msgid "Reset to Default Fields"
+msgstr "Reset til standard felter"
+
+# @ upme
+#: admin/modules.php:2
+msgid "UPME - Modules"
+msgstr ""
+
+# @ upme
+#: admin/modules.php:4 admin/settings.php:4
+msgid "Settings Saved"
+msgstr "Indstillingerne er gemt"
+
+# @ upme
+#: admin/modules.php:8 admin/settings.php:8
+msgid "Settings Reset Completed."
+msgstr "Gendannelse af standard indstillinger er gennemført."
+
+#: admin/modules.php:13 admin/modules.php:22
+msgid "Site Lockdown"
+msgstr ""
+
+#: admin/modules.php:14 admin/modules.php:50 admin/modules.php:81
+msgid "Content Restriction Rules"
+msgstr ""
+
+# @ upme
+#: admin/modules.php:15 admin/modules.php:120
+msgid "Email Templates"
+msgstr ""
+
+# @ upme
+#: admin/modules.php:39 admin/settings.php:132 admin/settings.php:328
+#: admin/settings.php:397 admin/settings.php:470 admin/settings.php:670
+#: admin/settings.php:744 admin/settings.php:800 admin/settings.php:937
+#: admin/settings.php:995 classes/class-upme-admin.php:300
+#: classes/class-upme-admin.php:322
+msgid "Reset Options"
+msgstr "Nulstil mulighederne"
+
+#: admin/modules.php:52
+msgid "Back To Restriction Rules"
+msgstr ""
+
+#: admin/modules.php:83
+msgid "Create New Restriction Rule"
+msgstr ""
+
+#: admin/modules.php:96
+msgid "Allowed for"
+msgstr ""
+
+# @ upme
+#: admin/modules.php:97
+msgid "Allowed Conditions"
+msgstr ""
+
+# @ upme
+#: admin/modules.php:98
+msgid "Restrictions"
+msgstr ""
+
+# @ upme
+#: admin/modules.php:99
+msgid "Redirection"
+msgstr ""
+
+# @ upme
+#: admin/modules.php:100
+msgid "Delete"
+msgstr ""
+
+#: admin/modules.php:101
+msgid "Enable/Disable"
+msgstr ""
+
+# @ upme
+#: admin/modules.php:137
+msgid "Reset Templates"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:2
+msgid "UPME - Settings"
+msgstr "UPME -Indstillinger"
+
+# @ upme
+#: admin/settings.php:13 admin/settings.php:26
+msgid "General Settings"
+msgstr "Generelle indstillinger"
+
+# @ upme
+#: admin/settings.php:14 admin/settings.php:142
+msgid "User Profile Settings"
+msgstr "Brugerprofil indstillinger"
+
+# @ upme
+#: admin/settings.php:15 admin/settings.php:339
+msgid "UPME System Pages"
+msgstr "UPME system sider"
+
+# @ upme
+#: admin/settings.php:16 admin/settings.php:407
+msgid "Redirect Settings"
+msgstr "redirect indstillinger"
+
+# @ upme
+#: admin/settings.php:17 admin/settings.php:479
+msgid "Registration Options"
+msgstr "Registreringsmuligheder"
+
+# @ upme
+#: admin/settings.php:18 admin/settings.php:679
+msgid "Search Settings"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:19 admin/settings.php:752
+msgid "Privacy Options"
+msgstr "Synlighedsindstillinger"
+
+# @ upme
+#: admin/settings.php:20
+msgid "Messages"
+msgstr "Meddelelser"
+
+#: admin/settings.php:21
+msgid "Scripts and Styles"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:31
+msgid "Style"
+msgstr "Udseende"
+
+# @ upme
+#: admin/settings.php:35
+msgid "None - I will use custom CSS"
+msgstr "Intet - Jeg bruger egen CSS"
+
+# @ upme
+#: admin/settings.php:49
+msgid "Select Theme Style or disable CSS output to use your own custom CSS."
+msgstr "Vælg Tema eller slå CSS output fra for at bruge din egen CSS"
+
+# @ upme
+#: admin/settings.php:54
+msgid "Date Format"
+msgstr "Dato format"
+
+#: admin/settings.php:66
+msgid "Your server is running PHP "
+msgstr ""
+
+# @ upme
+#: admin/settings.php:84
+msgid "Select the date format to be used for date picker."
+msgstr "Vælg det datoformat, der skal bruges til datovælgeren."
+
+# @ upme
+#: admin/settings.php:95
+msgid "Admin Bar"
+msgstr "Admin bar"
+
+# @ upme
+#: admin/settings.php:97
+msgid "Enabled"
+msgstr "Slået til"
+
+# @ upme
+#: admin/settings.php:98
+msgid "Hide from Non-Admin Users"
+msgstr "Gem for ikke-admin brugere"
+
+# @ upme
+#: admin/settings.php:99
+msgid "Hide from All Users"
+msgstr "Gem for alle brugere"
+
+# @ upme
+#: admin/settings.php:101
+msgid ""
+"Optionally hide the WordPress admin bar for logged in users on frontend "
+"pages."
+msgstr ""
+"Vælg om Wordpress Admin baren skal skjules for brugere der er logget ind, på "
+"front-end siderne."
+
+# @ upme
+#: admin/settings.php:102
+msgid ""
+"Enabled will show the WordPress admin bar to all users. You amy select an "
+"option to hide the admin bar on frontend for non-admin users or all users."
+msgstr ""
+"Synlig - vil lade admin baren være synlig for alle brugere der er logget "
+"ind. Du kan også vælge at skjule admin baren for alle brugere eller blot for "
+"ikke-administratorer."
+
+#: admin/settings.php:108
+msgid "Lighbox Avatar Cropping"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:110
+msgid "If checked, users will be able to crop avatar images in a lightbox."
+msgstr ""
+
+#: admin/settings.php:111
+msgid ""
+"Unchecking this option will enable the default file upload instead of "
+"lightbox cropping."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:117
+msgid "Use AJAX on Custom Fields"
+msgstr ""
+
+#: admin/settings.php:119
+msgid ""
+"If checked, backend custom fields will be updated and sorted using AJAX."
+msgstr ""
+
+#: admin/settings.php:120
+msgid ""
+"Checking this option will enable AJAX on backend custom fields. Useful for "
+"working with large number\n"
+"                                            of custom fields ."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:150
+msgid "Display Name / User Link Options"
+msgstr "Display navn/ bruger link muligheder"
+
+# @ upme
+#: admin/settings.php:152
+msgid "Link to user profiles"
+msgstr "Link til brugerprofiler"
+
+# @ upme
+#: admin/settings.php:153
+msgid "Link to author archives"
+msgstr "Link til forfatter arkiver"
+
+# @ upme
+#: admin/settings.php:154
+msgid "No link, show as static text"
+msgstr "Intet link, vis som statisk tekst."
+
+# @ upme
+#: admin/settings.php:155
+msgid "Enable/disable linking of Display Names on user profiles"
+msgstr "Slå link til/ fra på brugerprofilens display navn."
+
+# @ upme
+#: admin/settings.php:156
+msgid "This is where the display name on user profiles will link."
+msgstr "Det er hertil displaynavnet på brugerprofilen linker."
+
+# @ upme
+#: admin/settings.php:162
+msgid "Profile Permalinks"
+msgstr "Profil permalinks"
+
+# @ upme
+#: admin/settings.php:164 classes/class-upme.php:2940
+msgid "User ID"
+msgstr "Bruger ID"
+
+# @ upme
+#: admin/settings.php:165 classes/class-upme.php:63 classes/class-upme.php:120
+msgid "Username"
+msgstr "Brugernavn"
+
+# @ upme
+#: admin/settings.php:166
+msgid ""
+"Select profile link type.<br />\n"
+"\t\t\t\t\t\t\t\t\t\t\t\tUsername will be written as <code>profile/username/</"
+"code><br />\n"
+"\t\t\t\t\t\t\t\t\t\t\t\tUser ID will be writtne as <code>profile/1/</code>"
+msgstr ""
+"Vælg profil link type<br />\n"
+"\\\t\\\t\\\t\\\t\\\t\\\t\\\t\\\t\\\t\\\t\\\t\\\tBrugernavn vil blive skrevet "
+"som <code>profile/username/</code><br />\n"
+"\\\t\\\t\\\t\\\t\\\t\\\t\\\t\\\t\\\t\\\t\\\t\\\tBruger ID vil blive skrevet "
+"som <code>profile/1/</code>"
+
+# @ upme
+#: admin/settings.php:169
+msgid "This is the rewrite rule used to link to user profiles."
+msgstr "Dette definerer hvordan links til medlemsprofiler skal bygges op."
+
+# @ upme
+#: admin/settings.php:175
+msgid "Link Post Count to Author Archive"
+msgstr "Link <strong>antal posteringer</strong> til forfatter arkivet."
+
+# @ upme
+#: admin/settings.php:177
+msgid ""
+"If checked, post/entries count on user profiles will link to the Author "
+"archive page."
+msgstr ""
+"Hvis valgt, vil <strong>antal posteringer</strong> på profilsiden linke "
+"videre til siden med forfatterens arkiv."
+
+# @ upme
+#: admin/settings.php:178
+msgid ""
+"Unchecking this option will show post count in text only, without linking to "
+"Author archive."
+msgstr ""
+"Hvis fravalgt vil <strong>antal posteringer</strong> stå som statisk tekst."
+
+# @ upme
+#: admin/settings.php:184
+msgid "Maximum allowed user image size"
+msgstr "Max-størrelse på brugerprofil billede"
+
+# @ upme
+#: admin/settings.php:185
+#, php-format
+msgid ""
+"Provide file size in megabytes, decimal values are accepted. Your server "
+"configuration supports up to <strong>%s</strong>"
+msgstr ""
+"Skriv fil størrelsen i megabytes, decimalværdiger er tilladt. Din server "
+"configuration understøtter op til <strong>%s</strong>"
+
+# @ upme
+#: admin/settings.php:186
+msgid ""
+"Users will receive an error message if they try to upload files larger than "
+"the limit set here."
+msgstr ""
+"Brugerne vil få en fejlmeddelelse, hvis de forsøger at uploade en fil, der "
+"er større end tilladt her."
+
+# @ upme
+#: admin/settings.php:192
+msgid "Show separators on profiles"
+msgstr "Vis separatorer på profilerne"
+
+# @ upme
+#: admin/settings.php:193
+msgid ""
+"<p>If checked, separators will be displayed when viewing front-end profiles."
+"<br />\n"
+"                                                    Otherwise, separators "
+"are displayed only on the registration form and when editing profiles.<br /"
+">\n"
+"                                                    If you are using this "
+"option, it is recommended to also enable the next option to show empty "
+"fields on profiles.</p>"
+msgstr ""
+"<p>Hvis valgt, vil Separatorer blive vist på front-end profilen<br />\n"
+" Ellers vises de i forbindelse med registration og tilretning af profiler."
+"<br />\n"
+"  Hvis du bruger denne funktion anbefales også at vise de tomme felter "
+"(næste mulighed)."
+
+# @ upme
+#: admin/settings.php:196
+msgid ""
+"Separators may be added & edited in the UPME Custom Fields section. When "
+"using this option, it is recommended to also check the option below to show "
+"empty fields on profiles."
+msgstr ""
+"Separatorer kan tilføjes/ rettes under UPME brugerdefinerede felter. Hvis du "
+"benytter denne mulighed anbefales det at du også slår visningen af tomme "
+"felter til herunder."
+
+# @ upme
+#: admin/settings.php:202
+msgid "Show empty fields on profiles"
+msgstr "Vis tomme felter på profilerne"
+
+# @ upme
+#: admin/settings.php:203
+msgid ""
+"<p>If checked, empty fields will be displayed when viewing front-end "
+"profiles.<br />\n"
+"                                                    Otherwise, only fields "
+"populated with data are when viewing front-end profiles.</p>"
+msgstr ""
+"<p>Hvis valgt, vil tomme felter blive vist på front-end profilen<br />\n"
+" Ellers er det kun udfyldte felter der vises."
+
+# @ upme
+#: admin/settings.php:205
+msgid "Empty fields are fields where a user has not filled in any data."
+msgstr "Tomme felter er felter, hvor der ikke er indtastet noget i."
+
+#: admin/settings.php:211
+msgid "Field for Profile Title"
+msgstr ""
+
+#: admin/settings.php:213
+msgid ""
+"Select the field to be displayed as profile title. Default and recommeneded "
+"choice is <code>Display Name</code>."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:214
+msgid "This field will be used as the display name on user profiles."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:220
+msgid "Show recent user posts on profiles"
+msgstr ""
+
+#: admin/settings.php:221
+msgid ""
+"If checked, recent posts of the user will be displayed under profile "
+"information."
+msgstr ""
+
+#: admin/settings.php:222
+msgid "User need to be the author of these posts."
+msgstr ""
+
+#: admin/settings.php:230
+msgid "Maximum number of posts"
+msgstr ""
+
+#: admin/settings.php:232
+msgid "Select maximum post count allowed for user profiles."
+msgstr ""
+
+#: admin/settings.php:233
+msgid "Given number of user posts are displayed under the profile."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:240
+msgid "Show featured images on posts"
+msgstr ""
+
+#: admin/settings.php:241
+msgid ""
+"If checked, featured image thumbnails will be displayed with the users "
+"recent posts."
+msgstr ""
+
+#: admin/settings.php:242
+msgid "If feature image doesnt exist, a default image will be used."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:248
+msgid "Website links on user profiles"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:250
+msgid "No link, plain text"
+msgstr ""
+
+#: admin/settings.php:251
+msgid "Live link"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:252
+msgid "Enable/disable linking of Website on user profiles"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:253
+msgid "This is where the website on user profiles will link."
+msgstr ""
+
+#: admin/settings.php:259
+msgid "Shortcode for Profile Popup"
+msgstr ""
+
+#: admin/settings.php:260
+msgid ""
+"Provide [upme] shortcode with neccessary attribute values for profile modal "
+"window"
+msgstr ""
+
+#: admin/settings.php:261
+msgid ""
+"When modal window is enabled on profile links, this shortcode will be used"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:267
+msgid "Enable Profile Status"
+msgstr ""
+
+#: admin/settings.php:268
+msgid ""
+"If checked, users will be able to change the profile status to active/"
+"inactive."
+msgstr ""
+
+#: admin/settings.php:269
+msgid ""
+"Admin can check this feature to enable the private status feature for users."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:275
+msgid "Display Profile Status"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:276
+msgid ""
+"If checked, users will be able to see the status of the profile along with "
+"other profile fields."
+msgstr ""
+
+#: admin/settings.php:277
+msgid ""
+"Admin can check this feature to display the profile status inside profiles."
+msgstr ""
+
+#: admin/settings.php:283
+msgid "Link Post Author Link to UPME Profile"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:285
+msgid "If checked, author link in posts will link to the UPME profile page."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:286
+msgid "Unchecking this option will link post author to Author archive."
+msgstr ""
+
+#: admin/settings.php:292
+msgid "Display UPME Profile for Post Author after Post Content"
+msgstr ""
+
+#: admin/settings.php:294
+msgid "If checked, UPME profile of author is displayed after the post content."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:295
+msgid "Unchecking this option will not display UPME author profile."
+msgstr ""
+
+#: admin/settings.php:301
+msgid "Template for Post Author Profiles"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:303
+msgid "Default Design"
+msgstr ""
+
+#: admin/settings.php:304
+msgid "Author Profile Design 1"
+msgstr ""
+
+#: admin/settings.php:305
+msgid "Author Profile Design 2"
+msgstr ""
+
+#: admin/settings.php:306
+msgid "Author Profile Design 3"
+msgstr ""
+
+#: admin/settings.php:307
+msgid "Author Profile Design 4"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:309 admin/settings.php:310
+msgid "Select the template for displaying author profile."
+msgstr ""
+
+#: admin/settings.php:316
+msgid "Enable Two-Factor authentication with Email"
+msgstr ""
+
+#: admin/settings.php:317
+msgid ""
+"If checked, users will be able to enable Two-Factor authentication with "
+"email."
+msgstr ""
+
+#: admin/settings.php:318
+msgid ""
+"Admin can check this feature to enable Two-Factor authentication with email "
+"for users."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:340
+msgid ""
+"These pages are automatically created when UPME is activated. You can leave "
+"them as they are or change to custom pages here."
+msgstr ""
+"Disse sider oprettes automatisk, når UPME aktiveres. Du kan lade dem være "
+"som de er, eller ændre dem til brugerdefinerede sider her."
+
+# @ upme
+#: admin/settings.php:348
+msgid "UPME Profile Page"
+msgstr "UPME profil side"
+
+# @ upme
+#: admin/settings.php:350
+msgid ""
+"If you wish to change default UPME Profile page, you may set it here. Make "
+"sure you have the <code>[upme]</code> shortcode on this page."
+msgstr ""
+"Hvis du ønsker at ændre standard UPME profilsiden, han du rette den her. "
+"Sørg for at du har <code>[upme]</code> shortcode på den pågældende side."
+
+# @ upme
+#: admin/settings.php:351
+msgid ""
+"This page is where users will view their own profiles, or view other user "
+"profiles from the member directory if allowed."
+msgstr ""
+"Denne side er den hvor brugere kan se deres egen profil, eller se andres "
+"profiler fra medlemslisten (hvis dette er tilladt)"
+
+# @ upme
+#: admin/settings.php:357
+msgid "UPME Login Page"
+msgstr "UPME login side"
+
+# @ upme
+#: admin/settings.php:359
+msgid ""
+"If you wish to change default UPME login page, you may set it here. Make "
+"sure you have the <code>[upme_login]</code> shortcode on this page."
+msgstr ""
+"Hvis du ønsker at skifte væk fra UPMEs standard login side, kan du gøre det "
+"her. Sørg for at have <code>[upme_login]</code> shortcode på den nye side du "
+"vælger."
+
+# @ upme
+#: admin/settings.php:360
+msgid "The default front-end login page."
+msgstr "Standard front-end login siden"
+
+# @ upme
+#: admin/settings.php:367
+msgid "UPME Registration Page"
+msgstr "UPME registreringsside"
+
+# @ upme
+#: admin/settings.php:369
+msgid ""
+"If you wish to change default UPME Registration page, you may set it here. "
+"Make sure you have the <code>[upme_registration]</code> shortcode on this "
+"page."
+msgstr ""
+"Hvis du ønsker at skifte væk fra UPMEs standard registreringsside, kan du "
+"gøre det her. Sørg for at have <code>[upme_registration]</code> shortcode på "
+"den nye side du vælger."
+
+# @ upme
+#: admin/settings.php:370
+msgid "The default front-end Registration page where new users will sign up."
+msgstr "Standard front-end registrerings-siden"
+
+# @ upme
+#: admin/settings.php:376
+msgid "UPME Reset Password Page"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:378
+msgid ""
+"If you wish to change default UPME Reset Password page, you may set it here. "
+"Make sure you have the <code>[upme_reset_password]</code> shortcode on this "
+"page."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:379
+msgid "The default front-end Reset Password page where new users will sign up."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:385
+msgid "UPME Member List Page"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:387
+msgid ""
+"If you wish to change default UPME Member List page, you may set it here. "
+"Make sure you have member list shortcode there, for example: "
+"<code>[upme_search] [upme group=all view=compact users_per_page=10]</code> "
+"is the default."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:388
+msgid "The default front-end Member List page."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:414
+msgid "Redirect Backend Profiles"
+msgstr "Redirect backend profiler"
+
+# @ upme
+#: admin/settings.php:416
+msgid ""
+"If checked, non-admin users who try to access backend WP profiles will be "
+"redirected to UPME Profile Page specified above."
+msgstr ""
+"Hvis valgt, vil ikke-administrator brugere, der forsøger at tilgå backend WP "
+"profiler, blive videresendt til den UPME profil side der er specificeret "
+"ovenfor."
+
+# @ upme
+#: admin/settings.php:417
+msgid ""
+"Checking this option will send all users to the front-end UPME Profile Page "
+"if they try to access the default backend profile page in wp-admin. The page "
+"can be selected in the UPME System Pages settings."
+msgstr ""
+"Når denne mulighed er valgt, vil alle brugere blive sendt til UPME front-end "
+"profil siden, hvis de forsøger at tilgå den almindelige WP admin backend "
+"profil side. Upme profilsiden, kan vælges i UPME indstillingerne på system "
+"siden."
+
+# @ upme
+#: admin/settings.php:423
+msgid "Redirect Backend Login"
+msgstr "Redirect Backend Login"
+
+# @ upme
+#: admin/settings.php:425
+msgid ""
+"If checked, non-admin users who try to access backend login form will be "
+"redirected to the front end UPME Login Page specified above."
+msgstr ""
+"Hvis valgt, vil ikke-administrator brugere, der forsøger at tilgå backend WP "
+"login formularen, blive videresendt til den UPME login side der er "
+"specificeret ovenfor."
+
+# @ upme
+#: admin/settings.php:426
+msgid ""
+"Checking this option will send all users to the front-end UPME Login Page if "
+"they try to access the default backend login form. The page can be selected "
+"in the UPME System Pages settings."
+msgstr ""
+"Når denne mulighed er valgt, vil alle brugere blive sendt til UPME front-end "
+"login siden, hvis de forsøger at tilgå den almindelige WP admin backend "
+"login side. Upme login siden, kan vælges i UPME indstillingerne på system "
+"siden."
+
+# @ upme
+#: admin/settings.php:432
+msgid "Redirect Backend Registrations"
+msgstr "Redirect backend registreringer"
+
+# @ upme
+#: admin/settings.php:434
+msgid ""
+"If checked, non-admin users who try to access backend registration form will "
+"be redirected to the front end UPME Registration Page specified above."
+msgstr ""
+"Hvis valgt, vil ikke-administrator brugere der prøver at tilgå backend "
+"brugeroprettelsessiden blive videresendt til UPME front-end "
+"registreringssiden der er specificeret ovenfor."
+
+# @ upme
+#: admin/settings.php:435
+msgid ""
+"Checking this option will send all users to the front-end UPME Registration "
+"Page if they try to access the default backend registraiton form. The page "
+"can be selected in the UPME System Pages settings."
+msgstr ""
+"Når denne mulighed er valgt, vil alle brugere blive sendt til UPME front-end "
+"registreringssiden, hvis de forsøger at tilgå den almindelige WP admin "
+"backend brugeroprettelsesside. Upme registrerings-siden, kan vælges i UPME "
+"indstillingerne på system siden."
+
+# @ upme
+#: admin/settings.php:440 admin/settings.php:452
+msgid "Default"
+msgstr "Default"
+
+# @ upme
+#: admin/settings.php:445
+msgid "Redirect After Login"
+msgstr "Redirect efter login"
+
+# @ upme
+#: admin/settings.php:447
+msgid ""
+"Users will be redirected to the page set here after successfully logging in. "
+"<br /> You may over-ride this setting for a specific login form by using the "
+"shortcode <code>[upme_login redirect_to=\"url_here\"]</code>"
+msgstr ""
+"Brugere vil blive videresent hertil, efter de har logget ind. <br />Du kan "
+"overskrive denne indstilling, på udvalgte loginsider, ved at indsætte denne "
+"shortcode: <code>[upme_login redirect_to=\"url_here\"]</code>"
+
+# @ upme
+#: admin/settings.php:448
+msgid ""
+"Setting this option to Default will automatically use any redirect specified "
+"in the URL, and will not prevent redirect_to set in shortcode option from "
+"working. If no redirect is found in the URL and redirect_to option is not "
+"set in shortcode option, the login page will simply be reloaded to welcome "
+"the logged in user."
+msgstr ""
+"Setting this option to Default will automatically use any redirect specified "
+"in the URL, and will not prevent redirect_to set in shortcode option from "
+"working. If no redirect is found in the URL and redirect_to option is not "
+"set in shortcode option, the login page will simply be reloaded to welcome "
+"the logged in user."
+
+# @ upme
+#: admin/settings.php:457
+msgid "Redirect After Registration"
+msgstr "Redirect efter registrering"
+
+# @ upme
+#: admin/settings.php:459
+msgid ""
+"New users will be redirected to the page set here after successfully "
+"registering using the UPME registration form. <br /> You may over-ride this "
+"setting for a specific registration form by using the shortcode "
+"<code>[upme_registration redirect_to=\"url_here\"]</code>"
+msgstr ""
+"Nye brugere vil blive videresendt til denne side, når de har oprettet sig "
+"via UPME registreringssiden.<br />Du kan overskrive denne indstilling, på "
+"udvalgte registreringssider, ved at indsætte denne shortcode: "
+"<code>[upme_login redirect_to=\"url_here\"]</code>"
+
+# @ upme
+#: admin/settings.php:460
+msgid ""
+"Setting this option to Default will show the Register Success message "
+"instead of redirecting to a custom page."
+msgstr ""
+"Her vil default indstillingen give brugeren en \"Registreringen er "
+"successfuldt gennemført\" meddelelse i stedet for at videresende til en "
+"brugerdefineret side."
+
+# @ upme
+#: admin/settings.php:486
+msgid "User Selected Passwords"
+msgstr "Brugerdefineret password"
+
+# @ upme
+#: admin/settings.php:488
+msgid "Enabled, allow users to set password"
+msgstr "Muligt - tillad brugere at vælge deres eget password"
+
+# @ upme
+#: admin/settings.php:489
+msgid "Disabled, email a random password to users"
+msgstr "Umuligt - send autogenererede password til brugerne"
+
+# @ upme
+#: admin/settings.php:490
+msgid "Enable or disable setting a user selected password at registration"
+msgstr "Slå brugervalgte passwords til eller fra."
+
+# @ upme
+#: admin/settings.php:491
+msgid ""
+"If enabled, users can choose their own password at registration. If "
+"disabled, WordPress will email users a random password when they register."
+msgstr ""
+"Hvis slået til, kan brugerne selv vælge deres passwords når de opretter sig. "
+"Hvis slået fra vil Wordpress sende dem en email med et autogenereret "
+"password, når de opretter sig."
+
+# @ upme
+#: admin/settings.php:498
+msgid "Automatic Login After Registration"
+msgstr "Automatisk log ind efter registrering"
+
+# @ upme
+#: admin/settings.php:500
+msgid "Enabled, log users in automatically after registration"
+msgstr "Slået til - Log automatisk brugere ind efter registrering."
+
+# @ upme
+#: admin/settings.php:501
+msgid "Disabled, users must login normally after registration"
+msgstr "Slået fra - Brugere skal logge ind på normal vis efter registrering."
+
+# @ upme
+#: admin/settings.php:503
+msgid "Enable or disable automatic login after registration."
+msgstr "Slå automatisk log ind efter registrering til eller fra."
+
+# @ upme
+#: admin/settings.php:504
+msgid ""
+"If enabled, users will be logged automatically after registration and "
+"redirected to the page defined in Redirect After Registration setting. If "
+"disabled, users must login normally after registration."
+msgstr ""
+"Hvis slået til, vil brugerne automatisk blive logget ind, når de har "
+"opretter sig og videresendt til den side der er defineret under \"Redirect "
+"efter registrering\". Hvis slået fra vil de være nødt til at logge ind som "
+"normalt efter oprettelse."
+
+# @ upme
+#: admin/settings.php:511
+msgid "User Profile Approvals"
+msgstr ""
+
+#: admin/settings.php:513
+msgid "Disabled, new users are not required to get the approval."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:514
+msgid "Enabled, new users must get the approval"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:515
+msgid "Enable or disable setting a user account approval at registration"
+msgstr ""
+
+#: admin/settings.php:516
+msgid ""
+"If enabled, users must be approved by admin before login. If disabled, new "
+"users are not required to get the account approved before login."
+msgstr ""
+
+#: admin/settings.php:522
+msgid "Email Confirmation"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:524
+msgid "Disabled, new users are not required to confirm email"
+msgstr ""
+
+#: admin/settings.php:525
+msgid "Enabled, new users must confirm email to activate"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:526
+msgid "Enable or disable setting a user email confirmation at registration"
+msgstr ""
+
+#: admin/settings.php:527
+msgid ""
+"If enabled, users must confirm email address to activate. If disabled, new "
+"users are not required to confirm email address."
+msgstr ""
+
+#: admin/settings.php:533
+msgid "Terms and Conditions"
+msgstr ""
+
+#: admin/settings.php:535
+msgid "Disabled, terms and conditions are not shown in registration form"
+msgstr ""
+
+#: admin/settings.php:536
+msgid "Enabled, terms and conditions are shown in registration form"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:537
+msgid "Enable or disable agreeing to terms and conditions at registration"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:538
+msgid "If enabled, users must agree to terms and conditions for registration."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:546
+msgid "FunCaptcha"
+msgstr "FunCaptcha"
+
+# @ upme
+#: admin/settings.php:547
+msgid "reCaptcha"
+msgstr "reCaptcha"
+
+# @ upme
+#: admin/settings.php:548
+msgid "Captcha"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:556
+msgid "Captcha Plugin"
+msgstr "Captcha plugin"
+
+# @ upme
+#: admin/settings.php:558
+msgid ""
+"Select which captcha plugin you want to use on the registration form. "
+"Funcaptcha requires the Funcaptcha plugin, however reCaptcha is built into "
+"UPME and requires no additional plugin to be installed. <br /> You can "
+"enable or disable captcha with shortcode options: <code>[upme_registration "
+"captcha=yes]</code> or <code>[upme_registration captcha=no]</code>."
+msgstr ""
+"Vælg hvilket captcha plugin der skal benyttes på registreringsformularen. "
+"FunCaptcha forudsætter separat indstilling af FunCaptcha pluginnet, mens "
+"reChaptcha er indbygget i UPME. <br />Du kan slå captcha til/ fra med "
+"følgende shortcoder: <code>[upme_registration captcha=yes]</code> eller "
+"<code>[upme_registration captcha=no]</code>."
+
+# @ upme
+#: admin/settings.php:559
+msgid ""
+"If you are using a captcha that requires a plugin, you must install and "
+"activate the selected captcha plugin. Some captcha plugins require you to "
+"register a free account with them, including FunCaptcha"
+msgstr ""
+"Hvis du benytter en captcha der kræver et separat plugin, skal du installere "
+"og aktivere det ønskede captcha plugin via Plugins i WP menuen. Nogle "
+"captcha plugins kræver at du registrerer dig hos producenten, deriblandt "
+"FunCaptcha."
+
+# @ upme
+#: admin/settings.php:566
+msgid "CAPTCHA Field Label"
+msgstr "CAPTCHA felt titel"
+
+# @ upme
+#: admin/settings.php:567 admin/settings.php:568
+msgid "Enter text which you want to show in form in front of CAPTCHA."
+msgstr "Indtast den tekst du ønsker skal stå før CAPTCHA."
+
+# @ upme
+#: admin/settings.php:574
+msgid "reCaptcha Public Key"
+msgstr "reCaptcha Public Key (offentlig nøgle)"
+
+# @ upme
+#: admin/settings.php:575
+msgid ""
+"Enter your reCaptcha Public Key. You can sign up for a free reCaptcha "
+"account <a href=\"http://www.google.com/recaptcha\" title=\"Get a reCaptcha "
+"Key\" target=\"_blank\">here</a>."
+msgstr ""
+"Indtast din offentlige reCaptcha nøgle. Du kan oprette en gratis reCaptcha "
+"konto <a href=\"http://www.google.com/recaptcha\" title=\"Get a reCaptcha Key"
+"\" target=\"_blank\">her</a>."
+
+# @ upme
+#: admin/settings.php:576 admin/settings.php:584
+msgid ""
+"Your reCaptcha kays are required to use reCaptcha. You can register your "
+"site for a free key on the Google reCaptcha page."
+msgstr ""
+"For at benytte reCapcha skal du have en reCapcha key (nøgle). Du kan få en "
+"gratis nøgle på Googles reCaptcha side."
+
+# @ upme
+#: admin/settings.php:582
+msgid "reCaptcha Private Key"
+msgstr "reCaptcha Private Key (privatnøgle)"
+
+# @ upme
+#: admin/settings.php:583
+msgid "Enter your reCaptcha Private Key."
+msgstr "Indtast din reCapcha privatnøgle"
+
+# @ upme
+#: admin/settings.php:590
+msgid "Register success message"
+msgstr "Registrering gennemført besked"
+
+# @ upme
+#: admin/settings.php:592
+msgid "Show a text message when users complete the registration process."
+msgstr ""
+"Vis en tekstmeddelelse når brugerne har gennemført registrerings-processen."
+
+# @ upme
+#: admin/settings.php:593
+msgid "This message will be shown to users after registration is complted."
+msgstr ""
+"Denne meddelelse vil blive vist, når registreringsprocessen er gennemført."
+
+# @ upme
+#: admin/settings.php:599
+msgid "Text/HTML below the Register Success message."
+msgstr "Tekst/ HTML under \\\"Registrering gennemført\\\" beskeden"
+
+# @ upme
+#: admin/settings.php:601
+msgid ""
+"Show a text/HTML content under success message when users complete the "
+"registration process."
+msgstr ""
+"Vis en tekst / HTML indhold under Registrering gennemført besked, når "
+"brugere har gennemført registrerings-processen."
+
+# @ upme
+#: admin/settings.php:602
+msgid ""
+"This message will be shown to users under the success messsage after "
+"registration is completed."
+msgstr ""
+"Denne meddelelse vil blive vist, under Registrering gennemført besked, når "
+"brugere har gennemført registrerings-processen."
+
+# @ upme
+#: admin/settings.php:608
+msgid "Select User Role at Registration"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:610
+msgid ""
+"If checked, users will be able to select their user role at registration. If "
+"you do not understand what this means, leave this option unchecked."
+msgstr ""
+
+#: admin/settings.php:611
+msgid ""
+"Checking this option will enable users to select a user role at "
+"registration, based on available user roles defined in the choose roles "
+"setting."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:617
+msgid "Select Role Label"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:618 admin/settings.php:619
+msgid "Enter text which you want to show as the label for User Role selection."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:628
+msgid "Choose User Roles for Registration"
+msgstr ""
+
+#: admin/settings.php:630
+msgid ""
+"Selected user roles will be available for users to choose at registration. "
+"The default role for new users will be always available, you can change the "
+"default role in WordPress general settings."
+msgstr ""
+
+#: admin/settings.php:631
+msgid ""
+"User roles selected in this section will appear on the registration form. Be "
+"aware that some user roles will give posting and editing access to your "
+"site, so please be careful when using this option."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:641
+msgid "Default Country"
+msgstr ""
+
+#: admin/settings.php:643
+msgid "List the countries to be used as default country."
+msgstr ""
+
+#: admin/settings.php:644
+msgid "Selected country will appear as the default value for country fields."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:650
+msgid "Password Strength Level"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:652
+msgid "Disabled"
+msgstr ""
+
+#: admin/settings.php:653 function/functions.php:828
+msgid "Weak"
+msgstr ""
+
+#: admin/settings.php:654 function/functions.php:829
+msgid "Medium"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:655 function/functions.php:831
+msgid "Strong"
+msgstr "stærkt"
+
+#: admin/settings.php:657
+msgid "Select the level of strength for user password."
+msgstr ""
+
+#: admin/settings.php:658
+msgid ""
+"User password should match the expected criteria required by strength level"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:686
+msgid "Use WP Cron"
+msgstr "Brug WP Cron"
+
+# @ upme
+#: admin/settings.php:688
+msgid ""
+"If checked, UPME will use WP Cron Feature to update User Search Cache.<br /"
+">\n"
+"                                                When usign this option, make "
+"sure <code>DISABLE_WP_CRON</code> is not set to <code>TRUE</code> in "
+"<code>wp-config.php</code>"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:690
+msgid ""
+"Using WP Cron will update your search cache automatically at regular "
+"intervals."
+msgstr ""
+"brug af WP Cron vil sikre opdatering af din søge cache automatisk og "
+"regelmæssigt."
+
+#: admin/settings.php:696
+msgid "Search Input Mandatory"
+msgstr ""
+
+#: admin/settings.php:698
+msgid ""
+"If checked, UPME will not show search results when "
+"<code>hide_until_search=true</code> is used and no search input is given."
+msgstr ""
+
+#: admin/settings.php:699
+msgid ""
+"Checking this option is useful if you do not want to show all users when "
+"submitting the search with no search criteria."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:705
+msgid "Users are Called"
+msgstr ""
+
+#: admin/settings.php:706
+msgid "What users are called in your system. Like Members, Doctors, etc."
+msgstr ""
+
+#: admin/settings.php:707
+msgid ""
+"This will update the text for the search form and search results. The "
+"default is Users."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:713
+msgid "Combined Search Text"
+msgstr ""
+
+#: admin/settings.php:714
+msgid "Name of Text search field which is used to perform combined search."
+msgstr ""
+
+#: admin/settings.php:715
+msgid ""
+"You may choose custom text for the main combined text search field. The "
+"default is Combined Search."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:721
+msgid "Search Button Text"
+msgstr ""
+
+#: admin/settings.php:722
+msgid "Text to display on search button."
+msgstr ""
+
+#: admin/settings.php:723
+msgid ""
+"This is the text of the button to submit the member search form. The default "
+"is Filter."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:729
+msgid "Reset Button Text"
+msgstr ""
+
+#: admin/settings.php:730
+msgid "Text to display on reset button."
+msgstr ""
+
+#: admin/settings.php:731
+msgid ""
+"This is the text of the button to reset the member search form. The default "
+"is Reset."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:759
+msgid "Guest viewing of profiles"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:761
+msgid "Enabled, make profiles publicly visible"
+msgstr "Tilladt - Profiler er synlige for offentligheden"
+
+# @ upme
+#: admin/settings.php:762
+msgid "Disabled, users must login to view profiles"
+msgstr "Ikke tilladt - brugere skal være logget ind for at kunne se profilerne"
+
+# @ upme
+#: admin/settings.php:763
+msgid "Enable or disable guest and non-logged in user viewing of profiles."
+msgstr ""
+"Slå muligheden for at gæster (og brugere der ikke er logget ind) kan se "
+"profiler til eller fra"
+
+# @ upme
+#: admin/settings.php:764
+msgid ""
+"If enabled, profiles will be publicly visible to non-logged in users. If "
+"disabled, guests must log in to view profiles."
+msgstr ""
+"Hvis slået til vil profiler være synlige for alle. Hvis slået fra, skal man "
+"være logge ind for at kunne se profiler."
+
+# @ upme
+#: admin/settings.php:770
+msgid "Logged-in user viewing of other profiles"
+msgstr "Synlighed af profiler til andre medlemmer"
+
+# @ upme
+#: admin/settings.php:772
+msgid "Enabled, logged-in users may view other user profiles"
+msgstr "Slået til - Brugere der er logget ind må se andres profiler."
+
+# @ upme
+#: admin/settings.php:773
+msgid "Disabled, users may only view their own profile"
+msgstr "Slået fra - Brugere må kun se deres egen profil"
+
+# @ upme
+#: admin/settings.php:774
+msgid "Restricted by User Role"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:775
+msgid ""
+"Enable or disable logged-in user viewing of other user profiles. Admin users "
+"can always view all profiles."
+msgstr ""
+"Slå muligheden for at brugere der er logget ind, kan se andres profiler, til "
+"eller fra. Administratorer kan altid se alle profiler."
+
+# @ upme
+#: admin/settings.php:776
+msgid ""
+"If enabled, logged-in users are allowed to view other user profiles. If "
+"disabled, logged-in users may only view theor own profile."
+msgstr ""
+"Hvis slået til vil brugere (medlemmer af sitet) kunne se andre medlemmers "
+"profiler. Hvis slået fra, vil man kun kunne se sig egen profil, når man er "
+"logget ind."
+
+# @ upme
+#: admin/settings.php:786
+msgid ""
+"Selected user roles can view other user profiles. Roles not selected here "
+"will only be able to view their own profile."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:787
+msgid ""
+"User roles selected in this section will have permission to view other "
+"profiles."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:810
+msgid "Messages for Insuficient Permissions"
+msgstr "Meddelelser ved manglende rettigheder"
+
+# @ upme
+#: admin/settings.php:817
+msgid "Guests cannot view profiles"
+msgstr "Gæster har ikke ret til at se profiler"
+
+# @ upme
+#: admin/settings.php:819
+msgid ""
+"Show a text/HTML message when guests try to view profiles if they are not "
+"allowed, asking them to login or register to view the profile."
+msgstr ""
+"Vis en tekst /HTML besked når gæster forsøger at se profiler  - og de "
+"mangler rettigheder til det - hvor de bliver bedt om at logge ind eller "
+"registrere sig."
+
+# @ upme
+#: admin/settings.php:820
+msgid ""
+"This message will eb shown to guests who try to view profiles if it is not "
+"allowed in the above settings."
+msgstr ""
+"Denne meddelelse vil blive vist til gæster der forsøger at se profiler, hvis "
+"det via de synlighedsindstillingerne ikke er tilladt."
+
+# @ upme
+#: admin/settings.php:823
+msgid "Display login form below this message"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:838
+msgid "User must log-in to view/edit his profile"
+msgstr "Bruger skal være logget ind, for at se/rette sin profil"
+
+# @ upme
+#: admin/settings.php:840
+msgid ""
+"Show a text/HTML message asking the user to login to view or edit his own "
+"profile. Leave blank to show nothing."
+msgstr ""
+"Vis en tekst/ HTML besked, der beder brugeren logge ind før de kan se/ rette "
+"i deres profil. Lad feltet være tomt, hvis der ikke skal vises noget."
+
+# @ upme
+#: admin/settings.php:841
+msgid ""
+"This message is shown to users who try to view/edit their own profile but "
+"are not logged in."
+msgstr ""
+"Denne meddelelse bliver vist fir brugere der forsøger at se/ rette deres "
+"profil, uden at være logget ind."
+
+# @ upme
+#: admin/settings.php:858
+msgid "User must log-in to view private content"
+msgstr "Bruger skal være logget ind, for at se privat indhold"
+
+# @ upme
+#: admin/settings.php:860
+msgid ""
+"Show a text/HTML message to guests and non-logged in users who try to view "
+"private member-only content. Leave blank to show nothing."
+msgstr ""
+"Vis en tekst/ HTML besked til gæster og brugere der ikke er logget ind, som "
+"forsøger at se privat indhold. Lad feltet være tomt, hvis der ikke skal "
+"vises noget."
+
+# @ upme
+#: admin/settings.php:861
+msgid ""
+"This message is shown to guests and non-logged in users who try to view "
+"private member-only content."
+msgstr ""
+"Denne meddelelse er til gæster og brugere der ikke er logget ind, som "
+"forsøger at se privat indhold."
+
+# @ upme
+#: admin/settings.php:879
+msgid "User must have permission to view private content"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:881
+msgid ""
+"Show a text/HTML message to logged in users who try to view private content "
+"restricted for current user. Leave blank to show nothing."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:882
+msgid ""
+"This message is shown to logged in users who try to view private content "
+"restricted for current user."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:888
+msgid "User Role may not view other profiles"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:890
+msgid ""
+"Show a text/HTML message in place of profiles when a User Role is not "
+"allowed to view other profiles."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:891
+msgid ""
+"This message is shown to users who try to view the UPME Profile List while "
+"user role is blocked for viewing other profiles."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:897
+msgid "Registration Closed Message"
+msgstr "Registrering lukket"
+
+# @ upme
+#: admin/settings.php:899
+msgid ""
+"Show a text/HTML message in place of the registration form when registration "
+"is closed. Registeration can be opened or closed from the WordPress general "
+"settings using the checkbox <code>Anyone can register</code>."
+msgstr ""
+"Vis en tekst/ HTML besked i stedet for registreringssiden, når registrering "
+"ikke er mulig fra front-enden. Dette indstilles med/uden et flueben i boksen "
+"<code>Alle kan registrere sig</code> under Generelle indstillinger i WP "
+"menuen."
+
+# @ upme
+#: admin/settings.php:900
+msgid ""
+"This message is shown to users who try to view the UPME registration form "
+"while you have registrations disabled."
+msgstr ""
+"Denne meddelelse vil blive vist til brugere der forsøger at se UPME "
+"registreringssiden, når registrering fra front-enden er slået fra."
+
+# @ upme
+#: admin/settings.php:906
+msgid "Profile Status Message"
+msgstr ""
+
+#: admin/settings.php:908
+msgid ""
+"Show a text/HTML message in place of the profile when profile is set to "
+"INACTIVE by user."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:909
+msgid ""
+"This message is shown to users who try to view profiles set to INACTIVE by "
+"users."
+msgstr ""
+
+#: admin/settings.php:915
+msgid "Profile Pending Approval Message"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:917
+msgid ""
+"Show a text/HTML message on top of login form when user profile is pending "
+"approval of admin."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:918
+msgid ""
+"This message is shown to users who try to login when user profile is pending "
+"approval of admin."
+msgstr ""
+
+#: admin/settings.php:924
+msgid "Terms and Conditions Message"
+msgstr ""
+
+# @ upme
+#: admin/settings.php:926
+msgid ""
+"Show a text/HTML message as the Terms and Conditions for user registration."
+msgstr ""
+
+# @ upme
+#: admin/settings.php:927
+msgid ""
+"This message is shown to users in registration forms as terms and conditions "
+"for registration."
+msgstr ""
+
+#: admin/settings.php:946
+msgid "Loading Scripts and Styles"
+msgstr ""
+
+#: admin/settings.php:953
+msgid "Disable Fancybox Scripts and Styles"
+msgstr ""
+
+#: admin/settings.php:955
+msgid ""
+"If checked, UPME will disable the loading of script and style files for "
+"Fancybox library."
+msgstr ""
+
+#: admin/settings.php:956
+msgid ""
+"Use it when you have newer Fancybox version in your theme or other plugins."
+msgstr ""
+
+#: admin/settings.php:962
+msgid "Disable Tipsy Scripts and Styles"
+msgstr ""
+
+#: admin/settings.php:964
+msgid ""
+"If checked, UPME will disable the loading of script and style files for "
+"Tipsy library."
+msgstr ""
+
+#: admin/settings.php:965
+msgid ""
+"Use it when you have newer Tipsy version in your theme or other plugins."
+msgstr ""
+
+#: admin/settings.php:971
+msgid "Disable FitVids Scripts and Styles"
+msgstr ""
+
+#: admin/settings.php:973
+msgid ""
+"If checked, UPME will disable the loading of script and style files for "
+"FitVids library."
+msgstr ""
+
+#: admin/settings.php:974
+msgid ""
+"Use it when you have newer FitVids version in your theme or other plugins."
+msgstr ""
+
+#: admin/settings.php:980
+msgid "Disable Google Font Files for Open Sans"
+msgstr ""
+
+#: admin/settings.php:982
+msgid ""
+"If checked, UPME will disable the loading of Open Sans from google fonts."
+msgstr ""
+
+#: admin/settings.php:983
+msgid "Use it when you want to avoid requests to google fonts."
+msgstr ""
+
+# @ upme
+#: admin/sync-tool.php:2
+msgid "UPME - Sync / Tools"
+msgstr "UPME Sync/ tools"
+
+# @ upme
+#: admin/sync-tool.php:4 admin/sync.php:1
+msgid "Auto Sync with WooCommerce"
+msgstr "Synkroniser automatisk med WooCommerce"
+
+# @ upme
+#: admin/sync-tool.php:8 admin/sync.php:5
+msgid ""
+"Syncing with WooCommerce will automatically add WooCommerce customer profile "
+"fields to your UPME. A quick way to have a WooCommerce account page "
+"integrated with UPME. Just click the following button and let UPME do the "
+"work for you."
+msgstr ""
+"Når der synkroniseres med WooCommerce vil WooCommerce brugerprofilerne "
+"automatisk blive føjet til UPME. For hurtigt at integrere en WooCommerce "
+"brugerkontoside med UPME skal du blot klikke på denne knap og lade UPME gøre "
+"arbejdet for dig."
+
+# @ upme
+#: admin/sync-tool.php:10 admin/sync.php:7
+msgid "Sync and keep existing fields"
+msgstr "Synkroniser og behold eksisterende felter"
+
+# @ upme
+#: admin/sync-tool.php:11 admin/sync.php:8
+msgid "Sync and delete existing fields"
+msgstr "Synkroniser og slet eksisterende felter."
+
+# @ upme
+#: admin/sync-tool.php:15 admin/sync.php:12
+msgid "Please install WooCommerce plugin first."
+msgstr "Installer venligst WooCommerce plugin først."
+
+#: admin/templates/addons-feed.php:11
+msgid "Activated"
+msgstr ""
+
+#: admin/templates/addons-feed.php:14
+msgid "Deactivated"
+msgstr ""
+
+#: admin/templates/addons-feed.php:27
+msgid "Download"
+msgstr ""
+
+#: admin/templates/addons-list.php:3
+msgid "Add-Ons for UPME"
+msgstr ""
+
+#: admin/templates/addons-list.php:6
+msgid "Extend the functionality of UPME through these Free and Premium Addons."
+msgstr ""
+
+# @ upme
+#: admin/user-cache.php:2
+msgid "UPME - Update User Search Cache"
+msgstr "UPME - Opdater Bruger Søge Cache"
+
+# @ upme
+#: admin/user-cache.php:4 admin/user_cache.php:1
+msgid "Update User Search Cache"
+msgstr "Opdater Bruger Søge Cache"
+
+# @ upme
+#: admin/user-cache.php:6 admin/user_cache.php:3
+msgid ""
+"In order to keep your search working smoothly you can update user cache from "
+"here. However it will be updated once user profile is updated."
+msgstr ""
+"For at sikre at søgemuligeheden fungerer optimalt kan du opdatere bruger "
+"cache herfra. Dog vil den automatisk blive opdateret når profilerne bliver "
+"opdateret."
+
+# @ upme
+#: admin/user-cache.php:14 admin/user_cache.php:11
+#, php-format
+msgid ""
+"You have total <span id=\"upme-total-user\" style=\"font-weight: bold;\">%s</"
+"span> users in your website."
+msgstr ""
+"Du har ialt <span id=\"upme-total-user\" style=\"font-weight: bold;\">%s</"
+"span> medlemmer på sitet."
+
+# @ upme
+#: admin/user-cache.php:20 admin/user_cache.php:17
+msgid ""
+"<p id=\"upme-processing-tag\" style=\"display:none;\">Processing.... <span "
+"id=\"upme-completed-users\" style=\"display:none;\"> users Completed</span> "
+"</p>"
+msgstr ""
+"<p id=\"upme-processing-tag\" style=\"display:none;\">Processing.... <span "
+"id=\"upme-completed-users\" style=\"display:none;\"> Brugere Completed</"
+"span> </p>"
+
+# @ default
+#: admin/user-cache.php:24 admin/user_cache.php:21
+msgid "User Search Cache Updated."
+msgstr "Søge cachen er opdateret."
+
+# @ upme
+#: admin/user-cache.php:32 classes/class-upme-admin.php:848
+msgid "Update User Cache"
+msgstr "Opdater Bruger Cache"
+
+# @ upme
+#: classes/class-upme-admin.php:13 classes/class-upme-admin.php:379
+msgid "UPME Settings"
+msgstr "UPME indstillinger"
+
+# @ upme
+#: classes/class-upme-admin.php:13 classes/class-upme-admin.php:382
+msgid "Custom Fields"
+msgstr "Brugerdefinerede felter"
+
+# @ upme
+#: classes/class-upme-admin.php:13 classes/class-upme-admin.php:386
+msgid "Sync / Tools"
+msgstr "Sync / Tools"
+
+# @ upme
+#: classes/class-upme-admin.php:13 classes/class-upme-admin.php:388
+msgid "Update Search Cache"
+msgstr "Opdater Søge Cache"
+
+# @ upme
+#: classes/class-upme-admin.php:21 classes/class-upme-admin.php:164
+msgid "Please log in to view / edit your profile."
+msgstr "Venligst log ind for at se/ rette i din profil."
+
+# @ upme
+#: classes/class-upme-admin.php:22 classes/class-upme-admin.php:163
+msgid "Please log in to view user profiles."
+msgstr "Venligst log ind for at kunne se medlemsprofiler."
+
+# @ upme
+#: classes/class-upme-admin.php:23 classes/class-upme-admin.php:165
+msgid "This content is for members only. You must log in to view this content."
+msgstr ""
+"Denne side er kun for medlemmer. Du skal være logget ind for at kunne se "
+"indholdet."
+
+# @ upme
+#: classes/class-upme-admin.php:35 classes/class-upme-admin.php:166
+#: classes/class-upme-updater.php:190 classes/class-upme.php:3498
+msgid "User registration is currently not allowed."
+msgstr "Bruger registrering er ikke tilladt på nuværende tidspunkt."
+
+# @ upme
+#: classes/class-upme-admin.php:37 classes/class-upme-admin.php:139
+msgid "Registration successful. Please check your email."
+msgstr "Registrering er gennemført - Tjeck venligst din email."
+
+# @ upme
+#: classes/class-upme-admin.php:47 classes/class-upme-admin.php:143
+#: classes/class-upme-updater.php:384
+msgid "Select Role"
+msgstr ""
+
+#: classes/class-upme-admin.php:63 classes/class-upme-admin.php:170
+#: classes/class-upme-updater.php:485
+msgid "Viewing of other profiles restricted for your user role."
+msgstr ""
+
+# @ upme
+#: classes/class-upme-admin.php:65 classes/class-upme-admin.php:171
+#: classes/class-upme-updater.php:510
+msgid "This is a private profile. You are not allowed to view this profile."
+msgstr ""
+
+#: classes/class-upme-admin.php:67 classes/class-upme-admin.php:172
+#: classes/class-upme-updater.php:511
+msgid ""
+"This profile is pending approval. You will get a notification once the "
+"profile is approved."
+msgstr ""
+
+#: classes/class-upme-admin.php:70 classes/class-upme-admin.php:173
+#: classes/class-upme-updater.php:515
+msgid "I agree to Terms and Conditions."
+msgstr ""
+
+#: classes/class-upme-admin.php:78 classes/class-upme-admin.php:174
+#: classes/class-upme-updater.php:554
+msgid "This content is restricted for your user account."
+msgstr ""
+
+# @ upme
+#: classes/class-upme-admin.php:153
+msgid "User"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-admin.php:154
+msgid "Combined Search"
+msgstr "Kombineret søgning"
+
+# @ upme
+#: classes/class-upme-admin.php:155
+msgid "Filter"
+msgstr "Filtrér"
+
+# @ upme
+#: classes/class-upme-admin.php:244
+msgid ""
+"Enter a custom meta key for this profile field if do not want to use a "
+"predefined meta field above. It is recommended to only use alphanumeric "
+"characters and underscores, for example my_custom_meta is a proper meta key."
+msgstr ""
+"Indtast en meta-key for dette profilfelt, hvis du ikke ønsker at bruge en af "
+"de predefinerede ovenfor. Vi anbefaler at du kun bruger alphanumeriske tegn "
+"og underscores - f.eks. my_custom_meta er en korrekt meta-key."
+
+# @ upme
+#: classes/class-upme-admin.php:245
+msgid ""
+"A Meta Key may be added to your separator in order to reference it with the "
+"[upme view=x,x,x] shortcode option. It is recommended to only use "
+"alphanumeric characters and underscores, for example my_custom_meta is a "
+"proper meta key."
+msgstr ""
+"Du kan tilføje en meta-key til din separator, så du kan ramme den med [upme "
+"view=x,x,x] shortcode muligheden, Vi anbefaler at du kun bruger "
+"alphanumeriske tegn og underscores - f.eks. my_custom_meta er en korrekt "
+"meta-key."
+
+# @ upme
+#: classes/class-upme-admin.php:293
+msgid "Separator Text"
+msgstr "Separator tekst"
+
+# @ upme
+#: classes/class-upme-admin.php:297 classes/class-upme-admin.php:319
+msgid "Saving..."
+msgstr "Gemmer..."
+
+# @ upme
+#: classes/class-upme-admin.php:299 classes/class-upme-admin.php:321
+msgid "Resetting..."
+msgstr "Gendanner..."
+
+# @ upme
+#: classes/class-upme-admin.php:302
+msgid "Are you sure you want to delete this field?"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-admin.php:303
+msgid "users Completed"
+msgstr ""
+
+#: classes/class-upme-admin.php:304
+msgid " Processing....."
+msgstr ""
+
+# @ upme
+#: classes/class-upme-admin.php:305
+msgid " Update Completed"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-admin.php:313
+msgid "User role is required."
+msgstr ""
+
+#: classes/class-upme-admin.php:314
+msgid "Redirect URL is required."
+msgstr ""
+
+#: classes/class-upme-admin.php:315
+msgid "Restricted Pages are required."
+msgstr ""
+
+#: classes/class-upme-admin.php:316
+msgid "Restricted Posts are required."
+msgstr ""
+
+#: classes/class-upme-admin.php:317
+msgid "Adding Restriction Rule"
+msgstr ""
+
+#: classes/class-upme-admin.php:318
+msgid "Add Restriction Rule"
+msgstr ""
+
+#: classes/class-upme-admin.php:323
+msgid "Email Template Title is required"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-admin.php:324
+msgid "Email Subject is required"
+msgstr ""
+
+#: classes/class-upme-admin.php:384
+msgid "Modules"
+msgstr ""
+
+#: classes/class-upme-admin.php:390
+msgid "Add-ons"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-admin.php:443 classes/class-upme-admin.php:688
+#: classes/class-upme-admin.php:704 classes/class-upme-admin.php:1915
+msgid "Update Now"
+msgstr "Opdater nu."
+
+# @ upme
+#: classes/class-upme-admin.php:445
+msgid ""
+"Profile field was sent to Trash. It is recommended to update your user "
+"search cache."
+msgstr ""
+"Profil feltet er slettet. Vi anbefaler at du opdaterer din \"bruger søge "
+"cache\\\"."
+
+# @ upme
+#: classes/class-upme-admin.php:690
+msgid "Settings saved. It is recommended to update your user search cache."
+msgstr ""
+"Indstillingerne er gemt. Vi anbefaler at du opdaterer din \"bruger søge cache"
+"\"."
+
+# @ upme
+#: classes/class-upme-admin.php:697
+msgid "Settings are reset to default."
+msgstr "Indstillingerne er gendannet til standard."
+
+# @ upme
+#: classes/class-upme-admin.php:707
+msgid ""
+"Settings are reset to default. It is recommended to update your user search "
+"cache."
+msgstr ""
+"Indstillingerne er gendannet til standard.  Vi anbefaler at du opdaterer din "
+"\"bruger søge cache\"."
+
+# @ upme
+#: classes/class-upme-admin.php:780
+msgid "Profile field was sent to Trash."
+msgstr "Profilfeltet er slettet."
+
+# @ upme
+#: classes/class-upme-admin.php:866
+msgid "Select Page"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-admin.php:877
+msgid "Select Post"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-admin.php:905
+msgid "UPME Fields"
+msgstr ""
+
+#: classes/class-upme-admin.php:1029 classes/class-upme.php:2630
+#: classes/class-upme.php:3605 classes/class-upme.php:3793
+msgid "Clear Date"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-admin.php:1061 classes/class-upme-admin.php:1971
+#: classes/class-upme.php:2666 classes/class-upme.php:3825
+msgid "Please Select"
+msgstr "Vælg venligst"
+
+# @ upme
+#: classes/class-upme-admin.php:1258 classes/class-upme-admin.php:1269
+#: function/functions.php:836
+msgid " is required."
+msgstr ""
+
+#: classes/class-upme-admin.php:1589
+msgid "Users activated successfully."
+msgstr ""
+
+#: classes/class-upme-admin.php:1592
+msgid "Select users for activation."
+msgstr ""
+
+#: classes/class-upme-admin.php:1598
+msgid "Users profile approved successfully."
+msgstr ""
+
+# @ upme
+#: classes/class-upme-admin.php:1600
+msgid "Select users for approval."
+msgstr ""
+
+#: classes/class-upme-admin.php:1607
+msgid "Users profile deactivated successfully."
+msgstr ""
+
+#: classes/class-upme-admin.php:1609
+msgid "Select users for deactivation."
+msgstr ""
+
+#: classes/class-upme-admin.php:1616
+msgid "Users profile disapproved successfully."
+msgstr ""
+
+#: classes/class-upme-admin.php:1618
+msgid "Select users for disapproval."
+msgstr ""
+
+#: classes/class-upme-admin.php:1633
+msgid "Approval Status"
+msgstr ""
+
+#: classes/class-upme-admin.php:1634
+msgid "Activation Status"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-admin.php:1778
+msgid "Position must be a number."
+msgstr "Position skal angives med et tal."
+
+# @ upme
+#: classes/class-upme-admin.php:1786
+msgid "Please enter a label/name for your field."
+msgstr "Indtast en titel/ navn til dit felt."
+
+# @ upme
+#: classes/class-upme-admin.php:1792 classes/class-upme-admin.php:1808
+msgid "You must specify a usermeta / custom field."
+msgstr "Du skal specificere et usermeta/ brugerdefineret felt."
+
+#: classes/class-upme-admin.php:1798 classes/class-upme-admin.php:1815
+msgid ""
+"A profile field with this meta key already exists, please use a unique meta "
+"key."
+msgstr ""
+
+# @ upme
+#: classes/class-upme-admin.php:1810
+msgid "Invalid usermeta / custom field."
+msgstr "Invalidt usermeta/ brugerdefineret felt."
+
+#: classes/class-upme-admin.php:1920
+msgid ".Click <a href=\""
+msgstr ""
+
+# @ upme
+#: classes/class-upme-admin.php:1922
+msgid ""
+"Profile field added. It is recommended to update your user search cache."
+msgstr ""
+"Profil feltet er tilføjet. Vi anbefaler at du opdaterer din \"bruger søge "
+"cache\"."
+
+#: classes/class-upme-api.php:48
+msgid "Welcome Guest"
+msgstr ""
+
+#: classes/class-upme-api.php:53
+msgid "Welcome "
+msgstr ""
+
+# @ upme
+#: classes/class-upme-api.php:176
+msgid "Login Page Link"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-api.php:177
+msgid "Registration Page Link"
+msgstr ""
+
+#: classes/class-upme-api.php:178
+msgid "Reset Password Page Link"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-api.php:179
+msgid "Profile Page Link"
+msgstr ""
+
+#: classes/class-upme-api.php:180
+msgid "Member List Page Link"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-captcha-loader.php:87
+#: classes/class-upme-captcha-loader.php:118
+#: classes/class-upme-updater.php:193
+msgid "Human Check"
+msgstr "Menneske tjeck"
+
+# @ upme
+#: classes/class-upme-login.php:38
+msgid "Invalid login form."
+msgstr ""
+
+# @ upme
+#: classes/class-upme-login.php:49
+msgid "The username field is empty."
+msgstr "Brugernavn feltet er tomt."
+
+# @ upme
+#: classes/class-upme-login.php:55
+msgid "The password field is empty."
+msgstr "Password feltet er tomt."
+
+#: classes/class-upme-login.php:86
+msgid "Please confirm your email to activate your account."
+msgstr ""
+
+# @ upme
+#: classes/class-upme-login.php:96 classes/class-upme-register.php:78
+msgid "Please complete Captcha Test first."
+msgstr "Gennemfør venligst Captcha Test først."
+
+# @ upme
+#: classes/class-upme-login.php:143
+msgid "Invalid Username or Email"
+msgstr "Brugernavn eller email er invalidt."
+
+# @ upme
+#: classes/class-upme-login.php:146
+msgid "Incorrect Username or Password"
+msgstr "Brugernavn eller password er ikke korrekt."
+
+# @ upme
+#: classes/class-upme-login.php:150
+msgid "Please enter a password."
+msgstr "Indtast venligst en password."
+
+#: classes/class-upme-login.php:254 classes/class-upme-register.php:534
+msgid "Username you have used is not allowed."
+msgstr ""
+
+#: classes/class-upme-login.php:268 classes/class-upme-register.php:547
+msgid "Email you have used is not allowed."
+msgstr ""
+
+#: classes/class-upme-login.php:282 classes/class-upme-register.php:562
+msgid "Email domain you have used is not allowed."
+msgstr ""
+
+#: classes/class-upme-login.php:312
+msgid ""
+"Verfication link sent to your email. Please click the link in the email to "
+"login"
+msgstr ""
+
+#: classes/class-upme-login.php:315
+msgid "Incorrect username or password."
+msgstr ""
+
+#: classes/class-upme-login.php:338
+msgid "Invalid verification code in link."
+msgstr ""
+
+#: classes/class-upme-login.php:341
+msgid "Invalid verification link."
+msgstr ""
+
+#: classes/class-upme-profile-fields.php:10
+msgid "Inactive"
+msgstr ""
+
+#: classes/class-upme-profile-fields.php:11
+msgid "Active"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-profile-fields.php:28
+#: classes/class-upme-profile-fields.php:72 classes/class-upme.php:2927
+msgid "Profile Status"
+msgstr ""
+
+#: classes/class-upme-profile-fields.php:45
+#: classes/class-upme-profile-fields.php:96
+msgid "Email Authentication"
+msgstr ""
+
+#: classes/class-upme-profile-fields.php:51
+#: classes/class-upme-profile-fields.php:103
+msgid "Disable"
+msgstr ""
+
+#: classes/class-upme-profile-fields.php:52
+#: classes/class-upme-profile-fields.php:104
+msgid "Enable"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-register.php:52
+msgid "Please enter a username."
+msgstr "Indtast venligst et brugernavn."
+
+# @ upme
+#: classes/class-upme-register.php:54
+msgid "This username is already registered. Please choose another one."
+msgstr "Dette brugernavn er allerede i brug. Vælg venligst et andet."
+
+# @ upme
+#: classes/class-upme-register.php:61
+msgid "Please type your e-mail address."
+msgstr "Indtast venligst din email adresse."
+
+# @ upme
+#: classes/class-upme-register.php:63
+msgid "The email address isn't correct."
+msgstr "Email adressen er ikke korrekt."
+
+# @ upme
+#: classes/class-upme-register.php:65
+msgid "This email is already registered, please choose another one."
+msgstr "Denne email adresse er allerede i brug. Vælg venligst en anden."
+
+# @ upme
+#: classes/class-upme-register.php:82
+msgid "Registration is disabled for this site."
+msgstr "Registrering er slået fra for dette site."
+
+# @ upme
+#: classes/class-upme-register.php:102
+msgid "Invalid registration form."
+msgstr ""
+
+#: classes/class-upme-register.php:335
+msgid "Your account is pending approval."
+msgstr ""
+
+#: classes/class-upme-register.php:441
+msgid "Account already activated. You can now login."
+msgstr ""
+
+#: classes/class-upme-register.php:455
+msgid "Your email has been verified. Please wait for moderator approval."
+msgstr ""
+
+#: classes/class-upme-register.php:458
+msgid "Activation successful. You can now login."
+msgstr ""
+
+#: classes/class-upme-register.php:470
+msgid "Activation failed. Please use a valid activation code."
+msgstr ""
+
+# @ upme
+#: classes/class-upme-reset-password.php:38
+msgid "The new password field is empty."
+msgstr ""
+
+# @ upme
+#: classes/class-upme-reset-password.php:44
+msgid "The confirm new password field is empty."
+msgstr ""
+
+# @ upme
+#: classes/class-upme-reset-password.php:53
+msgid "The passwords do not match."
+msgstr ""
+
+#: classes/class-upme-reset-password.php:122
+#: classes/class-upme-reset-password.php:138
+msgid ""
+"This password key has expired or has already been used. Please initiate a "
+"new password reset."
+msgstr ""
+
+#: classes/class-upme-reset-password.php:131
+msgid "Invalid Reset Password Key"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-reset-password.php:134
+msgid "Please enter the new password."
+msgstr ""
+
+#: classes/class-upme-save.php:96 classes/class-upme-save.php:102
+#, php-format
+msgid ""
+"The file you have selected for %s has a file extension that is not allowed. "
+"Please choose a different file."
+msgstr ""
+
+#: classes/class-upme-save.php:98
+#, php-format
+msgid ""
+"The file you have selected for %s exceeds the maximum allowed file size."
+msgstr ""
+
+# @ upme
+#: classes/class-upme-save.php:100
+#, php-format
+msgid ""
+"The file you selected for %s appears to be corrupt or not a real image file."
+msgstr ""
+
+# @ upme
+#: classes/class-upme-save.php:161
+msgid "E-mail address was not updated. Please enter a valid e-mail."
+msgstr ""
+"Email adressen blev ikke opdateret. Indtast venligst en valid email adresse."
+
+# @ upme
+#: classes/class-upme-save.php:169
+msgid "Your passwords do not match."
+msgstr "Dine passwords stemmer ikke overens."
+
+# @ upme
+#: classes/class-upme-save.php:280 modules/class-upme-email-templates.php:138
+msgid "Profile Information Update"
+msgstr ""
+
+#: classes/class-upme-save.php:281
+#, php-format
+msgid "%s has updated profile information."
+msgstr ""
+
+#: classes/class-upme-save.php:282
+msgid "Please find the updated information below."
+msgstr ""
+
+# @ upme
+#: classes/class-upme-save.php:285 function/functions.php:1014
+msgid "Field Key"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-save.php:286 function/functions.php:1015
+msgid "Previous Value"
+msgstr "forrige"
+
+# @ upme
+#: classes/class-upme-save.php:287 function/functions.php:1016
+msgid "Updated Value"
+msgstr ""
+
+#: classes/class-upme-save.php:290 function/functions.php:565
+#: function/functions.php:777
+#: modules/email_templates/upme_approval_notify_user_view.php:10
+#: modules/email_templates/upme_forgot_password_view.php:10
+#: modules/email_templates/upme_nofify_profile_update_view.php:8
+#: modules/email_templates/upme_reg_default_admin_view.php:9
+#: modules/email_templates/upme_reg_default_user_view.php:10
+#: modules/email_templates/upme_reg_email_confirm_admin_view.php:9
+#: modules/email_templates/upme_reg_email_confirm_user_view.php:11
+#: modules/email_templates/upme_two_factor_email_verify_view.php:11
+msgid "Thanks"
+msgstr ""
+
+#: classes/class-upme-save.php:291 function/functions.php:564
+#: function/functions.php:566
+#, php-format
+msgid "%s"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-save.php:332
+msgid "Your profile was updated."
+msgstr "DIn profil er blevet opdateret."
+
+# @ upme
+#: classes/class-upme-save.php:334
+msgid "Profile was updated."
+msgstr "Profilen er blevet opdateret."
+
+#: classes/class-upme-sync-woocommerce.php:61
+#: classes/class-upme-sync-woocommerce.php:183
+msgid "Woocommerce File Doesn't Exist"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-sync-woocommerce.php:165
+#: classes/class-upme-sync-woocommerce.php:282
+msgid "WooCommerce customer fields have been added successfully."
+msgstr "WooCommerce brugerfelter er successfuldt oprettet."
+
+# @ upme
+#: classes/class-upme-updater.php:133 classes/class-upme.php:561
+#: classes/class-upme.php:1060 classes/class-upme.php:2129
+#: classes/class-upme.php:4851 js/upme-custom-js.php:69
+#: js/upme-custom-js.php:74 upme.php:110
+msgid "View Profile"
+msgstr "Se profil"
+
+# @ upme
+#: classes/class-upme-updater.php:152 classes/class-upme.php:4016
+#: classes/class-upme.php:4049 classes/class-upme.php:4698
+msgid "Register"
+msgstr "Registrer"
+
+# @ upme
+#: classes/class-upme-updater.php:172 classes/class-upme.php:4085
+#: classes/class-upme.php:4570 js/upme-custom-js.php:117 upme.php:114
+msgid "Login"
+msgstr "Log ind"
+
+# @ upme
+#: classes/class-upme-updater.php:277
+msgid "Upload folder creation failed."
+msgstr "Upload folder creation failed."
+
+#: classes/class-upme-updater.php:391
+msgid "Reset"
+msgstr ""
+
+# @ upme
+#: classes/class-upme-updater.php:403 classes/class-upme.php:4918
+#: classes/class-upme.php:5009
+msgid "Reset Password"
+msgstr ""
+
+#: classes/class-upme-updater.php:446
+msgid "Member List"
+msgstr ""
+
+# @ upme
+#: classes/class-upme.php:37
+msgid "Text"
+msgstr "Tekst"
+
+# @ upme
+#: classes/class-upme.php:38
+msgid "Image Upload"
+msgstr "Billede upload"
+
+# @ upme
+#: classes/class-upme.php:39
+msgid "Textarea"
+msgstr "Textarea"
+
+# @ upme
+#: classes/class-upme.php:40
+msgid "Select Dropdown"
+msgstr "Vælg dropdown"
+
+# @ upme
+#: classes/class-upme.php:41
+msgid "Radio"
+msgstr "Radio"
+
+# @ upme
+#: classes/class-upme.php:42
+msgid "Checkbox"
+msgstr "Checkbox"
+
+# @ upme
+#: classes/class-upme.php:43 classes/class-upme.php:82
+#: classes/class-upme.php:162
+msgid "Password"
+msgstr "Password"
+
+# @ upme
+#: classes/class-upme.php:44
+msgid "Date Picker"
+msgstr "Dato vælger"
+
+# @ upme
+#: classes/class-upme.php:45
+msgid "Video"
+msgstr "Video"
+
+#: classes/class-upme.php:46
+msgid "Soundcloud"
+msgstr ""
+
+# @ upme
+#: classes/class-upme.php:72 classes/class-upme.php:129
+msgid "E-mail"
+msgstr "email"
+
+# @ upme
+#: classes/class-upme.php:85 classes/class-upme.php:4989
+msgid ""
+"Password must be at least 7 characters long. To make it stronger, use upper "
+"and lower case letters, numbers and symbols."
+msgstr ""
+"Dit password skal være mindst 7 tegn langt. Gør det sikrere ved at bruge "
+"store og små bogstaver samt numre og symboler. "
+
+# @ upme
+#: classes/class-upme.php:92
+msgid "Confirm Password"
+msgstr "Bekræft password"
+
+# @ upme
+#: classes/class-upme.php:95
+msgid "Type your password again."
+msgstr "Indtast dit password igen."
+
+# @ upme
+#: classes/class-upme.php:132
+msgid "A password will be e-mailed to you."
+msgstr "Vi emailer et password til dig."
+
+# @ upme
+#: classes/class-upme.php:153 classes/class-upme.php:4345
+#: classes/class-upme.php:4740 classes/class-upme.php:5020
+msgid "Username or Email"
+msgstr "Brugernavn eller email"
+
+# @ upme
+#: classes/class-upme.php:174
+msgid "Profile Info"
+msgstr "Profil info"
+
+# @ upme
+#: classes/class-upme.php:185
+msgid "Profile Picture"
+msgstr "Profilbillede"
+
+# @ upme
+#: classes/class-upme.php:201
+msgid "First Name"
+msgstr "Fornavn"
+
+# @ upme
+#: classes/class-upme.php:217
+msgid "Last Name"
+msgstr "Efternavn"
+
+# @ upme
+#: classes/class-upme.php:233
+msgid "Display Name"
+msgstr "Vist navn"
+
+# @ upme
+#: classes/class-upme.php:249
+msgid "About / Bio"
+msgstr "Om/ Beskrivelse"
+
+# @ upme
+#: classes/class-upme.php:266
+msgid "Custom Photo 1"
+msgstr "Brugerfoto 1"
+
+# @ upme
+#: classes/class-upme.php:280
+msgid "Contact Info"
+msgstr "Kontaktinfo"
+
+# @ upme
+#: classes/class-upme.php:291
+msgid "Email"
+msgstr "email"
+
+# @ upme
+#: classes/class-upme.php:296
+msgid "Send E-mail"
+msgstr "Send email"
+
+# @ upme
+#: classes/class-upme.php:308
+msgid "Website"
+msgstr "Website"
+
+# @ upme
+#: classes/class-upme.php:322
+msgid "Social Profiles"
+msgstr "Sociale profiler"
+
+# @ upme
+#: classes/class-upme.php:333
+msgid "Facebook"
+msgstr "Facebook"
+
+# @ upme
+#: classes/class-upme.php:338
+msgid "Connect via Facebook"
+msgstr "Connect via Facebook"
+
+# @ upme
+#: classes/class-upme.php:350
+msgid "Twitter Username"
+msgstr "Twitter brugenavn"
+
+# @ upme
+#: classes/class-upme.php:355
+msgid "Connect via Twitter"
+msgstr "Connect via Twitter"
+
+# @ upme
+#: classes/class-upme.php:367
+msgid "Google+"
+msgstr "Google+"
+
+# @ upme
+#: classes/class-upme.php:372
+msgid "Connect via Google+"
+msgstr "Connect via Google+"
+
+# @ upme
+#: classes/class-upme.php:382 classes/class-upme.php:3523
+msgid "Account Info"
+msgstr "Konto information"
+
+# @ upme
+#: classes/class-upme.php:393 classes/class-upme.php:4984
+#: classes/class-upme.php:4986
+msgid "New Password"
+msgstr "Nyt password"
+
+#: classes/class-upme.php:914
+msgid "This account is pending activation."
+msgstr ""
+
+# @ upme
+#: classes/class-upme.php:1173
+msgid "first"
+msgstr "første"
+
+# @ upme
+#: classes/class-upme.php:1176
+msgid "previous"
+msgstr "forrige"
+
+# @ upme
+#: classes/class-upme.php:1208
+msgid "next"
+msgstr "næste"
+
+# @ upme
+#: classes/class-upme.php:1210
+msgid "last"
+msgstr "seneste"
+
+# @ upme
+#: classes/class-upme.php:1406
+#, php-format
+msgid "Search %s"
+msgstr "Søg %s"
+
+#: classes/class-upme.php:1989
+msgid "Your search has returned <span>"
+msgstr ""
+
+# @ upme
+#: classes/class-upme.php:2133 js/upme-custom-js.php:82 upme.php:111
+msgid "Edit Profile"
+msgstr "Ret profil"
+
+# @ upme
+#: classes/class-upme.php:2306
+msgid "Nothing found matching the selected criteria."
+msgstr ""
+
+# @ upme
+#: classes/class-upme.php:2310
+msgid "Please enter search criteria."
+msgstr "Indtast søgekriterier."
+
+# @ upme
+#: classes/class-upme.php:2730 classes/class-upme.php:3903
+msgid ""
+"If you would like to change the password type a new one. Otherwise leave "
+"this blank."
+msgstr ""
+"Hvis du ønsker at ændre dit password, taster du det nye her - ellers lad "
+"feltet være tomt."
+
+# @ upme
+#: classes/class-upme.php:2732 classes/class-upme.php:3905
+msgid "Type your new password again."
+msgstr "Tast dit nye password igen."
+
+#: classes/class-upme.php:2733 classes/class-upme.php:3622
+#: classes/class-upme.php:4999
+msgid "Strength Indicator"
+msgstr ""
+
+# @ upme
+#: classes/class-upme.php:2743 classes/class-upme.php:2757
+#: profile/upme-profile.php:195 profile/upme-profile.php:394
+msgid "Delete Image"
+msgstr "Slet billede"
+
+# @ upme
+#: classes/class-upme.php:2744 classes/class-upme.php:2758
+#: profile/upme-profile.php:200 profile/upme-profile.php:396
+msgid "Loading"
+msgstr "Loader"
+
+# @ upme
+#: classes/class-upme.php:2747
+msgid "Current Picture"
+msgstr "Nuværende billede"
+
+# @ upme
+#: classes/class-upme.php:2752
+msgid ""
+"You can sign up at <a href=\"http://en.gravatar.com/\">Gravatar</a> to have "
+"a globally recognized avatar or upload a custom profile picture below."
+msgstr ""
+"Du kan tilmelde dig  <a href=\"http://en.gravatar.com/\">Gravatar</a> for at "
+"få en global avatar eller uploade et personligt profilbillede herunder."
+
+# @ upme
+#: classes/class-upme.php:2774
+msgid "Update Image"
+msgstr "Opdater billede"
+
+# @ upme
+#: classes/class-upme.php:2828 classes/class-upme.php:3665
+#: classes/class-upme.php:3950
+msgid "Hide from Public"
+msgstr "Skjul for offentligeheden"
+
+# @ upme
+#: classes/class-upme.php:2864
+msgid "Update Profile"
+msgstr "Opdater profil"
+
+# @ upme
+#: classes/class-upme.php:2964
+msgid "User Role"
+msgstr ""
+
+# @ upme
+#: classes/class-upme.php:3087
+msgid "Name"
+msgstr "Navn"
+
+# @ upme
+#: classes/class-upme.php:3291
+#, php-format
+msgid "%s entry"
+msgstr "%s artikel"
+
+# @ upme
+#: classes/class-upme.php:3293
+#, php-format
+msgid "%s entries"
+msgstr "%s artikler"
+
+# @ upme
+#: classes/class-upme.php:3304
+#, php-format
+msgid "%s comment"
+msgstr "%s kommentar"
+
+# @ upme
+#: classes/class-upme.php:3306
+#, php-format
+msgid "%s comments"
+msgstr "%s kommentarer"
+
+# @ upme
+#: classes/class-upme.php:3442
+msgid "Your display name will appear here."
+msgstr "Dit display navn vil blive vist her."
+
+#: classes/class-upme.php:3979
+msgid "Please Accept Terms and Conditions"
+msgstr ""
+
+# @ upme
+#: classes/class-upme.php:4051 classes/class-upme.php:4678
+#: classes/class-upme.php:4680
+msgid "Forget?"
+msgstr "Glemt?"
+
+# @ upme
+#: classes/class-upme.php:4320 classes/class-upme.php:4721
+msgid "Remember me"
+msgstr "Husk mig"
+
+# @ upme
+#: classes/class-upme.php:4322 classes/class-upme.php:4723
+msgid "Log In"
+msgstr "Log ind"
+
+# @ upme
+#: classes/class-upme.php:4363 classes/class-upme.php:4753
+msgid "Back to Login"
+msgstr "Tilbage til login"
+
+# @ upme
+#: classes/class-upme.php:4366 classes/class-upme.php:4756
+#: classes/class-upme.php:5037 js/upme-custom-js.php:107
+#: modules/email_templates_view.php:20 upme.php:113
+msgid "Forgot Password"
+msgstr "Glemt password?"
+
+# @ upme
+#: classes/class-upme.php:4446
+msgid "Log Out"
+msgstr "Log af"
+
+# @ upme
+#: classes/class-upme.php:4534
+msgid "User not found."
+msgstr "Brugeren findes ikke"
+
+# @ upme
+#: classes/class-upme.php:4994 classes/class-upme.php:4996
+msgid "Confirm"
+msgstr ""
+
+#: classes/class-upme.php:5068
+msgid "Recent Posts"
+msgstr ""
+
+# @ default
+#: forgotpass/upme-forgot-pass.php:67
+#: modules/email_templates/upme_forgot_password_view.php:3
+msgid "Someone requested that the password be reset for the following account:"
+msgstr "Der er blevet anmodet om nulstilling af passwordet til følgende konto:"
+
+# @ default
+#: forgotpass/upme-forgot-pass.php:69 function/functions.php:526
+#: function/functions.php:772
+#, php-format
+msgid "Username: %s"
+msgstr "Brugernavn: %s"
+
+# @ default
+#: forgotpass/upme-forgot-pass.php:70
+#: modules/email_templates/upme_forgot_password_view.php:6
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr ""
+"Ignorér blot denne email, hvis dette er sket ved en fejl, så sker der ikke "
+"noget. "
+
+# @ default
+#: forgotpass/upme-forgot-pass.php:71
+#: modules/email_templates/upme_forgot_password_view.php:7
+msgid "To reset your password, visit the following address:"
+msgstr "For at nulstille dit password, gå til denne adresse:"
+
+# @ default
+#: forgotpass/upme-forgot-pass.php:81
+#: modules/class-upme-email-templates.php:144
+#, php-format
+msgid "[%s] Password Reset"
+msgstr "[%s] Password er nulstillet"
+
+# @ upme
+#: function/functions.php:525
+#, php-format
+msgid "New user registration on %s:"
+msgstr ""
+
+# @ upme
+#: function/functions.php:527 function/functions.php:773
+#, php-format
+msgid "E-mail: %s"
+msgstr ""
+
+# @ upme
+#: function/functions.php:533 modules/class-upme-email-templates.php:129
+#: modules/class-upme-email-templates.php:135
+#, php-format
+msgid "[%s] New User Registration"
+msgstr ""
+
+#: function/functions.php:561
+#, php-format
+msgid "Someone (hopefully you) has used this email to register at %s :"
+msgstr ""
+
+#: function/functions.php:562
+#: modules/email_templates/upme_reg_email_confirm_user_view.php:7
+msgid "Please click the link below to verify your ownership of this email:"
+msgstr ""
+
+#: function/functions.php:563
+msgid "You will not be able to log in to use your account until you do so:"
+msgstr ""
+
+#: function/functions.php:572 modules/class-upme-email-templates.php:132
+#, php-format
+msgid "[%s] Action Required: Email Verification"
+msgstr ""
+
+# @ upme
+#: function/functions.php:619
+msgid "Done"
+msgstr ""
+
+#: function/functions.php:620
+msgid "Prev"
+msgstr ""
+
+# @ upme
+#: function/functions.php:621
+msgid "Next"
+msgstr ""
+
+#: function/functions.php:622
+msgid "Today"
+msgstr ""
+
+#: function/functions.php:624
+msgid "January"
+msgstr ""
+
+#: function/functions.php:625
+msgid "February"
+msgstr ""
+
+#: function/functions.php:626
+msgid "March"
+msgstr ""
+
+#: function/functions.php:627
+msgid "April"
+msgstr ""
+
+#: function/functions.php:628 function/functions.php:642
+msgid "May"
+msgstr ""
+
+#: function/functions.php:629
+msgid "June"
+msgstr ""
+
+#: function/functions.php:630
+msgid "July"
+msgstr ""
+
+#: function/functions.php:631
+msgid "August"
+msgstr ""
+
+# @ upme
+#: function/functions.php:632
+msgid "September"
+msgstr ""
+
+#: function/functions.php:633
+msgid "October"
+msgstr ""
+
+#: function/functions.php:634
+msgid "November"
+msgstr ""
+
+# @ upme
+#: function/functions.php:635
+msgid "December"
+msgstr ""
+
+#: function/functions.php:638
+msgid "Jan"
+msgstr ""
+
+#: function/functions.php:639
+msgid "Feb"
+msgstr ""
+
+#: function/functions.php:640
+msgid "Mar"
+msgstr ""
+
+#: function/functions.php:641
+msgid "Apr"
+msgstr ""
+
+#: function/functions.php:643
+msgid "Jun"
+msgstr ""
+
+#: function/functions.php:644
+msgid "Jul"
+msgstr ""
+
+#: function/functions.php:645
+msgid "Aug"
+msgstr ""
+
+#: function/functions.php:646
+msgid "Sep"
+msgstr ""
+
+#: function/functions.php:647
+msgid "Oct"
+msgstr ""
+
+# @ upme
+#: function/functions.php:648
+msgid "Nov"
+msgstr ""
+
+#: function/functions.php:649
+msgid "Dec"
+msgstr ""
+
+#: function/functions.php:652
+msgid "Sunday"
+msgstr ""
+
+#: function/functions.php:653
+msgid "Monday"
+msgstr ""
+
+#: function/functions.php:654
+msgid "Tuesday"
+msgstr ""
+
+#: function/functions.php:655
+msgid "Wednesday"
+msgstr ""
+
+#: function/functions.php:656
+msgid "Thursday"
+msgstr ""
+
+#: function/functions.php:657
+msgid "Friday"
+msgstr ""
+
+#: function/functions.php:658
+msgid "Saturday"
+msgstr ""
+
+#: function/functions.php:661
+msgid "Sun"
+msgstr ""
+
+#: function/functions.php:662
+msgid "Mon"
+msgstr ""
+
+#: function/functions.php:663
+msgid "Tue"
+msgstr ""
+
+#: function/functions.php:664
+msgid "Wed"
+msgstr ""
+
+#: function/functions.php:665
+msgid "Thu"
+msgstr ""
+
+#: function/functions.php:666
+msgid "Fri"
+msgstr ""
+
+#: function/functions.php:667
+msgid "Sat"
+msgstr ""
+
+#: function/functions.php:670
+msgid "Su"
+msgstr ""
+
+#: function/functions.php:671
+msgid "Mo"
+msgstr ""
+
+#: function/functions.php:672
+msgid "Tu"
+msgstr ""
+
+#: function/functions.php:673
+msgid "We"
+msgstr ""
+
+#: function/functions.php:674
+msgid "Th"
+msgstr ""
+
+#: function/functions.php:675
+msgid "Fr"
+msgstr ""
+
+#: function/functions.php:676
+msgid "Sa"
+msgstr ""
+
+#: function/functions.php:678
+msgid "Wk"
+msgstr ""
+
+# @ upme
+#: function/functions.php:770
+#: modules/email_templates/upme_approval_notify_user_view.php:3
+msgid "Your account has been approved successfully. "
+msgstr ""
+
+#: function/functions.php:775
+#: modules/email_templates/upme_approval_notify_user_view.php:8
+msgid "You can now log in to use your account using the following link."
+msgstr ""
+
+#: function/functions.php:783 modules/class-upme-email-templates.php:141
+#, php-format
+msgid "[%s] User Account Approved"
+msgstr ""
+
+# @ upme
+#: function/functions.php:812 function/functions.php:824
+msgid "Your password is too similar to your username."
+msgstr "Dit password er for lig dit brugernavn."
+
+# @ upme
+#: function/functions.php:813 function/functions.php:825
+msgid "Both passwords do not match."
+msgstr "De to indtastede passwords er ikke ens."
+
+# @ upme
+#: function/functions.php:814 function/functions.php:826
+msgid "Your password is too short."
+msgstr "Dit password er for kort."
+
+# @ upme
+#: function/functions.php:815
+msgid "Your password strength is too weak."
+msgstr "Styrken på dit password er for svag."
+
+# @ upme
+#: function/functions.php:816
+msgid "Your password strength is weak."
+msgstr "Styrken på dit password er svag."
+
+# @ upme
+#: function/functions.php:817
+msgid "Please provide username."
+msgstr "Indtast venligst et brugernavn"
+
+# @ upme
+#: function/functions.php:818
+msgid "Please provide email address."
+msgstr "Indtast venligst en email adresse."
+
+# @ upme
+#: function/functions.php:819
+msgid "Please provide valid email address."
+msgstr "Indtast venligst en valid email adresse."
+
+# @ upme
+#: function/functions.php:820
+msgid "That username is already taken, please try a different one."
+msgstr "Det brugernavn er allerede taget. Vælg venligst et andet."
+
+# @ upme
+#: function/functions.php:821
+msgid ""
+"The email you entered is already registered. Please try a new email or log "
+"in to your existing account."
+msgstr ""
+"Den indtastede email adresse er allerede oprettet. Prøv venligst med en "
+"anden, eller log ind med din nuværende bruger."
+
+#: function/functions.php:827
+msgid "Very weak"
+msgstr ""
+
+# @ upme
+#: function/functions.php:830
+msgid "Good"
+msgstr "Godt"
+
+# @ upme
+#: function/functions.php:833
+msgid "ERROR"
+msgstr "FEJL"
+
+# @ upme
+#: function/functions.php:835
+msgid "Minimum password strength level should be"
+msgstr ""
+
+# @ upme
+#: function/functions.php:837
+msgid " New password is required."
+msgstr ""
+
+# @ upme
+#: function/functions.php:838
+msgid " Confirm new password is required."
+msgstr ""
+
+#: function/functions.php:858
+msgid "Insert UPME Shortcode"
+msgstr ""
+
+# @ upme
+#: function/functions.php:859
+msgid "Login / Registration Forms"
+msgstr ""
+
+# @ upme
+#: function/functions.php:860
+msgid "Front-end Registration Form"
+msgstr ""
+
+#: function/functions.php:861
+msgid "Registration Form with Custom Redirect"
+msgstr ""
+
+# @ upme
+#: function/functions.php:862
+msgid "Registration Form with Captcha"
+msgstr ""
+
+#: function/functions.php:863
+msgid "Registration Form without Captcha"
+msgstr ""
+
+#: function/functions.php:864
+msgid "Front-end Login Form"
+msgstr ""
+
+#: function/functions.php:865
+msgid "Sidebar Login Widget (use in text widget)"
+msgstr ""
+
+#: function/functions.php:866
+msgid "Login Form with Custom Redirect"
+msgstr ""
+
+# @ upme
+#: function/functions.php:867
+msgid "Logout Button"
+msgstr ""
+
+#: function/functions.php:868
+msgid "Logout Button with Custom Redirect"
+msgstr ""
+
+# @ upme
+#: function/functions.php:869
+msgid "Single Profile"
+msgstr ""
+
+# @ upme
+#: function/functions.php:870
+msgid "Logged in User Profile"
+msgstr ""
+
+#: function/functions.php:871
+msgid "Logged in User Profile showing User ID"
+msgstr ""
+
+#: function/functions.php:873
+msgid "Logged in User Profile without Stats"
+msgstr ""
+
+# @ upme
+#: function/functions.php:874
+msgid "Logged in User Profile showing User Role"
+msgstr ""
+
+# @ upme
+#: function/functions.php:875
+msgid "Logged in User Profile showing Profile Status"
+msgstr ""
+
+#: function/functions.php:876
+msgid "Logged in User Profile with Logout Redirect"
+msgstr ""
+
+#: function/functions.php:878
+msgid "Post Author Profile"
+msgstr ""
+
+# @ upme
+#: function/functions.php:879
+msgid "Specific User Profile"
+msgstr ""
+
+#: function/functions.php:880
+msgid "Multiple Profiles / Member List"
+msgstr ""
+
+#: function/functions.php:881
+msgid "Group of Specific Users"
+msgstr ""
+
+# @ upme
+#: function/functions.php:882
+msgid "All Users"
+msgstr ""
+
+#: function/functions.php:883
+msgid "All Users in Compact View"
+msgstr ""
+
+#: function/functions.php:884
+msgid "All Users in Compact View, Half Width"
+msgstr ""
+
+#: function/functions.php:885
+msgid "All Users in Modal Windows"
+msgstr ""
+
+#: function/functions.php:886
+msgid "All Users in New Windows"
+msgstr ""
+
+#: function/functions.php:887
+msgid "Users Based on User Role"
+msgstr ""
+
+#: function/functions.php:888
+msgid "Administrator Users Only"
+msgstr ""
+
+#: function/functions.php:889
+msgid "All Users Ordered by Display Name"
+msgstr ""
+
+#: function/functions.php:890
+msgid "All Users Ordered by Post Count"
+msgstr ""
+
+#: function/functions.php:891
+msgid "All Users Ordered by Registration Date"
+msgstr ""
+
+#: function/functions.php:892
+msgid "All Users Ordered by Custom Field"
+msgstr ""
+
+#: function/functions.php:893
+msgid "All Users showing User ID"
+msgstr ""
+
+#: function/functions.php:894
+msgid "Group Users by Custom Field Values"
+msgstr ""
+
+# @ upme
+#: function/functions.php:895
+msgid "Hide All Users until Search"
+msgstr ""
+
+# @ upme
+#: function/functions.php:896
+msgid "Search Profiles"
+msgstr ""
+
+#: function/functions.php:897
+msgid "Search with Custom Field Filters"
+msgstr ""
+
+#: function/functions.php:898
+msgid "Private Content (Login Required)"
+msgstr ""
+
+#: function/functions.php:899
+msgid "Shortcode Option Examples"
+msgstr ""
+
+#: function/functions.php:900
+msgid "Hide User Statistics"
+msgstr ""
+
+#: function/functions.php:901
+msgid "Hide User Social Bar"
+msgstr ""
+
+#: function/functions.php:902
+msgid "1/2 Width Profile View"
+msgstr ""
+
+#: function/functions.php:903
+msgid "Compact View (No extra fields)"
+msgstr ""
+
+# @ upme
+#: function/functions.php:904
+msgid "Customized Profile Fields"
+msgstr ""
+
+# @ upme
+#: function/functions.php:905
+msgid "Show User ID on Profiles"
+msgstr ""
+
+#: function/functions.php:906
+msgid "Limit Results on Member List"
+msgstr ""
+
+#: function/functions.php:907
+msgid "Show Result Count on Member List"
+msgstr ""
+
+#: function/functions.php:1053
+msgid "Free"
+msgstr ""
+
+#: function/functions.php:1063 function/functions.php:1073
+msgid "Premium"
+msgstr ""
+
+#: integrated_plugins/wpmember.php:74
+msgid "Please purchase a package to continue. Click "
+msgstr ""
+
+#: integrated_plugins/wpmember.php:74
+msgid "Here"
+msgstr ""
+
+# @ upme
+#: integrated_plugins/wpmember.php:93
+msgid "You need to confirm your email address."
+msgstr ""
+
+# @ upme
+#: js/upme-custom-js.php:127
+msgid "Please provide username or email address to reset password."
+msgstr ""
+"Indtast venligst dit brugernavn eller email for at gendanne dit password."
+
+# @ upme
+#: js/upme-custom-js.php:141
+msgid "Please provide email address which is registered with us."
+msgstr "Indtast venligst den email adresse du er registreret med hos os."
+
+# @ upme
+#: js/upme-custom-js.php:142
+msgid "Please enter valid user name or email address."
+msgstr "Indtast venligst et korrekt brugernavn eller email adresse"
+
+# @ upme
+#: js/upme-custom-js.php:143
+msgid "User with given details is not allowed to change password."
+msgstr ""
+"Brugeren med de givne detaljer har ikke rettigheder til at rette password'et."
+
+# @ upme
+#: js/upme-custom-js.php:144 upme.php:120
+msgid ""
+"We are unable to deliver email to your email address. Please contact site "
+"admin."
+msgstr ""
+"Vi kan desværre ikke levere email til den mailadresse du har opgivet. "
+"Kontakt venligst administratoren for dette site"
+
+# @ upme
+#: js/upme-custom-js.php:145
+msgid "We have sent password reset link to your email address."
+msgstr "Vi har sendt et gendan password-link til din email adresse"
+
+# @ upme
+#: js/upme-custom-js.php:146
+msgid "Something went wrong, Please try again"
+msgstr "Der gik noget galt - prøv venligst igen."
+
+#: modules/class-upme-email-templates.php:29
+msgid "Email Template reset successfully."
+msgstr ""
+
+# @ upme
+#: modules/class-upme-email-templates.php:35
+#: modules/class-upme-email-templates.php:60
+#: modules/class-upme-email-templates.php:78
+msgid "Template not found."
+msgstr ""
+
+#: modules/class-upme-email-templates.php:58
+msgid "Email Template saved successfully."
+msgstr ""
+
+# @ upme
+#: modules/class-upme-email-templates.php:126
+#, php-format
+msgid "[%s] Your username and password"
+msgstr ""
+
+#: modules/class-upme-email-templates.php:147
+#, php-format
+msgid "[%s] Email Verification and Login"
+msgstr ""
+
+#: modules/class-upme-site-restrictions.php:44
+msgid "New restriction rule added."
+msgstr ""
+
+#: modules/class-upme-site-restrictions.php:47
+msgid "Failed to add new restriction rule."
+msgstr ""
+
+#: modules/class-upme-site-restrictions.php:78
+msgid "Restriction rule deleted."
+msgstr ""
+
+#: modules/class-upme-site-restrictions.php:81
+msgid "Failed to delete restriction rule."
+msgstr ""
+
+# @ upme
+#: modules/class-upme-site-restrictions.php:116
+msgid "Delete Rule"
+msgstr ""
+
+#: modules/class-upme-site-restrictions.php:124
+msgid "Restriction rules are not available."
+msgstr ""
+
+#: modules/class-upme-site-restrictions.php:137
+#: modules/site_content_restriction_rules_view.php:61
+msgid "All Logged in Users"
+msgstr ""
+
+#: modules/class-upme-site-restrictions.php:155
+msgid "All Pages"
+msgstr ""
+
+#: modules/class-upme-site-restrictions.php:159
+msgid "All Posts"
+msgstr ""
+
+# @ upme
+#: modules/class-upme-site-restrictions.php:168
+msgid "Selected Pages:"
+msgstr ""
+
+# @ upme
+#: modules/class-upme-site-restrictions.php:177
+msgid "Selected Posts:"
+msgstr ""
+
+# @ upme
+#: modules/class-upme-site-restrictions.php:209
+msgid "Restriction rule staus updated."
+msgstr ""
+
+#: modules/class-upme-site-restrictions.php:212
+msgid "Failed to update restriction rule status."
+msgstr ""
+
+# @ upme
+#: modules/email_templates/upme_approval_notify_user_view.php:5
+#: modules/email_templates/upme_forgot_password_view.php:5
+#: modules/email_templates/upme_reg_default_admin_view.php:6
+#: modules/email_templates/upme_reg_default_user_view.php:5
+#: modules/email_templates/upme_reg_email_confirm_admin_view.php:6
+#: modules/email_templates/upme_reg_email_confirm_user_view.php:5
+#: modules/email_templates/upme_two_factor_email_verify_view.php:5
+msgid "Username:"
+msgstr ""
+
+# @ upme
+#: modules/email_templates/upme_approval_notify_user_view.php:6
+#: modules/email_templates/upme_reg_default_admin_view.php:7
+#: modules/email_templates/upme_reg_email_confirm_admin_view.php:7
+msgid "E-mail:"
+msgstr ""
+
+#: modules/email_templates/upme_nofify_profile_update_view.php:3
+msgid "has updated profile information. "
+msgstr ""
+
+#: modules/email_templates/upme_nofify_profile_update_view.php:5
+msgid "Please find the updated information below"
+msgstr ""
+
+# @ upme
+#: modules/email_templates/upme_reg_default_admin_view.php:3
+#: modules/email_templates/upme_reg_email_confirm_admin_view.php:3
+msgid "New user registration on "
+msgstr ""
+
+#: modules/email_templates/upme_reg_default_user_view.php:4
+#: modules/email_templates/upme_reg_email_confirm_user_view.php:4
+msgid ""
+"Someone (hopefully you) has used this email to register at {%blog_name%}"
+msgstr ""
+
+# @ upme
+#: modules/email_templates/upme_reg_default_user_view.php:6
+#: modules/email_templates/upme_reg_email_confirm_user_view.php:6
+msgid "Password:"
+msgstr ""
+
+#: modules/email_templates/upme_two_factor_email_verify_view.php:4
+msgid ""
+"Someone (hopefully you) has used this email to verify the login at "
+"{%blog_name%}"
+msgstr ""
+
+#: modules/email_templates/upme_two_factor_email_verify_view.php:6
+msgid "Email:"
+msgstr ""
+
+#: modules/email_templates/upme_two_factor_email_verify_view.php:7
+msgid "Please click the link below to login automatically:"
+msgstr ""
+
+#: modules/email_templates_view.php:10
+msgid "Email Template Title"
+msgstr ""
+
+# @ upme
+#: modules/email_templates_view.php:14
+msgid "Select Template"
+msgstr ""
+
+#: modules/email_templates_view.php:15
+msgid "Default registration for users"
+msgstr ""
+
+# @ upme
+#: modules/email_templates_view.php:16
+msgid "Default registration for admin"
+msgstr ""
+
+#: modules/email_templates_view.php:17
+msgid "Registration with email confirmation for Users"
+msgstr ""
+
+#: modules/email_templates_view.php:18
+msgid "Registration with email confirmation for Admin"
+msgstr ""
+
+# @ upme
+#: modules/email_templates_view.php:19
+msgid "Notify Profile Update"
+msgstr ""
+
+#: modules/email_templates_view.php:21
+msgid "User approval notification for users"
+msgstr ""
+
+#: modules/email_templates_view.php:28
+msgid "Select the email template name."
+msgstr ""
+
+#: modules/email_templates_view.php:32
+msgid "Email Status"
+msgstr ""
+
+#: modules/email_templates_view.php:35
+msgid "Disabled - Don't send Email"
+msgstr ""
+
+# @ upme
+#: modules/email_templates_view.php:35
+msgid "Enabled - Send Email"
+msgstr ""
+
+#: modules/email_templates_view.php:40
+msgid "Enable/Disable sending a specific email."
+msgstr ""
+
+#: modules/email_templates_view.php:44
+msgid "Email Subject"
+msgstr ""
+
+#: modules/email_templates_view.php:50
+msgid "Edit the subject of email template."
+msgstr ""
+
+#: modules/email_templates_view.php:54
+msgid "Email Template Editor"
+msgstr ""
+
+#: modules/email_templates_view.php:60
+msgid "Edit the contents of email template."
+msgstr ""
+
+# @ upme
+#: modules/site_content_restriction_rules_view.php:2
+msgid "Restriction Type"
+msgstr ""
+
+#: modules/site_content_restriction_rules_view.php:6
+#: modules/site_lockdown_view.php:16
+msgid "Lock Entire Site"
+msgstr ""
+
+#: modules/site_content_restriction_rules_view.php:7
+msgid "Lock Part of Site"
+msgstr ""
+
+#: modules/site_content_restriction_rules_view.php:12
+msgid ""
+"Select whether you want to restrict entire site or part of the site for "
+"users based on following conditions."
+msgstr ""
+
+# @ upme
+#: modules/site_content_restriction_rules_view.php:17
+msgid "Restricted Section"
+msgstr ""
+
+#: modules/site_content_restriction_rules_view.php:21
+msgid "Restrict All Pages"
+msgstr ""
+
+#: modules/site_content_restriction_rules_view.php:22
+msgid "Restrict All Posts"
+msgstr ""
+
+# @ upme
+#: modules/site_content_restriction_rules_view.php:23
+msgid "Restrict Selected Pages"
+msgstr ""
+
+# @ upme
+#: modules/site_content_restriction_rules_view.php:24
+msgid "Restrict Selected Posts"
+msgstr ""
+
+#: modules/site_content_restriction_rules_view.php:30
+msgid "Select type of content to be restricted."
+msgstr ""
+
+#: modules/site_content_restriction_rules_view.php:35
+msgid "Restricted Pages"
+msgstr ""
+
+#: modules/site_content_restriction_rules_view.php:41
+msgid "Select pages to be restricted."
+msgstr ""
+
+#: modules/site_content_restriction_rules_view.php:46
+msgid "Restricted Posts"
+msgstr ""
+
+#: modules/site_content_restriction_rules_view.php:52
+msgid "Select posts to be restricted."
+msgstr ""
+
+#: modules/site_content_restriction_rules_view.php:57
+msgid "Allowed Users"
+msgstr ""
+
+# @ upme
+#: modules/site_content_restriction_rules_view.php:62
+msgid "Specific User Roles"
+msgstr ""
+
+#: modules/site_content_restriction_rules_view.php:67
+msgid "Select what type of users have access to restricted content."
+msgstr ""
+
+# @ upme
+#: modules/site_content_restriction_rules_view.php:72
+msgid "Allowed User Roles"
+msgstr ""
+
+# @ upme
+#: modules/site_content_restriction_rules_view.php:84
+msgid "Select which user roles will be allowed to access this content."
+msgstr ""
+
+# @ upme
+#: modules/site_content_restriction_rules_view.php:89
+msgid "Redirect URL"
+msgstr ""
+
+#: modules/site_content_restriction_rules_view.php:96
+msgid ""
+"Specify the redirection URL for users with unauthorized access based on this "
+"rule."
+msgstr ""
+
+# @ upme
+#: modules/site_content_restrictions_view.php:12
+msgid "Restriction Rules"
+msgstr ""
+
+#: modules/site_content_restrictions_view.php:16
+msgid "Disable Restriction Rules"
+msgstr ""
+
+#: modules/site_content_restrictions_view.php:17
+msgid "Enable Restriction Rules"
+msgstr ""
+
+#: modules/site_content_restrictions_view.php:22
+msgid ""
+"Enable/ Disable site restriction rules defined in Content Restriction Rules "
+"section."
+msgstr ""
+
+#: modules/site_content_restrictions_view.php:27
+#: modules/site_lockdown_view.php:27
+msgid "Allowed Pages"
+msgstr ""
+
+#: modules/site_content_restrictions_view.php:35
+msgid ""
+"These pages will be acessible to any user regardless of the restriction rule "
+"settings."
+msgstr ""
+
+#: modules/site_content_restrictions_view.php:40
+#: modules/site_lockdown_view.php:38
+msgid "Allowed Posts"
+msgstr ""
+
+#: modules/site_content_restrictions_view.php:46
+#: modules/site_content_restrictions_view.php:56
+msgid ""
+"These posts will be acessible to any user regardless of the restriction rule "
+"settings."
+msgstr ""
+
+# @ upme
+#: modules/site_content_restrictions_view.php:51
+msgid "Allowed URLs"
+msgstr ""
+
+#: modules/site_lockdown_view.php:18
+msgid ""
+"If checked, access to your entire site will be restricted for guests and non-"
+"logged in users.\n"
+"                You can create exceptions below by allowing posts, pages or "
+"URL's."
+msgstr ""
+
+#: modules/site_lockdown_view.php:20
+msgid ""
+"Checking this option will restrict access to your entire site for guests and "
+"non-logged in users ."
+msgstr ""
+
+#: modules/site_lockdown_view.php:29
+msgid "These pages will be acessible to any user without any restrictions."
+msgstr ""
+
+#: modules/site_lockdown_view.php:30
+msgid "Define public pages ."
+msgstr ""
+
+#: modules/site_lockdown_view.php:40
+msgid "These posts will be acessible to any user without any restrictions."
+msgstr ""
+
+#: modules/site_lockdown_view.php:41
+msgid "Define public posts ."
+msgstr ""
+
+# @ upme
+#: modules/site_lockdown_view.php:49
+msgid "Allowed URL's"
+msgstr ""
+
+#: modules/site_lockdown_view.php:51
+msgid "These URL's will be acessible to any user without any restrictions."
+msgstr ""
+
+#: modules/site_lockdown_view.php:52
+msgid "Define public URL's"
+msgstr ""
+
+# @ upme
+#: modules/site_lockdown_view.php:65
+msgid "Redirect Page"
+msgstr ""
+
+#: modules/site_lockdown_view.php:67
+msgid ""
+"Guests will be redirected here when they try to access your locked site.The "
+"default is UPME Login page which may be\n"
+"                set in UPME Settings -> System Pages. If you choose another "
+"page, be sure it includes <code>[upme_login]</code> shortcode."
+msgstr ""
+
+#: modules/site_lockdown_view.php:69
+msgid "Define redirection URL for violating site lockdown restrictions ."
+msgstr ""
+
+#: modules/site_lockdown_view.php:77
+msgid "RSS Feed"
+msgstr ""
+
+# @ upme
+#: modules/site_lockdown_view.php:78
+msgid "RSS Enabled"
+msgstr ""
+
+#: modules/site_lockdown_view.php:78
+msgid "RSS Disabled"
+msgstr ""
+
+#: modules/site_lockdown_view.php:78
+msgid "Limited to Headlines/ Titles"
+msgstr ""
+
+#: modules/site_lockdown_view.php:79 modules/site_lockdown_view.php:81
+msgid ""
+"RSS feed viewing does not require the user to login.Your RSS feed is "
+"publicly acessible if enabled.You may disable or\n"
+"                limit the RSS feed above to prevent access to locked content "
+"through your RSS feed."
+msgstr ""
+
+# @ upme
+#: profile/upme-profile.php:57 upme.php:131
+msgid "Are you sure you want to delete this image?"
+msgstr "Er du sikker på at du ønsker at slette dette billede?"
+
+# @ upme
+#: profile/upme-profile.php:58
+msgid "Please select an image to upload."
+msgstr "Vælg venligst et billede til upload."
+
+# @ upme
+#: profile/upme-profile.php:96
+msgid "Update Profile Picture"
+msgstr "Opdater profilbillede"
+
+# @ upme
+#: profile/upme-profile.php:185
+msgid "Current Picture:"
+msgstr "Nuværende billede:"
+
+# @ upme
+#: profile/upme-profile.php:205 profile/upme-profile.php:260
+msgid "Crop Image"
+msgstr "Beskær billede"
+
+# @ upme
+#: profile/upme-profile.php:238 profile/upme-profile.php:242
+msgid "Upload Image"
+msgstr "Upload billede"
+
+# @ upme
+#: profile/upme-profile.php:259
+msgid "Crop Your New Profile Picture"
+msgstr "Beskær dit nye profilbillede."
+
+# @ upme
+#: profile/upme-profile.php:261
+msgid "Save Image"
+msgstr ""
+
+# @ upme
+#: upme.php:116
+msgid "Please enter your username or email to reset password."
+msgstr ""
+"Indtast venligst dit brugernavn eller email for at gendanne dit password."
+
+# @ upme
+#: upme.php:117
+msgid "Please enter your email address."
+msgstr "Indtast venligst din emailadresse"
+
+# @ upme
+#: upme.php:118
+msgid "Please enter valid username or email address."
+msgstr "Indtast venligst et korrekt brugernavn eller email adresse"
+
+# @ upme
+#: upme.php:119
+msgid "Password changes are not allowed for this user."
+msgstr "Du har ikke ret til at ændre password for denne bruger."
+
+# @ upme
+#: upme.php:121
+msgid "We have sent a password reset link to your email address."
+msgstr ""
+"Vi har sendt et link til din email, hvor du kan oprette et nyt password."
+
+# @ upme
+#: upme.php:122
+msgid "Something went wrong, please try again"
+msgstr "Der gik noget galt - prøv venligst igen."
+
+# @ upme
+#: upme.php:123
+msgid "Email is already registered."
+msgstr "Emailen er allerede registreret."
+
+# @ upme
+#: upme.php:124
+msgid "Email is available"
+msgstr "Email er tilgængelig"
+
+# @ upme
+#: upme.php:125
+msgid "Invalid email."
+msgstr "invalid email."
+
+# @ upme
+#: upme.php:126
+msgid "Email is empty."
+msgstr "Email er ikke indtastet."
+
+# @ upme
+#: upme.php:127
+msgid "Username is already registered."
+msgstr "Brugernavn er optaget"
+
+# @ upme
+#: upme.php:128
+msgid "Username is available."
+msgstr "Brugernavn er tilgængeligt"
+
+# @ upme
+#: upme.php:129
+msgid "Username is empty."
+msgstr "Brugernavn er ikke udfyldt"
+
+# @ upme
+#: upme.php:130
+msgid "Invalid username."
+msgstr "Forkert brugernavn."
+
+#: upme.php:186
+#, php-format
+msgid ""
+"The file you have selected for %s exceeds the allowed dimensions. Please "
+"upload an image of 500px * 400px or less.."
+msgstr ""
+
+# @ upme
+#: widgets/upme-login-widget.php:17
+msgid "UPME Login"
+msgstr ""
+
+# @ upme
+#: widgets/upme-login-widget.php:18
+msgid "Display Register Link"
+msgstr ""
+
+# @ upme
+#: widgets/upme-login-widget.php:20
+msgid "Display Forgot Password Link"
+msgstr ""
+
+# @ upme
+#: widgets/upme-login-widget.php:25
+msgid "Displays a log-in form for users"
+msgstr ""
+
+# @ upme
+#: widgets/upme-login-widget.php:26
+msgid "UPME Log-in"
+msgstr ""
+
+# @ upme
+#: widgets/upme-widgets.php:9
+msgid "Displays a list of latest registered users."
+msgstr "Viser en liste med de seneste registrerede medlemmer."
+
+# @ upme
+#: widgets/upme-widgets.php:13
+msgid "UPME - Latest Members"
+msgstr "UPME - Seneste medlemmer"
+
+# @ upme
+#: widgets/upme-widgets.php:44
+#, php-format
+msgid "View %s Profile"
+msgstr "Vis %s profil"
+
+# @ upme
+#: widgets/upme-widgets.php:102
+msgid "Latest Members"
+msgstr ""
+
+# @ upme
+#: widgets/upme-widgets.php:106
+msgid "Title:"
+msgstr "Titel:"
+
+# @ upme
+#: widgets/upme-widgets.php:111
+msgid "How many users to show:"
+msgstr "Hvor mange brugere skal vises:"
+
+# @ upme
+#: widgets/upme-widgets.php:116
+msgid "Profile picture size:"
+msgstr "Profilbillede størrelse:"
+
+# @ upme
+#: widgets/upme-widgets.php:121
+msgid "Link to user profile:"
+msgstr "Link til brugerprofil"

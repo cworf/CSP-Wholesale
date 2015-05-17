@@ -1,0 +1,410 @@
+table.upme-table {
+	margin: 20px 0 0 0;
+}
+
+table.upme-table th {font-family: Open Sans,'Helvetica','Arial';font-size: 12px;}
+
+table.upme-table td { padding: 10px }
+
+table.upme-table .regular-text {
+	width: 94%;
+}
+
+table.upme-table td i {
+	font-size: 20px;
+}
+
+table.upme-table i.upme-tooltip2, table.upme-table i.upme-tooltip, table.upme-add-form i.upme-tooltip2 {
+	margin: 0 0 0 6px;
+	cursor: help;
+	color: #366799;
+	font-size: 14px;
+}
+table.upme-table i.upme-tooltip2:hover,
+table.upme-table i.upme-tooltip:hover,
+table.upme-add-form i.upme-tooltip2:hover {color: #ff7000}
+
+table.upme-table a {color: #666}
+
+table.upme-table a.upme-trash {color: #ff0000}
+
+/* The inline editor */
+.upme-editor * {font-size: 11px}
+
+.upme-editor p {
+	display: block;
+}
+
+table.upme-table tr.upme-editor label.upme-icons {
+	margin: 0 20px 0 0;
+	padding:0 0 10px 0;
+	float: left;
+	width: 50px;
+	display: none;
+}
+
+table.upme-table tr.upme-editor label.upme-icons i {
+	font-size: 14px;
+	margin: 0 0 0 10px;
+}
+
+i.upme-ticked {
+	background: url(../images/tick.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	float: left;
+	display: block;
+}
+
+i.upme-unticked {
+	background: url(../images/untick.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	float: left;
+	display: block;
+}
+
+p.upme-hide {
+	display: none;
+}
+
+/* Form that adds new fields */
+table.upme-add-form {
+	border: 1px solid #ddd;
+	display: none;
+}
+
+tr.upme-editor {display: none}
+
+table.upme-add-form label.upme-icons {
+	margin: 0 20px 0 0;
+	padding:0 0 16px 0;
+	float: left;
+	width: 55px;
+}
+
+table.upme-add-form label.upme-icons i {
+	line-height: 20px;
+	color: #444;
+	cursor: pointer;
+	margin: 0 0 0 10px;
+	font-size: 18px;
+}
+
+.mce-i-upme_shortcodes_button,span.mce_upme_shortcodes_button{background-image:url(../images/upme-icon-20.png)!important;background-repeat:no-repeat!important;background-position:center!important}
+
+.text-area
+{
+	width: 50% !important;
+	
+}
+
+.option-help
+{
+	font-size: 15px;
+margin-left: 10px;
+color: #366799;
+}
+
+.option-help:hover
+{
+	color: #ff7000;
+}
+
+.dragging
+{
+	background-color: #F5FA5C;
+}
+
+/* Tabbing */
+
+.upme-shortcode-popup-tabs { padding: 0; clear: both; }
+.upme-shortcode-popup-tabs li a { background: #f5f5f5; padding: 5px; float:left; border-right: 1px solid #ccf; border-bottom: 2px solid #CCC; text-decoration: none; color: #444; font-weight: bold; }
+.upme-shortcode-popup-tabs li.active a { background: #D8D8D8; color: #1A1818 !important; border-bottom: 2px solid #1A1818; }
+.upme-shortcode-popup-content { float: left; clear: both; border-top: 0px none; background: #f5f5f5; padding: 10px 20px 20px; width: 565px; }
+
+.small_help
+{
+	font-size: 11px;
+font-style: normal;
+color: #666;
+}
+
+/* New Setting Page Design */
+.upme-tab-group
+{
+	background-color: #F1F1F1;
+	border: 1px solid #DFDFDF;
+	margin-right: 9px;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+	display: block;	
+}
+
+.upme-tabs
+{
+	width: 175px;
+	float: left; 
+	margin: 10px 0px 0px 0px;
+}
+
+.upme-tabs li
+{
+	margin: 10px 0px;
+	padding: 5px 0px 5px 5px;
+	cursor: pointer;
+}
+
+.upme-tabs li.active
+{
+	font-weight: bold;
+	background-color: #777;
+	color: #FFF; 
+}
+
+.upme-tab-content-holder
+{
+	overflow: hidden;
+}
+
+.upme-tab-content{
+	min-height: 500px;
+}
+
+.upme-tab-container
+{
+	margin-left: 175px;
+	background-color: #FFF;
+	padding: 20px 20px 40px 20px;
+	border-left: 1px solid #DFDFDF	
+}
+
+.upme-tab-content h3
+{
+	font-size: 1.6em;
+	margin-top: 2px;	
+}
+
+.upme-help-text{
+    width: 25em;
+}
+
+.upme-admin-inline-checkbox, td.upme-admin-inline-checkbox {
+	padding: 0 10px !important;
+	vertical-align: top !important;
+}
+
+/* UPME Admin Custom Fields Styles */
+.upme-field-table-footer,.upme-field-table-header{
+	float: left;
+	font-size: 12px;
+	padding: 10px;
+	width: 5%;
+	background: #fff;
+}
+
+.upme-field-table-footer-extend,.upme-field-table-header-extend{
+	width: 7%;
+}
+
+.upme-field-table-headers{
+	background: #FFF;
+	border-bottom: 1px solid #E1E1E1;
+}
+
+.upme-field-table-footers{
+	background: #FFF;
+	border-top: 1px solid #E1E1E1;
+}
+
+
+.upme-field-table-data{
+	float: left;
+	font-size: 12px;
+	padding: 10px;
+	width: 5%;
+}
+
+.upme-field-table-data-extend{
+	width: 7%;
+}
+
+upme-table {
+	margin: 20px 0 0 0;
+}
+
+
+.upme-table .regular-text {
+	width: 94%;
+}
+
+.upme-table div i {
+	font-size: 20px;
+}
+
+.upme-table i.upme-tooltip2, .upme-table i.upme-tooltip, .upme-add-form i.upme-tooltip2 {
+	margin: 0 0 0 6px;
+	cursor: help;
+	color: #366799;
+	font-size: 14px;
+}
+.upme-table i.upme-tooltip2:hover,
+.upme-table i.upme-tooltip:hover,
+.upme-add-form i.upme-tooltip2:hover {color: #ff7000}
+
+.upme-table a {color: #666}
+
+.upme-table a.upme-trash {color: #ff0000}
+
+
+.upme-table div.upme-editor label.upme-icons {
+	margin: 0 20px 0 0;
+	padding:0 0 10px 0;
+	float: left;
+	width: 50px;
+	display: none;
+}
+
+.upme-table div.upme-editor label.upme-icons i {
+	font-size: 14px;
+	margin: 0 0 0 10px;
+}
+
+div.upme-editor {display: none;background: #FFF;}
+
+#upme-form-customizer-table{
+	border: 1px solid #E5E5E5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    margin-top: 20px;
+}
+
+.upme-edit-table-column{
+	width: 25%;
+	float: left;
+	padding: 2%;
+}
+.upme-edit-table-column-last{
+	width: 40%;
+	float: left;
+	padding: 1%;
+}
+
+#upme-form-customizer-table-data,#upme-form-customizer-table-data li{
+	margin: 0;
+}
+
+.update_processing{
+    color: #75B84D;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 5px;
+    display: none;
+}
+
+#upme_site_restriction_rules{
+	border:1px solid #cfcfcf;
+}
+#upme_site_restriction_rules_titles{
+	background: #eee;
+	border-bottom: 1px solid #CFCFCF;
+}
+#upme_site_restriction_rules_titles th{
+	padding: 10px;
+}
+
+/* Styles for chosen dropdown */
+.search-field .default{
+    width: 90% !important;
+}
+
+#email_template_chosen{
+	width: 80% !important;
+}
+
+/* Required fields highlight */
+span.upme-required{
+    color: #F31212;
+}
+
+/* Styles for Addons List */
+#upme-addons-feed .upme-addon-single{
+    background: none repeat scroll 0 0 #fff;
+    box-sizing: border-box;
+    float: left;
+    margin: 10px 1%;
+    padding: 1%;
+    width: 31%;
+    border: 1px solid #CFCFCF;
+}
+
+
+#upme-addons-feed .upme-addon-single-title{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#upme-addons-feed .upme-addon-single-image img{
+    width: 100%;
+    height: 200px;
+}
+
+#upme-addons-feed .upme-addon-single-desc{
+    padding: 10px 0;
+}
+
+#upme-addons-feed .upme-addon-single-buttons div{
+    color: #3c3535;
+    float: left;
+    font-weight: bold;
+    margin: 10px 2px;
+    max-width: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#upme-addons-feed .upme-addon-single-status{
+    background: none repeat scroll 0 0 #eee;
+    border: 1px solid #cfcfcf;
+    width:30%;
+}
+
+#upme-addons-feed .upme-addon-single-type{
+    background: none repeat scroll 0 0 #eee;
+    border: 1px solid #cfcfcf;
+    width:25%;
+}
+
+#upme-addons-feed .upme-addon-single-get{
+    background: none repeat scroll 0 0 #eee;
+    border: 1px solid #cfcfcf;
+    width:30%;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 980px) {
+    #upme-addons-feed .upme-addon-single{
+        width:45%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #upme-addons-feed .upme-addon-single{
+        width:95%;
+    }
+}
+
+@media only screen and (min-width: 261px) and (max-width: 300px) {
+    #upme-addons-feed .upme-addon-single{
+        width:95%;
+    }
+}
+
+@media screen and (max-device-width: 480px) 
+{ 
+    #upme-addons-feed .upme-addon-single{
+        width:95%;
+    }
+}
+
