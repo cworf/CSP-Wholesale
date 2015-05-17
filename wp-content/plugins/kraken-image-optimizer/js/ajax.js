@@ -1,6 +1,5 @@
 jQuery(document).ready(function($) {
 
-
     var errors = [{
         code: 401,
         msg: 'Unnknown API Key. Please check your API key and try again'
@@ -31,9 +30,9 @@ jQuery(document).ready(function($) {
     }];
 
 
-    $('a.krakenError').tipsy({
+    $('.krakenWhatsThis').tipsy({
         fade: true,
-        gravity: 'e'
+        gravity: 'w'
     });
 
     var data = {
@@ -65,11 +64,7 @@ jQuery(document).ready(function($) {
 
             $parent.fadeOut("fast", function() {
                 $cell.find(".noSavings, .krakenErrorWrap").remove();
-                krakedData = '<strong>' + krakedSize + '</strong><br /><small>Type:&nbsp;' + type + '</small><br /><small>Savings: ' + savingsPercent + '</small>';
-                if (typeof data.thumbs_data !== 'undefined') {
-                    krakedData += '<br /><small>' + data.thumbs_data.length + ' thumbs optimized</small>';
-                }
-                $(this).replaceWith(krakedData);
+                $(this).replaceWith(data.html);
                 $originalSizeColumn.html(originalSize);
                 $parent.remove();
             });
@@ -150,24 +145,24 @@ jQuery(document).ready(function($) {
                 closeText: 'close',
                 showClose: false
             },
-            setting = $("button.kraken_req").eq(0).data("setting"),
+            setting = kraken_settings.api_lossy,
             nImages = bulkImageData.length,
             header = '<p class="krakenBulkHeader">Kraken Bulk Image Optimization</p>',
             krakEmAll = '<button class="kraken_req_bulk">Krak \'em all</button>',
             typeRadios = '<span class="radiosWrap"><span class="kraken-bulk-choose-type">Choose:</span>' + '<input type="radio" id="kraken-bulk-type-lossy" value="Lossy" name="kraken-bulk-type"/>' + '<label for="kraken-bulk-type-lossy">Lossy</label>&nbsp;' + '<input type="radio" id="kraken-bulk-type-lossless" value="Lossless" name="kraken-bulk-type"/>' + '<label for="kraken-bulk-type-lossless">Lossless</label></span>',
-            $modal = $('<div id="kraken-bulk-modal" class="modal"></div>')
+            $modal = $('<div id="kraken-bulk-modal" class="kraken-modal"></div>')
             .html(header)
             .append(typeRadios)
             .append('<br /><small class="kraken-bulk-small">The following <strong>' + nImages + '</strong> images will be optimized by Kraken.io using the <strong class="bulkSetting">' + setting + '</strong> setting:</small><br />')
             .appendTo("body")
-            .modal(modalOptions)
-            .bind($.modal.BEFORE_CLOSE, function(event, modal) {
+            .kmodal(modalOptions)
+            .bind($.kmodal.BEFORE_CLOSE, function(event, modal) {
 
             })
-            .bind($.modal.OPEN, function(event, modal) {
+            .bind($.kmodal.OPEN, function(event, modal) {
 
             })
-            .bind($.modal.CLOSE, function(event, modal) {
+            .bind($.kmodal.CLOSE, function(event, modal) {
                 $("#kraken-bulk-modal").remove();
             })
             .css({
@@ -211,7 +206,7 @@ jQuery(document).ready(function($) {
             .append('<span class="close-kraken-bulk">Close Window</span>');
 
         $(".close-kraken-bulk").click(function() {
-            $.modal.close();
+            $.kmodal.close();
         });
 
         if (!nImages) {
@@ -302,7 +297,7 @@ jQuery(document).ready(function($) {
                 });
                 callback();
             });
-        }, 5);
+        }, kraken_settings.bulk_async_limit);
 
         q.drain = function() {
             $(".kraken_req_bulk")
@@ -313,7 +308,7 @@ jQuery(document).ready(function($) {
                 .text("Done")
                 .unbind("click")
                 .click(function() {
-                    $.modal.close();
+                    $.kmodal.close();
                 });
         }
 
@@ -343,7 +338,90 @@ jQuery(document).ready(function($) {
             }
         });
 
-    $(".kraken_req").click(function(e) {
+    $('body').on('click', 'small.krakenReset', function(e) {
+        e.preventDefault();
+        var $resetButton = $(this);
+        var resetData = {
+            action: 'kraken_reset'
+        };
+        resetData.id = $(this).data("id");
+
+        var $spinner = $('<span class="resetSpinner"></span>');
+        $resetButton.after($spinner);
+
+        var jqxhr = $.ajax({
+                url: ajax_object.ajax_url,
+                data: resetData,
+                type: "post",
+                dataType: "json",
+                timeout: 360000
+            })
+            .done(function(data, textStatus, jqXHR) {
+                if (data.success !== 'undefined') {
+                    $resetButton
+                        .closest('.kraked_size.column-kraked_size')
+                        .hide()
+                        .html(data.html)
+                        .fadeIn()
+                        .prev(".original_size.column-original_size")
+                        .html(data.original_size);
+                }
+            });
+    });
+
+    $('body').on('click', '.kraken-reset-all', function(e) {
+        e.preventDefault();
+
+        var reset = confirm('This will immediately remove all Kraken metadata associated with your images. \n\nAre you sure you want to do this?');
+        if (!reset) {
+            return;
+        }
+
+        var $resetButton = $(this);
+        $resetButton
+            .text('Resetting images, pleaes wait...')
+            .attr('disabled', true);
+        var resetData = {
+            action: 'kraken_reset_all'
+        };
+
+
+        var $spinner = $('<span class="resetSpinner"></span>');
+        $resetButton.after($spinner);
+
+        var jqxhr = $.ajax({
+                url: ajax_object.ajax_url,
+                data: resetData,
+                type: "post",
+                dataType: "json",
+                timeout: 360000
+            })
+            .done(function(data, textStatus, jqXHR) {
+                $spinner.remove();
+                $resetButton
+                    .text('Your images have been reset.')
+                    .removeAttr('disabled')
+                    .removeClass('enabled');
+            });
+    });
+
+    $('.krakenAdvancedSettings h3').on('click', function () {
+        var $rows = $('.kraken-advanced-settings');
+        var $plusMinus = $('.kraken-plus-minus');
+        if ($rows.is(':visible')) {
+            $rows.hide();
+            $plusMinus
+                .removeClass('dashicons-arrow-down')
+                .addClass('dashicons-arrow-right');
+        } else {
+            $rows.show();
+            $plusMinus
+                .removeClass('dashicons-arrow-right')
+                .addClass('dashicons-arrow-down');        
+        }
+    });
+
+    $('body').on("click", ".kraken_req", function(e) {
         e.preventDefault();
         var $button = $(this),
             $parent = $(this).parent();
