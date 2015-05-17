@@ -1,0 +1,191 @@
+﻿*** WooCommerce Customer Relationship Manager Changelog ***
+2015.01.19 - version 2.5.7
+ * Fix conflict with WooCommerce Memberships plugin.
+
+2015.01.15 - version 2.5.6
+ * Fix fatal bug regarding user email not defined.
+ * Fix bug with customer icon now showing.
+ * Localisation support for DE.
+
+2015.01.13 - version 2.5.5
+ * Tweak SQL functions to allow more records to load, store and process.
+ * Fix bug when editing email addresses.
+
+2014.12.29 - version 2.5.4
+ * Fix bug with Google maps not appearing.
+ * Fix bug with WooSidebars compatibility.
+
+2014.12.23 - version 2.5.3
+ * Fix bug with importing customers.
+ * Fix bug when ACF fields not appearing.
+ * Fix bug with order notes.
+
+2014.11.21 - version 2.5.2
+ * Feature added in creating custom customer status.
+ * Fix bug with exporting contacts.
+
+2014.11.18 - version 2.5.1
+ * Fix with ACF bugs, sorry about this.
+
+2014.11.17 - version 2.5
+ * Feature integration with Advanced Custom Fields now supported.
+ * Feature importing customers is now possible.
+ * Feature where you can set what the username will be when adding a customer.
+ * Fix bugs when adding a new customer.
+
+2014.10.28 - version 2.4.6
+ * Feature added, multisite support.
+
+2014.10.27 - version 2.4.5
+ * Fix bug with automatic customer table update.
+ * Fix bug when relating calls to orders/products.
+
+2014.10.24 - version 2.4.4
+ * Feature added localisation, sorry for the wait.
+ * Tweak to 'Related Products' when making a call.
+ * Fix database handling.
+
+2014.10.11 - version 2.4.3
+ * Feature added where you can now decide how customers are loaded in the customers table.
+ * Tweak to the groups feature.
+
+2014.09.29 - version 2.4.2
+ * Feature added where you can view a Google map of the customers.
+ * Tweak to the page title of when you view a customer.
+ * Fix bug with the Orders Status and Product Category filter.
+
+2014.09.27 - version 2.4.1
+ * Feature added to assing what orders can be shown as Number of Orders and Total Value in customers table.
+
+2014.09.10 - version 2.4
+ * Feature compatibility for WooCommerce 2.2.
+ * Tweak unused files have been removed.
+ * Tweak to the customer status.
+ * Tweak to the menu order.
+
+2014.07.29 - version 2.3.4
+ * Fix customers page showing added customers, customers with customer role and purchasing customers.
+ * Tweak integration with POS plugin to show customers added through that plugin.
+ * Tweak the follow up page after adding a cusotmer.
+
+2014.07.15 - version 2.3.3
+ * Fix order of customers when sorting through them.
+ * Feature added to set what page loads when clicking on customer name on Orders page. This can be configured via Custoemrs > Settings > Orders Page.
+ * Tweak to emailing page, when sending emails without subejct, a warning message is displayed.
+ * Tweak to activity email page, now shows what email address was sent from and what email addresses were sent to.
+ * Fix customers appearing even though no orders and user profile.
+ * Fix number of orders appearing for uncompleted orders.
+ 
+2014.07.14 - version 2.3.2
+ * Fix Total Value sales are showing completed orders only.
+ * Feature added telephone number when placing a phone call.
+ * Fix bug when filtering customers and going to next and previous pages.
+ * Tweak to the orders page to view the customer directly.
+
+2014.07.10 - version 2.3.1
+ * Fix table displaying no customers.
+ 
+2014.07.09 - version 2.3
+ * Fix customers not showing bug.
+ * Feature added more fields to set Brands (official WooThemes extension).
+ * Feature added more fields to set Product Category.
+ 
+2014.07.07 - version 2.2.1
+ * Fix username formatting on customers page.
+ * Fix searching customers on customers page.
+ * Fix triple status icon issue.
+
+2014.07.04 - version 2.2
+ * Tweak with loading speed for 1000+ customers.
+ * Fix bug with date sorting.
+
+2014.06.03 - version 2.1.2
+ * Fix bug with email being displayed when exporting customers.
+ * Fix bug when emailing multiple customers.
+
+2014.05.25 - version 2.1.1
+ * Fix bug when customers status icon was not showing.
+ * Fix bug when view icon was not showing.
+ * Fix response time.
+ * Fix blank screen issue.
+
+2014.05.20 - version 2.1
+ * Feature added where you can add groups static or dynamic.
+ * Fix bug when new customer is added via shop, status is automatically "Customer".
+ * Tweak filters to include "Customer Status" now.
+ * Fix filter for searching for customers.
+ * Tweak in the settings, moved into seperate page.
+
+2014.05.13 - version 2.0.2
+ * Fix a few bugs related to viewing customer and editing their detials.
+ * Fix a few bugs related to customer status losing details.
+ 
+2014.05.13 - version 2.0.1
+ * Feature added where you can now add a customer and it appears in the customers table without order being made.
+ * Fix a few bugs when WP_DEBUG mode was turned on.
+ * Tweak when adding a customer, user created with default role as "Customer".
+
+2014.04.03 - version 2.0.0
+ * Feature added where you can now log a call.
+ * Feature added where you can now log email.
+ * Feature added where you can add customer.
+ * Feature added where you can view customer activity i.e. call or email.
+ * Feature added where you can choose what filters to have.
+ * Feature added where you can set a customer status i.e. lead, blocked etc.
+ * Feature added where you can add a customer note.
+ * Fix a few bugs with emailing, logging calls and activity.
+
+2014.02.20 - version 1.4.1
+ * Feature added where you can filter between users and guests.
+ * Feature added where you can filter for last 24 hours.
+ * Tweak for font icons in action buttions. 2.0.x support has gone.
+ * Fix bugs of adding notes 2.1 issue.
+ * Fix bugs of linking variations 2.1 issue.
+ * Feature email logs are now displayed.
+ 
+2014.02.12 - version 1.4
+ * Feature added where you can search customers by name, email address and phone number.
+ * Fix for when sending emails, no longer breaking paragraphs.
+ * Tweak to the email handling.
+
+2014.02.07 - version 1.3.5
+ * Tweak made to the menu, now a seperate menu called Customers.
+ * Tweak made to use latest font icons to match WordPress 3.8.
+
+2014.01.31 - version 1.3.4
+ * Fix the screen options number of customers to show on page.
+ * Fix alignment for filters.
+
+2013.11.30 - version 1.3.3
+ * Feature implemented where you can now filter customer by States & Cities.
+ * Feature implemented where you can enter your custom email address when you send an email.
+
+2013.11.15 - version 1.3.2
+ * When products are deleted, customers are still shown with their orders in place. This corrects the “blank issue” issue on some WordPress installations.
+
+2013.10.19 - version 1.3.1
+ * MailChimp API class renamed to prevent collisions with certain themes or plugins. This corrects the "blank page" issue on some WordPress installations.
+
+2013.10.14 - version 1.3
+ * Filter by product feature added.
+ * Listing now contains all values of ONLY complete orders, not ALL orders.
+
+2013.10.09 - version 1.2.2
+ * Listing now contains Total amount of ONLY complete orders, not ALL orders.
+
+2013.10.02 - version 1.2.1
+ * Quotes between terms added to CSV export file.
+ * Minor code reformating and adjustmest, CSS fixes.
+
+2013.09.29 - version 1.2
+ * Added a new Action button allowing users to Call Customer using Skype etc.
+
+2013.09.25 - version 1.1
+ * Added possibility of exporting customers in CSV format.
+
+2013.09.20 - version 1.0.1
+ * Width for Actions column is now in PX instead of % to ensure all viewframes can view actions.
+ * Telephone column added.
+
+2013.09.09 - version 1.0
+ * Initial release!

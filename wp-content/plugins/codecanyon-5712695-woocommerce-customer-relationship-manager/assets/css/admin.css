@@ -1,0 +1,534 @@
+@font-face {
+	font-family: 'aecrm';
+	src: url('includes/fonts//aecrm.eot');
+	src: url('includes/fonts//aecrm.eot?#iefix') format('embedded-opentype'), url('includes/fonts//aecrm.woff') format('woff'), url('includes/fonts//aecrm.ttf') format('truetype'), url('includes/fonts//aecrm.svg#aecrm') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+label[for="woocommerce_crm_mailchimp"]{width: auto;}
+#adminmenu #toplevel_page_wc-customer-relationship-manager .menu-icon-generic div.wp-menu-image:before {
+	font-family: 'aecrm' !important;
+	content: "\e601";
+	font-size: 1.3em !important;
+}
+/* Email Handling */
+.fancybox-wrap {
+	top: 50px !important;
+}
+.fancybox-skin {
+	margin-bottom: 50px !important;
+}
+.fancybox-skin {
+	padding: 0px !important;
+	border-radius: 0px !important;
+}
+.fancybox-inner {
+	width: 100%;
+}
+.fancybox-inner #wpwrap #wpcontent {
+	padding: 5px !important;
+}
+.fancybox-close {
+	top: -15px !important;
+	right: -15px !important;
+}
+#wc-crm-page #recipients, #subject {
+	margin: 5px 0 20px 0;
+	width: 100%;
+}
+#wc-crm-page .textboxlist-bit-editable-input {
+	height: 44px;
+	height: 17px;
+}
+#wc-crm-page td.customer_status i {
+	font-variant: normal;
+	display: block;
+	float: none;
+	margin: auto;
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+	-webkit-font-smoothing: antialiased;
+}
+/* MailChimp */
+#wc-crm-page .enrolled-yes:before, #wc-crm-page .enrolled-no:before {
+	position: relative;
+}
+#wc-crm-page .enrolled-yes:before, #wc-crm-page .enrolled-no:before {
+	font-family: aecrm;
+	font-style: normal;
+	text-decoration: inherit;
+	color: #737373;
+	position: relative;
+	top: 7px;
+	font-size: 100%;
+	font-weight: normal;
+	float: left;
+}
+#wc-crm-page .enrolled-yes:before {
+	content: "\e602";
+	color: #73a724;
+}
+#wc-crm-page .enrolled-no:before {
+	content: "\e603";
+	color: #d54e21;
+}
+#wc-crm-page .enrolled-no:before, #wc-crm-page .enrolled-yes:before {
+	font-size: 130%;
+	top: 0px;
+}
+#woocommerce-customer-orders .wp-list-table,
+#woocommerce-customer-activity .wp-list-table{
+  border: none;
+}
+
+#wc_crm_customers_form .wp-list-table .column-num_orders .ico_orders,
+#wc_crm_customers_form .wp-list-table .column-customer_notes .ico_notes,
+#wc_crm_customers_form .wp-list-table .column-enrolled .ico_news,
+#wc_crm_customers_form .wp-list-table .column-order_value .ico_value {
+    display: block;
+    height: 1em;
+    margin: 0 auto;
+    position: relative;
+    text-indent: -9999px;
+    width: 1em;
+}
+#wc_crm_customers_form .wp-list-table .column-num_orders .ico_orders:after,
+#wc_crm_customers_form .wp-list-table .column-customer_notes .ico_notes:after,
+#wc_crm_customers_form .wp-list-table .column-enrolled .ico_news:after,
+#wc_crm_customers_form .wp-list-table .column-order_value .ico_value:after {
+   font-variant: normal;
+    height: 100%;
+    left: 0;
+    line-height: 1;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    text-indent: 0;
+    text-transform: none;
+    top: 0;
+    width: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+/* Actions */
+.groups_tables .column-group_action a.button,
+#wc-crm-page .crm_actions a.button,
+#woocommerce-customer-activity .crm_actions a.button,
+#woocommerce-customer-orders .crm_actions a.button{
+	cursor: pointer;
+    float: left;
+    height: auto;
+    margin: 0 4px 2px 0;
+    padding: 3px 4px;
+    display: block;
+    height: 2em !important;
+    padding: 0 !important;
+    position: relative;
+    text-indent: -9999px;
+    width: 2em;
+}
+.groups_tables .column-group_action a.button:after,
+#wc-crm-page .crm_actions a.button:after,
+#woocommerce-customer-activity .crm_actions a.button:after,
+#woocommerce-customer-orders .crm_actions a.button:after{
+    font-variant: normal;
+    font-weight: 400;
+    height: 100%;
+    left: 0;
+    line-height: 1.85;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    text-indent: 0;
+    text-transform: none;
+    top: 0;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+.groups_tables .column-group_action a.view:after,
+#woocommerce-customer-activity .crm_actions a.view:after,
+#woocommerce-customer-orders .crm_actions a.view:after,
+#wc-crm-page .crm_actions a.view:after{
+	content:"\e010";
+	font-family:WooCommerce;
+}
+#wc-crm-page .crm_actions a.complete:after,
+#woocommerce-customer-orders .crm_actions a.complete:after {
+    content: "\e017";
+    font-family: WooCommerce;
+}
+#wc-crm-page .crm_actions a.processing:after,
+#woocommerce-customer-orders .crm_actions a.processing:after {
+    content: "\e00f";
+    font-family: WooCommerce;
+}
+#wc-crm-page .crm_actions a.email:after{
+	content:"\e60c";
+	font-family: 'aecrm' !important;
+}
+#wc-crm-page .crm_actions a.phone:after{
+	content:"\e613";
+	font-family: 'aecrm' !important;
+}
+#wc-crm-page .crm_actions a.activity:after{
+  content:"\e60b";
+  font-family: 'aecrm' !important;
+  font-weight: bold;
+}
+
+#woocommerce-customer-activity .crm_actions a.delete_log:after,
+#wc-crm-page .crm_actions a.delete_log:after{
+	content:"\e612";
+	font-family: 'aecrm' !important;
+}
+.groups_tables .column-group_action{
+width: 28px;
+}
+.groups_tables .column-group_type,
+.groups_tables .column-group_slug{
+width: 128px;
+}
+/* Customers Table */
+#wc-crm-page #the-list td {
+	padding: 8px;
+	vertical-align: top;
+}
+#wc-crm-page img.tips {
+	padding: 0px !important;
+}
+#wc-crm-page .note-on,
+#wc-crm-page .note-off{
+  font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    text-transform: none;
+    display: block;
+    color: #999;
+    text-align: center;
+}
+#wc-crm-page .note-on:after {
+    content: "\e027";
+    font-family: WooCommerce;
+}
+/* Icons */
+.ico_mail,
+.ico_phone,
+.ico_send,
+.ico_pause,
+.ico_stop,
+.ico_reset,
+table .ico_orders,
+table .status_head,
+table .ico_news,
+table .ico_notes,
+table .ico_value
+ {
+	margin-right: 10px;
+	font-family: 'aecrm' !important;
+	font-style: normal !important;
+	margin: auto;
+}
+.ico_call {
+	font-family: 'aecrm' !important;
+	font-style: normal !important;
+	margin-left: 7px;
+	float: right;
+}
+.ico_start,
+.ico_pause,
+.ico_stop,
+.ico_reset {
+	font-family: 'aecrm' !important;
+	font-style: normal !important;
+}
+.ico_calendar:before {
+	content: "\f145";
+	font-family: dashicons;
+	left: -36px;
+	position: relative;
+	top: 4px;
+	font-style: normal;
+	font-size: 17px;
+	pointer-events: none;
+}
+table .status_head:after {
+  font-family: WooCommerce;
+  content: "\e011";
+}
+.ico_mail:after {
+	content:"\e60c";
+}
+.ico_phone:after{
+	content:"\e613";
+}
+table .ico_news:after{
+	content:"\e60f";
+}
+.ico_call:after{
+	content:"\e614";
+}
+.ico_send:after{
+	content:"\e60a";
+	margin-left: 10px;
+}
+.ico_start:after {
+	content:"\e605";
+}
+.ico_pause:after {
+	content:"\e606";
+}
+.play .ico_pause:after {
+  content:"\e600";
+}
+.ico_stop:after {
+	content:"\e604";
+}
+.ico_reset:after {
+	content:"\e607";
+}
+table .ico_orders:after {
+	content:"\e611";
+}
+table .ico_value:after {
+	content:"\e61a";
+}
+table  .ico_notes:after {
+	content: "\e028";
+	font-family: 'WooCommerce';
+}
+#wc-crm-page .crm_actions a.select_order:after{
+	content:"\e609";
+	font-family: 'aecrm' !important;
+}
+
+
+input.current-page {width: 50px; }
+/*************Page Place New Call****************/
+.h2_new_call, .wprap_new_call{ float: left; }
+.wprap_new_call{ 
+	margin-left: 25px;
+}
+#view_info {
+	padding: 0 6px;
+}
+
+#place_new_call table.phone_call input[type="text"]{	width: 25em; float: left; margin-right: 1em;}
+#place_new_call table.phone_call textarea {
+	width: 500px;
+}
+#place_new_call #related_to,
+#place_new_call #number_order_product,
+#place_new_call #view_info {float: left;margin-right: 1em;}
+#place_new_call #view_customer_info{float: left;}
+#place_new_call #number_order_product{width: 100px;}
+#place_new_call .call_details{	float: left; padding-right: 25px;}
+#place_new_call .call_details input{ margin-right: 2px; width: auto !important;}
+#start_timer,
+#stop_timer,
+#pause_timer,
+#reset_timer {
+	display: block;
+	float: left;
+	margin-right: 4px;
+}
+#place_new_call .display_time {
+	float: left;
+	background-color: #dddddd;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.08) inset, 0 1px 1px #fafafa;
+	border-radius: 3px;
+	padding: 2px 8px;
+	margin-right: 0.5em;
+	font-size: 25px;
+	font-weight: 100;
+	}
+#place_new_call .display_date{line-height: 30px;}
+#place_new_call #completed_call_wrap{display: none;}
+#place_new_call #view_info:before {
+	content:"\e609";
+	font-family: 'aecrm' !important;
+	font-size: 150%;
+}
+#place_new_call #view_customer_info:before{
+	font-family: 'aecrm';
+	content:"\e608";
+}
+#stop_timer, #pause_timer, #reset_timer{display: none;}
+#place_new_call table.phone_call #call_date{ max-width: 132px;}
+#place_new_call table.phone_call input.call_time{ width: 44px;}
+
+#place_new_call .completed_call_wrap{display: none;}
+#place_new_call .completed_call_wrap .wrap_disabled{position: relative;}
+#place_new_call .completed_call_wrap.disabled input{
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.04);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.04);
+	border-color: rgba(222,222,222,.75);
+	background: rgba(255,255,255,.5);
+	color: rgba(51,51,51,.5);
+}
+  #place_new_call .completed_call_wrap .content_disabled{
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 100;
+  }
+  #place_new_call .completed_call_wrap.disabled .content_disabled{display: block;}
+
+.error_message, .error.below-h2{
+  display: none;
+}
+
+/*************END Page Place New Call****************/
+
+#wc-crm-page .column-activity_type, #woocommerce-customer-activity .column-activity_type{ width: 70px;}
+#wc-crm-page .column-activity_type i{
+	display: table;
+	margin-left: 11px;
+	float: left;
+}
+#wc-crm-page .column-activity_type i:before,
+#woocommerce-customer-activity .column-activity_type i:before{
+	position: relative;
+	font-family: aecrm;
+	font-style: normal;
+	color: #737373;
+}
+#wc-crm-page .column-activity_type i.phone:before,
+#woocommerce-customer-activity .column-activity_type i.phone:before{
+  content:"\e613";
+}
+#wc-crm-page .column-activity_type i.email:before,
+#woocommerce-customer-activity .column-activity_type i.email:before{
+  content:"\e60c";
+}
+#wc-crm-page .column-created,
+#woocommerce-customer-activity .column-created {
+    width: 120px;
+}
+#wc-crm-page .column-user_id,
+#woocommerce-customer-activity .column-user_id{
+    width: 120px;
+}
+#wc-crm-page .column-crm_actions,
+#woocommerce-customer-activity .column-crm_actions,
+#woocommerce-customer-orders .column-crm_actions {
+    width: 120px;
+}
+.view-activity {
+    width: 85%;
+}
+.view-activity td {
+	padding: 10px 5px;
+	vertical-align: top;
+	line-height: 1.5;
+}
+.view-activity td p {
+ 	margin-top: 0px;
+}
+.view-activity th {
+	padding: 10px 5px;
+	vertical-align: top;
+	text-align: right;
+	line-height: 1.5;
+}
+.Flagged,
+.Customer,
+.Lead,
+.Follow-Up,
+.Prospect,
+.Favourite,
+.Blocked{
+	font-family: aecrm;
+    font-variant: normal;
+    font-weight: bold;
+    height: 100%;
+    margin: 0;
+    text-transform: none;
+    display: block;
+	float: none;
+	margin: auto;
+	text-align: center;
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+	-webkit-font-smoothing: antialiased;
+}
+.Flagged:after{
+  content: '\e617';
+  color: #a00;
+  font-weight: 100 !important;
+}
+.Customer:after{
+  content: '\e610';
+  color: #2ea2cc;
+}
+.Lead:after{
+  content: '\e60e';
+  color: #ffba00;
+}
+.Follow-Up:after{
+  content: '\e619';
+  color: #551A8B;
+}
+.Prospect:after{
+  content: '\e618';
+  color: #73a724;
+}
+.Favourite:after{
+  content: '\e616';
+  color: #d0c21f;
+}
+.Blocked:after{
+  content: '\e615';
+  color: #999;
+}
+#woocommerce-customer-orders .tablenav,
+#woocommerce-customer-activity .tablenav{
+  display: none;
+}
+.order_notes li {
+	padding: 0 10px;
+}
+.wrap_date{
+  float: left;
+  position: relative;
+}
+.wrap_date .ico_calendar{
+  position: absolute;
+  right: -19px;
+  margin-top: 1px;
+}
+#customer_data #order_data .order_data_column div.edit_address{overflow: visible;}
+
+#screen-meta .metabox-prefs label * {
+  font-family: "Open Sans",sans-serif !important;
+}
+#order_data_column_billing #_billing_country{
+  height: 26px;
+}
+#order_data_column_shipping #_shipping_country{
+  height: 26px;
+}
+
+#customer_address_map_canvas{
+  width: 66%;
+  height: 300px;
+  float: left;
+  margin: 10px 0;
+}
+#wc_crm_loading_data .spinner{
+  float: left;
+  display: inline;
+}
+
+#wc_crm_customer_statuses{min-height: 544px;}
+.spiner_wrap{position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgba(255,255,255,0.7); display: none;}
+.spiner_wrap span{ position: absolute; height: 20px; width: 20px; left: 50%; margin-left: -10px; top: 50%; margin-top: -10px; display: block;}
+@media (max-width: 1280px) {
+  #customer_address_map_canvas {
+    width: 100%;
+  }
+}
