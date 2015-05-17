@@ -26,7 +26,7 @@ TT_ENQUEUE::$gfont_changer = array(
         _go('sidebar_text_font'),
         _go('menu_text_font')
     );
-TT_ENQUEUE::add_js(array('http://w.sharethis.com/button/buttons.js'));
+TT_ENQUEUE::add_js(array('//w.sharethis.com/button/buttons.js'));
 /***********************************************************************************************/
 /* Custom CSS */
 /***********************************************************************************************/
@@ -644,10 +644,3 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 //Removing breadcrumbs
 if(!_go('show_breadcrumbs'))
     remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
-
-/*add_filter( 'locale', 'my_theme_localized' );
-function my_theme_localized( $locale )
-{
-    
-    return 'ro_RO';
-}*/

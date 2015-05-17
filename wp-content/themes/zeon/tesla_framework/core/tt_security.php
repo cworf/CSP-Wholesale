@@ -89,7 +89,7 @@ class TT_Security extends TeslaFramework {
 	private function error_message($just_warning=NULL,$custom=NULL){
 		echo "<div id='result_content'><div id='tt_import_alert'>";
 		if($custom)
-			echo $custom;
+			print $custom;
 		if ( $just_warning )
 			echo '<span>WARNING :</span> We noticed some fraudulent activity with our theme or couldn\'t connect to our servers for some reasons. Please contact us in 5 days to fix this or '.THEME_PRETTY_NAME.' framework page will be blocked.<br> <span>State : ' . $this->state . '</span>';
 		else{

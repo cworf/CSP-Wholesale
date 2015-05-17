@@ -63,7 +63,7 @@ if ( !class_exists( 'TT_Security' ) ){
         id="<?php echo str_replace(' ','_',$tab[ 'title' ]) ; ?>"
       >
       <?php if (!empty($tab['type']) && $tab['type'] == 'iframe') : //if tab type is iframe show iframe?>
-          <iframe width="100%" height="700px" src="<?php echo $tab['link'] ?>"></iframe> 
+          <iframe width="100%" height="700px" src="<?php echo esc_attr($tab['link']) ?>"></iframe> 
         <?php  continue;
       endif; ?>
       <!-- <a class="tt_teslathemes" target="_blank" href="http://teslathemes.com/?spb"></a> -->
@@ -76,7 +76,7 @@ if ( !class_exists( 'TT_Security' ) ){
           <?php endif;?>
               <div class="tt_content_box<?php if (!empty($box['class'])) echo " " . $box['class'];?>">
                 <div class="tt_content_box_title">
-                  <span class="tt_bg_icon tt_<?php if(!empty($box['icon'])) echo $box['icon'];?>"><?php printf( __( '%s', THEME_NAME ), $box_name ); ?></span>
+                  <span class="tt_bg_icon tt_<?php if(!empty($box['icon'])) echo esc_attr($box['icon']);?>"><?php printf( __( '%s', THEME_NAME ), $box_name ); ?></span>
                 </div>
                 <div class="tt_content_box_content">
                   <?php if (!empty($box['description']))
@@ -106,7 +106,7 @@ if ( !class_exists( 'TT_Security' ) ){
                       echo "<section class='options_block'>";
                     $input_id = $input['id'];
                     if (count($box['input_fields']) > 1 && !empty($box['columns'] ) ):?>
-                      <div class="tt_box tt_box_<?php if (isset($input['size'])) echo $input['size'];?>">
+                      <div class="tt_box tt_box_<?php if (isset($input['size'])) echo esc_attr($input['size']);?>">
                     <?php endif;
                     if (!empty($input_field_name) && !ctype_digit(str_replace(' ','',$input_field_name))):?>
                         <div class="tt_option_title">
@@ -147,7 +147,7 @@ if ( !class_exists( 'TT_Security' ) ){
                 <div class="tt_content_box_bottom">
                   <?php if (!empty($box['repeater'])) : ?>
                     <div class='repeater'>
-                      <a class="repeat_box">&#43;<b>&nbsp;<?php echo $box['repeater']?></b></a>
+                      <a class="repeat_box">&#43;<b>&nbsp;<?php print $box['repeater']?></b></a>
                     </div>
                   <?php endif; ?>
                   <input class="tt_submit" type="submit" value="<?php _e('Save Changes','TeslaFramework')?>">

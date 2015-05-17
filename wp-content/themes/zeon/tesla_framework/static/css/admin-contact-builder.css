@@ -1,5 +1,4 @@
 /*=========================== Tesla Contact Builder CSS ==========================*/
-
 .row-edit, .row-delete , .form-delete{
 	position: absolute;
 	width: 24px;
@@ -33,8 +32,16 @@
 }
 
 
-ul.affix{
+.elements-wrapper.affix{
 	width: 27.5%;
+	top: 20px;
+}
+
+.elements-wrapper.affix-bottom{
+	bottom: 0;
+	position: absolute;
+	bottom: 20px;
+	top: auto;
 }
 
 .btn {

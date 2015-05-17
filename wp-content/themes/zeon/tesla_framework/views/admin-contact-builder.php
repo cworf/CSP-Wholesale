@@ -21,16 +21,16 @@
 				<div class="span8 builder">
 					<button class='btn btn-success save-forms'>Save forms</button>
 					<?php 
-					if(!empty($forms)) : ;
+					if(!empty($forms)) :
 						foreach ($forms as $form) : ?>	<!-- Start Form template -->
 							<div class="builder-body form-template">
 								<header class="form-meta">
-									<input type="text" class="form-id" placeholder="Unique Form ID" value="<?php echo $form['id'] ?>">
-									<input type="text" class="form-receiver-email" placeholder="Receiver's email (empty for admin email)" value="<?php echo $form['receiver_email'] ?>">
+									<input type="text" class="form-id" placeholder="Unique Form ID" value="<?php echo esc_attr($form['id']) ?>">
+									<input type="text" class="form-receiver-email" placeholder="Receiver's email (empty for admin email)" value="<?php echo esc_attr($form['receiver_email']) ?>">
 									<select name="form_location" class="form_location">
 										<option value="">No Location</option>
 										<?php foreach ($locations as $id => $name): ?>
-											<option value="<?php echo $id?>"<?php selected( $form['location'], $id );?>><?php echo $name ?></option>
+											<option value="<?php echo esc_attr($id) ?>"<?php selected( $form['location'], $id );?>><?php print $name ?></option>
 										<?php endforeach ?>
 									</select>
 									<label for="form-disable-headers"><input type="checkbox" id="form-disable-headers" class="form-disable-headers" value="true" <?php checked( $form['disable_headers'] , 1 ) ?>>Disable Headers (if message is sent but email not received)</label>
@@ -39,14 +39,14 @@
 								foreach($form['rows'] as $row) : ?> <!-- Start Row -->
 									<div class="row-fluid form-row">
 										<?php foreach( $row['columns'] as $column ) : ?> <!-- Start Column -->
-											<div class="span<?php echo $column['size']?> column">
+											<div class="span<?php echo esc_attr($column['size'])?> column">
 												<ul>
 													<?php if (!empty($column['form_elements']))
 														foreach($column['form_elements'] as $form_element) : ?>
 															<li 
 																class="form-element" 
 																data-element='<?php echo json_encode($form_element);//building element parameters json in the data attr ?>'
-																><?php echo $form_element['title'] ?>
+																><?php print $form_element['title'] ?>
 																	<span class='config'><i class='icon-pencil'></i></span>
 															</li>
 														<?php endforeach; ?>
@@ -76,7 +76,7 @@
 								<select name="form_location" class="form_location">
 									<option value="">No Location</option>
 									<?php foreach ($locations as $id => $name): ?>
-										<option value="<?php echo $id?>"><?php echo $name ?></option>
+										<option value="<?php echo esc_attr($id) ?>"><?php print $name ?></option>
 									<?php endforeach ?>
 								</select>
 							</header>
@@ -96,26 +96,26 @@
 							<button class='add-new-row btn btn-info'>Add row</button>
 						</div>
 					<?php endif; ?>
-				<button id="add-new-form" class='btn btn-primary'>Add form</button>
-				<button class='btn btn-success save-forms' data-loading-text="Saving..." data-success-text="Successfully Saved" data-fail-text="Couldn't save or nothing changed !">Save forms</button>
-			</div>
+					<button id="add-new-form" class='btn btn-primary'>Add form</button>
+					<button class='btn btn-success save-forms' data-loading-text="Saving..." data-success-text="Successfully Saved" data-fail-text="Couldn't save or nothing changed !">Save forms</button>
+				</div>
 				<aside class="span4 tools">
-					<ul class="form-elements" data-spy="affix">
+					<ul class="form-elements">
 						<?php foreach ($form_elements as $key => $form_element) : ?>
-							<li class='form-element' data-element='{<?php echo (empty($form_element['no_name'])) ? '"name":"",' : ''?>"type":"<?php echo $key ?>","title":"<?php echo $form_element['title'] ?>"<?php 
+							<li class='form-element' data-element='{<?php print (empty($form_element['no_name'])) ? '"name":"",' : ''?>"type":"<?php print $key ?>","title":"<?php print $form_element['title'] ?>"<?php 
 							if(!empty($form_element['properties'])){
 								echo ",";
 								$nr_prop = 1;
 								foreach ($form_element['properties'] as $prop_name => $property) {
 									echo '"'.$prop_name.'":"'.$property.'"';
-									echo $nr_prop < count($form_element['properties']) ? "," : "";
+									echo ($nr_prop < count($form_element['properties'])) ? "," : "";
 									$nr_prop++;
 								}
-							}?>}'><?php echo $form_element['title'] ?>
-						<?php if(!empty($form_element['properties']) || empty($form_element['no_name'])) : ?>
-							<span class='config'><i class='icon-pencil'></i></span>
-						<?php endif; ?>
-						</li>
+							}?>}'><?php print $form_element['title'] ?>
+							<?php if(!empty($form_element['properties']) || empty($form_element['no_name'])) : ?>
+								<span class='config'><i class='icon-pencil'></i></span>
+							<?php endif; ?>
+							</li>
 						<?php endforeach; ?>
 					</ul>
 				</aside>

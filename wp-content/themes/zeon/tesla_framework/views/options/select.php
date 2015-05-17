@@ -3,9 +3,9 @@
   $value = tt_get_value($input_nr,$input_id,$inputs_count);
  ?>
   <select
-    id="<?php echo $input_id?>"
-    name="<?php echo THEME_OPTIONS?>[<?php echo $input_id?>]<?php echo $repeater ?><?php if (!empty($input['multiple']))echo '[]';?>"
-    class="<?php if (!empty($input['class']))echo $input['class']; if (!empty($input['multiple'])) echo ' multiple_select';?>"
+    id="<?php echo esc_attr($input_id)?>"
+    name="<?php echo THEME_OPTIONS?>[<?php echo esc_attr($input_id)?>]<?php echo esc_attr($repeater) ?><?php if (!empty($input['multiple']))echo '[]';?>"
+    class="<?php if (!empty($input['class']))echo esc_attr($input['class']); if (!empty($input['multiple'])) echo ' multiple_select';?>"
     <?php if (!empty($input['multiple']))echo ' multiple';?>
     >
     <?php 
@@ -27,24 +27,24 @@
     <?php if (!empty($input['range']) && $input['range_type'] == 'digit' ) : ?>
         <?php for ( $i = $input['range'][0]; $i <= $input['range'][1]; $i ++  ) : ?>
             <option
-                value="<?php echo $i ?>"<?php if (!empty($input['multiple']))
+                value="<?php echo esc_attr($i) ?>"<?php if (!empty($input['multiple']))
                                                 foreach($options[ $input_id ] as $val)
                                                   selected($i,$val);
                                               else
                                                 selected($i,$value);?>
-             ><?php echo $i ?></option>
+             ><?php print $i ?></option>
         <?php endfor; ?>
     <?php else:?>
         <?php foreach ( $input['options'] as $name=>$val ) : ?>
             <option
-                value="<?php echo $val ?>"<?php if (!empty($input['multiple'])){
+                value="<?php echo esc_attr($val) ?>"<?php if (!empty($input['multiple'])){
                                                     if (!empty($options[ $input_id ]))
                                                       foreach($options[ $input_id ] as $option)
                                                         if ( $val == $option )
                                                           echo ' selected="selected"';
                                                   }elseif ( $val == $value )
                                                     echo ' selected="selected"' ?>
-            ><?php echo $name ?></option>
+            ><?php print $name ?></option>
         <?php endforeach; ?>
     <?php endif;?>
   </select>

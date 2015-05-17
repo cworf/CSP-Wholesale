@@ -443,7 +443,7 @@ class AT_Meta_Box {
 
     echo '<img src="';
     if ($this->_Local_images){
-      echo $plugin_path.'/images/add.png';
+      print $plugin_path.'/images/add.png';
     }else{
       echo 'http://i.imgur.com/w5Tuc.png';
     }

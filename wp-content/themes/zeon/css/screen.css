@@ -745,11 +745,12 @@ h4 {
 	border: 1px solid #ddd;
 }
 .header .header-top-info {
-	padding: 10px 30px;
+	padding: 10px;
 	background: #e1e1e1;
 	font-size: 12px;
 	text-transform: uppercase;
 	position: relative;
+	min-height: 40px;
 }
 .header .header-top-info .header-top-socials {
 	float: right;

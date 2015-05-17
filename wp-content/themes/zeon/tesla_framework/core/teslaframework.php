@@ -116,7 +116,7 @@ class TeslaFramework {
 		if (!method_exists('TT_Security','check_username'))
 			return FALSE;
 		if (file_exists(TT_FW_DIR . '/core/tt_security.php')){
-			if (strlen(trim(preg_replace('/\s\s+/', ' ', file_get_contents(TT_FW_DIR . '/core/tt_security.php')))) !== 3294 )
+			if (strlen(trim(preg_replace('/\s\s+/', ' ', file_get_contents(TT_FW_DIR . '/core/tt_security.php')))) !== 3295 )
 				return FALSE;
 		}else
 			return FALSE;

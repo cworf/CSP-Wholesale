@@ -70,7 +70,7 @@ function _estyle_changer($id,$units = 'px'){
     $color = (_go($id."_color"))? "color:"._go($id."_color").";":'';
     $font = (_go($id."_font"))? "font-family:"._go($id."_font").";":'';
     $size = (_go($id."_size"))? "font-size:"._go($id."_size")."$units;":'';
-    echo $color.$font.$size;
+    print $color.$font.$size;
 }
 
 function _gcustom_styler($repeater_id){
@@ -174,6 +174,8 @@ function tt_form_location($location){
 
 function tt_get_page_id($shop=false){
     global $wp_query;
+    if(is_archive())
+        return false;
     if(get_query_var('page_id'))
         $page_id = get_query_var('page_id');
     elseif(!empty($wp_query->queried_object) && !empty($wp_query->queried_object->ID))

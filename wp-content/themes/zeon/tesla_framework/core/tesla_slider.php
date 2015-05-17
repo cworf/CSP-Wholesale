@@ -1310,7 +1310,7 @@ class Tesla_slider_tax{
 	    if ($column_name == 'order') {
 	    	$term = get_term($term_id, $this->taxonomy);
 	        $term_meta = $this->tt_taxonomy_order($term->term_taxonomy_id);
-	        echo $term_meta;
+	        print $term_meta;
 	    }
 	}
 

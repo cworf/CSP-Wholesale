@@ -3,9 +3,9 @@
  ?>
 <input 
     type="text" 
-    name="<?php echo THEME_OPTIONS?>[<?php echo $input_id;?>]<?php echo $repeater ?>" 
-    id="<?php echo $input_id;?>"
-    value="<?php if ( $value ) echo $value ; ?>"
+    name="<?php echo THEME_OPTIONS?>[<?php echo esc_attr($input_id);?>]<?php echo esc_attr($repeater) ?>" 
+    id="<?php echo esc_attr($input_id);?>"
+    value="<?php if ( $value ) echo esc_attr($value);?>"
 />
 <button class="upload_image_button tt_button">
 <?php

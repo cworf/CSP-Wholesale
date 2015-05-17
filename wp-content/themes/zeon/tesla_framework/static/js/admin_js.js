@@ -42,7 +42,7 @@ jQuery(document).ready(function($) {
     //====================Image uploader=============================================
     // Uploading files
     var file_frame;
-    $('.upload_image_button').live('click', function( event ){
+    $('.upload_image_button').on('click', function( event ){
         event.preventDefault();
         var button = $(this);
         // If the media frame already exists, reopen it.
@@ -69,7 +69,7 @@ jQuery(document).ready(function($) {
      
           // Do something with attachment.id and/or attachment.url here or do console.log(attachment) to get the list
           button.prev('input').attr('value',attachment.url);
-          button.parent().find('.tt_show_logo img').attr('src',attachment.url);
+          button.next().next().next('.tt_show_logo').find('img').attr('src',attachment.url);
         });
      
         // Finally, open the modal
@@ -214,37 +214,47 @@ jQuery(document).ready(function($) {
           
           //Create the default marker-----------------------------------
           var image = '';
-          if($(this).find('.map-icon input[type=radio]:checked').val())
-              image = new google.maps.MarkerImage($(element).find('.map-icon input[type=radio]:checked').val(),
-                  new google.maps.Size(32.0, 37.0),
+          var selected_map_icon = $(element).find('.map-icon input[type=radio]:checked');
+          if(selected_map_icon.val()){
+            var selected_marker = selected_map_icon.next('img');
+            var marker_width = selected_marker[0].width
+            var marker_height = selected_marker[0].height
+            image = new google.maps.MarkerImage(selected_map_icon.val(),
+                  new google.maps.Size(marker_width , marker_height),
                   new google.maps.Point(0, 0),
-                  new google.maps.Point(16.0, 34.0)
+                  new google.maps.Point(marker_width/2, marker_height)
               );
-          var shadow_link = ($(this).find('.map-icon input[type=radio]:checked').val())? $(element).find('.map-icon input[type=radio]:checked').val() + '.shadow.png' : "";
+          var shadow_link = selected_map_icon.val() + '.shadow.png' ;
           var shadow = '';
           if(shadow_link !== '')
               shadow = new google.maps.MarkerImage(shadow_link ,
-                  new google.maps.Size(51.0, 37.0),
+                  new google.maps.Size(marker_width, marker_height),
                   new google.maps.Point(0, 0),
-                  new google.maps.Point(16.0, 34.0)
+                  new google.maps.Point(marker_width/2, marker_height)
               );
-          var marker = new google.maps.Marker({
-              draggable:true,
-              animation: google.maps.Animation.DROP,
-              icon:image,
-              shadow: shadow
-          });
+          }
+
+            var marker = new google.maps.Marker({
+                draggable:true,
+                animation: google.maps.Animation.DROP,
+                icon:image,
+                shadow: shadow
+            });
           //change marker icon on clik of radio button with icon--------------------------------------------------------
          $(this).find('.map-icon input[type=radio]').change(function(){
-             var image = new google.maps.MarkerImage($(this).val(),
-                     new google.maps.Size(32.0, 37.0),
-                     new google.maps.Point(0, 0),
-                     new google.maps.Point(16.0, 34.0)
-                 );
+            var selected_map_icon = $(element).find('.map-icon input[type=radio]:checked');
+            var selected_marker = selected_map_icon.next('img');
+            var marker_width = selected_marker[0].width
+            var marker_height = selected_marker[0].height
+           var image = new google.maps.MarkerImage($(this).val(),
+                   new google.maps.Size(marker_width , marker_height),
+                  new google.maps.Point(0, 0),
+                  new google.maps.Point(marker_width/2, marker_height)
+               );
              var shadow = new google.maps.MarkerImage($(this).val() + '.shadow.png',
-                     new google.maps.Size(51.0, 37.0),
-                     new google.maps.Point(0, 0),
-                     new google.maps.Point(16.0, 34.0)
+                     new google.maps.Size(marker_width , marker_height),
+                  new google.maps.Point(0, 0),
+                  new google.maps.Point(marker_width/2, marker_height)
                  );
              marker.setIcon(image);
              marker.setShadow(shadow);

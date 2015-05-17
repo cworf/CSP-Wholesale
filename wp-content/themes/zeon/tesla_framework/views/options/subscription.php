@@ -4,7 +4,7 @@
   if ( count($subscriptions) > 1 ) :
     foreach ( $subscriptions as $key => $subscription ) : if($key == 0) continue; if($key > 20) break;//show first 20 subscribers?>
       <div class="subscriber">
-          <p><i><?php echo $subscription ?></i></p>
+          <p><i><?php print $subscription ?></i></p>
       </div>
     <?php endforeach;?>
       <p>Total : <?php echo count($subscriptions) - 2; //ignoring first and last rows in file (column naimes, empty row)?></p>

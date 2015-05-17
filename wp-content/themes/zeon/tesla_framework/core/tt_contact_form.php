@@ -82,8 +82,8 @@ class TT_Contact_Form_Builder {
 			        $i = 0;
 			        foreach ($form_data as $name => $field_value) : ?>
 			            <tr>
-			                <td style="padding: 10px;<?php echo $i < count($form_data) - 1 ? 'border-bottom: 1px solid #ddd;' : ''?>"><?php echo $name ?></td>
-			                <td style="padding: 10px;<?php echo $i < count($form_data) - 1 ? 'border-bottom: 1px solid #ddd;' : ''?>border-left: 1px solid #ddd;"><?php echo $field_value ?></td>
+			                <td style="padding: 10px;<?php echo ( $i < count($form_data) - 1 ) ? 'border-bottom: 1px solid #ddd;' : ''?>"><?php print $name ?></td>
+			                <td style="padding: 10px;<?php echo ( $i < count($form_data) - 1 ) ? 'border-bottom: 1px solid #ddd;' : ''?>border-left: 1px solid #ddd;"><?php print $field_value ?></td>
 			            </tr>
 			        <?php 
 			        $i++;

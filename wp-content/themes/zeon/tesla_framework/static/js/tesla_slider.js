@@ -122,8 +122,11 @@
 			var t_hidden = t_parent.children('input[type="hidden"]');
 			var id = t_hidden.prop('value');
 			var a = wp.media.model.Attachment;
+			var add_button = t_parent.siblings('button');
 			if(frame===undefined){
-				frame = wp.media();
+				frame = wp.media({
+					multiple:true
+				});
 				t.data('frame',frame);
 
 				frame.on( 'open',function(){
@@ -142,15 +145,21 @@
 					s.reset(x);
 
 				}).state('library').on('select',function(){
-
-					var s = this.get('selection').first().toJSON();
-					var url;
-
-					id = s.id;
-					url = s.url;
-
-					t_hidden.prop('value',id);
-					t.prop('src',url);
+					var all_selected = this.get('selection')
+					all_selected.map(function(image,index){
+						var last_image;
+						image = image.toJSON();
+						
+						if(index > 0){
+							add_button.trigger('click');
+							last_image_container = add_button.parent().children('.tesla-option-container').last();
+							last_image_container.children('img').prop('src',image.url);
+							last_image_container.children('input[type="hidden"]').prop('value',image.id);
+						}else{
+							t_hidden.prop('value',image.id);
+							t.prop('src',image.url);
+						}
+					})
 
 				});
 			}

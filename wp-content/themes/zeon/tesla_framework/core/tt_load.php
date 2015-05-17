@@ -71,6 +71,6 @@ class TT_Load extends TeslaFramework{
         if ( $__return === TRUE )
             return $buffer;
         else
-            echo $buffer;
+            print $buffer;
     }
 }

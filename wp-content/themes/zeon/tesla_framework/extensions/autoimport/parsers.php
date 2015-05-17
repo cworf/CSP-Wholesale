@@ -34,10 +34,10 @@ class WXR_Parser {
 			echo '<pre>';
 			if ( 'SimpleXML_parse_error' == $result->get_error_code() ) {
 				foreach  ( $result->get_error_data() as $error )
-					echo $error->line . ':' . $error->column . ' ' . esc_html( $error->message ) . "\n";
+					print $error->line . ':' . $error->column . ' ' . esc_html( $error->message ) . "\n";
 			} else if ( 'XML_parse_error' == $result->get_error_code() ) {
 				$error = $result->get_error_data();
-				echo $error[0] . ':' . $error[1] . ' ' . esc_html( $error[2] );
+				print $error[0] . ':' . $error[1] . ' ' . esc_html( $error[2] );
 			}
 			echo '</pre>';
 			echo '<p><strong>' . __( 'There was an error when reading this WXR file', 'wordpress-importer' ) . '</strong><br />';
