@@ -1465,3 +1465,7 @@
 [17-May-2015 20:40:38 UTC] PHP Strict Standards:  Redefining already defined constructor for class WPPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/wp-plugin.php on line 27
 [17-May-2015 20:40:39 UTC] PHP Strict Standards:  Redefining already defined constructor for class ReCAPTCHAPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/recaptcha.php on line 41
 [17-May-2015 20:40:39 UTC] PHP Strict Standards:  Redefining already defined constructor for class WPPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/wp-plugin.php on line 27
+[17-May-2015 20:40:50 UTC] PHP Strict Standards:  Redefining already defined constructor for class ReCAPTCHAPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/recaptcha.php on line 41
+[17-May-2015 20:40:50 UTC] PHP Strict Standards:  Redefining already defined constructor for class WPPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/wp-plugin.php on line 27
+[17-May-2015 20:40:51 UTC] PHP Strict Standards:  Redefining already defined constructor for class ReCAPTCHAPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/recaptcha.php on line 41
+[17-May-2015 20:40:51 UTC] PHP Strict Standards:  Redefining already defined constructor for class WPPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/wp-plugin.php on line 27
