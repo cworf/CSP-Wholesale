@@ -1,0 +1,318 @@
+/*=========================== Tesla Contact Builder CSS ==========================*/
+
+.row-edit, .row-delete , .form-delete{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	display: block;
+	right: 0;
+	text-align: center;
+	line-height: 24px;
+	color: #fff;
+	font-size: 24px;
+}
+
+.row-edit {
+	top: 0;
+}
+
+.row-delete {
+	bottom: 0;
+}
+
+.config{
+	display: none;
+	width: 15px;
+	height: 100%;
+	float: right;
+	cursor: pointer;
+}
+
+.form-template .form-element .config{
+	display: inline;
+}
+
+
+ul.affix{
+	width: 27.5%;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+
+/* 27.06.2014 style*/
+
+.form-builder-holder {
+	background: #ffffff;
+	margin-top: 20px;
+	margin-right: 20px;
+	padding-bottom: 22px;
+}
+
+.fb-header {
+	background: #25282F;
+	padding: 22px;
+	margin-bottom: 22px;
+}
+
+.fb-header h2 {
+	overflow: hidden;
+	line-height: 45px;
+	margin: 0;
+	color: #999999;
+}
+
+.icon-form-builder {
+	display: block;
+	width: 30px;
+	height: 35px;
+	background: url(../img/form-builder.png) center center no-repeat transparent;
+	float: left;
+	opacity: 0.2;
+	margin-right: 11px;
+	margin-top: 7px;
+}
+
+.main-container {
+	padding: 0 22px;	
+}
+
+.builder {
+	outline: 3px dashed #ededed;
+	padding: 11px;
+}
+
+[class *= 'btn-'] {
+	padding: 11px 22px;
+	border: none;
+	text-decoration: none;
+}
+
+[class *= 'btn-']:hover {
+	text-decoration: none;
+}
+
+.btn-success {
+	background: #739265;
+}
+
+.btn-success:hover {
+	background: #5E885F;
+}
+
+.btn-primary {
+	background: #3757A2;
+}
+
+.btn-primary:hover {
+	background: #3A3FAC;
+}
+
+.btn-info {
+	background: #5F9ABF;
+}
+
+.btn-info:hover {
+	background: #5285A5;
+}
+
+.builder-body{
+	border: 1px solid #25282F;
+	margin: 22px 0 44px 0;
+	position: relative;
+}
+
+.form-meta {
+	background: #25282F;
+	padding: 11px;
+	margin-bottom: 22px;
+	overflow: hidden;
+}
+
+.form-meta label{
+	color: #999;
+	margin-top: 11px;
+	position: relative;
+	padding-left: 25px;
+	font-size: 13px;
+}
+
+.form-meta .form-disable-headers{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 2px 0 0 0;
+}
+
+.form_location, .form-receiver-email, .form-id {
+	margin: 0 !important;
+	border-radius: 0 !important;
+	border: 1px solid #454545 !important;
+	height: 28px !important;
+	background: #25282F !important;
+	color: #999999 !important;
+}
+
+.form_location:focus, .form-receiver-email:focus, .form-id:focus {
+	background: #ffffff !important;
+	color: #25282F !important;
+}
+
+.form_location {
+	float: right;
+	width: 152px;
+	margin-right: 22px !important;
+}
+
+.builder-body .form-row {
+	margin-bottom: 22px;
+	position: relative;
+	min-height: 100px;
+	padding: 0 44px 0 22px;
+	width: auto !important;
+}
+
+.form-delete {
+	top: 0;
+	cursor: pointer
+}
+
+.form-delete:hover {
+	color: #BF5656;
+}
+
+.span12.ui-sortable-helper {
+	top: auto !important;
+	right: auto !important;
+	left: auto !important;
+}
+
+.builder-body .form-row .column > ul {
+	min-height: 66px;
+	margin: 0;
+	padding: 11px;
+	border: 3px dashed #ededed;
+}
+
+.row-edit, .row-delete {
+	background: #ededed;
+	color: #999999;
+	right: 11px;
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.row-edit:hover, .row-delete:hover {
+	color: #ffffff;
+}
+
+.row-edit:hover {
+	background: #3757A2;
+}
+
+.row-delete:hover {
+	background: #BF5656;
+}
+
+.row-edit {
+	top: 33px;
+}
+
+.row-delete {
+	top: 0;
+	bottom: auto;
+}
+
+.add-new-row {
+	margin: 0 0 11px 11px;
+}
+
+.builder-body .form-row ul.column-picker{
+	position: absolute;
+	display: none;
+	top: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	margin: auto;
+	width: 192px;
+	height: 48px;
+	background: #f8f8f8 !important;
+	border: 1px solid #dedede;
+}
+
+.builder-body .form-row .column-picker li{
+	float:left;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	line-height: 48px;
+	box-shadow: 1px 0 0 rgba(0,0,0,0.03), 11px 0 0 rgba(255,255,255,0.03);
+	cursor: pointer;
+}
+
+.builder-body .form-row .column-picker li:hover {
+	background: rgba(0,0,0,0.02);
+}
+
+.form-elements {
+	padding: 0 22px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form-elements > li {
+	width: 152px;
+	float: left;
+	margin: 3px 5px;
+	padding: 44px 11px 11px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #f8f8f8;
+	border: 1px solid #eeeeee;
+	cursor: pointer;
+}
+
+.form-elements > li:hover {
+	background: #f5f5f5;
+}
+
+.ui-droppable > li {
+	background: #f8f8f8 !important;
+	padding: 11px;
+	border: 1px solid #dedede;
+	width: inherit !important;
+}
+
+.element-property  b {
+	width: 152px;
+	display: inline-block;
+}
+
+
+.element-property input {
+	border-radius: 0 !important;
+	line-height: 28px;
+	height: 28px;
+}
+
+.element-property input[type=checkbox] {
+	height: 18px !important;
+	line-height: 18px;
+}
+
+.how-to-list{
+	margin-top: 11px;
+	padding-left: 30px;
+}
+
+.alert{
+	border-radius: 0;
+}

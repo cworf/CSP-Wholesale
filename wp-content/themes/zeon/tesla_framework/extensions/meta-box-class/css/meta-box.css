@@ -1,0 +1,178 @@
+/**
+ * All Types Meta Box Class CSS
+ *
+ * CSS used for the custom metaboxes and other form items.
+ *
+ * Copyright 2011 Ohad Raz (admin@bainternet.info)
+ */
+
+/* =Common Rules for all fields.
+----------------------------------------------- */
+.form-table{
+	border-spacing: 10px;
+	border-collapse: separate !important;
+}
+.form-table td.at-field{ 
+	border: 1px solid #DDD;
+	padding: 10px 10px 20px;
+	margin: 0;
+	font-family: "Open Sans","Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #ECECEC;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 0 #FFF,inset 0 10px 26px -12px rgba(0, 0, 0, 0.1);
+}
+.at-label { 
+	margin: 0 0 5px 0; 
+	padding: 5px 0 0 0; 
+	font: 14px/31px "Open Sans","Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, sans-serif; 
+	text-shadow: rgb(255, 255, 255) 0 1px 0;
+	width: auto;
+	text-transform: uppercase;
+	color: #666;
+}
+.at-radio-label{ padding-right: 10px; }				
+.at-file-upload-label{ clear: both; margin: 5px 0 5px 1px; }	
+
+
+/* =Form Fields
+----------------------------------------------- */
+.postbox .at-field input,
+.postbox .at-field textarea { padding: 5px; line-height: 18px; } 
+.postbox .at-field input.at-radio{}
+.postbox .at-field input.at-color{ border: 0px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; margin-right: 10px; min-width: 100px; }
+.at-field input:focus, 
+.at-field textarea:focus { background: #fffff8; }
+#wpcontent select.at-select { 
+	height: 30px !important; 
+	padding: 5px; display: block; 
+	min-width: 200px; 
+}
+.at-field .desc-field { color: #AAA; font-style: italic; margin: 5px 0 0 3px !important; font-size: 13px; }
+.at-field .wp_themeSkin table.mceLayout{ border: 1px solid #DFDFDF; }
+#post-body .at-field .wp_themeSkin .mceStatusbar a.mceResize{ top: -25px; } 
+
+/* =Uploaded Images
+----------------------------------------------- */
+.at-images li { margin: 5px 10px 0px 0; float: left; width: 150px; height: 150px; text-align: center; border: 3px solid #ccc; cursor: move; position: relative; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+.at-images img { width: 150px; height: 150px; }
+.at-images a { position: absolute; top: -12px; right: -12px; color: #fff;  font-weight: bold; padding: 5px; }
+.at-images .at-delete-file img{ width: 16px; height: 16px; }
+
+/* =Upload Button
+----------------------------------------------- */
+.at-upload-button { float: left; clear: both; margin-top: 10px; }
+.at-add-file { float: left; clear: both; margin-top: 10px; }
+ 
+/* =Time Picker
+----------------------------------------------- */
+.ui-timepicker-div { font-size: 0.9em; }
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; }
+.ui-timepicker-div dl dd { margin: -25px 0 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+
+/* =Repater Block
+----------------------------------------------- */
+/* inline */
+.at-inline label{font-size: 12px !important;}
+.at-inline textarea{height: 130px;width: 200px;}
+
+/* code Editor */
+.CodeMirror{
+	background-color: #fff;
+}
+/*================================================================================*/
+.at-text{
+	width: 100%;
+}
+select.at-tax-select{
+	padding: 7px;
+	height: auto;
+	font-size: 14px;
+	min-width: 200px;
+}
+input.at-date{
+	padding-right: 30px;
+	background: url('../images/calendar.png') right 10px center no-repeat white;
+}
+
+input.at-time{
+	padding-right: 30px;
+	background: url('../images/clock.png') right 10px center no-repeat white;
+}
+.rw-checkbox{
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+}
+div.at-select {
+	min-width: 200px;
+}
+
+.at-field input[type=button]{
+    border: 1px solid #aaa;
+    padding: 6px 10px;
+    background: #f7f7f7;
+    cursor: pointer;
+    color: #555;
+    text-shadow: 0 1px 0 #fff;
+    box-shadow: 0 2px 3px #e1e1e1;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    height: auto!important;
+}
+
+.at-field input[type=button]:hover {
+    background: #fff;
+    color: #333;
+}
+.simplePanelImagePreview{
+	max-width: 200px;
+	display: block;
+}
+.simplePanelImagePreview img{
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	box-shadow: 0 0 0 1px #DDD;
+	padding: 5px;
+	background: #FAFAFA;
+	margin-bottom: 21px;
+}
+.simplePanelfilePreview ul li a{
+	font: 0/0 a;
+	width: 90px;
+	height: 90px;
+	background: #FFF;
+	display: block;
+	border: 1px solid #DDD;
+	position: relative;
+}
+.simplePanelfilePreview ul li a:before{
+	content: '';
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin: -12px 0 0 -9.5px;
+	display: block;
+	width: 19px;
+	height: 24px;
+	background: url('../images/file.png') 0 0 no-repeat transparent;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+.simplePanelfilePreview ul li a:after{
+	content: 'File';
+	position: absolute;
+	bottom: 0;
+	display: block;
+	background: #EEE;
+	font-size: 14px;
+	width: 100%;
+	line-height: 14px;
+	padding: 5px 0;
+	text-align: center;
+	border-top: 1px dotted #DDD;
+}

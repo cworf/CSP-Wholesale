@@ -1,0 +1,42 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="ignore">zeon_video_embed</custom-field>
+        <custom-field action="ignore">zeon_slider_categ</custom-field>
+    </custom-fields>
+    <custom-types>
+        <custom-type translate="1">tops</custom-type>
+        <custom-type translate="1">info_box</custom-type>
+        <custom-type translate="1">cases</custom-type>
+        <custom-type translate="1">clients</custom-type>
+        <custom-type translate="1">faq</custom-type>
+        <custom-type translate="1">price</custom-type>
+        <custom-type translate="1">services</custom-type>
+        <custom-type translate="1">stats</custom-type>
+        <custom-type translate="1">team</custom-type>
+        <custom-type translate="1">testimonials</custom-type>
+        <custom-type translate="1">toggle</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">slider_tax</taxonomy>
+        <taxonomy translate="1">services_tax</taxonomy>
+        <taxonomy translate="1">testimonials_tax</taxonomy>
+        <taxonomy translate="1">team_tax</taxonomy>
+        <taxonomy translate="1">toggle_tax</taxonomy>
+        <taxonomy translate="1">price_tax</taxonomy>
+    </taxonomies>    
+    <admin-texts>
+        <key name="zeon_options">
+            <key name="logo_text" />
+            <key name="email_contact" />
+            <key name="error_title" />
+            <key name="error_message" />
+            <key name="header_text" />
+            <key name="copyright_message" />
+            <key name="footer_text" />
+            <key name="title_contact" />
+            <key name="contact_address" />
+            <key name="contact_phone" />
+            <key name="contact_fax" />
+        </key>
+    </admin-texts>
+</wpml-config>

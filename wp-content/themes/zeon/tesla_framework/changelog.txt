@@ -1,0 +1,58 @@
+------- 0.9 Used in 17 Templates ([...] + display,novelty,icook,zeon,zero,lovers,sevenfold,yopta) [17-07-2014] -------------
+================================================================
+Fixed	:	Theme Options esc_attr
+Added	:	Font reset
+Added	:	Vimeo icon
+Changed	:	Security messages
+
+------- 0.8 Used in 10 Templates (revoke,vulcano,cool stuff,wedding,shape,winterfell,hudson,medpark,electra,zoomy,universe) [20-December-2013] -------------
+================================================================
+Added	:	Imporoved security nonces
+Fixed	:	Arbitrary file download
+Fixed	:	Other minor fixes
+
+------- 0.7 Used in 8 Templates (revoke,vulcano,cool stuff,wedding,shape,winterfell,hudson,medpark,electra) [11-October-2013] -------------
+================================================================
+Added	:	TT_ENQUEUE
+Added	:	TT_Contact_Form ( still in progress )
+
+------- 0.6 Used in 8 Templates (revoke,vulcano,cool stuff,wedding,shape,winterfell,hudson,medpark,electra) [11-September-2013] -------------
+================================================================
+Added	:	Security check
+
+------- 0.5 Used in 7 Templates (revoke,vulcano,cool stuff,wedding,shape,winterfell,hudson,medpark) [08-August-2013] -------------
+================================================================
+Added	:	Manual update check from FW
+Added	:	Subscription supports mailchimp integration (still in progress)
+
+------- 0.4 Used in 5 Templates (revoke,vulcano,cool stuff,wedding,shape,winterfell) [29-July-2013] -------------
+================================================================
+Added	:	AutoUpdate Parent Theme
+Fixed	:	Twitter redeclaring class in OAuth.php
+Fixed	:	"Add new option" JS
+
+------- 0.3.5 Used in 5 Templates (revoke,vulcano,cool stuff,wedding,shape,winterfell) [23-July-2013] -------------
+================================================================
+Added	:	"Add new option" / Repeatable items
+Changed	:	Metaboxes style
+
+------- 0.3 Used in 5 Templates (revoke,vulcano,cool stuff,wedding,shape) [10-July-2013] -------------
+================================================================
+Added	:	Import/export options page
+Added	:	reading theme version from style.css
+Added	:	Subscription module
+
+------- 0.2 Used in 5 Templates (revoke,vulcano,cool stuff,wedding,shape) [25-Jun-2013] -------------
+================================================================
+Added	:	Metaboxes
+Fixed	:	Slider issues
+
+------- 0.1 Used in 3 Templates (revoke,vulcano,cool stuff) [21-Jun-2013] -------------
+================================================================
+Added	:	Admin Options
+Added	:	Portfolio Options
+Added	:	Slider Options
+
+------- 0.0 Development Start [05-Apr-2013] -------
+================================================================
+! Changelog Creation

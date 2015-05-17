@@ -1,0 +1,73 @@
+Version 1.2.3 - 18.03.2015 
+================================================
+Fixed	:	Blog Sidebar on pages
+Added	:	Content View subcategory
+
+Version 1.2.2 - 18.12.2014 
+================================================
+Changed	:	Rev slider update 4.6.5
+
+Version 1.2.1 - 17.11.2014 - not public
+================================================
+Changed	:	RS Plugin update
+Changed	:	WC plugin version update
+
+Version 1.2 - 20.10.2014
+================================================
+Changed	:	RS Plugin update
+Fixed	:	RS padding
+Updated	:	Localization files
+Changed	:	FW update
+
+Version 1.1.7 - 15.07.2014
+================================================
+Changed	:	FW version 1.9
+
+Version 1.1.6 - 15.07.2014
+================================================
+Fixed	:	Cart Shipping
+Fixed	:	Reset Password view
+
+Version 1.1.5 - 07.07.2014
+================================================
+Fixed	:	Comments author linked
+Added	:	FW update (managewp.com api implementation)
+
+Version 1.1.4 - 26.05.2014
+================================================
+Fixed	:	Header info min height
+Fixed	:	Mobile menu IOS bug
+
+Version 1.1.3 - 16.05.2014
+================================================
+Fixed	:	WC messages
+Added	:	Colorpickers
+
+Version 1.1.2 - 15.05.2014
+================================================
+Fixed	:	Mobile menu color changer
+Fixed	:	Menu z-index
+Fixed	:	Slider bullets
+
+Version 1.1.1 - 14.05.2014
+================================================
+Fixed	:	Mobile menu
+
+Version 1.1 - 08.05.2014
+================================================
+Fixed	:	TUT (style) small fixes
+Fixed	:	WPML
+
+Version 1.0.5 - 05.05.2014
+================================================
+Added	:	Custom Stylers
+Fixed	:	Documentation issues
+Changed	:	FW version
+
+Version 1.0.1 - 2.05.2014
+================================================
+Fixed	:	Post meta
+
+Version 1.0.0 - Initial Release: 30.04.2014
+================================================
+-

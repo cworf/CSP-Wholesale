@@ -1,0 +1,267 @@
+/* SLIDER \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+
+.tesla_image_holder{
+	margin-bottom: 12px;
+	border: 1px dashed #333;
+}
+#slide_options .tesla-slide-image{
+	max-height: 150px;
+	width: auto;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 4px;
+	background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+#slide_options .tesla-slide-image:hover{
+	border-color: rgba(0, 0, 0, 0.3);
+}
+#slide_options fieldset{
+	margin-bottom: 14px;
+	border: 1px solid #dfdfdf;
+	padding: 6px 12px 8px 10px;
+	border-radius: 3px;
+}
+#slide_options .tesla-option-container{
+	margin-bottom: 14px;
+}
+#slide_options textarea{
+	margin: 0;
+	height: 4em;
+	width: 98%;
+	resize: vertical;
+}
+#slide_options input[type="text"]{
+	height: 2em;
+	width: 98%;
+	margin: 0;
+}
+#slide_options .tesla-select-image,
+#slide_options .tesla-remove-image,
+#slide_options input[type="button"]{
+	cursor: pointer;
+	margin: 0;
+	border-radius: 3px;
+	border-width: 1px;
+	border-style: solid;
+	background: #f3f3f3;
+	text-shadow: 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 23px;
+	height: 24px;
+	padding: 0 10px 1px;
+	border-color: #bbb;
+	color: #333;
+	margin-top: 5px;
+}
+#slide_options .tesla-select-image:hover,
+#slide_options .tesla-remove-image:hover,
+#slide_options input[type="button"]:hover{
+	border-color: #999;
+	color: #222;
+}
+#slide_options input[type="button"].tesla-remove-image{
+	margin: 5px 0 0 4px;
+	vertical-align: top;
+}
+
+.tesla-option-template{
+	display: none;
+}
+
+
+
+/*rewritted styles*/
+#slide_options .tesla-option-container>img{
+	max-height: 150px;
+	width: auto;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 4px;
+	background-color: transparent;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 0 4px white inset;
+	cursor: pointer;
+}
+#slide_options .tesla-option-container>img:hover{
+	border-color: rgba(0, 0, 0, 0.3);
+}
+#slide_options .tesla-option-container>button{
+	cursor: pointer;
+	margin: 0;
+	border-radius: 3px;
+	border-width: 1px;
+	border-style: solid;
+	background: #f3f3f3;
+	text-shadow: 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 23px;
+	height: 24px;
+	padding: 0 10px 1px;
+	border-color: #bbb;
+	color: #333;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+#slide_options .tesla-option-container>button:hover{
+	border-color: #999;
+	color: #222;
+}
+#slide_options .tesla-option-container>button{
+	/*display: block;*/
+}
+#slide_options .tesla-option>button{
+	cursor: pointer;
+	margin: 0;
+	border-radius: 3px;
+	border-width: 1px;
+	border-style: solid;
+	background: hsl(0, 0%, 95%);
+	background: hsl(0, 0%, 45%);
+	text-shadow: 0 1px 0 hsl(0, 0%, 100%);
+	text-shadow: 0 1px 0 hsl(0, 0%, 50%);
+	text-shadow: 0 1px 0 hsl(0, 0%, 75%);
+	font-size: 12px;
+	line-height: 23px;
+	height: 24px;
+	padding: 0 10px 1px;
+	border-color: hsl(0, 0%, 73%);
+	border-color: hsl(0, 0%, 23%);
+	color: hsl(0, 0%, 20%);
+	color: hsl(0, 0%, 70%);
+	color: hsl(0, 0%, 95%);
+	margin-top: 5px;
+	margin-right: 5px;
+}
+#slide_options .tesla-option>button:hover{
+	border-color: hsl(0, 0%, 60%);
+	border-color: hsl(0, 0%, 10%);
+	color: hsl(0, 0%, 13%);
+	color: hsl(0, 0%, 63%);
+	color: hsl(0, 0%, 88%);
+}
+
+#slide_options .tesla-option-container{
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid hsla(50, 39%, 59%, 0.1);
+	border: 1px solid hsla(240, 100%, 50%, 0.1);
+}
+
+#slide_options .tesla-option-container{
+	background: hsla(50, 39%, 59%, 0.1);
+	background: hsla(240, 100%, 50%, 0.1);
+}
+#slide_options fieldset fieldset{
+	border: 1px solid hsl(0, 0%, 100%);
+}
+
+#slide_options input[type="text"].tesla-option-color{
+	width: 74px;
+}
+#slide_options input[type="text"].tesla-option-color+input[type="button"]{
+	margin-top: 0 !important;
+	margin-left: 5px;
+}
+#slide_options .iris-slider-offset{
+	border: none !important;
+	background: transparent !important;
+}
+
+#slide_options iframe{
+	background: white;
+}
+#slide_options .wp-editor-wrap textarea{
+	width: 100%;
+	height: auto;
+}
+
+#ui-datepicker-div{
+	display: none;
+}
+
+.tesla_option_holder{
+	margin-bottom: 12px;
+	border: 1px dashed #333;
+	padding: 11px;
+	border-radius: 5px;
+}
+
+
+
+/*colors*/
+#slide_options .tesla-option-container{
+	background: hsla(210, 100%, 50%, 0.1);
+}
+
+#slide_options .inside>fieldset{
+	background: hsla(120,50%,50%,0.1);
+}
+#slide_options fieldset legend{
+	border: 1px solid #dfdfdf;
+	border-radius: 5px;
+	background: white;
+	padding: 0px 5px;
+	font-size: 14px;
+	line-height: 1.4em;
+}
+#slide_options fieldset fieldset legend{
+	border-color: white;
+	background: hsl(0, 0%, 62%);
+	color: white;
+	font-size: 12px;
+}
+
+
+
+/*spacing*/
+#slide_options fieldset{
+	padding-left: 25px;
+	padding-top: 15px;
+	margin-bottom: 25px;
+	position: relative;
+}
+#slide_options fieldset legend{
+	padding: 5px 15px;
+	margin-left: -15px;
+}
+#slide_options .inside{
+	margin-top: 20px;
+}
+#slide_options fieldset>select,
+#slide_options .tesla-option-container>select:not([name]){
+	position: absolute;
+	top: 41px;
+	top: 44px;
+	left: 35px;
+
+	border-color: white;
+	background: hsl(0, 0%, 62%);
+	color: white;
+	padding: 0px 15px;
+	height: 28px;
+	border-radius: 5px;
+
+	z-index: 1;
+}
+#slide_options fieldset>select:active,
+#slide_options .tesla-option-container>select:not([name]):active{
+	color: black;
+}
+
+#slide_options .tesla-option-container{
+	position: relative;
+}
+
+#slide_options fieldset>select~fieldset>legend{
+	visibility: hidden;
+}
+
+
+
+#slide_options .tesla-option-container > select:not([name]) ~ fieldset > legend{
+	background: blue;
+	border-color: red;
+	visibility: hidden;
+}
+#slide_options .tesla-option-container > select:not([name]){
+	top: 9px;
+	left: 20px;
+}
