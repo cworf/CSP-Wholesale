@@ -1,0 +1,29 @@
+Version 1.1 - October 24, 2014
+
+	Major update to provide a more robust updating system.
+
+Version 1.0.5 - September 15, 2014
+
+	Fixed CSS problem of zero column width on the license entry page - due to changes in WC and WP
+
+Version 1.0.4 - June 30, 2014
+
+	Suppress PHP warning
+
+December 15, 2013 - Version 1.0.3
+
+	Fixed PHP warning message
+	
+	Compatible with WordPress 3.8
+
+January 4, 2013 - Version 1.0.2
+
+	Initial public launch
+
+December 10, 2012 - version 1.0.1
+
+ 	/screens/screen-manage.php - Always show the "activate" button.
+
+December 5, 2012 - version 1.0.0
+
+ 	Initial development done
