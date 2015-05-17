@@ -1,0 +1,51 @@
+&.ubermenu{
+	display:block !important;
+}
+&.ubermenu-responsive .ubermenu-item.ubermenu-hide-desktop{
+	display:none !important;
+}
+&.ubermenu-responsive.ubermenu-retractors-responsive .ubermenu-retractor-mobile{
+	display:none;
+}
+
+
+//Force current submenu always open but below others
+&.ubermenu-force-current-submenu .ubermenu-item-level-0.ubermenu-current-menu-item > .ubermenu-submenu-drop,
+&.ubermenu-force-current-submenu .ubermenu-item-level-0.ubermenu-current-menu-ancestor > .ubermenu-submenu-drop {
+    display: block!important;
+    opacity: 1!important;
+    visibility: visible!important;
+    margin: 0!important;
+    top: auto!important;
+    //max-height: 600px;
+    height: auto;
+    //overflow: auto!important;
+    z-index:19;
+}
+
+
+//Invert Horizontal menu to make subs go up
+&.ubermenu-invert.ubermenu-horizontal .ubermenu-item-level-0 > .ubermenu-submenu-drop{
+     top:auto;
+     bottom:100%;
+}
+&.ubermenu-invert.ubermenu-horizontal.ubermenu-sub-indicators .ubermenu-item-level-0.ubermenu-has-submenu-drop > .ubermenu-target:after{
+     content:"\f106";
+}
+
+
+
+//Invert Vertical menu to make subs go left 
+&.ubermenu-invert.ubermenu-vertical .ubermenu-item-level-0 > .ubermenu-submenu-drop{
+  right:100%;
+  left:auto;
+}
+&.ubermenu-invert.ubermenu-vertical.ubermenu-sub-indicators .ubermenu-item-level-0.ubermenu-item-has-children > a.ubermenu-target:after{
+  right:auto;
+  left:10px;
+  margin-top:-7px;
+  content:"\f104";
+}
+&.ubermenu-vertical.ubermenu-invert .ubermenu-item > .ubermenu-submenu-drop {
+  clip: rect(-5000px,5000px,5000px,-5000px);
+}

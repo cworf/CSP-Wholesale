@@ -1,0 +1,24 @@
+/* Text RTL */
+.rtl .ubermenu,
+.rtl .ubermenu .ubermenu-item{
+     text-align:right;
+}
+/* Columns RTL */
+.rtl .ubermenu .ubermenu-submenu-type-mega > .ubermenu-column:not(.ubermenu-tabs-group),
+.rtl .ubermenu .ubermenu-submenu-type-tab-content-panel > .ubermenu-column:not(.ubermenu-tabs-group) {
+     float:right;
+}
+/* Reverse icon padding */
+.rtl .ubermenu .ubermenu-item-layout-icon_left>.ubermenu-target-title{
+    margin-left:0;
+    margin-right:.6em;
+}
+/* Move arrows to left */
+.rtl .ubermenu-sub-indicators .ubermenu-item-level-0.ubermenu-has-submenu-drop > .ubermenu-target{
+    padding-right:20px;
+    padding-left:25px;
+}
+.rtl .ubermenu-sub-indicators .ubermenu-item-level-0.ubermenu-has-submenu-drop > .ubermenu-target:after{
+    right:auto;
+    left:10px;
+}
