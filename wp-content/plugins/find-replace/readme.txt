@@ -2,9 +2,9 @@
 Contributors: Bas Bosman, Ramon Fincken
 Donate link: http://donate.ramonfincken.com
 Tags: rename,change,post,page,text,content,context,update,replace,change,server,url,cpt
-Requires at least: 2.0.2
-Tested up to: 3.8.1
-Stable tag: 1.8
+Requires at least: 3.0
+Tested up to: 4.1.1
+Stable tag: 2.0
 
 Lets you find and replace text in pages, posts, Custom Post types and trashed items with a GUI.
 Optional: postmeta and low_priority updates
@@ -32,9 +32,10 @@ I always check my tweets, so mention my name with @ramonfincken and your problem
 
 
 == Changelog ==
-= 1.9 =
-Added: Shows rows found and replaced
-xx
+= 2.0 =
+Added: Shows rows found and replaced<br>
+Added: Support for widgets<br>
+Added: Better serialize support
 
 = 1.8 =
 Bugfix: No post type selected error even though i am selecting pages<br>
