@@ -18,6 +18,7 @@ function front_end_portfolio($images, $paramssld, $portfolio)
     $portfolioShowFiltering=$portfolio[0]->ht_show_filtering;
 
 
+$paramssld['ht_view0_border_width'] = "1";
 $paramssld["ht_view0_togglebutton_style"] = "dark";
 $paramssld["ht_view0_show_separator_lines"] = "on";
 $paramssld["ht_view0_linkbutton_text"] = "View More";
@@ -730,6 +731,39 @@ $paramssld["ht_view2_cat_all"] = "All";
 $paramssld["ht_view3_cat_all"] = "All";
 $paramssld["ht_view4_cat_all"] = "All";
 $paramssld["ht_view6_cat_all"] = "All";
+				
+				/***<optimize_images>***/
+		$image_prefix = "_huge_it_small_portfolio";
+	if(!function_exists('get_huge_image')) {
+		function get_huge_image($image_url,$img_prefix) {
+			//if(huge_it_copy_image_to_small($image_url,$image_prefix,$cropwidth)) {
+				$pathinfo = pathinfo($image_url);
+				$upload_dir = wp_upload_dir();
+				$url_img_copy = $upload_dir["url"].'/'.$pathinfo["filename"].$img_prefix.'.'.$pathinfo["extension"];
+				$img_abs_path = $url_img_copy;
+				$img_abs_path= parse_url($url_img_copy, PHP_URL_PATH);
+				$img_abs_path =  $_SERVER['DOCUMENT_ROOT'].$img_abs_path;
+				if(file_exists($img_abs_path))
+				return $url_img_copy; else
+			//}
+			 return $image_url;
+		}
+	}
+			/***</optimize_images>***/
+			
+			/***<title display>***   free has not this option   /
+		function huge_it_title_img_display($image_name,$title) {
+			for($i = 0;$i < count($title);$i++) {
+				$title_explode = explode("_-_-_",$title[$i]);
+				if($title_explode[1] == $image_name) {
+					echo $title_explode[0];  
+				}
+				else { 
+					echo "" ;
+				}
+			}
+		}
+		 	/***</title display>***/
 ?>
 <script>
 	var lightbox_transition = '<?php echo $paramssld['light_box_transition'];?>';
@@ -1194,8 +1228,10 @@ jQuery(document).ready(function(){
         if($sorting_block_width == "100%" ) {
             echo "float:left !important;margin: 4px 8px 4px 0px !important;";
         }
+		if(isset($left_to_top)){
         if($left_to_top == "ok")
         { echo "float:left !important;"; }
+		}
         if($paramssld["ht_view0_sorting_float"] == "left" || $paramssld["ht_view0_sorting_float"] == "right")
         { echo 'border-bottom: 1px solid #ccc;'; }
         else
@@ -1239,7 +1275,9 @@ jQuery(document).ready(function(){
     list-style-type: none;
     <?php
         if($filtering_block_width == "100%") { echo "float:left !important;margin: 4px 8px 4px 0px !important;"; }
+		if(isset($left_to_top)){
         if($left_to_top == "ok") { echo "float:left !important;"; }
+		}
         if($paramssld["ht_view0_filtering_float"] == "left" || $paramssld["ht_view0_filtering_float"] == "right")
         { echo 'border-bottom: 1px solid #ccc;'; }
         else echo "border: 1px solid #ccc;";
@@ -1344,9 +1382,9 @@ jQuery(document).ready(function(){
                                       <div class="image-block_<?php echo $portfolioID; ?>">
                                               <?php $imgurl=explode(";",$row->image_url); ?>
                                               <?php 	if($row->image_url != ';'){ ?>
-                                              <img id="wd-cl-img<?php echo $key; ?>" src="<?php echo $imgurl[0]; ?>" />
+                                              <img alt="<?php echo $row->name; ?>" id="wd-cl-img<?php echo $key; ?>" src="<?php echo get_huge_image($imgurl[0],$image_prefix); ?>" />
                                               <?php } else { ?>
-                                              <img id="wd-cl-img<?php echo $key; ?>" src="images/noimage.jpg" />
+                                              <img alt="<?php echo $row->name; ?>" id="wd-cl-img<?php echo $key; ?>" src="images/noimage.jpg" />
                                               <?php
                                               } ?>	
                                       </div>
@@ -1368,7 +1406,7 @@ jQuery(document).ready(function(){
                                                               {
                                                               ?>
                                                               <li>
-                                                                      <a href="<?php echo $img; ?>" class=" portfolio-group<?php echo $group_key;?> "><img src="<?php echo $img; ?>"></a>
+                                                                      <a href="<?php echo $img; ?>" class="portfolio-group<?php echo $group_key;?>"><img src="<?php echo get_huge_image($img,$image_prefix); ?>"></a>
                                                               </li>
                                                               <?php
                                                               }
@@ -1391,7 +1429,7 @@ jQuery(document).ready(function(){
                                                               {
                                                               ?>
                                                               <li>
-                                                                      <a href="<?php echo $img; ?>" class="group1"><img src="<?php echo $img; ?>"></a>
+                                                                      <a href="<?php echo $img; ?>" class="group1"  title = "<?php echo $img;?>"><img src="<?php echo get_huge_image($img,$image_prefix); ?>"></a>
                                                               </li>
                                                               <?php
                                                               }
@@ -1822,8 +1860,10 @@ var defaultBlockWidth=<?php echo $paramssld['ht_view0_block_width']; ?>;
         if($sorting_block_width == "100%" ) {
             echo "float:left !important;margin: 4px 8px 4px 0px !important;";
         }
+		if(isset($left_to_top)){
         if($left_to_top == "ok")
         { echo "float:left !important;"; }
+		}
         if($paramssld["ht_view1_sorting_float"] == "left" || $paramssld["ht_view1_sorting_float"] == "right")
         { echo 'border-bottom: 1px solid #ccc;'; }
         else
@@ -1867,7 +1907,9 @@ var defaultBlockWidth=<?php echo $paramssld['ht_view0_block_width']; ?>;
     list-style-type: none;
     <?php
         if($filtering_block_width == "100%") { echo "float:left !important;margin: 4px 8px 4px 0px !important;"; }
+		if(isset($left_to_top)){
         if($left_to_top == "ok") { echo "float:left !important;"; }
+		}
         if($paramssld["ht_view1_filtering_float"] == "left" || $paramssld["ht_view1_filtering_float"] == "right")
         { echo 'border-bottom: 1px solid #ccc;'; }
         else echo "border: 1px solid #ccc;";
@@ -1970,9 +2012,9 @@ var defaultBlockWidth=<?php echo $paramssld['ht_view0_block_width']; ?>;
                                       <div class="image-block_<?php echo $portfolioID; ?>">
                                               <?php $imgurl=explode(";",$row->image_url); ?>
                                               <?php 	if($row->image_url != ';'){ ?>
-                                              <img id="wd-cl-img<?php echo $key; ?>" src="<?php echo $imgurl[0]; ?>" />
+                                              <img alt="<?php echo $row->name; ?>" id="wd-cl-img<?php echo $key; ?>" src="<?php echo get_huge_image($imgurl[0],$image_prefix); ?>" />
                                               <?php } else { ?>
-                                              <img id="wd-cl-img<?php echo $key; ?>" src="images/noimage.jpg" />
+                                              <img alt="<?php echo $row->name; ?>" id="wd-cl-img<?php echo $key; ?>" src="images/noimage.jpg" />
                                               <?php
                                               } ?>	
                                       </div>
@@ -1993,7 +2035,7 @@ var defaultBlockWidth=<?php echo $paramssld['ht_view0_block_width']; ?>;
                                                               {
                                                               ?>
                                                               <li>
-                                                                      <a href="<?php echo $img; ?>" class=" portfolio-group<?php echo $group_key;?>"><img src="<?php echo $img; ?>"></a>
+                                                                      <a href="<?php echo $img; ?>" class=" portfolio-group<?php echo $group_key;?>"><img src="<?php echo get_huge_image($img,$image_prefix); ?>"></a>
                                                               </li>
                                                               <?php
                                                               }
@@ -2733,7 +2775,7 @@ var defaultBlockHeight=<?php echo $paramssld['ht_view2_element_height']; ?>;
 	padding:6px 12px;
 	background:#<?php echo $paramssld["ht_view2_popup_linkbutton_background_color"];?>;
 	color:#<?php echo $paramssld["ht_view2_popup_linkbutton_color"];?>;
-	font-size:<?php echo $paramssld["ht_view2_popup_linkbutton_font_size"];?>;
+	font-size:<?php echo $paramssld["ht_view2_popup_linkbutton_font_size"];?>px;
 	text-decoration:none;
 }
 
@@ -2855,8 +2897,10 @@ var defaultBlockHeight=<?php echo $paramssld['ht_view2_element_height']; ?>;
         if($sorting_block_width == "100%" ) {
             echo "float:left !important;margin: 4px 8px 4px 0px !important;";
         }
+		if(isset($left_to_top)){
         if($left_to_top == "ok")
         { echo "float:left !important;"; }
+		}
         if($paramssld["ht_view2_sorting_float"] == "left" || $paramssld["ht_view2_sorting_float"] == "right")
         { echo 'border-bottom: 1px solid #ccc;'; }
         else
@@ -2900,7 +2944,9 @@ var defaultBlockHeight=<?php echo $paramssld['ht_view2_element_height']; ?>;
     list-style-type: none;
     <?php
         if($filtering_block_width == "100%") { echo "float:left !important;margin: 4px 8px 4px 0px !important;"; }
+		if(isset($left_to_top)){
         if($left_to_top == "ok") { echo "float:left !important;"; }
+		}
         if($paramssld["ht_view2_filtering_float"] == "left" || $paramssld["ht_view2_filtering_float"] == "right")
         { echo 'border-bottom: 1px solid #ccc;'; }
         else echo "border: 1px solid #ccc;";
@@ -2999,9 +3045,9 @@ var defaultBlockHeight=<?php echo $paramssld['ht_view2_element_height']; ?>;
                               <div class="image-block_<?php echo $portfolioID; ?>">
                                       <?php $imgurl=explode(";",$row->image_url); ?>
                                               <?php 	if($row->image_url != ';'){ ?>
-                                              <img id="wd-cl-img<?php echo $key; ?>" src="<?php echo $imgurl[0]; ?>" alt="" />
+                                              <img alt="<?php echo $row->name; ?>" id="wd-cl-img<?php echo $key; ?>" src="<?php echo get_huge_image($imgurl[0],$image_prefix); ?>" />
                                               <?php } else { ?>
-                                              <img id="wd-cl-img<?php echo $key; ?>" src="images/noimage.jpg" alt="" />
+                                              <img alt="<?php echo $row->name; ?>" id="wd-cl-img<?php echo $key; ?>" src="images/noimage.jpg" />
                                               <?php
                                               } ?>	
                                       <div class="image-overlay"><a href="#<?php echo $row->id; ?>"></a></div>
@@ -3035,9 +3081,9 @@ var defaultBlockHeight=<?php echo $paramssld['ht_view2_element_height']; ?>;
 			<div class="popup-wrapper_<?php echo $portfolioID; ?>">
 				<div class="image-block_<?php echo $portfolioID; ?>">
 					<?php 	if($row->image_url != ';'){ ?>
-					<img id="wd-cl-img<?php echo $key; ?>" src="<?php echo $imgurl[0]; ?>" alt="" />
+					<img alt="<?php echo $row->name; ?>" id="wd-cl-img<?php echo $key; ?>" src="<?php echo $imgurl[0]; ?>" />
 					<?php } else { ?>
-					<img id="wd-cl-img<?php echo $key; ?>" src="images/noimage.jpg" alt="" />
+					<img alt="<?php echo $row->name; ?>" id="wd-cl-img<?php echo $key; ?>" src="images/noimage.jpg" />
 					<?php
 					} ?>					
 				</div>
@@ -3233,7 +3279,7 @@ var defaultBlockHeight=<?php echo $paramssld['ht_view2_element_height']; ?>;
 	padding:6px 12px;
 	background:#<?php echo $paramssld["ht_view3_linkbutton_background_color"];?>;
 	color:#<?php echo $paramssld["ht_view3_linkbutton_color"];?>;
-	font-size:<?php echo $paramssld["ht_view3_linkbutton_font_size"];?>;
+	font-size:<?php echo $paramssld["ht_view3_linkbutton_font_size"];?>px;
 	text-decoration:none;
 }
 
@@ -3317,8 +3363,10 @@ var defaultBlockHeight=<?php echo $paramssld['ht_view2_element_height']; ?>;
         if($sorting_block_width == "100%" ) {
             echo "float:left !important;margin: 4px 8px 4px 0px !important;";
         }
+		if(isset($left_to_top)){
         if($left_to_top == "ok")
         { echo "float:left !important;"; }
+		}
         if($paramssld["ht_view3_sorting_float"] == "left" || $paramssld["ht_view3_sorting_float"] == "right")
         { echo 'border-bottom: 1px solid #ccc;'; }
         else
@@ -3362,7 +3410,9 @@ var defaultBlockHeight=<?php echo $paramssld['ht_view2_element_height']; ?>;
     list-style-type: none;
     <?php
         if($filtering_block_width == "100%") { echo "float:left !important;margin: 4px 8px 4px 0px !important;"; }
+		if(isset($left_to_top)){
         if($left_to_top == "ok") { echo "float:left !important;"; }
+		}
         if($paramssld["ht_view3_filtering_float"] == "left" || $paramssld["ht_view3_filtering_float"] == "right")
         { echo 'border-bottom: 1px solid #ccc;'; }
         else echo "border: 1px solid #ccc;";
@@ -3466,9 +3516,9 @@ var defaultBlockHeight=<?php echo $paramssld['ht_view2_element_height']; ?>;
                                       <div class="main-image-block_<?php echo $portfolioID; ?>">
                                               <?php $imgurl=explode(";",$row->image_url); ?>
                                               <?php 	if($row->image_url != ';'){ ?>
-                                                      <a href="<?php echo $imgurl[0]; ?>" class=" portfolio-group<?php echo $group_key; ?>"><img id="wd-cl-img<?php echo $key; ?>"src="<?php echo $imgurl[0]; ?>"></a>
+                                                      <a href="<?php echo $imgurl[0]; ?>" class=" portfolio-group<?php echo $group_key; ?>" title = "<?php echo $row->name; ?>"><img alt="<?php echo $row->name; ?>" id="wd-cl-img<?php echo $key; ?>"src="<?php echo get_huge_image($imgurl[0],$image_prefix); ?>"></a>
                                               <?php } else { ?>
-                                                      <a href="<?php echo $imgurl[0]; ?>" class=" portfolio-group<?php echo $group_key; ?>"><img id="wd-cl-img<?php echo $key; ?>" src="images/noimage.jpg"></a>
+                                                      <a href="<?php echo $imgurl[0]; ?>" class=" portfolio-group<?php echo $group_key; ?>"><img alt="<?php echo $row->name; ?>" id="wd-cl-img<?php echo $key; ?>" src="images/noimage.jpg"></a>
                                               <?php
                                               }
                                               ?>
@@ -3487,7 +3537,7 @@ var defaultBlockHeight=<?php echo $paramssld['ht_view2_element_height']; ?>;
                                                       foreach($imgurl as $key=>$img)
                                                       {
                                                               ?>
-                                                                      <li><a href="<?php echo $img;?>" class=" portfolio-group<?php echo $group_key; ?>"><img src="<?php echo $img; ?>"></a></li>
+                                                                      <li><a href="<?php echo $img;?>" class=" portfolio-group<?php echo $group_key; ?>"><img src="<?php echo get_huge_image($img,$image_prefix); ?>"></a></li>
                                                       <?php
                                                       }
                                                       ?>
@@ -3549,8 +3599,8 @@ var defaultBlockWidth=<?php echo $paramssld['ht_view3_mainimage_width']; ?>;
     
     $container.hugeitmicro({
       itemSelector : '.element_<?php echo $portfolioID; ?>',
-      masonry : {
-        columnWidth : <?php echo $paramssld['ht_view3_width']; ?>+20+<?php echo $paramssld['ht_view3_border_width']*2; ?>
+      masonry : { 
+        columnWidth : <?php echo $paramssld["ht_view3_mainimage_width"]; ?>+20+<?php echo $paramssld["ht_view3_element_border_width"]*2; ?>
       },
       masonryHorizontal : {
         rowHeight: 300+20
@@ -3929,8 +3979,10 @@ var defaultBlockWidth=<?php echo $paramssld['ht_view3_mainimage_width']; ?>;
         if($sorting_block_width == "100%" ) {
             echo "float:left !important;margin: 4px 8px 4px 0px !important;";
         }
+		if(isset($left_to_top)){
         if($left_to_top == "ok")
         { echo "float:left !important;"; }
+		}
         if($paramssld["ht_view4_sorting_float"] == "left" || $paramssld["ht_view4_sorting_float"] == "right")
         { echo 'border-bottom: 1px solid #ccc;'; }
         else
@@ -3974,7 +4026,9 @@ var defaultBlockWidth=<?php echo $paramssld['ht_view3_mainimage_width']; ?>;
     list-style-type: none;
     <?php
         if($filtering_block_width == "100%") { echo "float:left !important;margin: 4px 8px 4px 0px !important;"; }
+		if(isset($left_to_top)){
         if($left_to_top == "ok") { echo "float:left !important;"; }
+		}
         if($paramssld["ht_view4_filtering_float"] == "left" || $paramssld["ht_view4_filtering_float"] == "right")
         { echo 'border-bottom: 1px solid #ccc;'; }
         else echo "border: 1px solid #ccc;";
@@ -4083,7 +4137,7 @@ var defaultBlockWidth=<?php echo $paramssld['ht_view3_mainimage_width']; ?>;
                                                       <p><?php echo $row->description; ?></p>
                                               </div>
                                       <?php }
-                                      if($paramssld['ht_view4_show_thumbs']=='on' and $paramssld['ht_view4_thumbs_position']=="after"){?>
+                                      if(isset($paramssld['ht_view4_show_thumbs']) && $paramssld['ht_view4_show_thumbs']=='on' and $paramssld['ht_view4_thumbs_position']=="after"){?>
                                               <div>
                                                       <ul class="thumbs-list_<?php echo $portfolioID; ?>">
                                                               <?php
@@ -4139,7 +4193,7 @@ var defaultBlockWidth=<?php echo $paramssld['ht_view4_block_width']; ?>;
     $container.hugeitmicro({
       itemSelector : '.element_<?php echo $portfolioID; ?>',
       masonry : {
-        columnWidth : <?php echo $paramssld['ht_view4_block_width']; ?>+20+<?php echo $paramssld['ht_view4_border_width']*2; ?>
+        columnWidth : <?php echo $paramssld['ht_view4_block_width']; ?>+20+<?php echo (isset($paramssld['ht_view4_element_border_width'])?$paramssld['ht_view4_element_border_width']:1)*2; ?>
       },
       masonryHorizontal : {
         rowHeight: 300+20
@@ -4499,9 +4553,9 @@ var defaultBlockWidth=<?php echo $paramssld['ht_view4_block_width']; ?>;
 			<div class="slider-content-wrapper slide_number<?php echo $group_key1;?>">
 				<div class="image-block_<?php echo $portfolioID; ?>">
 					<?php 	if($row->image_url != ';'){ ?>
-					<a class="portfolio-group-slider<?php  echo $group_key1; ?>" href="<?php echo $imgurl[0]; ?>"><img class="main-image" src="<?php echo $imgurl[0]; ?>" alt="" /></a>
+					<a class="portfolio-group-slider<?php  echo $group_key1; ?>" href="<?php echo $imgurl[0]; ?>" title = "<?php echo $row->name; ?>"><img alt="<?php echo $row->name; ?>" class="main-image" src="<?php echo $imgurl[0]; ?>" /></a>
 					<?php } else { ?>
-					<img class="main-image" src="images/noimage.jpg" alt="" />
+					<img alt="<?php echo $row->name; ?>" class="main-image" src="images/noimage.jpg" />
 					<?php
 					} ?>
 					
@@ -4510,7 +4564,7 @@ var defaultBlockWidth=<?php echo $paramssld['ht_view4_block_width']; ?>;
 						<?php  
 						array_shift($imgurl);
 								foreach($imgurl as $key=>$img){?>
-									<li><a class="portfolio-group-slider<?php echo $group_key1; ?>" href="<?php echo $img; ?>"><img src="<?php echo $img; ?>"></a></li>
+									<li><a class="portfolio-group-slider<?php echo $group_key1; ?>" href="<?php echo $img; ?>"><img src="<?php echo get_huge_image($img,$image_prefix); ?>"></a></li>
 								<?php } ?>
 					</ul></div>
 					<?php } ?>					
@@ -4682,8 +4736,10 @@ var defaultBlockWidth=<?php echo $paramssld['ht_view4_block_width']; ?>;
         if($sorting_block_width == "100%" ) {
             echo "float:left !important;margin: 4px 8px 4px 0px !important;";
         }
+		if(isset($left_to_top)){
         if($left_to_top == "ok")
         { echo "float:left !important;"; }
+		}
         if($paramssld["ht_view6_sorting_float"] == "left" || $paramssld["ht_view6_sorting_float"] == "right")
         { echo 'border-bottom: 1px solid #ccc;'; }
         else
@@ -4733,7 +4789,9 @@ var defaultBlockWidth=<?php echo $paramssld['ht_view4_block_width']; ?>;
     list-style-type: none;
     <?php
         if($filtering_block_width == "100%") { echo "float:left !important;margin: 4px 8px 4px 0px !important;"; }
+		if(isset($left_to_top)){
         if($left_to_top == "ok") { echo "float:left !important;"; }
+		}
         if($paramssld["ht_view6_filtering_float"] == "left" || $paramssld["ht_view6_filtering_float"] == "right")
         { echo 'border-bottom: 1px solid #ccc;'; }
         else echo "border: 1px solid #ccc;";
@@ -4842,9 +4900,9 @@ var defaultBlockWidth=<?php echo $paramssld['ht_view4_block_width']; ?>;
                                 <?php //echo $row->id; ?>
                                     <?php $imgurl=explode(";",$row->image_url); ?>
                                             <?php 	if($row->image_url != ';'){ ?>
-                                            <a href="<?php echo $imgurl[0]; ?>" class=" portfolio-lightbox-group"><img id="wd-cl-img<?php echo $key; ?>" src="<?php echo $imgurl[0]; ?>" alt="" /></a>
+                                            <a href="<?php echo $imgurl[0]; ?>" class=" portfolio-lightbox-group" title = "<?php echo $row->name; ?>"><img alt="<?php echo $row->name; ?>" id="wd-cl-img<?php echo $key; ?>" src="<?php echo get_huge_image($imgurl[0],$image_prefix); ?>" /></a>
                                             <?php } else { ?>
-                                            <img id="wd-cl-img<?php echo $key; ?>" src="images/noimage.jpg" alt="" />
+                                            <img alt="<?php echo $row->name; ?>" id="wd-cl-img<?php echo $key; ?>" src="images/noimage.jpg" />
                                             <?php
                                             } ?>	
                             </div>
@@ -4985,10 +5043,10 @@ var defaultBlockWidth=<?php echo $paramssld['ht_view6_width']; ?>;
                 strheight+=jQuery(this).outerHeight()+10;
                 //alert(strheight);
           })
-          strheight+=<?php echo $paramssld['ht_view6_block_height']+45; ?>;
+          strheight+=<?php echo (isset($paramssld['ht_view6_block_height'])?$paramssld['ht_view6_block_height']:0)+45; ?>;
 	  			if(jQuery(this).parents('.element_<?php echo $portfolioID; ?>').hasClass("large")){
 			jQuery(this).parents('.element_<?php echo $portfolioID; ?>').animate({
-				height: "<?php echo $paramssld['ht_view6_block_height']+45; ?>px"
+				height: "<?php echo (isset($paramssld['ht_view6_block_height'])?$paramssld['ht_view6_block_height']:0)+45; ?>px"
 			}, 300, function() {
 				jQuery(this).removeClass('large');
 				$container.hugeitmicro('reLayout');
@@ -5003,7 +5061,7 @@ var defaultBlockWidth=<?php echo $paramssld['ht_view6_width']; ?>;
 		jQuery(this).parents('.element_<?php echo $portfolioID; ?>').addClass('large');
 
 		$container.hugeitmicro('reLayout');
-		jQuery(this).parents('.element_<?php echo $portfolioID; ?>').css({height:"<?php echo $paramssld['ht_view6_block_height']+45; ?>px"});		 
+		jQuery(this).parents('.element_<?php echo $portfolioID; ?>').css({height:"<?php echo (isset($paramssld['ht_view6_block_height'])?$paramssld['ht_view6_block_height']:0)+45; ?>px"});		 
 		 
 		//alert(strheight);
 		 

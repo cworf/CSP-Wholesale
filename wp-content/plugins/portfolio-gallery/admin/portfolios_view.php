@@ -208,6 +208,13 @@ function submitbutton(pressbutton)
 	document.getElementById("adminForm").submit();
 	
 }
+var  name_changeRight = function(e) {
+	document.getElementById("name").value = e.value;
+}
+var  name_changeTop = function(e) {
+		document.getElementById("huge_it_portfolio_name").value = e.value;
+		//alert(e);
+	};
 function change_select()
 {
 		submitbutton('apply'); 
@@ -263,8 +270,8 @@ jQuery(function() {
 				<?php
 				}
 				else{ ?>
-					<li class="active" style="background-image:url(<?php echo plugins_url('../images/edit.png', __FILE__) ;?>)">
-						<input class="text_area" onfocus="this.style.width = ((this.value.length + 1) * 8) + 'px'" type="text" name="name" id="name" maxlength="250" value="<?php echo esc_html(stripslashes($row->name));?>" />
+					<li class="active"  onclick = "this.firstElementChild.style.width = ((this.firstElementChild.value.length + 1) * 8) + 'px';" style="background-image:url(<?php echo plugins_url('../images/edit.png', __FILE__) ;?>);cursor:pointer;">
+						<input class="text_area" onkeyup = "name_changeTop(this)" onfocus="this.style.width = ((this.value.length + 1) * 8) + 'px'" type="text" name="name" id="name" maxlength="250" value="<?php echo esc_html(stripslashes($row->name));?>" />
 					</li>
 				<?php	
 				}
@@ -314,13 +321,13 @@ jQuery(document).ready(function($){
   });
   
   	/*#####HIDE NEW UPLOADER'S LEFT MENU######*/  
-										jQuery(".wp-media-buttons-icon").click(function() {
+										/*jQuery(".wp-media-buttons-icon").click(function() {
 											jQuery(".media-menu .media-menu-item").css("display","none");
 											jQuery(".media-menu-item:first").css("display","block");
 											jQuery(".separator").next().css("display","none");
 											jQuery('.attachment-filters').val('image').trigger('change');
 											jQuery(".attachment-filters").css("display","none");
-										});
+										});*/
 
 });
 </script>
@@ -475,13 +482,13 @@ jQuery(document).ready(function($){
 										
 
 										/*#####HIDE NEW UPLOADER'S LEFT MENU######*/  
-										jQuery(".wp-media-buttons-icon").click(function() {
+										/*jQuery(".wp-media-buttons-icon").click(function() {
 											jQuery(".media-menu .media-menu-item").css("display","none");
 											jQuery(".media-menu-item:first").css("display","block");
 											jQuery(".separator").next().css("display","none");
 											jQuery('.attachment-filters').val('image').trigger('change');
 											jQuery(".attachment-filters").css("display","none");
-										});
+										});*/
 									});
 								</script>
 							</div>
@@ -666,6 +673,10 @@ jQuery(document).ready(function($){
 									<option <?php if($row->sl_position == 'right'){ echo 'selected'; } ?>   value="right">Right</option>
 									<option <?php if($row->sl_position == 'center'){ echo 'selected'; } ?>  value="center">Center</option>
 							</select>
+						</li>
+						<li>
+							<label for="huge_it_portfolio_name">Portfolio name</label>
+							<input type = "text" name="name" id="huge_it_portfolio_name" value="<?php echo esc_html(stripslashes($row->name));?>" onkeyup = "name_changeRight(this)">
 						</li>
 
 					</ul>
