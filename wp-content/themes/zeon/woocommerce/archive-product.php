@@ -50,14 +50,7 @@ get_header( 'shop' ); ?>
 		</div> <!-- /all-products-details -->
 		<div class="row"> <!-- row2 -->
 			<div class="col-md-3">
-				<?php
-					/**
-					 * woocommerce_sidebar hook
-					 *
-					 * @hooked woocommerce_get_sidebar - 10
-					 */
-					do_action( 'woocommerce_sidebar' );
-				?>
+				<?php ubermenu( 'wholesale-side' , array( 'menu' => 632 ) ); ?>
 			</div>
 			<div class="col-md-9">
 					<?php woocommerce_product_loop_start(); ?>
