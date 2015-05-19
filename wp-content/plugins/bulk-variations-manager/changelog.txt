@@ -1,0 +1,49 @@
+
+
+*** Bulk Variations Manager Changelog ***
+
+2015.02.25 - version 1.9
+ * Update: WooCommerce 2.3 compatible
+ * Update: Support for PHP version lower than 5.3
+
+2014.10.25 - version 1.8
+ * Fix: Variations not creating, giving warnings 'Syntax error' or 'Undefined variable'
+ * Update: Search for even draft product under 'Let me choose Base Products'
+
+2014.09.25 - version 1.7
+ * Update: WooCommerce 2.2 compatible
+
+2014.06.19 - version 1.6
+ * Update: UI & Performance improvement
+
+2014.04.16 - version 1.5.2
+ * Update: Important update related to 'update notification' of the plugin
+
+2014.04.04 - version 1.5.1
+ * Fix: Important fix related to plugin updates
+
+2014.02.14 - version 1.5
+ * Update: WooCommerce 2.1+ compatible
+
+2013.12.25 - version 1.4
+ * Update: Reduced CPU consumption by 50%
+ * Update: Moved progress in page title
+
+2013.12.02 - version 1.3
+ * Update: Added progress bar
+ * Update: Improved performance
+ * Update: New class for upgrade
+
+2013.09.06 - version 1.2
+ * Fix: Update variation not working correctly
+
+2013.09.04 - version 1.1
+ * New: Inherit access privilege from Smart Manager
+ * New: Links for Demo & form to contact us directly
+ * Update: Notifications from the plugin
+
+2013.08.28 - version 1.0.1
+ * Fix: Price fields doesn't allow decimal value
+
+2013.08.15 - version 1.0
+ * First release
