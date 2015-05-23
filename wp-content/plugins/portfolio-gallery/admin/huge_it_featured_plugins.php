@@ -156,6 +156,22 @@
 <div class="element hugeitmicro-item">
 	<div class="left-block">
 		<div class="main-image-block">
+			<a href="<?php echo plugins_url( '../images/product-catalog-logo.png' , __FILE__ ); ?>" rel="content"><img src="<?php echo plugins_url( '../images/product-catalog-logo.png' , __FILE__ ); ?>"></a>
+		</div>
+	</div>
+	<div class="right-block">
+		<div class="title-block"><h3>WordPress Product Catalog</h3></div>
+		<div class="description-block">
+			<p>Huge-IT Product Catalog is made for demonstration, sale, advertisements for your products. Imagine a stand with a variety of catalogs with a specific product category. To imagine is not difficult, to use is even easier.</p>
+		</div>			  				
+		<div class="button-block">
+			<a href="http://huge-it.com/product-catalog/" target="_blank">View Plugin</a>
+		</div>
+	</div>
+</div>
+<div class="element hugeitmicro-item">
+	<div class="left-block">
+		<div class="main-image-block">
 			<a href="<?php echo plugins_url( '../images/pimage-gallery-icon.png' , __FILE__ ); ?>" rel="content"><img src="<?php echo plugins_url( '../images/image-gallery-icon.png' , __FILE__ ); ?>"></a>
 		</div>
 	</div>
