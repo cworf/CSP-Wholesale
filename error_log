@@ -4307,3 +4307,11 @@
 [25-May-2015 21:01:58 UTC] PHP Strict Standards:  Redefining already defined constructor for class WPPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/wp-plugin.php on line 27
 [25-May-2015 21:04:50 UTC] PHP Strict Standards:  Redefining already defined constructor for class ReCAPTCHAPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/recaptcha.php on line 41
 [25-May-2015 21:04:50 UTC] PHP Strict Standards:  Redefining already defined constructor for class WPPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/wp-plugin.php on line 27
+[25-May-2015 21:26:18 UTC] PHP Strict Standards:  Redefining already defined constructor for class ReCAPTCHAPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/recaptcha.php on line 41
+[25-May-2015 21:26:18 UTC] PHP Strict Standards:  Redefining already defined constructor for class WPPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/wp-plugin.php on line 27
+[25-May-2015 21:26:19 UTC] PHP Strict Standards:  Redefining already defined constructor for class ReCAPTCHAPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/recaptcha.php on line 41
+[25-May-2015 21:26:19 UTC] PHP Strict Standards:  Redefining already defined constructor for class WPPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/wp-plugin.php on line 27
+[25-May-2015 21:26:19 UTC] PHP Strict Standards:  Redefining already defined constructor for class ReCAPTCHAPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/recaptcha.php on line 41
+[25-May-2015 21:26:19 UTC] PHP Strict Standards:  Redefining already defined constructor for class WPPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/wp-plugin.php on line 27
+[25-May-2015 21:26:21 UTC] PHP Strict Standards:  Redefining already defined constructor for class ReCAPTCHAPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/recaptcha.php on line 41
+[25-May-2015 21:26:21 UTC] PHP Strict Standards:  Redefining already defined constructor for class WPPlugin in /home2/montani7/public_html/cspwholesale/wp-content/plugins/wp-recaptcha/wp-plugin.php on line 27
