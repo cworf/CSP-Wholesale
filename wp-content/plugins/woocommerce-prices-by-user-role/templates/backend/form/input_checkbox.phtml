@@ -1,0 +1,42 @@
+
+<?php 
+$checked = (isset($currentValue)) ? ' checked="checked"' : '';
+$data = (isset($item['event'])) ? ' data-event="'.$item['event'].'"' : '';
+
+if (isset($item['disabled']) && $item['disabled'] === true) {
+   $disabled = 'disabled="disabled"';
+   $disabledClass=  'festi-user-role-prices-disabled-info';
+   
+   if (isset($currentValue)) {
+   ?>
+   <input name="<?php echo $ident;?>" type="hidden" value="1">   
+   <?php   
+   }   
+} else {
+   $disabled = '';
+   $disabledClass = '';
+}
+
+?>
+
+<input <?php echo $disabled;?> <?php echo $data;?> name="<?php echo $ident;?>" <?php echo $checked;?> type="checkbox" value="1"> 
+<span class="festi-user-role-prices-lable <?php echo $disabledClass;?>">
+    <?php 
+    if(isset($item['lable'])) {
+        echo $item['lable'];
+    } 
+    ?>
+    <?php
+    if (isset($item['disabled']) && $item['disabled'] === true && isset($item['disabledInfo']) ) {
+    ?>
+        <img
+            class="festi-user-role-prices-tooltip" 
+            title="<?php echo $item['disabledInfo']; ?> "
+            src="<?php echo $this->getPluginImagesUrl('help.png'); ?>"
+            height="16"
+            width="16"
+        >
+    <?php
+    }
+    ?>
+</span>

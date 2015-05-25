@@ -1,0 +1,64 @@
+body:has(div#wpwrap)
+{
+    display: none;
+}
+
+
+div#festi-user-role-prices-product-tab-content fieldset label
+{
+    float: none;
+    margin: 5px 0 0 0;
+    display: inline-block;
+    width: 100%;
+}
+div#festi-user-role-prices-product-tab-content fieldset
+{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+div#festi-user-role-prices-product-tab-content p.festi-user-role-prices-option-name
+{
+    padding: 0;
+    margin: 0;
+    margin-left: 9px;
+}
+
+div#festi-user-role-prices-product-tab-content span.festi-user-role-prices-lable
+{
+    margin-left: 5px;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+div#festi-user-role-prices-product-tab-content span.festi-user-role-prices-disabled-info
+{
+    color: #cccccc;
+}
+
+div#festi-user-role-prices-product-tab-content span.festi-user-role-prices-disabled-info > span
+{
+    font-style: italic;
+    color: #ff0000;
+}
+
+div#festi-user-role-prices-product-tab-content img.festi-user-role-prices-tooltip
+{
+    cursor: help;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+}
+
+body .tip-twitter {
+
+    max-width:300px;
+}
+
+div#festi-user-role-prices-product-tab-content div.festi-user-role-prices-general-settings
+{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+

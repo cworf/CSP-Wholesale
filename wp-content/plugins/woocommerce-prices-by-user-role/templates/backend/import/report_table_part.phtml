@@ -1,0 +1,65 @@
+<?php 
+if (!$reportData) {
+    return false;
+}
+    
+foreach ($reportData as $row => $data) {
+?>
+
+<tr>
+    <th style="width: 80px;">
+        <?php echo $row; ?>
+    </th>
+    <th style="width: 80px;">
+       <?php echo $data['post_id']; ?>
+    </th>
+    <th>
+        <?php echo $data['name']; ?>
+    </th>
+    <th>
+        <?php echo $data['sku']; ?>
+    </th>
+    <th>
+<?php
+        if ($data['has_errors'] && $data['errors']) {
+            foreach ($data['errors'] as $error) {
+?> 
+                <p class="feti-price-role-error-message">
+                    <?php echo $error; ?>
+                </p>
+<?php       
+            }
+        }
+        
+        if ($data['has_messages'] && $data['messages']) {
+            foreach ($data['messages'] as $message) {
+?> 
+                <p class="feti-price-role-message">
+                    <?php echo $message; ?>
+                </p>
+<?php       
+            }
+        }
+?>
+    </th>
+    <th>
+<?php
+        if ($data['success']) {
+?> 
+            <span class="feti-price-role-succes-result">
+                <?php echo 'success'; ?>
+            </span>
+<?php       
+        } else {
+?> 
+            <span class="feti-price-role-error-result">
+                <?php echo 'error'; ?>
+            </span>
+<?php                   
+        }
+?>
+    </th>
+</tr>
+<?php
+}
+?>

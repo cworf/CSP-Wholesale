@@ -1,0 +1,19 @@
+<table class="festi-import-in-progress-data" cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <th><?php _e('Processed', $this->_languageDomain); ?>:</th>
+            <td>
+                <span id="festi-processed-count">0</span>
+                (<span id="festi-processed-percent">0</span>%)
+            </td>
+        </tr>
+        <tr>
+            <th><?php _e('Remainin', $this->_languageDomain); ?>:</th>
+            <td id="festi-remaining-count"><?php echo $rowsCount; ?></td>
+        </tr>
+        <tr>
+            <th><?php _e('Total', $this->_languageDomain ); ?>:</th>
+            <td id="festi-total-count"><?php echo $rowsCount; ?></td>
+        </tr>
+    </tbody>
+</table>

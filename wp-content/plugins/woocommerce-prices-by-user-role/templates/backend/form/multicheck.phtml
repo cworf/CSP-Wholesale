@@ -1,0 +1,66 @@
+<?php 
+$pluginRoles = $this->getCreatedRolesOptionsOfPlugin();
+
+if (!$pluginRoles) {
+    $pluginRoles = array();
+}
+    
+if (array_key_exists('description', $item)) 
+{   
+?>
+    <p class="description"><?php echo $item['description']; ?></p>
+<?php
+}
+?>
+<fieldset>
+    <?php
+     foreach ($roles as $key => $role) {
+         if (
+            isset($item['checkDisabled'])
+            && $item['checkDisabled'] === true
+            && isset($settings)
+            && $this->hasRoleInHidePriceForUserRolesOption($settings, $key)
+         ) {
+            $disabled = true;
+            $disabledInfo = $item['disabledInfo'];
+         } else {
+            $disabled = false;
+            $disabledInfo = '';
+         }
+     ?>
+
+    <label for="my-theme_my_select_option1">
+        <?php
+        $vars = array (
+            'ident' => $ident.'['.$key.']',
+            'item' => array(
+                'lable' => $role['name'],
+                'disabled' => $disabled,
+                'disabledInfo' => $disabledInfo
+            )
+        );
+
+        if (isset($currentValue) && array_key_exists($key, $currentValue)) {
+           $vars['currentValue'] = true;
+        }
+        echo $this->fetch('form/input_checkbox.phtml', $vars);
+        ?>
+    <?php 
+        $params = array(
+            'refresh_competed' => '',
+            'refresh_plugin' => '',
+            'delete_role' => $key
+        );
+        $url = $this->getUrl($params);
+        
+        if (array_key_exists($key, $pluginRoles) && isset($item['deleteButton']) && $item['deleteButton'] === true) {
+        ?>
+            <a href="<?php echo $url; ?>" class="festi-user-role-prices-delete-role">
+                <?php _e('&times;', $this->_languageDomain); ?></a>
+         <?php
+        }
+    ?>
+    </label>
+    <br>
+    <?php }?>
+</fieldset>      

@@ -1,0 +1,71 @@
+<div class="festi-user-role-prices festi-content">
+    <?php
+        $params = array(
+            'refresh_completed' => '',
+            'refresh_plugin' => '',
+            'delete_role' => ''
+        );
+        $url = $this->getUrl($params);
+    ?>
+    <form action="<?php echo $url; ?>"  method="post" class="festi-user-role-prices-form">
+        <input type="hidden" name="__action" value="save" /> 
+        <?php
+        foreach ($fieldset as $key => $item) {
+            if (array_key_exists('legend', $item)) {
+            ?>
+                <h2><?php echo $item['legend']; ?></h2>
+            <?php
+            }
+            ?>
+            <fieldset class="festi-user-role-prices-options">
+                <?php
+                $vars = array (
+                    'filds' => $item['filds'],
+                    'currentValues' => $currentValues
+                ); 
+    
+                echo $this->fetch('settings_filds.phtml', $vars);     
+
+                ?>        
+                </fieldset>
+        <?php
+        }
+        ?>
+        <div class="festi-user-role-prices-save-button-block">
+           <input type="submit"  value="<?php echo __('Save Changes', $this->_languageDomain); ?>"  class="festi-user-role-prices-save-button button-primary">
+        </div>
+    </form>
+     <form action="<?php echo $url; ?>"  method="post" class="festi-user-role-prices-form">
+        <input type="hidden" name="__action" value="new_role" />
+            <h2><?php echo __('Add New Role', $this->_languageDomain); ?></h2>
+            <fieldset class="festi-user-role-prices-options">
+                <?php
+                $vars = array (
+                    'filds' => array(
+                        'active' => array(
+                            'value' => true,
+                            'type' => 'input_checkbox',
+                            'caption' => __('Active', $this->_languageDomain)
+                        ),
+                        'roleName' => array(
+                            'caption' => __(
+                                'Role Name',
+                                $this->_languageDomain
+                            ),
+                            'type' => 'input_text'
+                        ),
+                    ),
+                    'currentValues' => array(
+                        'active' => true,
+                        'roleName' => ''
+                    )
+                ); 
+      
+                    echo $this->fetch('settings_filds.phtml', $vars);
+                ?>        
+                </fieldset>
+        <div class="festi-user-role-prices-save-button-block">
+            <input type="submit"  value="<?php echo __('Add New Role', $this->_languageDomain); ?>"  class="festi-user-role-prices-save-button button-primary">
+        </div>
+    </form>   
+</div>

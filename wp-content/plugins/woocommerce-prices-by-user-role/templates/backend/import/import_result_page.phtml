@@ -1,0 +1,36 @@
+<div class="festi-user-role-prices festi-content">
+    <fieldset class="festi-user-role-prices-options">
+        <div id="festi-import-in-progress">
+            <div  style="display: none;" class="festi-import-in-progress-complete">
+                <h3>
+                    <img src="<?php echo $this->getPluginImagesUrl('completed.png'); ?>">
+                    <?php _e('The process of importing completed. '); ?>
+                </h3>
+            </div>
+            <div class="festi-import-in-progress-ajax-loader">
+                <h3><?php _e('Please Wait! The process of importing. '); ?></h3>
+                <img src="<?php echo $this->getPluginImagesUrl('ajax-loader.gif'); ?>">
+            </div>
+        </div>
+        
+        <?php 
+        $vars = array(
+            'rowsCount' => $rowsCount
+        );
+        
+        echo $this->fetch('import/progress_data.phtml', $vars);
+        ?>
+        
+        <?php 
+        echo $this->fetch('import/result_table.phtml');
+        ?>
+        <p style="display: none;">
+            <a id="feti-price-role-result-show-log" href="#" class="festi-button">
+                <?php _e('Show Responses Log', $this->_languageDomain ); ?>
+            </a>
+        </p>
+        <div id="feti-price-role-result-log">sdfsdf
+            <!-- server responses get logged here -->
+        </div>
+    </fieldset>
+</div>

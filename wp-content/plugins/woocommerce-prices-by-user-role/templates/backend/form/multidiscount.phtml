@@ -1,0 +1,99 @@
+<?php 
+$pluginRoles = $this->getCreatedRolesOptionsOfPlugin();
+
+if (!$pluginRoles) {
+    $pluginRoles = array();
+}
+    
+if (array_key_exists('description', $item)) 
+{   
+?>
+    <p class="description"><?php echo $item['description']; ?></p>
+<?php
+}
+?>
+
+<table cellpadding="0" cellspacing="0" id="festi-user-role-prices-discount-roles">
+    <tbody>
+
+            <?php
+             foreach ($roles as $key => $role) {
+             ?>
+             <tr>
+             <th>
+                 <span><?php echo $role['name'].":"; ?></span>
+             </th>
+             <td>
+                 <?php
+
+                if (
+                    !isset($currentValue)
+                    || !array_key_exists($key, $currentValue)
+                    || !array_key_exists('value', $currentValue[$key])
+                ) {
+                    $value = 0;
+                } else {
+                    $value = $currentValue[$key]['value'];
+                }
+                
+                $vars = array (
+                    'ident' => $ident.'['.$key.'][value]',
+                    'currentValue' => $value
+                );
+
+                echo $this->fetch('form/input_number.phtml', $vars);
+                
+                if (!isset($currentValue)
+                    || !array_key_exists($key, $currentValue)
+                    || !array_key_exists('type', $currentValue[$key])
+                ) {
+                    $value = 0;
+                } else {
+                    $value = $currentValue[$key]['type'];
+                }
+                
+                $vars = array (
+                    'ident' => $ident.'['.$key.'][type]',
+                    'item' => array(
+                        'values' => array(
+                            0 => __('%', $this->_languageDomain),
+                            1 => get_woocommerce_currency_symbol()
+                        )
+                    ),
+                    'currentValue' => $value
+                );
+
+                echo $this->fetch('form/input_select.phtml', $vars);
+				?>
+				<label style="font-style: italic;">for price:</label>
+				<?php
+				if (!isset($currentValue)
+                    || !array_key_exists($key, $currentValue)
+                    || !array_key_exists('priceType', $currentValue[$key])
+                ) {
+                    $value = 'regular';
+                } else {
+                    $value = $currentValue[$key]['priceType'];
+                }
+				
+				$vars = array (
+                    'ident' => $ident.'['.$key.'][priceType]',
+                    'item' => array(
+                        'values' => array(
+                            'regular' => __('regular', $this->_languageDomain),
+                            'role' => __('role', $this->_languageDomain)
+                        )
+                    ),
+                    'currentValue' => $value
+                );
+
+                echo $this->fetch('form/input_select.phtml', $vars);
+				
+                ?>
+                 
+             </td>
+                </tr>
+            <?php }?>
+
+    </tbody>
+</table>

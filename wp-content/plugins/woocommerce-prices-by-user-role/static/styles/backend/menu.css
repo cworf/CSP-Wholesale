@@ -1,0 +1,71 @@
+div.festi-menu .festi-menu-nav 
+{
+    padding-left: 0;
+    margin-bottom: 0px;
+    list-style: none;
+}
+
+div.festi-menu .festi-menu-nav:before,
+div.festi-menu .festi-menu-nav:after 
+{
+    display: table;
+    content: " ";
+}
+
+div.festi-menu .festi-menu-nav:after 
+{
+    clear: both;
+}
+
+div.festi-menu .festi-menu-nav-tabs 
+{
+    border-bottom: 1px solid #c3c3c3;
+    padding-left: 10px;
+}
+
+
+div.festi-menu .festi-menu-nav-tabs > li 
+{
+    position: relative;
+    display: block;
+    float: left;
+    margin-bottom: -1px;
+}
+
+div.festi-menu .festi-menu-nav-tabs > li > a 
+{
+    background-color: #e4e4e4;
+    padding: 6px 10px;
+    text-decoration: none;
+    position: relative;
+    display: block;  
+    margin-right: 4px;
+    line-height: 24px;
+    font-size: 15px;
+    border: 1px solid;
+    border-color: #c3c3c3;
+    font-weight: 700;
+    color: #555;
+}
+
+div.festi-menu .festi-menu-nav-tabs > li > a:hover 
+{
+    border: 1px solid;
+    border-color: #c3c3c3;
+    background-color: #ffffff;
+    border: 1px solid #c3c3c3;
+}
+
+div.festi-menu .festi-menu-nav-tabs > li.festi-menu-active > a,
+div.festi-menu .festi-menu-nav-tabs > li.festi-menu-active > a:hover,
+div.festi-menu .festi-menu-nav-tabs > li.festi-menu-active > a:focus 
+{
+    color: #000000;
+    cursor: default;
+    background-color: #f1f1f1;
+    border: 1px solid #c3c3c3;
+    border-bottom: 0px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 7px;  
+}

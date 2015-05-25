@@ -1,0 +1,14 @@
+<span class="festi-user-role-prices-regular-price-lable">
+    <?php _e("Total retail", $this->_languageDomain); ?>:
+</span> 
+<?php echo $regularPrice; ?>
+<br />
+<span class="festi-user-role-prices-user-price-lable">
+    <?php echo $this->getUserRoleNameByRoleKey($this->userRole); ?> <?php _e("Price", $this->_languageDomain); ?>:
+</span> 
+<?php echo $userPrice; ?>
+<br />
+<span class="festi-user-role-prices-discount-lable">
+    <?php _e("Total savings", $this->_languageDomain); ?>:
+</span> 
+<?php echo $userDiscount; ?>

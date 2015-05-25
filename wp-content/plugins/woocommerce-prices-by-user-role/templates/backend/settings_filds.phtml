@@ -1,0 +1,75 @@
+<table cellpadding="0" cellspacing="0"  class="festi-user-role-prices-form-table">
+    <tbody>
+        <?php
+
+        foreach ($filds as $ident => $item) {
+            $selectorClass = '';
+                         
+            if (isset($item['eventClasses'])) {
+                $class = $item['eventClasses'];
+                
+                $classes = explode(",", $class);
+                
+                foreach ($classes as $value) {
+                   $selectorClass.= ' '.$this->getSelectorClassForDisplayEvent($value); 
+                }
+
+            }
+            
+            if ($item['type'] == 'divider') {
+            ?>
+                <tr class="festi-user-role-prices-divider">
+                    <th colspan="2">
+                        <?php echo $item['caption']; ?>
+                    </th>
+                </tr>
+            <?php
+                continue;
+            }
+            
+            $backlight = (isset($item['backlight'])) ? 'festi-user-role-prices-'.$item['backlight'] : '';
+            
+            $classes = (isset($item['classes'])) ? $item['classes'] : '';
+            
+        ?>
+            <tr class = "<?php echo $selectorClass; ?> <?php echo $backlight; ?> <?php echo $classes; ?>" >
+                <th>
+                    <?php echo $item['caption']; ?>
+                    <?php if(isset($item['hint'])) {
+                    ?>
+                        <img
+                            class="festi-user-role-prices-help-tip" 
+                            title="<?php echo $item['hint']; ?> "
+                            src="<?php echo $this->getPluginImagesUrl('help.png'); ?>"
+                            height="16"
+                            width="16"
+                        >
+                    <?php       
+                    } 
+                    ?>
+                </th>
+                <td valign="middle">
+                    <?php
+
+                    $vars = array (
+                        'ident' => $ident,
+                        'item' => $item,
+                        'options' => $filds
+                    );
+                    
+                    if (array_key_exists('type', $item) && ($item['type'] == 'multicheck' || $item['type'] == 'multidiscount')) {
+                        $vars['roles'] = $this->getUserRoles();
+                    }
+
+                    if (isset($currentValues[$ident])) {
+                       $vars['currentValue'] = $currentValues[$ident];
+                    }
+                    echo $this->fetch('form/'.$item['type'].'.phtml', $vars);
+                    ?>
+                </td>
+            </tr>
+        <?php
+        }
+        ?>
+    </tbody>
+</table>

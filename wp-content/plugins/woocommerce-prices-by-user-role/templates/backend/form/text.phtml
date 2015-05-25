@@ -1,0 +1,7 @@
+<?php 
+if (!isset($currentValue)) {
+    $currentValue = (isset($item['value'])) ? $item['value'] : '';
+}
+?>
+<input type="hidden"  name="<?php echo $ident; ?>" value ='<?php echo $currentValue; ?>' >
+<?php echo $item['text'];?>

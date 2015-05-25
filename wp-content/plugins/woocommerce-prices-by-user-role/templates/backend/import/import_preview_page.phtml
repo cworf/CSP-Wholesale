@@ -1,0 +1,95 @@
+<form 
+	 enctype="multipart/form-data" 
+	 method="post" 
+	 class='festi-user-role-import-form'
+	 action=<?php echo $url;?> 
+>
+	<div class="festi-user-role-prices festi-content">
+		<fieldset class="festi-user-role-prices-options">
+		 <p>
+			<button class="button-primary" type="submit">
+				<?php
+					 _e(
+					 	'Import', 
+					 	$this->_languageDomain
+					); 
+				 ?>
+			</button>
+		</p>
+	    
+	<table class='festi-user-role-import-table' cellspacing="0">	
+		<thead class='festi-user-role-import-header'>
+<?php
+            $mapingClass = 'festi-user-role-import-maping-header-tr';
+
+			if ($isFirstRowHeader) {
+			    $mapingClass = 'festi-user-role-import-maping-tr';
+                $firstRow = $importData[0];
+?>
+				<tr class="festi-user-role-import-tr">
+<?php
+				foreach ($firstRow as $col) {
+?>
+				<td>
+					<?php echo htmlspecialchars($col); ?>
+				</td>
+<?php
+				}
+?>
+				</tr>
+<?php
+				array_shift($importData);
+			} 
+			$count = count($importData[0]);
+?>
+	<tr  class="<?php echo $mapingClass;?> ">
+<?php
+			$i = 0;
+			while ($i < $count) {
+?>
+			<td>
+<?php
+            $firstRow = (isset($firstRow)) ? $firstRow : array();
+            
+			$vars = array(
+				'id' => $i,
+				'mapingOptions' => $mapingOptions,
+				'isFirstRowHeader' => $isFirstRowHeader,
+				'firstRow' => $firstRow
+			);
+			
+			echo $this->fetch('import/maping_select.phtml', $vars);
+			echo $this->fetch('import/maping_settings.phtml', $vars);
+?>
+			</td>
+<?php
+					$i++;
+			}
+?>
+			</tr>
+				</thead>
+				<tbody class="festi-user-role-import-body">
+<?php
+					foreach($importData as $rowId => $row)
+					{
+?>
+					<tr>
+<?php
+					foreach ($row as $col) 
+					{
+?>
+					<td>
+						<?php echo htmlspecialchars($col); ?>
+					</td>
+<?php
+					}
+?>
+					</tr>
+<?php
+					}
+?>
+				</tbody>
+			</table>
+		</fieldset>
+	</div>
+</form>

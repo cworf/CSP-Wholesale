@@ -1,0 +1,15 @@
+<span class="festi-user-role-prices-regular-price-lable">
+    <?php _e("Regular Price", $this->_languageDomain); ?>:
+</span> 
+<?php echo sprintf('%1$s %2$s',$regularPrice, $priceSuffix); ?>
+<br />
+<span class="festi-user-role-prices-user-price-lable">
+    <?php _e("Your Price", $this->_languageDomain); ?>:
+</span> 
+<?php echo sprintf('%1$s %2$s', $userPrice, $priceSuffix); ?>
+<br />
+<span class="festi-user-role-prices-discount-lable">
+    <?php _e("Savings", $this->_languageDomain); ?>:
+</span> 
+<?php  echo $userDiscount; ?>
+

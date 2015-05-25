@@ -1,0 +1,70 @@
+.festi-user-role-map-to-settings-select{
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    width: 98%;
+}
+
+.festi-user-role-import-table{
+    border: 1px solid #C1CDC1;
+}
+
+.festi-user-role-import-header .festi-user-role-import-tr{
+    color: white;
+}
+
+.festi-user-role-import-header td {
+    vertical-align: top;
+    border-bottom: 1px solid #C1CDC1;
+}
+
+.festi-user-role-map-to-settings-map-to{
+    color: black;
+}
+
+.festi-user-role-import-tr,
+.festi-user-role-import-header .festi-user-role-import-maping-header-tr {
+    background-color: #4D95B6;
+}
+
+.festi-user-role-import-form .festi-user-role-import-table td
+{
+    padding: 8px;
+    min-width: 100px;
+}
+
+.festi-user-role-import-form .field_settings {
+        display: none;
+        margin: 2px 0;
+        padding: 4px;
+        background-color: #A1C8DB;
+}
+.festi-user-role-import-form .field_settings h4 {
+        margin: 0;
+        font-size: 0.9em;
+        line-height: 1.2em;
+}
+.festi-user-role-import-form .field_settings p {
+    margin: 4px 0;
+    overflow: hidden;
+    font-size: .9em;
+    line-height: 1.3em;
+}
+.festi-user-role-import-form .field_settings select {
+    width: 98%;
+}
+
+.festi-user-role-import-form .field_settings input[type="text"] {
+    width: 98%;
+}
+
+.festi-user-role-import-form .festi-user-role-import-table tbody tr:nth-child(2n+1) {
+    background-color: #ffffff;
+}
+
+.festi-user-role-import-form .festi-user-role-import-table tbody tr:nth-child(2n) {
+    background-color: #eeeeee;
+}
+
+.festi-user-role-import-header .festi-user-role-import-maping-tr {
+    background-color: #EAF6FF;
+}

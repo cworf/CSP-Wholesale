@@ -1,0 +1,17 @@
+<?php 
+
+$class = (isset($item['class'])) ? $item['class'] : '';
+
+$data = (isset($item['event'])) ? ' data-event="'.$item['event'].'"' : '';
+?>
+<select <?php echo $data;?>  class="<?php echo $class ;?>"  name="<?php echo $ident; ?>">
+    <?php
+    foreach ($item['values'] as $value => $title) {
+        $selected =  ($value == $currentValue) ? ' selected="selected" ' : '';
+        
+    ?>
+        <option <?php echo $selected; ?> value="<?php echo $value; ?>"> <?php echo $title; ?>&nbsp</option>
+    <?php
+    }
+    ?>
+</select>

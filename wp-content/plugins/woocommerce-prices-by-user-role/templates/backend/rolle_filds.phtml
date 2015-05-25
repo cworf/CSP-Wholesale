@@ -1,0 +1,50 @@
+<table cellpadding="0" cellspacing="0"  class="festi-user-role-prices-form-table">
+    <tbody>
+        <?php
+        $pluginRoles = $this->getCreatedRolesOptionsOfPlugin();
+        
+        if (!$pluginRoles) {
+            $pluginRoles = array();
+        }
+        
+        foreach ($roles as $ident => $item) {            
+        ?>
+            <tr>
+                <th>
+                    <?php echo $item['name']; ?>
+                </th>
+                <td valign="middle">                    
+                    <?php
+
+                    $vars = array (
+                        'ident' => 'roles['.$ident.']',
+                        'item' => $item
+                    );
+                    
+                    if (isset($currentValues['roles']) && array_key_exists($ident, $currentValues['roles'])) {
+                       $vars['currentValue'] = true;
+                    }
+                    echo $this->fetch('form/input_checkbox.phtml', $vars);
+                    
+                    $params = array(
+                        'refresh_competed' => '',
+                        'refresh_plugin' => '',
+                        'delete_role' => $ident
+                    );
+                    $url = $this->getUrl($params);
+                    
+                    if (array_key_exists($ident, $pluginRoles)) {
+                    ?>
+                        <a href="<?php echo $url; ?>" class="festi-user-role-prices-delete-role">
+                            <?php _e('delete', $this->_languageDomain); ?>
+                        </a>
+                     <?php
+                    }
+                    ?>
+                </td>
+            </tr>
+        <?php
+        }
+        ?>
+    </tbody>
+</table>

@@ -1,0 +1,290 @@
+select#newfesti_docs_versions_parent,
+label[for='parent'],
+select#parent.postform
+{
+    display: none;
+}
+
+body table.wp-list-table.tags
+{
+    table-layout: auto;
+}
+
+.festi-user-role-prices  .festi-user-role-prices-section {
+    margin: 0;
+}
+
+.festi-user-role-prices-message#message {
+    margin-left:0;
+}
+
+.festi-user-role-prices  .festi-user-role-prices-form-table
+{
+    width: 100%;
+}
+
+.festi-user-role-prices-form-table tr.festi-user-role-prices-top-border td,
+.festi-user-role-prices-form-table tr.festi-user-role-prices-top-border th
+{
+    border-top: 1px solid #eee;
+}
+
+
+.festi-user-role-prices  .festi-user-role-prices-form-table  td,
+.festi-user-role-prices  .festi-user-role-prices-form-table  th
+{
+    padding: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    line-height: 20px;
+    vertical-align: top;
+    text-align: left;
+    font-size: 15px;
+}
+
+.festi-user-role-prices .festi-user-role-prices-help-tip
+{
+    cursor: help;
+    vertical-align: middle;
+}
+
+.festi-user-role-prices  .festi-user-role-prices-form-table  th
+{
+    width: 280px;
+}
+
+.festi-user-role-prices .festi-user-role-prices-lable
+{
+    
+}
+
+input[type="text"],
+.festi-user-role-prices input[type="number"],
+.festi-user-role-prices select
+{
+    height: 30px; 
+}
+
+.festi-user-role-prices input[type="text"],
+.festi-user-role-prices input[type="number"],
+.festi-user-role-prices input[type="checkbox"],
+.festi-user-role-prices select
+{
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+input[type="text"]:focus,
+.festi-user-role-prices input[type="number"]:focus,
+.festi-user-role-prices input[type="checkbox"]:focus,
+.festi-user-role-prices select:focus
+{
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0;
+    outline: thin dotted \9;
+      /* IE6-9 */
+    
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+.festi-user-role-prices .festi-user-role-prices-add-on
+{
+    display: inline-block;
+    width: 26px;
+    height: 24px !important;
+    min-width: 16px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 22px;
+    position:relative;
+    right: 8px;
+    padding:2px;
+    top: 1px;
+    text-align: center;
+    text-shadow: 0 1px 0 #ffffff;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+    vertical-align: top;
+}
+.festi-user-role-prices tr.festi-user-role-prices-divider th
+{
+    text-align:left;
+    background-color: #789bb3;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+a.festi-user-role-prices-delete-role
+{
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    margin-left: 5px;
+    vertical-align: middle;
+    color: #ff5c5c;
+}
+
+a.festi-user-role-prices-delete-role:hover
+{
+    color: #ff0000;
+}
+
+.festi-user-role-prices  .festi-user-role-prices-hidden
+{
+    display:none;
+}
+
+fieldset.festi-user-role-prices-grouped-roles table th
+{
+    font-weight: normal;
+}
+
+.festi-user-role-prices-save-button-block
+{
+    
+}
+
+.festi-user-role-prices .festi-user-role-prices-save-button
+{
+    float: right;
+}
+
+fieldset.festi-user-role-prices-options
+{
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top:20px;
+    min-width: 820px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+}
+
+.festi-user-role-prices  h2
+{
+    font-size: 22px;
+    font-weight: 400;
+    padding: 9px 15px 4px 0;
+}
+
+
+fieldset.festi-user-role-prices-options #festi-user-role-prices-discount-roles tr,
+fieldset.festi-user-role-prices-options #festi-user-role-prices-discount-roles th,
+fieldset.festi-user-role-prices-options #festi-user-role-prices-discount-roles td
+{
+    border: 0;
+    padding: 5px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+fieldset.festi-user-role-prices-options #festi-user-role-prices-discount-roles th
+{
+    width:40%;
+}
+fieldset.festi-user-role-prices-options #festi-user-role-prices-discount-roles td label
+{
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+fieldset.festi-user-role-prices-options #festi-user-role-prices-discount-roles span
+{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+fieldset.festi-user-role-prices-options #festi-user-role-prices-discount-roles td input
+{
+    width: 75px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.festi-user-role-prices 
+{
+
+}
+
+.festi-content
+{
+    display: inline-block;
+}
+
+fieldset.festi-user-role-prices-options #festi-user-role-prices-discount-roles td input,
+fieldset.festi-user-role-prices-options #festi-user-role-prices-discount-roles td select
+{
+    height: 28px;
+}
+
+div#festi-import-report .festi-import-report-title
+{
+    text-transform: uppercase;
+}
+
+.festi-user-role-prices
+{
+    
+}
+
+div#festi-import-report p.festi-import-report-text
+{
+    font-weight: normal;
+}
+
+div#festi-import-report p.festi-import-report-text
+{
+    margin-left: 20px;
+}
+
+.festi-color-selector {
+    position: relative;
+    top: 0;
+    left: -3px;
+    width: 36px;
+    height: 36px;
+}
+
+.festi-color-selector div {
+    position: relative;
+    top: 4px;
+    left: 4px;
+    width: 28px;
+    height: 28px;
+    background: url(../../images/color_picker/select2.png) center;
+}
+
+div.colorpicker input {
+    height: 15px !important;
+    border: 0 !important;
+}
+
+body div.colorpicker {
+    z-index: 10;
+}
+
+/*Import Page*/
+.festi-user-role-prices-import-url {
+    width: 400px;
+}
+

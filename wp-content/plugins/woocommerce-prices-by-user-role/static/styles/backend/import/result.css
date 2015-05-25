@@ -1,0 +1,73 @@
+.festi-user-role-prices-import-content {
+    
+}
+
+#festi-import-in-progress {
+    float: left;
+    margin-right: 30px;
+    width: 400px;
+}
+
+.festi-import-in-progress-data {
+    background-color: #CBDDEA;
+    margin-top: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.festi-import-in-progress-data td,
+.festi-import-in-progress-data th {
+    padding: 5px;
+
+}
+
+.festi-import-in-progress-data th {
+    text-align: left;
+}
+
+.festi-import-in-progress-data ts {
+    text-align: right;
+}
+
+#feti-price-role-result-table {
+    border: 1px solid #cccccc;
+    margin-top: 40px;
+    width: 100%;
+}
+
+#feti-price-role-result-table thead td,
+#feti-price-role-result-table thead th {
+    color: #ffffff;
+}
+
+#feti-price-role-result-table td,
+#feti-price-role-result-table th {
+    padding: 5px;
+    font-size: 12px;
+    min-width: 100px;
+}
+
+#feti-price-role-result-table thead tr {
+    background-color: #6793AE;
+}
+
+#feti-price-role-result-log {
+    display: none;
+}
+
+#feti-price-role-result-table tbody tr:nth-child(2n+1) {
+    background-color: #ffffff;
+}
+
+#feti-price-role-result-table tbody tr:nth-child(2n) {
+    background-color: #cccccc;
+}
+
+#feti-price-role-result-table .feti-price-role-succes-result {
+    color: #44B038;
+}
+
+#feti-price-role-result-table .feti-price-role-error-result {
+    color: #ff0000;
+}

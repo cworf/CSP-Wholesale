@@ -1,0 +1,44 @@
+<div class="festi-user-role-map-to-settings-map-to">
+	Map to:
+	<select 
+		name='mapTo[<?php echo $id; ?>]'
+		class='festi-user-role-map-to-settings-select'
+	>
+<?php
+		foreach ($mapingOptions as $key => $item) 
+		{
+			if (array_key_exists('label', $item)) {
+?>
+			<optgroup label="<?php echo $item['label'];?>"> 
+<?php
+			}
+			
+			foreach ($item['options'] as $ident => $value)
+			{
+			    $selected = '';
+
+                if ($isFirstRowHeader) {
+                    $headerValue = strtolower($firstRow[$id]);
+                    if ($headerValue == strtolower($ident) ||
+                        $headerValue == strtolower($value['label']) ||
+                        in_array($headerValue, $value['mapping_hints']) ) {
+                        $selected = 'selected="selected"';
+                    }
+                }
+?>
+			<option <?php echo $selected;?> value="<?php echo $ident; ?>">
+				<?php echo $value['label'];?>
+			</option>
+<?php
+			}
+			
+			if (array_key_exists('label', $item)) {
+?>
+			</optgroup>
+<?php
+			}
+		}
+?>
+	
+	</select>
+</div>

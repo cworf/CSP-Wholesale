@@ -1,0 +1,43 @@
+<form action="<?php echo $url; ?>"  method="post" class="festi-user-role-prices-form" enctype="multipart/form-data">
+    <div class="festi-user-role-prices festi-content">
+    <fieldset class="festi-user-role-prices-options">
+        <table class="festi-user-role-prices-form-table">
+            <tbody>
+            <?php foreach ($fields as $ident => $item) { ?>
+                <tr>
+                    <th>
+                        <?php echo (isset($item['caption'])) ? $item['caption'] : ""; ?>
+                        <?php if(isset($item['hint'])) {
+                        ?>
+                            <img
+                                class="festi-user-role-prices-help-tip" 
+                                title="<?php echo $item['hint']; ?> "
+                                src="<?php echo $this->getPluginImagesUrl('help.png'); ?>"
+                                height="16"
+                                width="16"
+                            >
+                        <?php       
+                        } 
+                        ?>
+                    </th>
+                    <td valign="middle">
+                        <?php
+    
+                        $vars = array (
+                            'ident' => $ident,
+                            'item' => $item
+                        );
+
+                        echo $this->fetch('form/'.$item['type'].'.phtml', $vars);
+                        ?>
+                </td>
+                 </tr>
+            <?php } ?>
+            </tbody>
+        </table>
+    </fieldset>
+    <div class="festi-user-role-prices-save-button-block">
+           <input type="submit"  value="<?php echo __('Upload and Preview', $this->_languageDomain); ?>"  class="festi-user-role-prices-save-button button-primary">
+    </div>
+    </div>
+</form>

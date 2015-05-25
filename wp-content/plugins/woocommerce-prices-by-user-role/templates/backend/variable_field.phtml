@@ -1,0 +1,25 @@
+<tr class="wholesale_price_row">
+    <td>
+        <div>
+            <?php
+            
+                if (array_key_exists($key, $values)) {
+                    $decimalSeparator = $this->getWoocommerceDecimalSeparator();
+                    $search = array('.', ',');
+                    $value = str_replace($search, $decimalSeparator, $values[$key]);
+                } else {
+                    $value = '';
+                }
+            
+                $id = 'festiVariableUserRolePrices_'.$loop.'_'.$key;
+                 
+            ?>
+            <p class="form-field <?php echo  $id; ?>_field ">
+                <label for="<?php echo  $id; ?>">
+                    <?php echo  $label; ?>
+                </label>
+                <input type="text" class="short wc_input_price" name="festiVariableUserRolePrices[<?php echo  $loop; ?>][<?php echo  $key; ?>]" id="<?php echo  $id; ?>" value="<?php echo  $value; ?>" placeholder="">
+            </p>
+        </div>
+    </td>
+</tr>
