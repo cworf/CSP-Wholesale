@@ -1,0 +1,528 @@
+﻿/* -------------------------------------------------------------------------------- /	
+	
+	Plugin Name: Go - Responsive Pricing & Compare Tables
+	Plugin URI: http://codecanyon.net/item/go-responsive-pricing-compare-tables-for-wp/3725820
+	Description: The New Generation Pricing Tables. If you like traditional Pricing Tables, but you would like get much more out of it, then this rodded product is a useful tool for you.
+	Author: Granth
+	Version: 2.4.5
+	Author URI: http://themeforest.net/user/Granth
+	
+	+----------------------------------------------------+
+		TABLE OF CONTENTS
+	+----------------------------------------------------+
+	
+	[1] COMMON STYLES
+	[2] CUSTOM STYLES	
+	[2.1] BOX
+	[2.2] COLUMN
+	[2.3] POPUP
+	[2.4] MISCALLENAOUS
+	
+/ -------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------- /
+	[1] COMMON STYLES
+/ ---------------------------------------------------------------------- */	
+
+	#go-pricing-admin-wrap .button-primary, 
+	#go-pricing-admin-wrap .button-secondary { 
+		display:inline-block;
+		height:auto !important;
+		line-height:15px !important;
+		margin:1px !important;
+		padding:4px 8px !important;
+		margin-right:5px !important;
+	}
+	
+	#go-pricing-admin-wrap .inside .button-secondary { padding:8px !important; }
+
+	#go-pricing-admin-wrap .ajax-loading {
+		left:5px;
+		position:relative;
+		top:3px;
+	}
+	#go-pricing-admin-wrap .clearfix { 
+		clear:both; 
+		margin:0; 
+		padding:0;
+	}
+	#go-pricing-admin-wrap input[type="text"], 
+	#go-pricing-admin-wrap textarea, 
+	#go-pricing-admin-wrap select { min-height:25px !important; _min-height:15px !important; }
+	#go-pricing-admin-wrap select { background:#FFF; }	
+	#go-pricing-admin-wrap select optgroup { background:#DFDFDF; }
+
+	#go-pricing-admin-wrap .w60 { width:60px !important; }
+	#go-pricing-admin-wrap .w80{ width:80px !important; }	
+	#go-pricing-admin-wrap .w100 { width:100px !important; }
+	#go-pricing-admin-wrap .w150 { width:150px !important; }
+	#go-pricing-admin-wrap .w180 { width:180px !important; }
+	#go-pricing-admin-wrap .w200 { width:200px !important; }		
+	#go-pricing-admin-wrap .w255 { width:255px !important; }	
+	#go-pricing-admin-wrap .w300 { width:300px !important; }
+	#go-pricing-admin-wrap .wfull { width:100% !important; }
+	.go-pricing-space { margin-bottom:20px !important; }
+	.no-tb-overlay #TB_overlay { display:none !important; }
+	
+	#go-pricing-admin-wrap .vtop {
+		vertical-align:top;
+		padding:8px 0;
+	}
+
+/* ---------------------------------------------------------------------- /
+	[2] CUSTOM STYLES
+/ ---------------------------------------------------------------------- */	
+
+/* ---------------------------------------------------------------------- /
+	[2.1] BOX
+/ ---------------------------------------------------------------------- */	
+	
+	/* box header  */
+	#go-pricing-admin-wrap .hndle {
+		cursor:pointer;		
+		font-size:12px;
+		padding:7px 10px;
+		margin:0;
+	}
+	#go-pricing-admin-wrap .hndle span {
+		background:url(../images/icon_open_close.png) 0 -16px no-repeat;
+		display:block;
+		float:right;
+		height:16px;
+		position:relative;
+		right:-4px;
+		top:-2px;
+		width:16px;
+	}
+	#go-pricing-admin-wrap .hndle span.go-pricing-closed { background-position:0 0; }
+
+	/* inside */
+	#go-pricing-admin-wrap .inside {
+		margin:0 auto;
+		/* max-height:100%; req IE9*/
+		overflow:visible;
+		padding:10px 5px;		
+	}
+	/* form table */
+	#go-pricing-admin-wrap .form-table { margin:0; clear:none; }
+	#go-pricing-admin-wrap .form-table tr { position:relative; }
+	
+	#go-pricing-admin-wrap .form-table th { padding-left:8px; }
+	#go-pricing-admin-wrap .form-table td.wfull {
+		padding:8px 10px 8px 0 !important;
+		vertical-align:top;
+		width:auto !important;
+	}
+	#go-pricing-admin-wrap .form-table td.description {
+		position:absolute;
+	}
+	
+/* ---------------------------------------------------------------------- /
+	[2.2] COLUMN
+/ ---------------------------------------------------------------------- */	
+	
+	#go-pricing-column-wrapper > .inside { background:#E8E8E8; }
+	.go-pricing-columns li .postbox { margin-bottom:10px; }	
+	.go-pricing-columns {
+		margin:0;
+		overflow:hidden;
+	}
+
+	/* column types */
+	.go-pricing-columns li.go-pricing-column, 
+	.go-pricing-columns li.go-pricing-add-column, 
+	.go-pricing-columns li.go-pricing-column-placeholder {
+		border:solid 1px transparent;
+		cursor:move;
+		float:left;
+		margin:0 5px;
+		width:400px;
+	}
+	.go-pricing-columns li.go-pricing-add-column, 
+	.go-pricing-columns li.go-pricing-column-placeholder {
+		background:#F6F6F6;
+		border:dashed 1px #BBBBBB;
+		cursor:default;
+		overflow:hidden;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		border-radius:3px;
+		width:400px;
+		float:left;		
+		margin:0 5px;
+		height:432px;
+		position:relative;
+	}
+	
+	/* add column type */	
+	.go-pricing-columns li.go-pricing-add-column a {
+		display:block;
+		height:100%;
+		position:absolute;
+		text-align:center;
+		width:100%;
+	}
+	.go-pricing-columns li.go-pricing-add-column a span {
+		background:url(../images/icon_add_column.png) 0 0 no-repeat;
+		display:block;
+		height:50px;
+		left:50%;
+		margin-left:-30px;
+		margin-top:-25px;
+		position:absolute;
+		top:50%;
+		width:59px;
+	}
+	.go-pricing-columns li.go-pricing-add-column a:hover span {
+		background-position:0 -50px;
+	}
+
+	/* column controls */	
+	.go-pricing-column-controls {
+		background-color:#ECECEC !important;	
+		-webkit-border-top-left-radius:0;
+		-webkit-border-top-right-radius:0;
+		border-top-left-radius:0;
+		border-top-right-radius:0;
+		height:29px !important;
+		padding:17px 0 !important;
+		text-align:center;		
+	}
+	.go-pricing-column-controls a { margin:0 3px !important; }
+	
+	/* box header */
+	.go-pricing-columns li .hndle { 
+		border-radius:none;
+		-webkit-border-top-left-radius:0;
+		-webkit-border-top-right-radius:0;
+		border-top-left-radius:0;
+		border-top-right-radius:0;
+		border-top:solid 1px #DFDFDF;
+		margin-top:-1px !important;
+		font-size:16px !important;
+		padding:20px 10px 18px !important;
+		height:40px;
+		-webkit-border-top-left-radius:3px;
+		-webkit-border-top-right-radius:3px;
+		border-top-left-radius:3px;
+		border-top-right-radius:3px;
+		border-top:none;
+		margin-top:1px !important;		
+	}
+	
+	/* header icon container & icons */
+	.go-pricing-columns li .hndle div[class*="go-pricing-handle-icon"] {
+		height:40px;
+		padding-left:125px;
+		margin-left:-10px;
+		position:relative;
+		float:left;		
+	}
+	.go-pricing-handle-icon-general-options { background:url(../images/h0.png) 0 0 no-repeat !important; }
+	.go-pricing-handle-icon-header-options { background:url(../images/h1.png) 0 0 no-repeat !important; }
+	.go-pricing-handle-icon-body-options { background:url(../images/h2.png) 0 0 no-repeat !important; }
+	.go-pricing-handle-icon-button-options { background:url(../images/h3.png) 0 0 no-repeat !important; }	
+	.go-pricing-columns li .hndle span { right:8px !important; }		
+	
+	/* sub text under title*/
+	.go-pricing-columns li .hndle small {
+		color:#666;
+		text-shadow:none;
+		font-weight:normal;
+		display:block;
+	}
+	.go-pricing-columns li .inside { display:none; }
+	.go-pricing-column-controls { display:block !important; }
+	
+	/* sortable rows */
+	.go-pricing-sortable-row {
+		border:solid 1px transparent;
+		border-bottom:solid 1px #DFDFDF;
+		margin-bottom:10px !important;
+	}
+	.go-pricing-sortable-row-placeholder {
+		border:dashed 1px #DFDFDF;		
+		display:block;	
+		margin-bottom:10px !important;	
+		padding:0 0 22px 0 !important;
+		height:164px !important;
+	}
+	.go-pricing-sortable-row.ui-sortable-helper {
+		border:solid 1px transparent;
+		margin-bottom:10px !important;
+	}
+
+/* ---------------------------------------------------------------------- /
+	[2.3] POPUP
+/ ---------------------------------------------------------------------- */
+
+	/* add shortcode button */
+	.go-pricing-add-sc {
+		background:url(../images/icon_add_shortcode.png) 0 0 no-repeat;
+		color:inherit !important;		
+		display:block;
+		height:30px;		
+		line-height:30px;		
+		padding-left:42px;
+		text-decoration:none;
+	}
+	.go-pricing-add-sc:hover { background-position:0 -30px; }
+
+	/* popup elements */
+	#go-pricing-overlay {
+		background:#000;
+		height:100%;	
+		left:0;
+		filter:alpha(opacity=75);
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+		-moz-opacity:0.75;
+		opacity:0.75;
+		position:fixed;	
+		top:0;
+		width:100%;
+		z-index:100;		
+	}
+	#go-pricing-popup {
+		background:#FFF;
+		border:1px solid #555;
+		-moz-box-shadow:rgba(0,0,0,1) 0 4px 30px;
+		-webkit-box-shadow:rgba(0,0,0,1) 0 4px 30px;
+		box-shadow:rgba(0,0,0,1) 0 4px 30px;
+		color:#000;	
+		height:400px;
+		left:50%;
+		margin-top:-15px;
+		overflow:hidden;
+		position:fixed;
+		padding-top:30px;	
+		text-align:left;
+		top:50%;
+		width:670px;
+		z-index:102;	
+	}
+	#go-pricing-popup-title {
+		background-color:#222;
+		color:#CFCFCF;
+		height:30px;
+		line-height:30px;
+		margin-top:-30px;		
+		padding:0 10px 0 15px;
+		position:relative;
+	}
+	#go-pricing-popup-title span {
+		background:url(../images/icon_close.png) 0 0 no-repeat;
+		cursor:pointer;
+		display:block;
+		width:16px;
+		height:16px;
+		float:right;
+		margin-top:7px;
+	}
+	#go-pricing-popup-title span:hover { background-position:0 -16px; }
+	#go-pricing-popup-loader {
+		background:url(../images/loader.png) 0 0 no-repeat;
+		height:20px;
+		position:absolute;
+		right:35px;
+		top:5px;
+		width:20px;
+		z-index:101;
+	}	
+	#go-pricing-popup-content {
+		background:#F7F7F7 !important;
+		border:none !important;
+		height:100%;
+		overflow:auto;
+	}
+	#go-pricing-popup-content .postbox {
+		background:-moz-linear-gradient(bottom,#ECECEC,#F9F9F9);
+		background:-ms-linear-gradient(bottom,#ECECEC,#F9F9F9);
+		background:-o-linear-gradient(bottom,#ECECEC,#F9F9F9);
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #ECECEC), color-stop(100%, #F9F9F9));		
+		background:-webkit-linear-gradient(bottom,#ECECEC,#F9F9F9);
+		background:linear-gradient(bottom,#ECECEC,#F9F9F9);
+		border-left:none;
+		border-right:none;
+		border-top:none;
+		-moz-border-radius:0;
+		-webkit-border-radius:0;
+		border-radius:0;						
+		margin-bottom:0px;
+		padding:20px 4px;
+	}
+	#go-pricing-popup-content .inside {
+		-moz-box-shadow:0 1px 0 #FFF inset;		
+		-webkit-box-shadow:0 1px 0 #FFF inset;
+		box-shadow:0 1px 0 #FFF inset;
+		padding-top:20px;		
+	}
+	.go-pricing-pin,
+	.go-pricing-icon {
+		-moz-border-radius:2px;
+		-webkit-border-radius:2px;
+		border-radius:2px;		
+		cursor:pointer;
+		display:inline-block;			
+		float:left;
+		filter:alpha(opacity=75);
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+		-moz-opacity:0.75;
+		opacity:0.75;		
+		margin:1px;
+		margin-right:5px;
+		padding:3px;
+	}
+	.go-pricing-icon-dark { background:#A2A2A2;	}
+	.go-pricing-pin:hover,
+	.go-pricing-icon:hover,
+	.go-pricing-pin-current,
+	.go-pricing-icon-current {
+		background:#FFF;
+		border:solid 1px #BBBBBB;
+		filter:alpha(opacity=100);
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		-moz-opacity:0;
+		opacity:1;
+		padding:2px;
+	}
+	.go-pricing-icon-dark:hover,
+	.go-pricing-icon-current.go-pricing-icon-dark { 
+		background:#464646;
+		border:solid 1px #464646;
+	}
+
+/* ---------------------------------------------------------------------- /
+	[2.4] MISCALLENAOUS
+/ ---------------------------------------------------------------------- */
+
+	/* settings inside */
+	.go-pricing-thumbs-wrapper { background:#E8E8E8; }
+	#go-pricing-settings-wrapper .go-pricing-thumbs {
+		margin:10px;
+		padding:10px;
+		height:125px;
+		width:625px;
+	}
+	.go-pricing-thumbs a {
+		border:solid 1px #DFDFDF;
+		color:#666;
+		display:block;
+		float:left;
+		height:117px;
+		margin:3px;
+		-moz-transition:all 0.1s linear;
+		-ms-transition:all 0.1s linear;
+		-o-transition:all 0.1s linear;
+		-webkit-transition:all 0.1s linear;	
+		transition:all 0.1s linear;					
+		width:200px;
+	}
+	.go-pricing-thumbs a:hover,
+	.go-pricing-thumbs a.go-pricing-current {
+		border-color:#CCCCCC;
+		-moz-box-shadow:0 0 10px -2px rgba(0,0,0,0.15);
+		-webkit-box-shadow:0 0 10px -2px rgba(0,0,0,0.15);
+		box-shadow:0 0 10px -2px  rgba(0,0,0,0.15);	
+		color:#666;			
+	}
+	
+	.go-pricing-thumbs a img { display:block; }
+	.go-pricing-thumbs a span {
+		background:#FFF;
+		display:block;
+		height:20px;
+		line-height:20px;
+		padding:0 5px;
+		float:left;
+		overflow:hidden;
+		width:190px;
+	}
+
+	/* misc */
+	img[class*="go-pricing-img-ribbon"] {
+		height:auto;
+		max-width:255px;
+	}
+	.go-pricing-separator {
+		border-bottom:solid 1px #DFDFDF;
+		margin:10px 0;
+	}
+	.go-pricing-img-shadow { margin-left:-19px; }
+	.go-pricing-colorpicker, 
+	.go-pricing-img-coin { margin-top:-8px; }
+	
+	table[class*=go-pricing-header-type],
+	.button-secondary.go-pricing-delete, 
+	.button-secondary.go-pricing-copy,
+	.go-pricing-img-custom-ribbon-wrapper { display:none; }
+
+	/* admin icon */
+	#go-pricing-admin-icon { background:url(../images/icon_wp_header.png) 3px 0 no-repeat; }
+	
+	/* button icon */
+	span[class*="go-pricing-button-icon"] {
+		display:inline-block;
+		height:16px;	
+		margin-bottom:-4px;
+		margin-left:0;
+		margin-right:3px;
+		width:16px;	
+	}
+	a:hover span[class*="go-pricing-button-icon"] { background-position:0 -16px; }
+	.go-pricing-button-icon-add { background:url(../images/button_add.png) 0 0 no-repeat; }
+	.go-pricing-button-icon-remove { background:url(../images/button_del.png) 0 0 no-repeat; }
+	.go-pricing-button-icon-clone { 
+		background:url(../images/button_clone.png) 0 0 no-repeat;
+		width:24px !important; }
+	.go-pricing-button-icon-collapse { 
+		background:url(../images/button_collapse.png) 0 0 no-repeat;
+		width:34px !important;
+	}
+	
+	/* align icons*/
+	a[class*="go-pricing-align-icon"] {
+		display:block;
+		float:left;
+		height:19px;
+		margin-right:3px;
+		width:22px;
+	}
+	a[class*="go-pricing-align-icon"].go-pricing-current {
+		background-position:0 -19px;
+	}
+	.go-pricing-align-icon-left { background:url(../images/icon_align_left.png) 0 0 no-repeat; }
+	.go-pricing-align-icon-center { background:url(../images/icon_align_center.png) 0 0 no-repeat; }
+	.go-pricing-align-icon-right { background:url(../images/icon_align_right.png) 0 0 no-repeat; }	
+	
+	/* checkbox list */
+	.go-pricing-checkbox-list {
+		margin-top:5px;		
+		overflow:hidden;
+		width:250px;
+	}
+	.go-pricing-checkbox-list ul {
+		padding-left:16px;
+		margin-top:10px !important;
+		margin-bottom:10px !important;
+		display:none;
+		width: auto;
+	}
+	.go-pricing-checkbox-list li { margin-bottom:3px; }
+	.go-pricing-checkbox-list li label {
+		display:block;
+		margin-right:26px;
+		padding-left:16px;
+		position:relative;
+	}
+	.go-pricing-checkbox-list li label input[type="checkbox"] { margin-left:-16px; }
+	.go-pricing-checkbox-list li label span {
+		background:url(../images/button_collapse.png) 0 0 no-repeat;
+		height:16px;
+		position:absolute;
+		right:-26px;
+		top:2px;
+		width:16px;
+	}
+	.go-pricing-checkbox-list li label:hover span { background-position:0 -16px; }
+	.go-pricing-checkbox-list li label span.go-pricing-closed { background-position:-18px 0; }
+	.go-pricing-checkbox-list li label:hover span.go-pricing-closed { background-position:-18px -16px; }

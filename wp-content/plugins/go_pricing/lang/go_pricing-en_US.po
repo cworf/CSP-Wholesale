@@ -1,0 +1,1890 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Go - Responsive Pricing & Compare Tables v2.4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-09-17 21:35:03+0000\n"
+"Last-Translator: granthweb@gmail.com <granthweb@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#  go_pricing
+#: go_pricing.php:595
+#@ go_pricing
+msgid "You must specify a pricing table id."
+msgstr "You must specify a pricing table id."
+
+#  go_pricing
+#: go_pricing.php:599
+#, php-format
+#@ go_pricing
+msgid "Pricing table with id of \"%s\" is not defined."
+msgstr "Pricing table with id of \"%s\" is not defined."
+
+#  go_pricing
+#: go_pricing.php:610
+#: go_pricing.php:728
+#: go_pricing.php:1279
+#@ go_pricing
+msgid "Clone"
+msgstr "Clone"
+
+#  go_pricing
+#: go_pricing.php:611
+#: go_pricing.php:729
+#: go_pricing.php:1279
+#@ go_pricing
+msgid "Delete"
+msgstr "Delete"
+
+#  go_pricing
+#: go_pricing.php:612
+#@ go_pricing
+msgid "row"
+msgstr "row"
+
+#  go_pricing
+#: go_pricing.php:613
+#@ go_pricing
+msgid "column"
+msgstr "column"
+
+#  go_pricing
+#: go_pricing.php:614
+#: go_pricing.php:1208
+#@ go_pricing
+msgid "Description"
+msgstr "Description"
+
+#  go_pricing
+#: go_pricing.php:615
+#: go_pricing.php:1212
+#@ go_pricing
+msgid "Tooltip"
+msgstr "Tooltip"
+
+#  go_pricing
+#: go_pricing.php:1614
+#@ go_pricing
+msgid "-- Select shortcode --"
+msgstr "-- Select shortcode --"
+
+#  go_pricing
+#: go_pricing.php:1820
+#: go_pricing.php:1913
+#: go_pricing.php:1969
+#@ go_pricing
+msgid "Insert shortcode"
+msgstr "Insert shortcode"
+
+#  go_pricing
+#: go_pricing.php:616
+#: go_pricing.php:891
+#: go_pricing.php:892
+#: go_pricing.php:893
+#: go_pricing.php:894
+#: go_pricing.php:895
+#: go_pricing.php:896
+#: go_pricing.php:897
+#: go_pricing.php:898
+#: go_pricing.php:899
+#: go_pricing.php:900
+#: go_pricing.php:901
+#: go_pricing.php:902
+#: go_pricing.php:903
+#: go_pricing.php:904
+#: go_pricing.php:905
+#: go_pricing.php:906
+#: go_pricing.php:907
+#: go_pricing.php:908
+#: go_pricing.php:909
+#: go_pricing.php:910
+#: go_pricing.php:911
+#: go_pricing.php:912
+#: go_pricing.php:913
+#: go_pricing.php:914
+#: go_pricing.php:915
+#: go_pricing.php:1067
+#@ go_pricing
+msgid "Blue"
+msgstr "Blue"
+
+#  go_pricing
+#: go_pricing.php:617
+#: go_pricing.php:1016
+#: go_pricing.php:1017
+#: go_pricing.php:1018
+#: go_pricing.php:1019
+#: go_pricing.php:1020
+#: go_pricing.php:1021
+#: go_pricing.php:1022
+#: go_pricing.php:1023
+#: go_pricing.php:1024
+#: go_pricing.php:1025
+#: go_pricing.php:1026
+#: go_pricing.php:1027
+#: go_pricing.php:1028
+#: go_pricing.php:1029
+#: go_pricing.php:1030
+#: go_pricing.php:1031
+#: go_pricing.php:1032
+#: go_pricing.php:1033
+#: go_pricing.php:1034
+#: go_pricing.php:1035
+#: go_pricing.php:1036
+#: go_pricing.php:1037
+#: go_pricing.php:1038
+#: go_pricing.php:1039
+#: go_pricing.php:1040
+#@ go_pricing
+msgid "Earth"
+msgstr "Earth"
+
+#  go_pricing
+#: go_pricing.php:618
+#: go_pricing.php:991
+#: go_pricing.php:992
+#: go_pricing.php:993
+#: go_pricing.php:994
+#: go_pricing.php:995
+#: go_pricing.php:996
+#: go_pricing.php:997
+#: go_pricing.php:998
+#: go_pricing.php:999
+#: go_pricing.php:1000
+#: go_pricing.php:1001
+#: go_pricing.php:1002
+#: go_pricing.php:1003
+#: go_pricing.php:1004
+#: go_pricing.php:1005
+#: go_pricing.php:1006
+#: go_pricing.php:1007
+#: go_pricing.php:1008
+#: go_pricing.php:1009
+#: go_pricing.php:1010
+#: go_pricing.php:1011
+#: go_pricing.php:1012
+#: go_pricing.php:1013
+#: go_pricing.php:1014
+#: go_pricing.php:1015
+#: go_pricing.php:1094
+#@ go_pricing
+msgid "Yellow"
+msgstr "Yellow"
+
+#  go_pricing
+#: go_pricing.php:619
+#: go_pricing.php:966
+#: go_pricing.php:967
+#: go_pricing.php:968
+#: go_pricing.php:969
+#: go_pricing.php:970
+#: go_pricing.php:971
+#: go_pricing.php:972
+#: go_pricing.php:973
+#: go_pricing.php:974
+#: go_pricing.php:975
+#: go_pricing.php:976
+#: go_pricing.php:977
+#: go_pricing.php:978
+#: go_pricing.php:979
+#: go_pricing.php:980
+#: go_pricing.php:981
+#: go_pricing.php:982
+#: go_pricing.php:983
+#: go_pricing.php:984
+#: go_pricing.php:985
+#: go_pricing.php:986
+#: go_pricing.php:987
+#: go_pricing.php:988
+#: go_pricing.php:989
+#: go_pricing.php:990
+#@ go_pricing
+msgid "Purple"
+msgstr "Purple"
+
+#  go_pricing
+#: go_pricing.php:620
+#: go_pricing.php:941
+#: go_pricing.php:942
+#: go_pricing.php:943
+#: go_pricing.php:944
+#: go_pricing.php:945
+#: go_pricing.php:946
+#: go_pricing.php:947
+#: go_pricing.php:948
+#: go_pricing.php:949
+#: go_pricing.php:950
+#: go_pricing.php:951
+#: go_pricing.php:952
+#: go_pricing.php:953
+#: go_pricing.php:954
+#: go_pricing.php:955
+#: go_pricing.php:956
+#: go_pricing.php:957
+#: go_pricing.php:958
+#: go_pricing.php:959
+#: go_pricing.php:960
+#: go_pricing.php:961
+#: go_pricing.php:962
+#: go_pricing.php:963
+#: go_pricing.php:964
+#: go_pricing.php:965
+#: go_pricing.php:1085
+#@ go_pricing
+msgid "Red"
+msgstr "Red"
+
+#  go_pricing
+#: go_pricing.php:621
+#: go_pricing.php:916
+#: go_pricing.php:917
+#: go_pricing.php:918
+#: go_pricing.php:919
+#: go_pricing.php:920
+#: go_pricing.php:921
+#: go_pricing.php:922
+#: go_pricing.php:923
+#: go_pricing.php:924
+#: go_pricing.php:925
+#: go_pricing.php:926
+#: go_pricing.php:927
+#: go_pricing.php:928
+#: go_pricing.php:929
+#: go_pricing.php:930
+#: go_pricing.php:931
+#: go_pricing.php:932
+#: go_pricing.php:933
+#: go_pricing.php:934
+#: go_pricing.php:935
+#: go_pricing.php:936
+#: go_pricing.php:937
+#: go_pricing.php:938
+#: go_pricing.php:939
+#: go_pricing.php:940
+#: go_pricing.php:1076
+#@ go_pricing
+msgid "Green"
+msgstr "Green"
+
+#  go_pricing
+#: go_pricing.php:622
+#: go_pricing.php:854
+#@ go_pricing
+msgid "General options"
+msgstr "General options"
+
+#  go_pricing
+#: go_pricing.php:623
+#: go_pricing.php:854
+#@ go_pricing
+msgid "Set global column style"
+msgstr "Set global column style"
+
+#  go_pricing
+#: go_pricing.php:624
+#: go_pricing.php:858
+#@ go_pricing
+msgid "Highlight column?"
+msgstr "Highlight column?"
+
+#  go_pricing
+#: go_pricing.php:627
+#: go_pricing.php:776
+#: go_pricing.php:794
+#: go_pricing.php:822
+#: go_pricing.php:859
+#: go_pricing.php:863
+#: go_pricing.php:867
+#: go_pricing.php:1171
+#: go_pricing.php:1270
+#: go_pricing.php:1274
+#: go_pricing.php:1479
+#: go_pricing.php:1486
+#: go_pricing.php:1662
+#: go_pricing.php:1737
+#: go_pricing.php:1742
+#: go_pricing.php:1815
+#: includes/submenu_page_import_export.php:351
+#@ go_pricing
+msgid "Yes"
+msgstr "Yes"
+
+#  go_pricing
+#: go_pricing.php:628
+#: go_pricing.php:870
+#@ go_pricing
+msgid "Style"
+msgstr "Style"
+
+#  go_pricing
+#: go_pricing.php:629
+#: go_pricing.php:1049
+#: go_pricing.php:1050
+#: go_pricing.php:1051
+#: go_pricing.php:1052
+#: go_pricing.php:1053
+#@ go_pricing
+msgid "style"
+msgstr "style"
+
+#  go_pricing
+#: go_pricing.php:630
+#: go_pricing.php:878
+#: go_pricing.php:891
+#: go_pricing.php:916
+#: go_pricing.php:941
+#: go_pricing.php:966
+#: go_pricing.php:991
+#: go_pricing.php:1016
+#@ go_pricing
+msgid "styles"
+msgstr "styles"
+
+#  go_pricing
+#: go_pricing.php:631
+#: go_pricing.php:1045
+#@ go_pricing
+msgid "Shadow style"
+msgstr "Shadow style"
+
+#  go_pricing
+#: go_pricing.php:632
+#: go_pricing.php:1049
+#: go_pricing.php:1050
+#: go_pricing.php:1051
+#: go_pricing.php:1052
+#: go_pricing.php:1053
+#@ go_pricing
+msgid "shadow"
+msgstr "shadow"
+
+#  go_pricing
+#: go_pricing.php:633
+#: go_pricing.php:1048
+#@ go_pricing
+msgid "No shadow"
+msgstr "No shadow"
+
+#  go_pricing
+#: go_pricing.php:634
+#: go_pricing.php:1062
+#@ go_pricing
+msgid "Ribbon"
+msgstr "Ribbon"
+
+#  go_pricing
+#: go_pricing.php:635
+#: go_pricing.php:1067
+#: go_pricing.php:1076
+#: go_pricing.php:1085
+#: go_pricing.php:1094
+#@ go_pricing
+msgid "ribbons"
+msgstr "ribbons"
+
+#  go_pricing
+#: go_pricing.php:636
+#: go_pricing.php:1065
+#@ go_pricing
+msgid "No ribbon"
+msgstr "No ribbon"
+
+#  go_pricing
+#: go_pricing.php:637
+#: go_pricing.php:1066
+#@ go_pricing
+msgid "Custom ribbon (+add)"
+msgstr "Custom ribbon (+add)"
+
+#  go_pricing
+#: go_pricing.php:638
+#: go_pricing.php:1068
+#: go_pricing.php:1070
+#: go_pricing.php:1072
+#: go_pricing.php:1074
+#: go_pricing.php:1077
+#: go_pricing.php:1079
+#: go_pricing.php:1081
+#: go_pricing.php:1083
+#: go_pricing.php:1086
+#: go_pricing.php:1088
+#: go_pricing.php:1090
+#: go_pricing.php:1092
+#: go_pricing.php:1095
+#: go_pricing.php:1097
+#: go_pricing.php:1099
+#: go_pricing.php:1101
+#@ go_pricing
+msgid "left side"
+msgstr "left side"
+
+#  go_pricing
+#: go_pricing.php:639
+#: go_pricing.php:1069
+#: go_pricing.php:1071
+#: go_pricing.php:1073
+#: go_pricing.php:1075
+#: go_pricing.php:1078
+#: go_pricing.php:1080
+#: go_pricing.php:1082
+#: go_pricing.php:1084
+#: go_pricing.php:1087
+#: go_pricing.php:1089
+#: go_pricing.php:1091
+#: go_pricing.php:1093
+#: go_pricing.php:1096
+#: go_pricing.php:1098
+#: go_pricing.php:1100
+#: go_pricing.php:1102
+#@ go_pricing
+msgid "right side"
+msgstr "right side"
+
+#  go_pricing
+#: go_pricing.php:640
+#@ go_pricing
+msgid "Ribbon Align"
+msgstr "Ribbon Align"
+
+#  go_pricing
+#: go_pricing.php:641
+#: go_pricing.php:1110
+#: go_pricing.php:1905
+#: go_pricing.php:1951
+#@ go_pricing
+msgid "Align left"
+msgstr "Align left"
+
+#  go_pricing
+#: go_pricing.php:642
+#: go_pricing.php:1111
+#: go_pricing.php:1906
+#: go_pricing.php:1952
+#@ go_pricing
+msgid "Align right"
+msgstr "Align right"
+
+#  go_pricing
+#: go_pricing.php:643
+#: go_pricing.php:1279
+#@ go_pricing
+msgid "Expand all"
+msgstr "Expand all"
+
+#  go_pricing
+#: go_pricing.php:644
+#: go_pricing.php:1279
+#@ go_pricing
+msgid "Collapse all"
+msgstr "Collapse all"
+
+#  go_pricing
+#: go_pricing.php:645
+#: go_pricing.php:1233
+#@ go_pricing
+msgid "Button options"
+msgstr "Button options"
+
+#  go_pricing
+#: go_pricing.php:646
+#: go_pricing.php:1233
+#@ go_pricing
+msgid "Set column button function"
+msgstr "Set column button function"
+
+#  go_pricing
+#: go_pricing.php:650
+#: go_pricing.php:1237
+#@ go_pricing
+msgid "Button size"
+msgstr "Button size"
+
+#  go_pricing
+#: go_pricing.php:651
+#: go_pricing.php:1269
+#@ go_pricing
+msgid "Open in new window?"
+msgstr "Open in new window?"
+
+#  go_pricing
+#: go_pricing.php:653
+#: go_pricing.php:892
+#: go_pricing.php:893
+#: go_pricing.php:894
+#: go_pricing.php:895
+#: go_pricing.php:896
+#: go_pricing.php:897
+#: go_pricing.php:898
+#: go_pricing.php:899
+#: go_pricing.php:900
+#: go_pricing.php:901
+#: go_pricing.php:902
+#: go_pricing.php:903
+#: go_pricing.php:908
+#: go_pricing.php:909
+#: go_pricing.php:910
+#: go_pricing.php:911
+#: go_pricing.php:914
+#: go_pricing.php:917
+#: go_pricing.php:918
+#: go_pricing.php:919
+#: go_pricing.php:920
+#: go_pricing.php:921
+#: go_pricing.php:922
+#: go_pricing.php:923
+#: go_pricing.php:924
+#: go_pricing.php:925
+#: go_pricing.php:926
+#: go_pricing.php:927
+#: go_pricing.php:928
+#: go_pricing.php:933
+#: go_pricing.php:934
+#: go_pricing.php:935
+#: go_pricing.php:936
+#: go_pricing.php:939
+#: go_pricing.php:942
+#: go_pricing.php:943
+#: go_pricing.php:944
+#: go_pricing.php:945
+#: go_pricing.php:946
+#: go_pricing.php:947
+#: go_pricing.php:948
+#: go_pricing.php:949
+#: go_pricing.php:950
+#: go_pricing.php:951
+#: go_pricing.php:952
+#: go_pricing.php:953
+#: go_pricing.php:958
+#: go_pricing.php:959
+#: go_pricing.php:960
+#: go_pricing.php:961
+#: go_pricing.php:964
+#: go_pricing.php:967
+#: go_pricing.php:968
+#: go_pricing.php:969
+#: go_pricing.php:970
+#: go_pricing.php:971
+#: go_pricing.php:972
+#: go_pricing.php:973
+#: go_pricing.php:974
+#: go_pricing.php:975
+#: go_pricing.php:976
+#: go_pricing.php:977
+#: go_pricing.php:978
+#: go_pricing.php:983
+#: go_pricing.php:984
+#: go_pricing.php:985
+#: go_pricing.php:986
+#: go_pricing.php:989
+#: go_pricing.php:992
+#: go_pricing.php:993
+#: go_pricing.php:994
+#: go_pricing.php:995
+#: go_pricing.php:996
+#: go_pricing.php:997
+#: go_pricing.php:998
+#: go_pricing.php:999
+#: go_pricing.php:1000
+#: go_pricing.php:1001
+#: go_pricing.php:1002
+#: go_pricing.php:1003
+#: go_pricing.php:1008
+#: go_pricing.php:1009
+#: go_pricing.php:1010
+#: go_pricing.php:1011
+#: go_pricing.php:1014
+#: go_pricing.php:1017
+#: go_pricing.php:1018
+#: go_pricing.php:1019
+#: go_pricing.php:1020
+#: go_pricing.php:1021
+#: go_pricing.php:1022
+#: go_pricing.php:1023
+#: go_pricing.php:1024
+#: go_pricing.php:1025
+#: go_pricing.php:1026
+#: go_pricing.php:1027
+#: go_pricing.php:1028
+#: go_pricing.php:1033
+#: go_pricing.php:1034
+#: go_pricing.php:1035
+#: go_pricing.php:1036
+#: go_pricing.php:1039
+#@ go_pricing
+msgid "pricing header"
+msgstr "pricing header"
+
+#  go_pricing
+#: go_pricing.php:654
+#: go_pricing.php:904
+#: go_pricing.php:905
+#: go_pricing.php:915
+#: go_pricing.php:929
+#: go_pricing.php:930
+#: go_pricing.php:940
+#: go_pricing.php:954
+#: go_pricing.php:955
+#: go_pricing.php:965
+#: go_pricing.php:979
+#: go_pricing.php:980
+#: go_pricing.php:990
+#: go_pricing.php:1004
+#: go_pricing.php:1005
+#: go_pricing.php:1015
+#: go_pricing.php:1029
+#: go_pricing.php:1030
+#: go_pricing.php:1040
+#@ go_pricing
+msgid "html header"
+msgstr "html header"
+
+#  go_pricing
+#: go_pricing.php:655
+#: go_pricing.php:906
+#: go_pricing.php:931
+#: go_pricing.php:956
+#: go_pricing.php:981
+#: go_pricing.php:1006
+#: go_pricing.php:1031
+#@ go_pricing
+msgid "pricing with html header"
+msgstr "pricing with html header"
+
+#  go_pricing
+#: go_pricing.php:656
+#: go_pricing.php:907
+#: go_pricing.php:932
+#: go_pricing.php:957
+#: go_pricing.php:982
+#: go_pricing.php:1007
+#: go_pricing.php:1032
+#@ go_pricing
+msgid "pricing with full image header"
+msgstr "pricing with full image header"
+
+#  go_pricing
+#: go_pricing.php:657
+#: go_pricing.php:913
+#: go_pricing.php:938
+#: go_pricing.php:963
+#: go_pricing.php:988
+#: go_pricing.php:1013
+#: go_pricing.php:1038
+#@ go_pricing
+msgid "product pricing header"
+msgstr "product pricing header"
+
+#  go_pricing
+#: go_pricing.php:658
+#: go_pricing.php:912
+#: go_pricing.php:937
+#: go_pricing.php:962
+#: go_pricing.php:987
+#: go_pricing.php:1012
+#: go_pricing.php:1037
+#@ go_pricing
+msgid "team header"
+msgstr "team header"
+
+#  go_pricing
+#: go_pricing.php:659
+#: go_pricing.php:1191
+#@ go_pricing
+msgid "Body options"
+msgstr "Body options"
+
+#  go_pricing
+#: go_pricing.php:660
+#: go_pricing.php:1191
+#@ go_pricing
+msgid "Set column main content"
+msgstr "Set column main content"
+
+#  go_pricing
+#: go_pricing.php:662
+#: go_pricing.php:1127
+#@ go_pricing
+msgid "Header options"
+msgstr "Header options"
+
+#  go_pricing
+#: go_pricing.php:663
+#: go_pricing.php:1127
+#@ go_pricing
+msgid "Set column header content"
+msgstr "Set column header content"
+
+#  go_pricing
+#: go_pricing.php:664
+#: go_pricing.php:1132
+#@ go_pricing
+msgid "Column title"
+msgstr "Column title"
+
+#  go_pricing
+#: go_pricing.php:665
+#: go_pricing.php:1138
+#@ go_pricing
+msgid "Price"
+msgstr "Price"
+
+#  go_pricing
+#: go_pricing.php:666
+#: go_pricing.php:1121
+#: go_pricing.php:1159
+#@ go_pricing
+msgid "Add image"
+msgstr "Add image"
+
+#  go_pricing
+#: go_pricing.php:667
+#: go_pricing.php:1154
+#@ go_pricing
+msgid "Select an image"
+msgstr "Select an image"
+
+#  go_pricing
+#: go_pricing.php:668
+#: go_pricing.php:1148
+#: go_pricing.php:1180
+#@ go_pricing
+msgid "HTML content"
+msgstr "HTML content"
+
+#  go_pricing
+#: go_pricing.php:669
+#: go_pricing.php:1164
+#: go_pricing.php:1184
+#@ go_pricing
+msgid "CSS extension"
+msgstr "CSS extension"
+
+#  go_pricing
+#: go_pricing.php:670
+#: go_pricing.php:1170
+#@ go_pricing
+msgid "Replace default header type?"
+msgstr "Replace default header type?"
+
+#  go_pricing
+#: go_pricing.php:1615
+#@ go_pricing
+msgid "Image"
+msgstr "Image"
+
+#  go_pricing
+#: go_pricing.php:671
+#: go_pricing.php:1241
+#: go_pricing.php:1961
+#@ go_pricing
+msgid "Medium"
+msgstr "Medium"
+
+#  go_pricing
+#: go_pricing.php:672
+#: go_pricing.php:1242
+#: go_pricing.php:1962
+#@ go_pricing
+msgid "Large"
+msgstr "Large"
+
+#  go_pricing
+#: go_pricing.php:679
+#@ go_pricing
+msgid "You have reached the maximum number of columns!"
+msgstr "You have reached the maximum number of columns!"
+
+#  go_pricing
+#: go_pricing.php:686
+#: go_pricing.php:1410
+#: includes/submenu_page_import_export.php:210
+#@ go_pricing
+msgid "Go - Responsive Pricing & Compare Tables"
+msgstr "Go - Responsive Pricing & Compare Tables"
+
+#  go_pricing
+#: go_pricing.php:609
+#: go_pricing.php:701
+#: go_pricing.php:1441
+#@ go_pricing
+msgid "Oops, AJAX error!"
+msgstr "Oops, AJAX error!"
+
+#  go_pricing
+#: go_pricing.php:705
+#@ go_pricing
+msgid "Table creator"
+msgstr "Table creator"
+
+#  go_pricing
+#: go_pricing.php:721
+#: go_pricing.php:727
+#@ go_pricing
+msgid "Create a new table"
+msgstr "Create a new table"
+
+#  go_pricing
+#: go_pricing.php:727
+#@ go_pricing
+msgid "Edit"
+msgstr "Edit"
+
+#  go_pricing
+#: go_pricing.php:758
+#@ go_pricing
+msgid "Global table settings"
+msgstr "Global table settings"
+
+#  go_pricing
+#: go_pricing.php:762
+#@ go_pricing
+msgid "Pricing table name"
+msgstr "Pricing table name"
+
+#  go_pricing
+#: go_pricing.php:764
+#@ go_pricing
+msgid "Name for pricing table, only used in admin area."
+msgstr "Name for pricing table, only used in admin area."
+
+#  go_pricing
+#: go_pricing.php:767
+#@ go_pricing
+msgid "Pricing table id"
+msgstr "Pricing table id"
+
+#  go_pricing
+#: go_pricing.php:775
+#@ go_pricing
+msgid "Enlarge current column?"
+msgstr "Enlarge current column?"
+
+#  go_pricing
+#: go_pricing.php:777
+#@ go_pricing
+msgid "Whether to increase the size of the current column."
+msgstr "Whether to increase the size of the current column."
+
+#  go_pricing
+#: go_pricing.php:780
+#@ go_pricing
+msgid "Space between columns"
+msgstr "Space between columns"
+
+#  go_pricing
+#: go_pricing.php:783
+#@ go_pricing
+msgid "No space"
+msgstr "No space"
+
+#  go_pricing
+#: go_pricing.php:784
+#: go_pricing.php:785
+#: go_pricing.php:786
+#: go_pricing.php:787
+#: go_pricing.php:788
+#@ go_pricing
+msgid "space"
+msgstr "space"
+
+#  go_pricing
+#: go_pricing.php:790
+#@ go_pricing
+msgid "Space between two columns."
+msgstr "Space between two columns."
+
+#  go_pricing
+#: go_pricing.php:801
+#@ go_pricing
+msgid "Tooltip width"
+msgstr "Tooltip width"
+
+#  go_pricing
+#: go_pricing.php:803
+#@ go_pricing
+msgid "Width of the tooltip (in pixels)."
+msgstr "Width of the tooltip (in pixels)."
+
+#  go_pricing
+#: go_pricing.php:806
+#@ go_pricing
+msgid "Tooltip background color"
+msgstr "Tooltip background color"
+
+#  go_pricing
+#: go_pricing.php:808
+#@ go_pricing
+msgid "Background color of the tooltip (you can use colorpicker)."
+msgstr "Background color of the tooltip (you can use colorpicker)."
+
+#  go_pricing
+#: go_pricing.php:812
+#@ go_pricing
+msgid "Tooltip text color"
+msgstr "Tooltip text color"
+
+#  go_pricing
+#: go_pricing.php:814
+#@ go_pricing
+msgid "Text color of the tooltip (you can use colorpicker)."
+msgstr "Text color of the tooltip (you can use colorpicker)."
+
+#  go_pricing
+#: go_pricing.php:829
+#: go_pricing.php:1291
+#@ go_pricing
+msgid "Back"
+msgstr "Back"
+
+#  go_pricing
+#: go_pricing.php:830
+#: go_pricing.php:1292
+#: go_pricing.php:1530
+#: go_pricing.php:1552
+#: includes/submenu_page_import_export.php:294
+#: includes/submenu_page_import_export.php:361
+#@ go_pricing
+msgid "Save"
+msgstr "Save"
+
+#  go_pricing
+#: go_pricing.php:835
+#@ go_pricing
+msgid "Column settings"
+msgstr "Column settings"
+
+#  go_pricing
+#: go_pricing.php:1107
+#@ go_pricing
+msgid "Ribbon align"
+msgstr "Ribbon align"
+
+#  go_pricing
+#: go_pricing.php:1217
+#@ go_pricing
+msgid "Delete row"
+msgstr "Delete row"
+
+#  go_pricing
+#: go_pricing.php:1217
+#@ go_pricing
+msgid "Clone row"
+msgstr "Clone row"
+
+#  go_pricing
+#: go_pricing.php:1285
+#@ go_pricing
+msgid "Add column"
+msgstr "Add column"
+
+#  go_pricing
+#: go_pricing.php:1306
+#: go_pricing.php:1564
+#@ go_pricing
+msgid "Oops, something went wrong!"
+msgstr "Oops, something went wrong!"
+
+#  go_pricing
+#: go_pricing.php:1325
+#: go_pricing.php:1336
+#: go_pricing.php:1398
+#@ go_pricing
+msgid "Pricing tables has been successfully updated."
+msgstr "Pricing tables has been successfully updated."
+
+#  go_pricing
+#: go_pricing.php:1367
+#@ go_pricing
+msgid "Pricing table name is empty."
+msgstr "Pricing table name is empty."
+
+#  go_pricing
+#: go_pricing.php:1371
+#@ go_pricing
+msgid "Pricing table id is empty."
+msgstr "Pricing table id is empty."
+
+#  go_pricing
+#: go_pricing.php:1385
+#@ go_pricing
+msgid "This table id is already used."
+msgstr "This table id is already used."
+
+#  go_pricing
+#: go_pricing.php:1445
+#@ go_pricing
+msgid "General Settings"
+msgstr "General Settings"
+
+#  go_pricing
+#: go_pricing.php:1449
+#@ go_pricing
+msgid "Primary font"
+msgstr "Primary font"
+
+#  go_pricing
+#: go_pricing.php:1451
+#@ go_pricing
+msgid "Primary font is used in header (title, price and buttons)"
+msgstr "Primary font is used in header (title, price and buttons)"
+
+#  go_pricing
+#: go_pricing.php:1454
+#@ go_pricing
+msgid "Primary font css"
+msgstr "Primary font css"
+
+#  go_pricing
+#: go_pricing.php:1456
+#@ go_pricing
+msgid "Primary font external css file for Google (or other) fonts"
+msgstr "Primary font external css file for Google (or other) fonts"
+
+#  go_pricing
+#: go_pricing.php:1459
+#@ go_pricing
+msgid "Secondary font"
+msgstr "Secondary font"
+
+#  go_pricing
+#: go_pricing.php:1461
+#@ go_pricing
+msgid "Secondary font is used in the body part of the table (descriptions, tooltips)"
+msgstr "Secondary font is used in the body part of the table (descriptions, tooltips)"
+
+#  go_pricing
+#: go_pricing.php:1464
+#@ go_pricing
+msgid "Secondary font css"
+msgstr "Secondary font css"
+
+#  go_pricing
+#: go_pricing.php:1466
+#@ go_pricing
+msgid "Secondary font external css file for Google (or other) fonts"
+msgstr "Secondary font external css file for Google (or other) fonts"
+
+#  go_pricing
+#: go_pricing.php:1472
+#@ go_pricing
+msgid "Column widths"
+msgstr "Column widths"
+
+#  go_pricing
+#: go_pricing.php:1473
+#: go_pricing.php:1490
+#: go_pricing.php:1497
+#: go_pricing.php:1504
+#@ go_pricing
+msgid "Minimum width"
+msgstr "Minimum width"
+
+#  go_pricing
+#: go_pricing.php:1474
+#: go_pricing.php:1492
+#: go_pricing.php:1499
+#: go_pricing.php:1506
+#@ go_pricing
+msgid "Maximum width"
+msgstr "Maximum width"
+
+#  go_pricing
+#: go_pricing.php:1478
+#@ go_pricing
+msgid "Enable CSS transitions"
+msgstr "Enable CSS transitions"
+
+#  go_pricing
+#: go_pricing.php:1485
+#@ go_pricing
+msgid "Enable responsivity"
+msgstr "Enable responsivity"
+
+#  go_pricing
+#: go_pricing.php:1489
+#@ go_pricing
+msgid "Tablet (portrait)"
+msgstr "Tablet (portrait)"
+
+#  go_pricing
+#: go_pricing.php:1496
+#@ go_pricing
+msgid "Mobile (portrait)"
+msgstr "Mobile (portrait)"
+
+#  go_pricing
+#: go_pricing.php:1503
+#@ go_pricing
+msgid "Mobile (landscape)"
+msgstr "Mobile (landscape)"
+
+#  go_pricing
+#: go_pricing.php:1589
+#@ go_pricing
+msgid "General settings has been successfully updated."
+msgstr "General settings has been successfully updated."
+
+#  go_pricing
+#: go_pricing.php:1979
+#@ go_pricing
+msgid "Oops, authorized persons only!"
+msgstr "Oops, authorized persons only!"
+
+#  go_pricing
+#: go_pricing.php:2020
+#@ go_pricing
+msgid "GW_GoPricing class has been already declared!"
+msgstr "GW_GoPricing class has been already declared!"
+
+#  go_pricing
+#: go_pricing.php:769
+#@ go_pricing
+msgid "Unique id, used in shortcodes (e.g. if table id is: \"my_table\" the shortcode will be: [go_pricing id=\"my_table\"])."
+msgstr "Unique id, used in shortcodes (e.g. if table id is: \"my_table\" the shortcode will be: [go_pricing id=\"my_table\"])."
+
+#  go_pricing
+#: go_pricing.php:661
+#: go_pricing.php:1227
+#@ go_pricing
+msgid "Add row"
+msgstr "Add row"
+
+#: go_pricing.php:647
+#: go_pricing.php:1247
+#@ go_pricing
+msgid "Button type"
+msgstr "Button type"
+
+#: go_pricing.php:648
+#: go_pricing.php:1261
+#@ go_pricing
+msgid "Button content"
+msgstr "Button content"
+
+#: go_pricing.php:649
+#: go_pricing.php:1265
+#@ go_pricing
+msgid "Button link / Paypal button code or shortcode"
+msgstr "Button link / Paypal button code or shortcode"
+
+#: go_pricing.php:673
+#: go_pricing.php:1240
+#@ go_pricing
+msgid "Small"
+msgstr "Small"
+
+#: go_pricing.php:674
+#: go_pricing.php:1250
+#@ go_pricing
+msgid "Regular button"
+msgstr "Regular button"
+
+#: go_pricing.php:675
+#: go_pricing.php:1251
+#@ go_pricing
+msgid "Form submit button (e.g. Paypal)"
+msgstr "Form submit button (e.g. Paypal)"
+
+#: go_pricing.php:677
+#: go_pricing.php:1145
+#: go_pricing.php:1177
+#: go_pricing.php:1206
+#: go_pricing.php:1258
+#@ go_pricing
+msgid "Shortcode editor"
+msgstr "Shortcode editor"
+
+#: go_pricing.php:678
+#: go_pricing.php:1145
+#: go_pricing.php:1177
+#: go_pricing.php:1206
+#: go_pricing.php:1258
+#@ go_pricing
+msgid "Add shortcode"
+msgstr "Add shortcode"
+
+#: go_pricing.php:680
+#@ go_pricing
+msgid "Insert"
+msgstr "Insert"
+
+#: go_pricing.php:1611
+#@ go_pricing
+msgid "Create shortcode"
+msgstr "Create shortcode"
+
+#: go_pricing.php:1617
+#@ go_pricing
+msgid "Youtube video"
+msgstr "Youtube video"
+
+#: go_pricing.php:1618
+#@ go_pricing
+msgid "Vimeo video"
+msgstr "Vimeo video"
+
+#: go_pricing.php:1619
+#@ go_pricing
+msgid "Screenr video"
+msgstr "Screenr video"
+
+#: go_pricing.php:1622
+#@ go_pricing
+msgid "HTML5 video"
+msgstr "HTML5 video"
+
+#: go_pricing.php:1627
+#@ go_pricing
+msgid "HTML5 audio"
+msgstr "HTML5 audio"
+
+#: go_pricing.php:1629
+#@ go_pricing
+msgid "Google map"
+msgstr "Google map"
+
+#: go_pricing.php:1641
+#@ go_pricing
+msgid "You can select & insert shortcodes into the content using the selector."
+msgstr "You can select & insert shortcodes into the content using the selector."
+
+#: go_pricing.php:1645
+#@ go_pricing
+msgid "Image source"
+msgstr "Image source"
+
+#: go_pricing.php:1646
+#@ go_pricing
+msgid "Image source file. (required)"
+msgstr "Image source file. (required)"
+
+#: go_pricing.php:1647
+#: go_pricing.php:1678
+#: go_pricing.php:1683
+#: go_pricing.php:1688
+#: go_pricing.php:1693
+#: go_pricing.php:1723
+#: go_pricing.php:1728
+#: go_pricing.php:1733
+#@ go_pricing
+msgid "Add"
+msgstr "Add"
+
+#: go_pricing.php:1650
+#@ go_pricing
+msgid "Width"
+msgstr "Width"
+
+#: go_pricing.php:1651
+#@ go_pricing
+msgid "Width of the image in pixels e.g. \"200\". (optional)"
+msgstr "Width of the image in pixels e.g. \"200\". (optional)"
+
+#: go_pricing.php:1654
+#: go_pricing.php:1716
+#@ go_pricing
+msgid "Height"
+msgstr "Height"
+
+#: go_pricing.php:1655
+#@ go_pricing
+msgid "Height of the image in pixels e.g. \"150\". (optional)"
+msgstr "Height of the image in pixels e.g. \"150\". (optional)"
+
+#: go_pricing.php:1658
+#@ go_pricing
+msgid "Classes"
+msgstr "Classes"
+
+#: go_pricing.php:1659
+#@ go_pricing
+msgid "Image classes. (optional)"
+msgstr "Image classes. (optional)"
+
+#: go_pricing.php:1661
+#@ go_pricing
+msgid "Responsive?"
+msgstr "Responsive?"
+
+#: go_pricing.php:1662
+#@ go_pricing
+msgid "Whether to make the image fluid/responsive (optional)"
+msgstr "Whether to make the image fluid/responsive (optional)"
+
+#: go_pricing.php:1666
+#@ go_pricing
+msgid "Video id"
+msgstr "Video id"
+
+#: go_pricing.php:1667
+#@ go_pricing
+msgid "Video id. (required)"
+msgstr "Video id. (required)"
+
+#: go_pricing.php:1671
+#@ go_pricing
+msgid "Video height"
+msgstr "Video height"
+
+#: go_pricing.php:1672
+#@ go_pricing
+msgid "Video height in pixels e.g. \"300\". (optional)"
+msgstr "Video height in pixels e.g. \"300\". (optional)"
+
+#: go_pricing.php:1676
+#: go_pricing.php:1681
+#: go_pricing.php:1686
+#: go_pricing.php:1721
+#: go_pricing.php:1726
+#: go_pricing.php:1731
+#@ go_pricing
+msgid "source"
+msgstr "source"
+
+#: go_pricing.php:1677
+#@ go_pricing
+msgid "MP4 file for Safari, IE9, iPhone, iPad, Android, and WP7. (required)"
+msgstr "MP4 file for Safari, IE9, iPhone, iPad, Android, and WP7. (required)"
+
+#: go_pricing.php:1682
+#@ go_pricing
+msgid "WebM/VP8 file for Firefox4, Opera, and Chrome.(optional)"
+msgstr "WebM/VP8 file for Firefox4, Opera, and Chrome.(optional)"
+
+#: go_pricing.php:1687
+#@ go_pricing
+msgid "Ogg/Vorbis for older Firefox and Opera versions.(optional)"
+msgstr "Ogg/Vorbis for older Firefox and Opera versions.(optional)"
+
+#: go_pricing.php:1691
+#@ go_pricing
+msgid "Poster image source"
+msgstr "Poster image source"
+
+#: go_pricing.php:1692
+#@ go_pricing
+msgid "Image to be shown while the video is downloading. (required)"
+msgstr "Image to be shown while the video is downloading. (required)"
+
+#: go_pricing.php:1722
+#@ go_pricing
+msgid "MP3 audio file. (optional"
+msgstr "MP3 audio file. (optional"
+
+#: go_pricing.php:1727
+#@ go_pricing
+msgid "Ogg audio file. (optional)"
+msgstr "Ogg audio file. (optional)"
+
+#: go_pricing.php:1732
+#@ go_pricing
+msgid "Wav audio file. (optional)"
+msgstr "Wav audio file. (optional)"
+
+#: go_pricing.php:1736
+#@ go_pricing
+msgid "Autoplay?"
+msgstr "Autoplay?"
+
+#: go_pricing.php:1737
+#@ go_pricing
+msgid "Whether to autoplay audio/video. (optional)"
+msgstr "Whether to autoplay audio/video. (optional)"
+
+#: go_pricing.php:1741
+#@ go_pricing
+msgid "Loop?"
+msgstr "Loop?"
+
+#: go_pricing.php:1742
+#@ go_pricing
+msgid "Whether to play audio/video continuously. (optional)"
+msgstr "Whether to play audio/video continuously. (optional)"
+
+#: go_pricing.php:1746
+#@ go_pricing
+msgid "Address"
+msgstr "Address"
+
+#: go_pricing.php:1747
+#@ go_pricing
+msgid "Address to be shown on map e.g. \"New York, USA\".(required)"
+msgstr "Address to be shown on map e.g. \"New York, USA\".(required)"
+
+#: go_pricing.php:1751
+#@ go_pricing
+msgid "Map height"
+msgstr "Map height"
+
+#: go_pricing.php:1752
+#@ go_pricing
+msgid "Height of map in pixels e.g. \"300\". (required)"
+msgstr "Height of map in pixels e.g. \"300\". (required)"
+
+#: go_pricing.php:1756
+#@ go_pricing
+msgid "Zoom level"
+msgstr "Zoom level"
+
+#: go_pricing.php:1780
+#@ go_pricing
+msgid "Zoom level for map. (required)"
+msgstr "Zoom level for map. (required)"
+
+#: go_pricing.php:1798
+#@ go_pricing
+msgid "Marker image source"
+msgstr "Marker image source"
+
+#: go_pricing.php:1799
+#@ go_pricing
+msgid "Custom address marker on map. (optional)"
+msgstr "Custom address marker on map. (optional)"
+
+#: go_pricing.php:1800
+#@ go_pricing
+msgid "Leave blank to use the default marker."
+msgstr "Leave blank to use the default marker."
+
+#: go_pricing.php:1804
+#@ go_pricing
+msgid "Marker title"
+msgstr "Marker title"
+
+#: go_pricing.php:1805
+#@ go_pricing
+msgid "Custom title attribute for marker on map. (optional)"
+msgstr "Custom title attribute for marker on map. (optional)"
+
+#: go_pricing.php:1809
+#@ go_pricing
+msgid "Map info window content"
+msgstr "Map info window content"
+
+#: go_pricing.php:1810
+#@ go_pricing
+msgid "Info window (popup) for marker on map. (optional)"
+msgstr "Info window (popup) for marker on map. (optional)"
+
+#: go_pricing.php:1814
+#@ go_pricing
+msgid "Info window by default?"
+msgstr "Info window by default?"
+
+#: go_pricing.php:1815
+#@ go_pricing
+msgid "Whether to show info window by default. (optional)"
+msgstr "Whether to show info window by default. (optional)"
+
+#: go_pricing.php:1836
+#: go_pricing.php:1929
+#@ go_pricing
+msgid "Select icon"
+msgstr "Select icon"
+
+#: go_pricing.php:1895
+#: go_pricing.php:1941
+#@ go_pricing
+msgid "Custom icon source"
+msgstr "Custom icon source"
+
+#: go_pricing.php:1896
+#@ go_pricing
+msgid "Transparent image (png/gif), 20x20 pixels. (optional)"
+msgstr "Transparent image (png/gif), 20x20 pixels. (optional)"
+
+#: go_pricing.php:1897
+#: go_pricing.php:1943
+#@ go_pricing
+msgid "Leave blank to use the default icons."
+msgstr "Leave blank to use the default icons."
+
+#: go_pricing.php:1901
+#: go_pricing.php:1947
+#@ go_pricing
+msgid "Icon alignment"
+msgstr "Icon alignment"
+
+#: go_pricing.php:1904
+#: go_pricing.php:1950
+#@ go_pricing
+msgid "Align center"
+msgstr "Align center"
+
+#: go_pricing.php:1908
+#: go_pricing.php:1954
+#@ go_pricing
+msgid "Icon alignment. Default value \"Align center\". (optional)"
+msgstr "Icon alignment. Default value \"Align center\". (optional)"
+
+#: go_pricing.php:1942
+#@ go_pricing
+msgid "Transparent image (png/gif). 20x20 pixels for normal, 24x24 pixels for large buttons. (optional)"
+msgstr "Transparent image (png/gif). 20x20 pixels for normal, 24x24 pixels for large buttons. (optional)"
+
+#: go_pricing.php:1958
+#@ go_pricing
+msgid "Icon size"
+msgstr "Icon size"
+
+#: go_pricing.php:1964
+#@ go_pricing
+msgid "Icon size. Default value \"Medium\". (optional)"
+msgstr "Icon size. Default value \"Medium\". (optional)"
+
+#: go_pricing.php:676
+#: go_pricing.php:1252
+#@ go_pricing
+msgid "Custom button"
+msgstr "Custom button"
+
+#: go_pricing.php:1535
+#@ go_pricing
+msgid "Custom CSS code"
+msgstr "Custom CSS code"
+
+#: go_pricing.php:1540
+#@ go_pricing
+msgid "You can add custom CSS code to plugin main frontend stylesheet file."
+msgstr "You can add custom CSS code to plugin main frontend stylesheet file."
+
+#: go_pricing.php:1541
+#@ go_pricing
+msgid "After clicking to the \"Save\" button your changes will appear in css file."
+msgstr "After clicking to the \"Save\" button your changes will appear in css file."
+
+#: go_pricing.php:210
+#@ go_pricing
+msgid "The \"go_pricing_styles.css\" file couldn't be created in \"assets/css\" folder lack of write permission. <strong>Please set this folder's chmod to 777 and activate the plugin again.</strong>"
+msgstr "The \"go_pricing_styles.css\" file couldn't be created in \"assets/css\" folder lack of write permission. <strong>Please set this folder's chmod to 777 and activate the plugin again.</strong>"
+
+#: go_pricing.php:793
+#@ go_pricing
+msgid "Equalize row height?"
+msgstr "Equalize row height?"
+
+#: go_pricing.php:795
+#@ go_pricing
+msgid "Whether to equalize the description rows height."
+msgstr "Whether to equalize the description rows height."
+
+#: go_pricing.php:821
+#@ go_pricing
+msgid "Hide footer?"
+msgstr "Hide footer?"
+
+#: go_pricing.php:823
+#@ go_pricing
+msgid "Whether to hide the table footer"
+msgstr "Whether to hide the table footer"
+
+#: go_pricing.php:1616
+#@ go_pricing
+msgid "Video"
+msgstr "Video"
+
+#: go_pricing.php:1620
+#@ go_pricing
+msgid "Dailymotion video"
+msgstr "Dailymotion video"
+
+#: go_pricing.php:1621
+#@ go_pricing
+msgid "Metacafe video"
+msgstr "Metacafe video"
+
+#: go_pricing.php:1623
+#@ go_pricing
+msgid "Audio"
+msgstr "Audio"
+
+#: go_pricing.php:1624
+#@ go_pricing
+msgid "Soundcloud audio"
+msgstr "Soundcloud audio"
+
+#: go_pricing.php:1625
+#@ go_pricing
+msgid "Mixcloud audio"
+msgstr "Mixcloud audio"
+
+#: go_pricing.php:1626
+#@ go_pricing
+msgid "Beatport audio"
+msgstr "Beatport audio"
+
+#: go_pricing.php:1628
+#@ go_pricing
+msgid "Other"
+msgstr "Other"
+
+#: go_pricing.php:1630
+#@ go_pricing
+msgid "Custom iframe"
+msgstr "Custom iframe"
+
+#: go_pricing.php:1696
+#: go_pricing.php:1706
+#@ go_pricing
+msgid "Track ID"
+msgstr "Track ID"
+
+#: go_pricing.php:1697
+#@ go_pricing
+msgid "Soundcloud track ID. (required)"
+msgstr "Soundcloud track ID. (required)"
+
+#: go_pricing.php:1701
+#@ go_pricing
+msgid "Track URL"
+msgstr "Track URL"
+
+#: go_pricing.php:1702
+#@ go_pricing
+msgid "Mixcloud track URL. (required)"
+msgstr "Mixcloud track URL. (required)"
+
+#: go_pricing.php:1707
+#@ go_pricing
+msgid "Beatport track ID. (required)"
+msgstr "Beatport track ID. (required)"
+
+#: go_pricing.php:1711
+#@ go_pricing
+msgid "URL"
+msgstr "URL"
+
+#: go_pricing.php:1712
+#@ go_pricing
+msgid "Iframe URL. (required)"
+msgstr "Iframe URL. (required)"
+
+#: go_pricing.php:1717
+#@ go_pricing
+msgid "Iframe height in pixels e.g. \"300\". (optional)"
+msgstr "Iframe height in pixels e.g. \"300\". (optional)"
+
+#: go_pricing.php:625
+#: go_pricing.php:862
+#@ go_pricing
+msgid "Disable enlarge?"
+msgstr "Disable enlarge?"
+
+#: go_pricing.php:626
+#: go_pricing.php:866
+#@ go_pricing
+msgid "Disable hover state?"
+msgstr ""
+
+#: go_pricing.php:652
+#: go_pricing.php:1273
+#@ go_pricing
+msgid "Nofollow link?"
+msgstr ""
+
+#: go_pricing.php:103
+#: go_pricing.php:104
+#@ go_pricing
+msgid "Import & Export"
+msgstr ""
+
+#: go_pricing.php:103
+#@ go_pricing
+msgid "Go - Pricing"
+msgstr ""
+
+#: go_pricing.php:1514
+#@ go_pricing
+msgid "Set role"
+msgstr ""
+
+#: go_pricing.php:1517
+#@ go_pricing
+msgid "Administrator"
+msgstr ""
+
+#: go_pricing.php:1518
+#@ go_pricing
+msgid "Editor"
+msgstr ""
+
+#: go_pricing.php:1519
+#@ go_pricing
+msgid "Author"
+msgstr ""
+
+#: go_pricing.php:1520
+#@ go_pricing
+msgid "Contributor"
+msgstr ""
+
+#: go_pricing.php:1523
+#@ go_pricing
+msgid "Set user access to the plugin"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:42
+#: includes/submenu_page_import_export.php:401
+#@ go_pricing
+msgid "There is nothing to export!"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:62
+#@ go_pricing
+msgid "Invalid import data!"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:84
+#: includes/submenu_page_import_export.php:190
+#: includes/submenu_page_import_export.php:315
+#@ go_pricing
+msgid "There is nothing to import!"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:176
+#, php-format
+#@ go_pricing
+msgid "%1$d pricing table(s) has been imported."
+msgstr ""
+
+#: includes/submenu_page_import_export.php:245
+#@ go_pricing
+msgid "Import & Export Data"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:249
+#@ go_pricing
+msgid "Select action"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:252
+#@ go_pricing
+msgid "Import data"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:253
+#@ go_pricing
+msgid "Export data"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:256
+#@ go_pricing
+msgid "Import or Export table data."
+msgstr ""
+
+#: includes/submenu_page_import_export.php:261
+#@ go_pricing
+msgid "To import data open the file that contains demodata and copy its content to the textarea below and click to the \"Save\" button."
+msgstr ""
+
+#: includes/submenu_page_import_export.php:271
+#@ go_pricing
+msgid "Tables"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:274
+#@ go_pricing
+msgid "All tables"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:283
+#: includes/submenu_page_import_export.php:347
+#@ go_pricing
+msgid "Select the pricing tables you would like to export."
+msgstr ""
+
+#: includes/submenu_page_import_export.php:315
+#: includes/submenu_page_import_export.php:401
+#@ go_pricing
+msgid "Click here"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:315
+#: includes/submenu_page_import_export.php:401
+#@ go_pricing
+msgid "for Import & Export"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:327
+#@ go_pricing
+msgid "Import Data"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:331
+#@ go_pricing
+msgid "Select the data to be imported and click to \"Save\" button."
+msgstr ""
+
+#: includes/submenu_page_import_export.php:335
+#@ go_pricing
+msgid "Pricing tables"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:338
+#@ go_pricing
+msgid "All Pricing Tables"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:350
+#@ go_pricing
+msgid "Replace existing items?"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:352
+#@ go_pricing
+msgid "Existing items with same ids will be replaced with the new ones if set, else a new copy will be created."
+msgstr ""
+
+#: includes/submenu_page_import_export.php:410
+#@ go_pricing
+msgid "Export Data"
+msgstr ""
+
+#: includes/submenu_page_import_export.php:414
+#@ go_pricing
+msgid "Copy the content of the textarea below and save into file on your hard drive."
+msgstr ""
+
+#: includes/vc/class_vc_extend.php:53
+#@ go_pricing
+msgid "No table found!"
+msgstr ""
+
+#: includes/vc/class_vc_extend.php:59
+#@ go_pricing
+msgid "Go Pricing"
+msgstr ""
+
+#: includes/vc/class_vc_extend.php:60
+#@ go_pricing
+msgid "Awesome responsive pricing tables"
+msgstr ""
+
+#: includes/vc/class_vc_extend.php:62
+#@ go_pricing
+msgid "Content"
+msgstr ""
+
+#: includes/vc/class_vc_extend.php:69
+#@ go_pricing
+msgid "Table Name"
+msgstr ""
+
+#: includes/vc/class_vc_extend.php:72
+#@ go_pricing
+msgid "Select Pricing Table"
+msgstr ""
+
