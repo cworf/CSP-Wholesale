@@ -779,4 +779,23 @@ color: #9B8A55;
 .responsive-tabs .responsive-tabs__list__item {
   color: #575555!important;
 }
+.rowmask{
+position: relative;
+   overflow: hidden;
+   margin: 0px auto;
+   width: 100%;
+}
+.col1{
+position: relative;
+   overflow: hidden;
+   float: left;
+   width: 22%;
+  margin-right: 3%;
+}
+.col2{
+position: relative;
+   overflow: hidden;
+   float: right;
+   width: 75%;
+}
 
