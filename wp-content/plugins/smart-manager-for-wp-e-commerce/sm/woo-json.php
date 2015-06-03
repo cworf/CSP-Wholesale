@@ -172,20 +172,33 @@ function get_data_woo ( $post, $offset, $limit, $is_export = false ) {
         $results_trash = $wpdb->get_col( $query_trash );
         $rows_trash = $wpdb->num_rows;
         
-        $query_deleted = "SELECT distinct products.post_parent 
-                            FROM {$wpdb->prefix}posts as products 
-                            WHERE NOT EXISTS (SELECT * FROM {$wpdb->prefix}posts WHERE ID = products.post_parent) 
-                              AND products.post_parent > 0 
-                              AND products.post_type = 'product_variation'";
-        $results_deleted = $wpdb->get_col( $query_deleted );
-        $rows_deleted = $wpdb->num_rows;
-        
-        for ($i=sizeof($results_trash),$j=0;$j<sizeof($results_deleted);$i++,$j++ ) {
-            $results_trash[$i] = $results_deleted[$j];
+
+        //Code to get the taxonomy id for 'simple' product_type
+        $query_taxonomy_id = "SELECT taxonomy.term_taxonomy_id as term_taxonomy_id
+                                    FROM {$wpdb->prefix}terms as terms
+                                        JOIN {$wpdb->prefix}term_taxonomy as taxonomy ON (taxonomy.term_id = terms.term_id)
+                                    WHERE taxonomy.taxonomy = 'product_type'
+                                        AND terms.slug = 'variable'";
+        $variable_taxonomy_id = $wpdb->get_var( $query_taxonomy_id );
+
+        if ( !empty($variable_taxonomy_id) ) {
+            $query_post_parent_not_variable = "SELECT distinct products.post_parent 
+                                        FROM {$wpdb->prefix}posts as products 
+                                        WHERE NOT EXISTS (SELECT * 
+                                                            FROM {$wpdb->prefix}term_relationships 
+                                                            WHERE object_id = products.post_parent
+                                                                AND term_taxonomy_id = ".$variable_taxonomy_id.") 
+                                          AND products.post_parent > 0 
+                                          AND products.post_type = 'product_variation'";
+            $results_post_parent_not_variable = $wpdb->get_col( $query_post_parent_not_variable );
+            $rows_post_parent_not_variable = $wpdb->num_rows;   
+
+            for ($i=sizeof($results_trash),$j=0;$j<sizeof($results_post_parent_not_variable);$i++,$j++ ) {
+                $results_trash[$i] = $results_post_parent_not_variable[$j];
+            }
         }
         
-        
-        if ($rows_trash > 0 || $rows_deleted > 0) {
+        if ($rows_trash > 0 || $rows_post_parent_not_variable > 0) {
             $trash_id = " AND {$wpdb->prefix}posts.post_parent NOT IN (" .implode(",",$results_trash). ")";
         }
         else {
