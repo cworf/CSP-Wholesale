@@ -1,4 +1,12 @@
-<?php	
+<?php
+    if(function_exists('current_user_can'))
+//        if(!current_user_can('manage_options')) {
+        if(!current_user_can('delete_pages')) {
+            die('Access Denied');
+}	
+if(!function_exists('current_user_can')){
+	die('Access Denied');
+}
 function showportfolio() 
   {
 	  
@@ -225,6 +233,7 @@ function apply_cat($id)
 	$query=$wpdb->prepare("SELECT * FROM ".$wpdb->prefix."huge_itportfolio_portfolios WHERE id = %d", $id);
 	   $row=$wpdb->get_row($query);
 				
+				
 				/***<image optimize>***/
 				
 		/*$query="SELECT * FROM ".$wpdb->prefix."huge_itportfolio_params";
@@ -260,11 +269,17 @@ function apply_cat($id)
 					$pathinfo = pathinfo($imgurl);
 					$filename = $pathinfo["filename"];//get image's name
 					$extension = $pathinfo["extension"];//get image,s extension
-					//set_time_limit (0);
+					set_time_limit (0);
 					$upload_dir = wp_upload_dir(); 
 					$path = parse_url($imgurl, PHP_URL_PATH);
 					//$path = substr($path,1);
+					$url = $upload_dir["path"];//get upload path
+					$copy_image = $url.'/'.$filename.$image_prefix.".".$extension;
+					if(file_exists($copy_image)) {
+						return;
+					}
 					$imgurl = $_SERVER['DOCUMENT_ROOT'].$path;
+					
 					if(function_exists("wp_get_image_editor")) {
 						$size = wp_get_image_editor($imgurl);
 

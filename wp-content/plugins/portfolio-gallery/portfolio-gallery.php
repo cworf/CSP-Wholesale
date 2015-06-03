@@ -4,7 +4,7 @@
 Plugin Name: Huge IT Portfolio Gallery
 Plugin URI: http://huge-it.com/portfolio-gallery
 Description: Portfolio Gallery is a great plugin for adding specialized portfolios or gallery to your site. There are various view options for the images to choose from.
-Version: 1.4.8
+Version: 1.5.1
 Author: Huge IT
 Author URI: http://huge-it.com/
 License: GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
@@ -213,8 +213,8 @@ add_action('wp_enqueue_scripts', 'portfolio_frontend_scripts_and_styles');
 add_action('admin_menu', 'huge_it_portfolio_options_panel');
 function huge_it_portfolio_options_panel()
 {
-    $page_cat = add_menu_page('Theme page title', 'Huge IT Portfolio', 'manage_options', 'portfolios_huge_it_portfolio', 'portfolios_huge_it_portfolio', plugins_url('images/huge_it_portfolioLogoHover -for_menu.png', __FILE__));
-    add_submenu_page('portfolios_huge_it_portfolio', 'Portfolios', 'Portfolios', 'manage_options', 'portfolios_huge_it_portfolio', 'portfolios_huge_it_portfolio');
+    $page_cat = add_menu_page('Theme page title', 'Huge IT Portfolio', 'delete_pages', 'portfolios_huge_it_portfolio', 'portfolios_huge_it_portfolio', plugins_url('images/huge_it_portfolioLogoHover -for_menu.png', __FILE__));
+    add_submenu_page('portfolios_huge_it_portfolio', 'Portfolios', 'Portfolios', 'delete_pages', 'portfolios_huge_it_portfolio', 'portfolios_huge_it_portfolio');
     $page_option = add_submenu_page('portfolios_huge_it_portfolio', 'General Options', 'General Options', 'manage_options', 'Options_portfolio_styles', 'Options_portfolio_styles');
 	$lightbox_options = add_submenu_page('portfolios_huge_it_portfolio', 'Lightbox Options', 'Lightbox Options', 'manage_options', 'Options_portfolio_lightbox_styles', 'Options_portfolio_lightbox_styles');
 	

@@ -1058,7 +1058,7 @@ if(typeof lightbox_html != 'undefined') {
 				
 				setTimeout(function () {
 					closing = false;
-					trigger(event_closed);
+					//trigger(event_closed);
 					settings.get('onClosed');
 				}, 1);
 			});

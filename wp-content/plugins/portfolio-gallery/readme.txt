@@ -4,7 +4,7 @@ Donate link: http://huge-it.com/portfolio-gallery/
 Tags: Portfolio Gallery, portfolio, portfolio plugin, portfolios, picture, pictures, album, custom fields, image description, image display, image-size, images gallery, gallery, labels, visual items, thumbnails, screenshots, screenshot, image gallery, wordpress FAQ, list, grid, web designer, slider, sliders, wordpress slider, wordpress slideshow, wp slider, slide, slide show, slider, slider plugin, slider widget, slides, slideshow, slideshow manager, gallery description, slideshow plugin, gallery slider,  galeri, galerie, widget slider, widget slideshow, foto, responsive, responsive slider, responsive slideshow, Photo Slider, plugin, Image Rotator, carousel, wordpress gallery, wordpress gallery plugin, banner rotator, best gallery, best gallery plugin, image album, image gallery plugin, images gallery, photo, photo album, photo albums, photo gallery, photoset, picture, pictures, Simple gallery, website gallery, widget gallery, wp gallery plugins, wp gallery plugin, wp gallery, photoalbum, view images, multiple pictures, lightbox, lightbox photo, image lightbox, gallery lightbox, content slider, wordpress portfolio, galleries, galleria, wordpress portfolio plugin, project, photography, filterable gallery, filterable portfolio, jquery portfolio, jquery gallery, sortable portfolio, prettyphoto, picture gallery, picture portfolio,  fullscreen, thumbnail, iphone gallery, free photo gallery, widget portfolio, fullscreen photo, free gallery, best portfolio plugin, free gallery, fullscreen slider, gallery shortcode, pretty photo, free slider, showcase, nextcellent, wordpress responsive gallery, filterable, masonry, Responsive Portfolio, image-portfolio, photographs, custom, labels, fullscreen gallery, thumbnail view,
 Requires at least: 3.0.1
 Tested up to: 4.2.2
-Stable tag: 1.4.8
+Stable tag: 1.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -132,6 +132,15 @@ If you still see "free version" notification after installation of pro version
 ### If you think, that you found a bug in our [WordPress Portfolio Gallery](http://huge-it.com/portfolio-gallery) plugin or have any question contact us at [info@huge-it.com](mailto:info@huge-it.com).
 
 == Changelog ==
+
+= 1.5.1 =
+*  Bug fixed in Portfolio Gallery.
+
+= 1.5.0 =
+*  Bug fixed in Portfolio Gallery.
+
+= 1.4.9 =
+*  Bug fixed in Portfolio Gallery.
 
 = 1.4.8 =
 *  Bug fixed in Portfolio Gallery.
