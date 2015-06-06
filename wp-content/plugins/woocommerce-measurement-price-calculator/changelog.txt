@@ -1,0 +1,102 @@
+*** WooCommerce Measurement Price Calculator Changelog ***
+
+2014.11.18 - version 3.5.2
+ * Tweak - Introduce 'wc_measurement_price_calculator_measurement_needed' filter
+ * Tweak - Introduce 'wc_measurement_price_calculator_measurement_dimension' filter
+ * Tweak - Introduce 'wc_measurement_price_calculator_measurement_area' filter
+ * Tweak - Introduce 'wc_measurement_price_calculator_measurement_perimeter' filter
+ * Tweak - Introduce 'wc_measurement_price_calculator_measurement_volume' filter
+ * Fix - Display sale badge on pricing rules products
+
+2014.10.07 - version 3.5.1
+ * Fix - Fix an error when using variable measurement products
+
+2014.10.06 - version 3.5.0
+ * Feature - Surface area calculator
+ * Tweak - Support for measurement price calculator pricing products sold individually
+ * Tweak - Separate price and pricing label with a slash
+ * Fix - Fix an issue with variation measurement meta in WooCommerce 2.2
+
+2014.09.10 - version 3.4.3
+ * Fix - Compatibility with Cost of Goods Sold
+
+2014.09.07 - version 3.4.2
+ * Misc - WooCommerce 2.2 Compatibility
+
+2014.08.22 - version 3.4.1
+* Fix - Fix bug with fractions calculations
+
+2014.08.19 - version 3.4.0
+ * Feature - Users can now enter measurements needed in fractions such as "1/4" or "8 1/4"
+ * Tweak - Show pricing as a range for better compatibility with rich snippets
+ * Tweak - Show price suffix after the pricing label for quantity calculator products
+ * Tweak - Frontend measurement label is filterable with wc_measurement_price_calculator_label
+ * Fix - Include price suffix for products that use the pricing calculator
+ * Fix - Fix price rich snippet for pricing calculator products
+ * Fix - Total measurement needed can no longer be altered from the browser
+
+2014.05.27 - version 3.3.3
+ * Fix - Error that can occur during WPML translation
+
+2014.04.25 - version 3.3.2
+ * Fix - Product variation with pricing table support
+
+2014.02.24 - version 3.3.1
+ * Fix - Quantity calculator pricing per unit display for variable products
+
+2014.01.20 - version 3.3
+ * Misc - Uses SkyVerge Plugin Framework
+ * Misc - WooCommerce 2.1 Compatibility
+ * Localization - Changed text domain to woocommerce-measurement-price-calculator and moved languages directory to i18n
+
+2013.12.13 - version 3.2
+ * Feature - Perimeter calculator
+ * Fix - Improved shipping handling for pricing quantity calculator products
+ * Fix - Corrected Volume (LxWxH) calculation for metric units
+ * Localization - Fixed text domain
+
+2013.10.18 - version 3.1.3
+ * Fix - Allow non-integer stock quantities
+ * Fix - Pricing calculator compatibility with WooCommerce Dynamic Pricing plugin
+ * Fix - Improved compatbility with WooCommerce Product Addons
+
+2013.09.06 - version 3.1.2
+ * Tweak - Improved customizability of the frontend unit label field
+
+2013.07.16 - version 3.1.1
+ * Fix - Bug fix on edit product page
+
+2013.07.12 - version 3.1
+ * Feature - Pricing calculator product minimum price
+ * Tweak - Pricing Calculator Product compatibility with WooCommerce Product Addons 2.0.9+
+
+2013.05.31 - version 3.0.1
+ * Tweak - Frontend unit label is filterable with wc_measurement_price_calculator_unit_label
+ * Tweak - Measurement unit labels are localized on frontend
+
+2013.05.17 - version 3.0
+ * Feature - Fixed values or select dropdowns can be configured for pricing calculator product measurement fields
+ * Feature - Price per unit (ie $/sq ft) can be displayed on frontend for quantity calculator products
+ * Feature - Customizable pricing calculator products inventory can now be managed "per unit" (requires WC 2.0.4+)
+ * Feature - Customizable pricing calculator products weight can now be calculated "per unit"
+ * Feature - Pricing table for configuring stepped prices for pricing calculator products
+ * Feature - Pricing Calculator Product compatibility with WooCommerce Product Addons
+ * Tweak - Total amount displayed on frontend for derived pricing calculator products
+ * Tweak - Measurement units are localized on frontend
+ * Fix - Improved "order again" support for pricing calculator customizable products (requires WC 2.0.4+)
+
+2013.01.13 - version 2.0
+ * Feature - Pricing per unit calculator
+ * Feature - Quantity calculator variation support
+ * Localization - added German translation by Stephanie Schlieske
+ * WC 2.0 compatibility
+
+2012.12.17 - version 1.0.2
+ * Fix - cleaned up frontend javascript minor issues
+ * Localization - added French translation by Olivier Herzog
+
+2012.12.04 - version 1.0.1
+ * New updater
+
+2012.07.09 - version 1.0
+ * Initial Release
