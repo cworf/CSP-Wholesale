@@ -1,0 +1,219 @@
+0000.000 (0) Opened log file at time: Thu, 04 Jun 2015 04:47:13 +0000 on http://wholesale.csprintingmt.com
+0000.005 (0) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.10.1 WP: 4.2.2 PHP: 5.4.40 (Linux box358.bluehost.com 3.12.35.1418868052 #1 SMP Wed Dec 17 20:04:02 CST 2014 x86_64) MySQL: 5.5.42-37.1-log Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 50.9M | 52.8M) multisite: N mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.324 (0) Free space on disk containing Updraft's temporary directory: 650845.8 Mb
+0000.331 (0) Tasks: Backup files:  (schedule: daily) Backup DB: 1 (schedule: every4hours)
+0000.334 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 1
+0000.339 (0) Requesting semaphore lock (d)
+0000.341 (0) Set semaphore last lock (d) time to 2015-06-04 04:47:14
+0000.342 (0) Semaphore lock (d) complete
+0000.347 (0) Backup run: resumption=0, nonce=09ef167f4e97, begun at=1433393233 (1s ago), job type=backup
+0000.348 (0) Scheduling a resumption (1) after 300 seconds (1433393534) in case this run gets aborted
+0000.359 (0) This backup run is not intended for files - skipping
+0000.363 (0) Beginning creation of database dump (WordPress DB)
+0000.366 (0) Testing: /usr/bin/mysqldump
+0000.401 (0) Binary mysqldump: error (code: 2)
+0000.424 (0) Table wp_dovc_options: Total expected rows (approximate): 7000
+0000.858 (0) Table wp_dovc_options: Total rows added: 6999 in 0.42 seconds
+0000.870 (0) Table wp_dovc_options: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_options.table.gz - 214 Kb)
+0000.892 (0) Table wp_dovc_users: Total expected rows (approximate): 8
+0000.903 (0) Table wp_dovc_users: Total rows added: 8 in 0.01 seconds
+0000.905 (0) Table wp_dovc_users: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_users.table.gz - 0.9 Kb)
+0000.925 (0) Table wp_dovc_usermeta: Total expected rows (approximate): 249
+0000.944 (0) Table wp_dovc_usermeta: Total rows added: 249 in 0.02 seconds
+0000.945 (0) Table wp_dovc_usermeta: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_usermeta.table.gz - 5.4 Kb)
+0000.954 (0) Table wp_dovc_commentmeta: Total expected rows (approximate): 2
+0000.963 (0) Table wp_dovc_commentmeta: Total rows added: 2 in 0.01 seconds
+0000.965 (0) Table wp_dovc_commentmeta: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_commentmeta.table.gz - 0.4 Kb)
+0000.968 (0) Table wp_dovc_comments: Total expected rows (approximate): 3
+0000.973 (0) Table wp_dovc_comments: Total rows added: 3 in 0.00 seconds
+0000.974 (0) Table wp_dovc_comments: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_comments.table.gz - 0.8 Kb)
+0000.990 (0) Table wp_dovc_links: Total expected rows (approximate): 0
+0000.993 (0) Table wp_dovc_links: Total rows added: 0 in 0.00 seconds
+0000.995 (0) Table wp_dovc_links: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_links.table.gz - 0.4 Kb)
+0000.998 (0) Table wp_dovc_postmeta: Total expected rows (approximate): 42212
+0003.592 (0) Table wp_dovc_postmeta: Total rows added: 42212 in 2.59 seconds
+0003.595 (0) Table wp_dovc_postmeta: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_postmeta.table.gz - 418.4 Kb)
+0003.599 (0) Table wp_dovc_posts: Total expected rows (approximate): 2166
+0003.991 (0) Table wp_dovc_posts: Total rows added: 2166 in 0.39 seconds
+0003.993 (0) Table wp_dovc_posts: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_posts.table.gz - 87.4 Kb)
+0003.996 (0) Table wp_dovc_term_relationships: Total expected rows (approximate): 2751
+0004.044 (0) Table wp_dovc_term_relationships: Total rows added: 2751 in 0.05 seconds
+0004.046 (0) Table wp_dovc_term_relationships: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_term_relationships.table.gz - 9.2 Kb)
+0004.050 (0) Table wp_dovc_term_taxonomy: Total expected rows (approximate): 593
+0004.079 (0) Table wp_dovc_term_taxonomy: Total rows added: 593 in 0.03 seconds
+0004.081 (0) Table wp_dovc_term_taxonomy: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_term_taxonomy.table.gz - 4.5 Kb)
+0004.084 (0) Table wp_dovc_terms: Total expected rows (approximate): 593
+0004.109 (0) Table wp_dovc_terms: Total rows added: 593 in 0.02 seconds
+0004.111 (0) Table wp_dovc_terms: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_terms.table.gz - 5.4 Kb)
+0004.129 (0) Table wp_dovc_woocommerce_order_itemmeta: Total expected rows (approximate): 66
+0004.138 (0) Table wp_dovc_woocommerce_order_itemmeta: Total rows added: 66 in 0.01 seconds
+0004.140 (0) Table wp_dovc_woocommerce_order_itemmeta: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_woocommerce_order_itemmeta.table.gz - 0.9 Kb)
+0004.146 (0) Table wp_dovc_woocommerce_termmeta: Total expected rows (approximate): 755
+0004.171 (0) Table wp_dovc_woocommerce_termmeta: Total rows added: 755 in 0.02 seconds
+0004.172 (0) Table wp_dovc_woocommerce_termmeta: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_woocommerce_termmeta.table.gz - 5.1 Kb)
+0004.189 (0) Table wp_dovc_huge_itportfolio_images: Total expected rows (approximate): 31
+0004.203 (0) Table wp_dovc_huge_itportfolio_images: Total rows added: 31 in 0.01 seconds
+0004.205 (0) Table wp_dovc_huge_itportfolio_images: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_huge_itportfolio_images.table.gz - 1.7 Kb)
+0004.212 (0) Table wp_dovc_huge_itportfolio_portfolios: Total expected rows (approximate): 5
+0004.217 (0) Table wp_dovc_huge_itportfolio_portfolios: Total rows added: 5 in 0.00 seconds
+0004.219 (0) Table wp_dovc_huge_itportfolio_portfolios: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_huge_itportfolio_portfolios.table.gz - 0.6 Kb)
+0004.238 (0) Table wp_dovc_irecommendthis_votes: Total expected rows (approximate): 0
+0004.242 (0) Table wp_dovc_irecommendthis_votes: Total rows added: 0 in 0.00 seconds
+0004.244 (0) Table wp_dovc_irecommendthis_votes: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_irecommendthis_votes.table.gz - 0.3 Kb)
+0004.256 (0) Table wp_dovc_layerslider: Total expected rows (approximate): 0
+0004.259 (0) Table wp_dovc_layerslider: Total rows added: 0 in 0.00 seconds
+0004.260 (0) Table wp_dovc_layerslider: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_layerslider.table.gz - 0.3 Kb)
+0004.281 (0) Table wp_dovc_pmxi_files: Total expected rows (approximate): 18
+0004.292 (0) Table wp_dovc_pmxi_files: Total rows added: 18 in 0.01 seconds
+0004.294 (0) Table wp_dovc_pmxi_files: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_pmxi_files.table.gz - 1.2 Kb)
+0004.304 (0) Table wp_dovc_pmxi_history: Total expected rows (approximate): 21
+0004.311 (0) Table wp_dovc_pmxi_history: Total rows added: 21 in 0.00 seconds
+0004.313 (0) Table wp_dovc_pmxi_history: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_pmxi_history.table.gz - 0.8 Kb)
+0004.328 (0) Table wp_dovc_pmxi_imports: Total expected rows (approximate): 18
+0004.362 (0) Table wp_dovc_pmxi_imports: Total rows added: 18 in 0.03 seconds
+0004.364 (0) Table wp_dovc_pmxi_imports: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_pmxi_imports.table.gz - 9.4 Kb)
+0004.384 (0) Table wp_dovc_pmxi_posts: Total expected rows (approximate): 202
+0004.396 (0) Table wp_dovc_pmxi_posts: Total rows added: 202 in 0.01 seconds
+0004.402 (0) Table wp_dovc_pmxi_posts: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_pmxi_posts.table.gz - 3.3 Kb)
+0004.415 (0) Table wp_dovc_pmxi_templates: Total expected rows (approximate): 8
+0004.441 (0) Table wp_dovc_pmxi_templates: Total rows added: 8 in 0.02 seconds
+0004.442 (0) Table wp_dovc_pmxi_templates: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_pmxi_templates.table.gz - 5.5 Kb)
+0004.450 (0) Table wp_dovc_revslider_css: Total expected rows (approximate): 47
+0004.464 (0) Table wp_dovc_revslider_css: Total rows added: 47 in 0.01 seconds
+0004.466 (0) Table wp_dovc_revslider_css: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_revslider_css.table.gz - 1.8 Kb)
+0004.473 (0) Table wp_dovc_revslider_layer_animations: Total expected rows (approximate): 0
+0004.477 (0) Table wp_dovc_revslider_layer_animations: Total rows added: 0 in 0.00 seconds
+0004.479 (0) Table wp_dovc_revslider_layer_animations: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_revslider_layer_animations.table.gz - 0.3 Kb)
+0004.485 (0) Table wp_dovc_revslider_settings: Total expected rows (approximate): 1
+0004.524 (0) Table wp_dovc_revslider_settings: Total rows added: 1 in 0.03 seconds
+0004.526 (0) Table wp_dovc_revslider_settings: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_revslider_settings.table.gz - 0.3 Kb)
+0004.538 (0) Table wp_dovc_revslider_sliders: Total expected rows (approximate): 0
+0004.541 (0) Table wp_dovc_revslider_sliders: Total rows added: 0 in 0.00 seconds
+0004.542 (0) Table wp_dovc_revslider_sliders: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_revslider_sliders.table.gz - 0.3 Kb)
+0004.548 (0) Table wp_dovc_revslider_slides: Total expected rows (approximate): 0
+0004.551 (0) Table wp_dovc_revslider_slides: Total rows added: 0 in 0.00 seconds
+0004.552 (0) Table wp_dovc_revslider_slides: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_revslider_slides.table.gz - 0.3 Kb)
+0004.558 (0) Table wp_dovc_revslider_static_slides: Total expected rows (approximate): 0
+0004.562 (0) Table wp_dovc_revslider_static_slides: Total rows added: 0 in 0.00 seconds
+0004.564 (0) Table wp_dovc_revslider_static_slides: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_revslider_static_slides.table.gz - 0.3 Kb)
+0004.592 (0) Table wp_dovc_sm_advanced_search_temp: Total expected rows (approximate): 0
+0004.598 (0) Table wp_dovc_sm_advanced_search_temp: Total rows added: 0 in 0.00 seconds
+0004.600 (0) Table wp_dovc_sm_advanced_search_temp: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_sm_advanced_search_temp.table.gz - 0.3 Kb)
+0004.615 (0) Table wp_dovc_wc_crm_customer_list: Total expected rows (approximate): 7
+0004.623 (0) Table wp_dovc_wc_crm_customer_list: Total rows added: 7 in 0.01 seconds
+0004.625 (0) Table wp_dovc_wc_crm_customer_list: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_wc_crm_customer_list.table.gz - 0.6 Kb)
+0004.633 (0) Table wp_dovc_wc_crm_groups: Total expected rows (approximate): 0
+0004.636 (0) Table wp_dovc_wc_crm_groups: Total rows added: 0 in 0.00 seconds
+0004.637 (0) Table wp_dovc_wc_crm_groups: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_wc_crm_groups.table.gz - 0.4 Kb)
+0004.650 (0) Table wp_dovc_wc_crm_groups_relationships: Total expected rows (approximate): 0
+0004.652 (0) Table wp_dovc_wc_crm_groups_relationships: Total rows added: 0 in 0.00 seconds
+0004.655 (0) Table wp_dovc_wc_crm_groups_relationships: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_wc_crm_groups_relationships.table.gz - 0.3 Kb)
+0004.670 (0) Table wp_dovc_wc_crm_log: Total expected rows (approximate): 0
+0004.674 (0) Table wp_dovc_wc_crm_log: Total rows added: 0 in 0.00 seconds
+0004.675 (0) Table wp_dovc_wc_crm_log: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_wc_crm_log.table.gz - 0.4 Kb)
+0004.680 (0) Table wp_dovc_wc_crm_statuses: Total expected rows (approximate): 0
+0004.685 (0) Table wp_dovc_wc_crm_statuses: Total rows added: 0 in 0.00 seconds
+0004.686 (0) Table wp_dovc_wc_crm_statuses: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_wc_crm_statuses.table.gz - 0.3 Kb)
+0004.692 (0) Table wp_dovc_woocommerce_attribute_taxonomies: Total expected rows (approximate): 7
+0004.697 (0) Table wp_dovc_woocommerce_attribute_taxonomies: Total rows added: 7 in 0.00 seconds
+0004.699 (0) Table wp_dovc_woocommerce_attribute_taxonomies: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_woocommerce_attribute_taxonomies.table.gz - 0.5 Kb)
+0004.708 (0) Table wp_dovc_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0004.713 (0) Table wp_dovc_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0004.715 (0) Table wp_dovc_woocommerce_downloadable_product_permissions: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_woocommerce_downloadable_product_permissions.table.gz - 0.4 Kb)
+0004.733 (0) Table wp_dovc_woocommerce_order_items: Total expected rows (approximate): 6
+0004.738 (0) Table wp_dovc_woocommerce_order_items: Total rows added: 6 in 0.00 seconds
+0004.740 (0) Table wp_dovc_woocommerce_order_items: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_woocommerce_order_items.table.gz - 0.4 Kb)
+0004.746 (0) Table wp_dovc_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0004.750 (0) Table wp_dovc_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0004.751 (0) Table wp_dovc_woocommerce_tax_rate_locations: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_woocommerce_tax_rate_locations.table.gz - 0.3 Kb)
+0004.758 (0) Table wp_dovc_woocommerce_tax_rates: Total expected rows (approximate): 0
+0004.763 (0) Table wp_dovc_woocommerce_tax_rates: Total rows added: 0 in 0.00 seconds
+0004.765 (0) Table wp_dovc_woocommerce_tax_rates: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_woocommerce_tax_rates.table.gz - 0.4 Kb)
+0004.781 (0) Table wp_dovc_wpfront_ure_login_redirect: Total expected rows (approximate): 0
+0004.784 (0) Table wp_dovc_wpfront_ure_login_redirect: Total rows added: 0 in 0.00 seconds
+0004.785 (0) Table wp_dovc_wpfront_ure_login_redirect: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_wpfront_ure_login_redirect.table.gz - 0.3 Kb)
+0004.794 (0) Table wp_dovc_wpfront_ure_options: Total expected rows (approximate): 6
+0004.803 (0) Table wp_dovc_wpfront_ure_options: Total rows added: 6 in 0.01 seconds
+0004.804 (0) Table wp_dovc_wpfront_ure_options: finishing file (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_wpfront_ure_options.table.gz - 1.3 Kb)
+0004.807 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_options.table.gz (1/41): adding to final database dump
+0004.940 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_users.table.gz (2/41): adding to final database dump
+0004.948 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_usermeta.table.gz (3/41): adding to final database dump
+0004.957 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_commentmeta.table.gz (4/41): adding to final database dump
+0004.959 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_comments.table.gz (5/41): adding to final database dump
+0004.965 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_links.table.gz (6/41): adding to final database dump
+0004.967 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_postmeta.table.gz (7/41): adding to final database dump
+0005.489 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_posts.table.gz (8/41): adding to final database dump
+0005.563 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_term_relationships.table.gz (9/41): adding to final database dump
+0005.578 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_term_taxonomy.table.gz (10/41): adding to final database dump
+0005.587 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_terms.table.gz (11/41): adding to final database dump
+0005.597 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_woocommerce_order_itemmeta.table.gz (12/41): adding to final database dump
+0005.605 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_woocommerce_termmeta.table.gz (13/41): adding to final database dump
+0005.612 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_huge_itportfolio_images.table.gz (14/41): adding to final database dump
+0005.614 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_huge_itportfolio_portfolios.table.gz (15/41): adding to final database dump
+0005.616 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_irecommendthis_votes.table.gz (16/41): adding to final database dump
+0005.617 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_layerslider.table.gz (17/41): adding to final database dump
+0005.625 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_pmxi_files.table.gz (18/41): adding to final database dump
+0005.627 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_pmxi_history.table.gz (19/41): adding to final database dump
+0005.628 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_pmxi_imports.table.gz (20/41): adding to final database dump
+0005.642 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_pmxi_posts.table.gz (21/41): adding to final database dump
+0005.646 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_pmxi_templates.table.gz (22/41): adding to final database dump
+0005.658 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_revslider_css.table.gz (23/41): adding to final database dump
+0005.666 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_revslider_layer_animations.table.gz (24/41): adding to final database dump
+0005.675 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_revslider_settings.table.gz (25/41): adding to final database dump
+0005.676 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_revslider_sliders.table.gz (26/41): adding to final database dump
+0005.677 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_revslider_slides.table.gz (27/41): adding to final database dump
+0005.678 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_revslider_static_slides.table.gz (28/41): adding to final database dump
+0005.685 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_sm_advanced_search_temp.table.gz (29/41): adding to final database dump
+0005.686 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_wc_crm_customer_list.table.gz (30/41): adding to final database dump
+0005.689 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_wc_crm_groups.table.gz (31/41): adding to final database dump
+0005.695 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_wc_crm_groups_relationships.table.gz (32/41): adding to final database dump
+0005.696 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_wc_crm_log.table.gz (33/41): adding to final database dump
+0005.697 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_wc_crm_statuses.table.gz (34/41): adding to final database dump
+0005.698 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_woocommerce_attribute_taxonomies.table.gz (35/41): adding to final database dump
+0005.700 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_woocommerce_downloadable_product_permissions.table.gz (36/41): adding to final database dump
+0005.702 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_woocommerce_order_items.table.gz (37/41): adding to final database dump
+0005.703 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_woocommerce_tax_rate_locations.table.gz (38/41): adding to final database dump
+0005.704 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_woocommerce_tax_rates.table.gz (39/41): adding to final database dump
+0005.714 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_wpfront_ure_login_redirect.table.gz (40/41): adding to final database dump
+0005.715 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db-table-wp_dovc_wpfront_ure_options.table.gz (41/41): adding to final database dump
+0005.717 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db.gz: finished writing out complete database file (768 Kb)
+0005.727 (0) Total database tables backed up: 41 (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db.gz, size: 793616, checksum (SHA1): 6069313a905f0c5ba329e64e64098991a59f783c)
+0005.728 (0) Saving backup history
+0005.733 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db.gz: db: This file has not yet been successfully uploaded: will queue
+0005.735 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0005.738 (0) Cloud backup selection (1/1): googledrive (last)
+0005.742 (0) Beginning dispatch of backup to remote (googledrive)
+0005.763 (0) Google Drive: requesting access token: client_id=28835182280-j80cg308q6juilejm9ku1e13bp7fddnh.apps.googleusercontent.com
+0005.931 (0) Google Drive: successfully obtained access token
+0007.516 (0) Google Drive quota usage: used=820.6 Mb, total=30720 Mb, available=29899.4 Mb
+0007.518 (0) backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db.gz: Attempting to upload to Google Drive (into folder id: 0B3ktLxrsWEfmYlhhcW11UEplQzQ)
+0009.285 (0) Googledrive chunked upload: 100 % uploaded
+0009.287 (0) OK: Archive backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db.gz uploaded to Google Drive in 1.77 seconds
+0009.289 (0) Recording as successfully uploaded: backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db.gz (07844f7a1bac2f3926f61bfff85b19b5)
+0009.293 (0) Deleting local file: backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db.gz: OK
+0009.296 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=3, retain_db=25
+0009.297 (0) Number of backup sets in history: 6
+0009.298 (0) Examining backup set with datestamp: 1433393233 (Jun 04 2015 04:47:13)
+0009.299 (0) 1433393233: db: this set includes a database (backup_2015-06-03-2147_CSP_Wholesale_09ef167f4e97-db.gz); db count is now 1
+0009.656 (0) 1433393233: this backup set remains non-empty (0/1); will retain in history
+0009.657 (0) Examining backup set with datestamp: 1433379150 (Jun 04 2015 00:52:30)
+0009.658 (0) 1433379150: db: this set includes a database (backup_2015-06-03-1752_CSP_Wholesale_1b6547f1a12e-db.gz); db count is now 2
+0010.155 (0) 1433379150: this backup set remains non-empty (0/1); will retain in history
+0010.156 (0) Examining backup set with datestamp: 1433378940 (Jun 04 2015 00:49:00)
+0010.156 (0) 1433378940: db: this set includes a database (backup_2015-06-03-1749_CSP_Wholesale_4936f6be500e-db.gz); db count is now 3
+0010.657 (0) 1433378940: this backup set remains non-empty (0/1); will retain in history
+0010.665 (0) Examining backup set with datestamp: 1433378700 (Jun 04 2015 00:45:00)
+0010.666 (0) 1433378700: db: this set includes a database (backup_2015-06-03-1745_CSP_Wholesale_9bff64f3cd4b-db.gz); db count is now 4
+0011.049 (0) 1433378700: this backup set remains non-empty (0/1); will retain in history
+0011.050 (0) Examining backup set with datestamp: 1433378576 (Jun 04 2015 00:42:56)
+0011.463 (0) 1433378576: this backup set remains non-empty (1/0); will retain in history
+0011.464 (0) Examining backup set with datestamp: 1433358352 (Jun 03 2015 19:05:52)
+0011.465 (0) 1433358352: db: this set includes a database (backup_2015-06-03-1205_CSP_Wholesale_2f54da22f421-db.gz); db count is now 5
+0011.865 (0) 1433358352: this backup set remains non-empty (0/1); will retain in history
+0011.866 (0) Retain: saving new backup history (sets now: 6) and finishing retain operation
+0011.869 (0) Resume backup (09ef167f4e97, 0): finish run
+0011.871 (0) Decremented the semaphore (d) by 1
+0011.872 (0) Semaphore (d) unlocked
+0011.872 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0011.876 (0) No email will/can be sent - the user has not configured an email address.
+0011.877 (0) The backup apparently succeeded and is now complete
