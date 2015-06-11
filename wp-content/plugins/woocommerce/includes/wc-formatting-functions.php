@@ -384,9 +384,9 @@ function wc_price( $price, $args = array() ) {
 	if ( apply_filters( 'woocommerce_price_trim_zeros', false ) && $decimals > 0 ) {
 		$price = wc_trim_zeros( $price );
 	}
-    
+
 	$formatted_price = ( $negative ? '-' : '' ) . sprintf( $price_format, get_woocommerce_currency_symbol( $currency ), $price );
-	$return          = '<span class="amount">' . $formatted_price .'</span>';
+	$return          = '<span class="amount">' . $formatted_price . '</span>';
 
 	if ( $ex_tax_label && wc_tax_enabled() ) {
 		$return .= ' <small>' . WC()->countries->ex_tax_or_vat() . '</small>';
